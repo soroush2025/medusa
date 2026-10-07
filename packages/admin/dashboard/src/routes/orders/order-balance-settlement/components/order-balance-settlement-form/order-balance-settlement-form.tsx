@@ -309,7 +309,7 @@ export const OrderBalanceSettlementForm = ({
                               value: "0",
                               decimalScale: currency.decimal_digits,
                             })}
-                            constrainDecimals
+                            constrainDecimals="scale"
                             currencyCode={currency.code}
                             value={field.value?.value}
                             onStoredValueChange={onChange}
@@ -361,7 +361,7 @@ export const OrderBalanceSettlementForm = ({
                               value: "0",
                               decimalScale: currency.decimal_digits,
                             })}
-                            constrainDecimals
+                            constrainDecimals="scale"
                             currencyCode={currency.code}
                             value={field.value?.value}
                             onStoredValueChange={onChange}

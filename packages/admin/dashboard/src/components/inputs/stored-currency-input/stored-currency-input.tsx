@@ -28,10 +28,13 @@ export type StoredCurrencyInputProps = Omit<
   /** Called with the amount in STORED units on every change. */
   onStoredValueChange: (stored: StoredAmount) => void
   /**
-   * Pass decimalScale and decimalsLimit of the currency to the input while no
-   * display unit is active. Only for the sites that did so before.
+   * While no display unit is active, pass the currency's decimal digits to the
+   * input exactly as the site did before: "scale" passes only decimalScale,
+   * "scale-and-limit" passes decimalScale and decimalsLimit. Omit it for sites
+   * that passed neither. With a display unit active the derived props are
+   * always used.
    */
-  constrainDecimals?: boolean
+  constrainDecimals?: "scale" | "scale-and-limit"
 }
 
 const toNumber = (value: StoredCurrencyInputProps["value"]) => {
@@ -57,13 +60,7 @@ export const StoredCurrencyInput = forwardRef<
   StoredCurrencyInputProps
 >(
   (
-    {
-      currencyCode,
-      value,
-      onStoredValueChange,
-      constrainDecimals = false,
-      ...props
-    },
+    { currencyCode, value, onStoredValueChange, constrainDecimals, ...props },
     ref
   ) => {
     const info = useCurrencyInputInfo(currencyCode)
@@ -87,7 +84,13 @@ export const StoredCurrencyInput = forwardRef<
       }
     }, [value, info, active])
 
-    const derivedProps = active || constrainDecimals ? info.inputProps : {}
+    const derivedProps = active
+      ? info.inputProps
+      : constrainDecimals === "scale-and-limit"
+      ? info.inputProps
+      : constrainDecimals === "scale"
+      ? { decimalScale: info.inputProps.decimalScale }
+      : {}
 
     return (
       <CurrencyInput
@@ -99,8 +102,10 @@ export const StoredCurrencyInput = forwardRef<
         value={
           active
             ? display
-            : value === null || value === undefined
-            ? ""
+            : // Unit off: undefined stays undefined (the library's own
+            // uncontrolled state), so a typed "0" is not blanked.
+            value === null || value === undefined
+            ? undefined
             : String(value)
         }
         onValueChange={(next, _name, values) => {
