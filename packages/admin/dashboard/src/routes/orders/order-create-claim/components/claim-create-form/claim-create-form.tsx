@@ -9,7 +9,6 @@ import {
 import {
   Alert,
   Button,
-  CurrencyInput,
   Heading,
   IconButton,
   Switch,
@@ -31,6 +30,7 @@ import {
 
 import { Form } from "../../../../../components/common/form"
 import { Combobox } from "../../../../../components/inputs/combobox"
+import { StoredCurrencyInput } from "../../../../../components/inputs/stored-currency-input"
 import { useShippingOptions } from "../../../../../hooks/api/shipping-options"
 import { useStockLocations } from "../../../../../hooks/api/stock-locations"
 import { getStylizedAmount } from "../../../../../lib/money-amount-helpers"
@@ -910,7 +910,7 @@ export const ClaimCreateForm = ({
                   )}
 
                   {isShippingInboundPriceEdit ? (
-                    <CurrencyInput
+                    <StoredCurrencyInput
                       id="js-shipping-inbound-input"
                       onBlur={() => {
                         let actionId
@@ -945,17 +945,8 @@ export const ClaimCreateForm = ({
                         }
                         setIsShippingInboundPriceEdit(false)
                       }}
-                      symbol={
-                        currencies[order.currency_code.toUpperCase()]
-                          .symbol_native
-                      }
-                      code={order.currency_code}
-                      onValueChange={(_value, _name, values) => {
-                        setCustomInboundShippingAmount({
-                          value: values?.value ?? "",
-                          float: values?.float ?? null,
-                        })
-                      }}
+                      currencyCode={order.currency_code}
+                      onStoredValueChange={setCustomInboundShippingAmount}
                       value={customInboundShippingAmount.value}
                       disabled={showInboundItemsPlaceholder}
                     />
@@ -986,7 +977,7 @@ export const ClaimCreateForm = ({
                   )}
 
                   {isShippingOutboundPriceEdit ? (
-                    <CurrencyInput
+                    <StoredCurrencyInput
                       id="js-shipping-outbound-input"
                       onBlur={() => {
                         let actionId
@@ -1018,17 +1009,8 @@ export const ClaimCreateForm = ({
                         }
                         setIsShippingOutboundPriceEdit(false)
                       }}
-                      symbol={
-                        currencies[order.currency_code.toUpperCase()]
-                          .symbol_native
-                      }
-                      code={order.currency_code}
-                      onValueChange={(_value, _name, values) => {
-                        setCustomOutboundShippingAmount({
-                          value: values?.value ?? "",
-                          float: values?.float ?? null,
-                        })
-                      }}
+                      currencyCode={order.currency_code}
+                      onStoredValueChange={setCustomOutboundShippingAmount}
                       value={customOutboundShippingAmount.value}
                       disabled={showOutboundItemsPlaceholder}
                     />

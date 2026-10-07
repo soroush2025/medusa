@@ -1,5 +1,6 @@
 import { Button, Heading, toast } from "@medusajs/ui"
 import { useTranslation } from "react-i18next"
+import { CsvStoredUnitsHint } from "../../../components/common/csv-stored-units-hint"
 import { RouteDrawer, useRouteModal } from "../../../components/modals"
 import { useExportOrders } from "../../../hooks/api"
 import { useOrderTableQuery } from "../../../hooks/table/query"
@@ -48,6 +49,7 @@ const OrderExportContent = () => {
     <>
       <RouteDrawer.Body>
         <ExportFilters />
+        <CsvStoredUnitsHint />
       </RouteDrawer.Body>
       <RouteDrawer.Footer>
         <div className="flex items-center gap-x-2">

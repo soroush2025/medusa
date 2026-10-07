@@ -1,4 +1,5 @@
 import { Button, Heading, toast } from "@medusajs/ui"
+import { CsvStoredUnitsHint } from "../../../components/common/csv-stored-units-hint"
 import { RouteDrawer, useRouteModal } from "../../../components/modals"
 import { useTranslation } from "react-i18next"
 import { ExportFilters } from "./components/export-filters"
@@ -55,6 +56,7 @@ const ProductExportContent = () => {
     <>
       <RouteDrawer.Body>
         <ExportFilters />
+        <CsvStoredUnitsHint />
         {/* <Divider className="mt-4" variant="dashed" /> */}
       </RouteDrawer.Body>
       <RouteDrawer.Footer>

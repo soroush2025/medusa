@@ -3,7 +3,6 @@ import { AdminOrder, AdminPayment } from "@medusajs/types"
 import {
   Button,
   clx,
-  CurrencyInput,
   Divider,
   Label,
   RadioGroup,
@@ -19,6 +18,7 @@ import { useTranslation } from "react-i18next"
 import * as zod from "zod"
 
 import { Form } from "../../../../../components/common/form"
+import { StoredCurrencyInput } from "../../../../../components/inputs/stored-currency-input"
 import { RouteDrawer, useRouteModal } from "../../../../../components/modals"
 import { KeyboundForm } from "../../../../../components/utilities/keybound-form"
 import {
@@ -302,23 +302,17 @@ export const OrderBalanceSettlementForm = ({
                         <Form.Label>{t("fields.amount")}</Form.Label>
 
                         <Form.Control>
-                          <CurrencyInput
+                          <StoredCurrencyInput
                             {...field}
                             min={0}
                             placeholder={formatValue({
                               value: "0",
                               decimalScale: currency.decimal_digits,
                             })}
-                            decimalScale={currency.decimal_digits}
-                            symbol={currency.symbol_native}
-                            code={currency.code}
+                            constrainDecimals
+                            currencyCode={currency.code}
                             value={field.value?.value}
-                            onValueChange={(_value, _name, values) =>
-                              onChange({
-                                value: values?.value ?? "",
-                                float: values?.float ?? null,
-                              })
-                            }
+                            onStoredValueChange={onChange}
                             autoFocus
                           />
                         </Form.Control>
@@ -360,23 +354,17 @@ export const OrderBalanceSettlementForm = ({
                         <Form.Label>{t("fields.amount")}</Form.Label>
 
                         <Form.Control>
-                          <CurrencyInput
+                          <StoredCurrencyInput
                             {...field}
                             min={0}
                             placeholder={formatValue({
                               value: "0",
                               decimalScale: currency.decimal_digits,
                             })}
-                            decimalScale={currency.decimal_digits}
-                            symbol={currency.symbol_native}
-                            code={currency.code}
+                            constrainDecimals
+                            currencyCode={currency.code}
                             value={field.value?.value}
-                            onValueChange={(_value, _name, values) => {
-                              onChange({
-                                value: values?.value ?? "",
-                                float: values?.float ?? null,
-                              })
-                            }}
+                            onStoredValueChange={onChange}
                             autoFocus
                           />
                         </Form.Control>

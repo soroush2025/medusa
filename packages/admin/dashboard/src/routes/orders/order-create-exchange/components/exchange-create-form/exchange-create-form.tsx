@@ -3,7 +3,6 @@ import { InformationCircleSolid, PencilSquare } from "@medusajs/icons"
 import { AdminExchange, AdminOrder, AdminOrderPreview } from "@medusajs/types"
 import {
   Button,
-  CurrencyInput,
   Heading,
   IconButton,
   Switch,
@@ -21,6 +20,7 @@ import {
 } from "../../../../../components/modals"
 
 import { Form } from "../../../../../components/common/form"
+import { StoredCurrencyInput } from "../../../../../components/inputs/stored-currency-input"
 import { getStylizedAmount } from "../../../../../lib/money-amount-helpers"
 import { CreateExchangeSchemaType, ExchangeCreateSchema } from "./schema"
 
@@ -33,7 +33,6 @@ import {
   useUpdateExchangeOutboundShipping,
 } from "../../../../../hooks/api/exchanges"
 import { useUpdateOrderChange } from "../../../../../hooks/api/orders"
-import { currencies } from "../../../../../lib/data/currencies"
 import { ExchangeInboundSection } from "./exchange-inbound-section.tsx"
 import { ExchangeOutboundSection } from "./exchange-outbound-section"
 
@@ -398,7 +397,7 @@ export const ExchangeCreateForm = ({
                   )}
 
                   {isInboundShippingPriceEdit ? (
-                    <CurrencyInput
+                    <StoredCurrencyInput
                       id="js-inbound-shipping-input"
                       onBlur={() => {
                         let actionId
@@ -433,17 +432,8 @@ export const ExchangeCreateForm = ({
                         }
                         setIsInboundShippingPriceEdit(false)
                       }}
-                      symbol={
-                        currencies[order.currency_code.toUpperCase()]
-                          .symbol_native
-                      }
-                      code={order.currency_code}
-                      onValueChange={(_value, _name, values) =>
-                        setCustomInboundShippingAmount({
-                          value: values?.value ?? "",
-                          float: values?.float ?? null,
-                        })
-                      }
+                      currencyCode={order.currency_code}
+                      onStoredValueChange={setCustomInboundShippingAmount}
                       value={customInboundShippingAmount.value}
                       disabled={!inboundPreviewItems?.length}
                     />
@@ -474,7 +464,7 @@ export const ExchangeCreateForm = ({
                   )}
 
                   {isOutboundShippingPriceEdit ? (
-                    <CurrencyInput
+                    <StoredCurrencyInput
                       id="js-outbound-shipping-input"
                       onBlur={() => {
                         let actionId
@@ -506,17 +496,8 @@ export const ExchangeCreateForm = ({
                         }
                         setIsOutboundShippingPriceEdit(false)
                       }}
-                      symbol={
-                        currencies[order.currency_code.toUpperCase()]
-                          .symbol_native
-                      }
-                      code={order.currency_code}
-                      onValueChange={(_value, _name, values) =>
-                        setCustomOutboundShippingAmount({
-                          value: values?.value ?? "",
-                          float: values?.float ?? null,
-                        })
-                      }
+                      currencyCode={order.currency_code}
+                      onStoredValueChange={setCustomOutboundShippingAmount}
                       value={customOutboundShippingAmount.value}
                       disabled={!outboundPreviewItems?.length}
                     />

@@ -21,6 +21,7 @@ import {
   InputProps,
 } from "../../../../../components/data-grid/types"
 import { useCombinedRefs } from "../../../../../hooks/use-combined-refs"
+import { useCurrencyInputInfo } from "../../../../../hooks/use-currency-input-info"
 
 export interface TieredPriceCellProps<TData, TValue = any>
   extends DataGridCellProps<TData, TValue> {
@@ -77,7 +78,7 @@ export const TieredPriceCell = <TData, TValue = any>({
             <Inner
               field={props}
               inputProps={input}
-              currencyInfo={currency}
+              code={code}
               onMeasureSymbol={measuredRef}
             />
           </DataGridCellContainer>
@@ -121,13 +122,14 @@ const Inner = ({
   field,
   onMeasureSymbol,
   inputProps,
-  currencyInfo,
+  code,
 }: {
   field: ControllerRenderProps<any, string>
   onMeasureSymbol: (node: HTMLSpanElement) => void
   inputProps: InputProps
-  currencyInfo: CurrencyInfo
+  code: string
 }) => {
+  const info = useCurrencyInputInfo(code)
   const { value, onChange: _, onBlur, ref, ...rest } = field
   const {
     ref: inputRef,
@@ -144,15 +146,17 @@ const Inner = ({
 
       return formatValue({
         value: ensuredValue,
-        decimalScale: currencyInfo.decimal_digits,
+        decimalScale: info.inputProps.decimalScale,
         disableGroupSeparators: true,
         decimalSeparator: ".",
       })
     },
-    [currencyInfo]
+    [info]
   )
 
-  const [localValue, setLocalValue] = useState<string | number>(value || "")
+  const [localValue, setLocalValue] = useState<string | number>(
+    info.toDisplayValue(value) || ""
+  )
 
   const handleValueChange: CurrencyInputProps["onValueChange"] = (
     value,
@@ -170,12 +174,14 @@ const Inner = ({
   useEffect(() => {
     let update = value
 
+    // The stored value is converted to the active display unit first (a no-op
+    // without one).
     if (!isNaN(Number(value))) {
-      update = formatter(update)
+      update = formatter(info.toDisplayValue(value))
     }
 
     setLocalValue(update)
-  }, [value, formatter])
+  }, [value, formatter, info])
 
   const combinedRef = useCombinedRefs(inputRef, ref)
 
@@ -186,7 +192,7 @@ const Inner = ({
         aria-hidden
         ref={onMeasureSymbol}
       >
-        {currencyInfo.symbol_native}
+        {info.symbol}
       </span>
       <CurrencyInput
         {...rest}
@@ -200,11 +206,11 @@ const Inner = ({
           onBlur()
           onInputBlur()
 
-          onChange(localValue, value)
+          // Convert on blur: the grid and the form only ever hold stored units.
+          onChange(info.toStoredText(localValue), value)
         }}
         onFocus={onFocus}
-        decimalScale={currencyInfo.decimal_digits}
-        decimalsLimit={currencyInfo.decimal_digits}
+        {...info.inputProps}
         autoComplete="off"
         tabIndex={-1}
       />

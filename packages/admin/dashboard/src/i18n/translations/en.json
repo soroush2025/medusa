@@ -68,7 +68,8 @@
     "noMoreData": "No more data",
     "quantityPrice": "Quantity Price",
     "exclusive": "Product-specific",
-    "global": "Global"
+    "global": "Global",
+    "csvStoredUnitsHint": "Amounts in CSV files always use the stored currency unit (for example Rials for IRR), not the Toman display unit."
   },
   "json": {
     "header": "JSON",

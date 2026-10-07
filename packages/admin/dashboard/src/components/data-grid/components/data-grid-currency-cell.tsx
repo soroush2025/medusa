@@ -6,7 +6,7 @@ import { Controller, ControllerRenderProps } from "react-hook-form"
 
 import { useCallback, useEffect, useState } from "react"
 import { useCombinedRefs } from "../../../hooks/use-combined-refs"
-import { CurrencyInfo, currencies } from "../../../lib/data/currencies"
+import { useCurrencyInputInfo } from "../../../hooks/use-currency-input-info"
 import { useDataGridCell, useDataGridCellError } from "../hooks"
 import { DataGridCellProps, InputProps } from "../types"
 import { DataGridCellContainer } from "./data-grid-cell-container"
@@ -27,8 +27,6 @@ export const DataGridCurrencyCell = <TData, TValue = any>({
 
   const { container, input } = renderProps
 
-  const currency = currencies[code.toUpperCase()]
-
   return (
     <Controller
       control={control}
@@ -36,7 +34,7 @@ export const DataGridCurrencyCell = <TData, TValue = any>({
       render={({ field }) => {
         return (
           <DataGridCellContainer {...container} {...errorProps}>
-            <Inner field={field} inputProps={input} currencyInfo={currency} />
+            <Inner field={field} inputProps={input} code={code} />
           </DataGridCellContainer>
         )
       }}
@@ -47,12 +45,13 @@ export const DataGridCurrencyCell = <TData, TValue = any>({
 const Inner = ({
   field,
   inputProps,
-  currencyInfo,
+  code,
 }: {
   field: ControllerRenderProps<any, string>
   inputProps: InputProps
-  currencyInfo: CurrencyInfo
+  code: string
 }) => {
+  const info = useCurrencyInputInfo(code)
   const { value, onChange: _, onBlur, ref, ...rest } = field
   const {
     ref: inputRef,
@@ -69,15 +68,17 @@ const Inner = ({
 
       return formatValue({
         value: ensuredValue,
-        decimalScale: currencyInfo.decimal_digits,
+        decimalScale: info.inputProps.decimalScale,
         disableGroupSeparators: true,
         decimalSeparator: ".",
       })
     },
-    [currencyInfo]
+    [info]
   )
 
-  const [localValue, setLocalValue] = useState<string | number>(value || "")
+  const [localValue, setLocalValue] = useState<string | number>(
+    info.toDisplayValue(value) || ""
+  )
 
   const handleValueChange: CurrencyInputProps["onValueChange"] = (
     value,
@@ -97,13 +98,14 @@ const Inner = ({
 
     // The component we use is a bit fidly when the value is updated externally
     // so we need to ensure a format that will result in the cell being formatted correctly
-    // according to the users locale on the next render.
+    // according to the users locale on the next render. The stored value is
+    // converted to the active display unit first (a no-op without one).
     if (!isNaN(Number(value))) {
-      update = formatter(update)
+      update = formatter(info.toDisplayValue(value))
     }
 
     setLocalValue(update)
-  }, [value, formatter])
+  }, [value, formatter, info])
 
   const combinedRed = useCombinedRefs(inputRef, ref)
 
@@ -113,7 +115,7 @@ const Inner = ({
         className="txt-compact-small text-ui-fg-muted pointer-events-none absolute start-0 w-fit min-w-4"
         aria-hidden
       >
-        {currencyInfo.symbol_native}
+        {info.symbol}
       </span>
       <CurrencyInput
         {...rest}
@@ -127,11 +129,11 @@ const Inner = ({
           onBlur()
           onInputBlur()
 
-          onChange(localValue, value)
+          // Convert on blur: the grid and the form only ever hold stored units.
+          onChange(info.toStoredText(localValue), value)
         }}
         onFocus={onFocus}
-        decimalScale={currencyInfo.decimal_digits}
-        decimalsLimit={currencyInfo.decimal_digits}
+        {...info.inputProps}
         autoComplete="off"
         tabIndex={-1}
       />

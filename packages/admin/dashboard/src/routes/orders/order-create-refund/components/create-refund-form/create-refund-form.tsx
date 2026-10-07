@@ -1,13 +1,6 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { HttpTypes } from "@medusajs/types"
-import {
-  Button,
-  CurrencyInput,
-  Label,
-  Select,
-  Textarea,
-  toast,
-} from "@medusajs/ui"
+import { Button, Label, Select, Textarea, toast } from "@medusajs/ui"
 import { useEffect, useMemo, useState } from "react"
 import { formatValue } from "react-currency-input-field"
 import { useForm } from "react-hook-form"
@@ -15,6 +8,7 @@ import { useTranslation } from "react-i18next"
 import { useSearchParams } from "react-router-dom"
 import * as zod from "zod"
 import { Form } from "../../../../../components/common/form"
+import { StoredCurrencyInput } from "../../../../../components/inputs/stored-currency-input"
 import { RouteDrawer, useRouteModal } from "../../../../../components/modals"
 import { KeyboundForm } from "../../../../../components/utilities/keybound-form"
 import { useRefundPayment, useRefundReasons } from "../../../../../hooks/api"
@@ -213,23 +207,17 @@ export const CreateRefundForm = ({ order }: CreateRefundFormProps) => {
                     <Form.Label>{t("fields.amount")}</Form.Label>
 
                     <Form.Control>
-                      <CurrencyInput
+                      <StoredCurrencyInput
                         {...field}
                         min={0}
                         placeholder={formatValue({
                           value: "0",
                           decimalScale: currency.decimal_digits,
                         })}
-                        decimalScale={currency.decimal_digits}
-                        symbol={currency.symbol_native}
-                        code={currency.code}
+                        constrainDecimals
+                        currencyCode={currency.code}
                         value={field.value.value}
-                        onValueChange={(_value, _name, values) =>
-                          onChange({
-                            value: values?.value ?? "",
-                            float: values?.float ?? null,
-                          })
-                        }
+                        onStoredValueChange={onChange}
                         autoFocus
                       />
                     </Form.Control>
