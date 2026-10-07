@@ -10370,11 +10370,18 @@
             "languageLabel": {
               "type": "string"
             },
+            "currencyDisplayUnitLabel": {
+              "type": "string"
+            },
             "usageInsightsLabel": {
               "type": "string"
             }
           },
-          "required": ["languageLabel", "usageInsightsLabel"],
+          "required": [
+            "languageLabel",
+            "currencyDisplayUnitLabel",
+            "usageInsightsLabel"
+          ],
           "additionalProperties": false
         },
         "mfa": {
@@ -10489,6 +10496,9 @@
             "languagePlaceholder": {
               "type": "string"
             },
+            "currencyDisplayUnitHint": {
+              "type": "string"
+            },
             "usageInsightsHint": {
               "type": "string"
             }
@@ -10497,6 +10507,7 @@
             "header",
             "languageHint",
             "languagePlaceholder",
+            "currencyDisplayUnitHint",
             "usageInsightsHint"
           ],
           "additionalProperties": false
