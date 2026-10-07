@@ -5,9 +5,25 @@
 /// <reference types="vite/client" />
 
 import { withThemeByDataAttribute } from "@storybook/addon-themes"
-import type { Preview } from "@storybook/react"
+import type { Decorator, Preview } from "@storybook/react"
+import * as React from "react"
 
+import { I18nProvider } from "../src/components/i18n-provider"
 import "../src/main.css"
+
+const withDirection: Decorator = (Story, context) => {
+  const direction = context.globals.direction === "rtl" ? "rtl" : "ltr"
+
+  React.useEffect(() => {
+    document.documentElement.setAttribute("dir", direction)
+  }, [direction])
+
+  return (
+    <I18nProvider locale={direction === "rtl" ? "fa-IR" : "en-US"}>
+      <Story />
+    </I18nProvider>
+  )
+}
 
 export const decorators = [
   withThemeByDataAttribute({
@@ -18,9 +34,27 @@ export const decorators = [
     defaultTheme: "light",
     attributeName: "data-mode",
   }),
+  withDirection,
 ]
 
 const preview: Preview = {
+  globalTypes: {
+    direction: {
+      description: "Text direction",
+      toolbar: {
+        title: "Direction",
+        icon: "transfer",
+        items: [
+          { value: "ltr", title: "Left to right (en-US)" },
+          { value: "rtl", title: "Right to left (fa-IR)" },
+        ],
+        dynamicTitle: true,
+      },
+    },
+  },
+  initialGlobals: {
+    direction: "ltr",
+  },
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
