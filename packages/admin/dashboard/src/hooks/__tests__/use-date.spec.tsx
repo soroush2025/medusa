@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 import { renderHook } from "@testing-library/react"
-import { afterEach, describe, expect, it, vi } from "vitest"
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
 
 const languageMock = vi.hoisted(() => ({ current: "en" }))
 
@@ -216,6 +216,155 @@ describe("formatRelativeDateIntl", () => {
     expect(
       formatRelativeDateIntl(new Date(NOW.getTime() + 2 * HOUR), NOW, L)
     ).toBe("۲ ساعت بعد")
+  })
+})
+
+describe("formatRelativeDateIntl unit selection after rounding", () => {
+  const NOW = new Date(2026, 2, 24, 12, 0, 0)
+  const L = "fa-IR-u-ca-persian"
+  const minus = (ms: number) => new Date(NOW.getTime() - ms)
+  const SECOND = 1000
+  const MINUTE = 60 * SECOND
+  const HOUR = 60 * MINUTE
+  const DAY = 24 * HOUR
+
+  it("promotes 59.6 seconds to 1 minute instead of 60 seconds", () => {
+    expect(formatRelativeDateIntl(minus(59.6 * SECOND), NOW, L)).toBe(
+      "۱ دقیقه پیش"
+    )
+  })
+
+  it("promotes 59.6 minutes to 1 hour and 23.6 hours to yesterday", () => {
+    expect(formatRelativeDateIntl(minus(59.6 * MINUTE), NOW, L)).toBe(
+      "۱ ساعت پیش"
+    )
+    expect(formatRelativeDateIntl(minus(23.6 * HOUR), NOW, L)).toBe("دیروز")
+  })
+
+  it("promotes 364 days to 1 year instead of 12 months", () => {
+    expect(formatRelativeDateIntl(minus(364 * DAY), NOW, L)).toBe("سال گذشته")
+  })
+
+  it("keeps the smaller unit while the rounded value stays below the next unit", () => {
+    expect(formatRelativeDateIntl(minus(30 * SECOND), NOW, L)).toBe(
+      "۳۰ ثانیه پیش"
+    )
+    expect(formatRelativeDateIntl(minus(59.4 * SECOND), NOW, L)).toBe(
+      "۵۹ ثانیه پیش"
+    )
+    expect(formatRelativeDateIntl(minus(45 * DAY), NOW, L)).toBe("ماه گذشته")
+  })
+
+  it("promotes the same way for future times", () => {
+    expect(
+      formatRelativeDateIntl(new Date(NOW.getTime() + 59.6 * SECOND), NOW, L)
+    ).toBe("۱ دقیقه بعد")
+  })
+})
+
+describe("getRelativeDate with an invalid date", () => {
+  it("returns an empty string with an intl_locale", () => {
+    languageMock.current = "fa"
+    const { result } = renderHook(() => useDate())
+
+    expect(result.current.getRelativeDate("not a date")).toBe("")
+  })
+})
+
+describe("Intl formatter cache", () => {
+  const OriginalDateTimeFormat = Intl.DateTimeFormat
+  const OriginalRelativeTimeFormat = Intl.RelativeTimeFormat
+  let dateTimeFormatLocales: unknown[] = []
+  let relativeTimeFormatLocales: unknown[] = []
+
+  beforeEach(() => {
+    dateTimeFormatLocales = []
+    relativeTimeFormatLocales = []
+
+    class CountingDateTimeFormat extends OriginalDateTimeFormat {
+      constructor(...args: ConstructorParameters<typeof Intl.DateTimeFormat>) {
+        super(...args)
+        dateTimeFormatLocales.push(args[0])
+      }
+    }
+    class CountingRelativeTimeFormat extends OriginalRelativeTimeFormat {
+      constructor(
+        ...args: ConstructorParameters<typeof Intl.RelativeTimeFormat>
+      ) {
+        super(...args)
+        relativeTimeFormatLocales.push(args[0])
+      }
+    }
+
+    const intl = Intl as unknown as Record<string, unknown>
+    intl.DateTimeFormat = CountingDateTimeFormat
+    intl.RelativeTimeFormat = CountingRelativeTimeFormat
+  })
+
+  afterEach(() => {
+    const intl = Intl as unknown as Record<string, unknown>
+    intl.DateTimeFormat = OriginalDateTimeFormat
+    intl.RelativeTimeFormat = OriginalRelativeTimeFormat
+  })
+
+  it("constructs one DateTimeFormat for repeated calls with the same locale and options", () => {
+    // A locale no other test uses, so the cache is cold for it.
+    const locale = "fa-IR-u-ca-persian-nu-arab"
+
+    const first = formatFullDateIntl(LOCAL_NOON, locale, true)
+    const second = formatFullDateIntl(LOCAL_NOON, locale, true)
+    const third = formatFullDateIntl(LOCAL_NOON, locale, true)
+
+    expect(dateTimeFormatLocales.filter((l) => l === locale)).toHaveLength(1)
+    expect(second).toBe(first)
+    expect(third).toBe(first)
+  })
+
+  it("keeps separate formatters for different options", () => {
+    const locale = "fa-IR-u-ca-persian-nu-latn"
+
+    const withTime = formatFullDateIntl(LOCAL_NOON, locale, true)
+    const withoutTime = formatFullDateIntl(LOCAL_NOON, locale, false)
+
+    expect(dateTimeFormatLocales.filter((l) => l === locale)).toHaveLength(2)
+    expect(withTime).not.toBe(withoutTime)
+    expect(withoutTime).toBe(
+      new OriginalDateTimeFormat(locale, { dateStyle: "medium" }).format(
+        LOCAL_NOON
+      )
+    )
+  })
+
+  it("constructs one DateTimeFormat for repeated preset calls", () => {
+    languageMock.current = "fa"
+    const { result } = renderHook(() => useDate())
+    const first = result.current.getPresetDate({
+      date: LOCAL_NOON,
+      preset: "date",
+    })
+    dateTimeFormatLocales = []
+
+    const second = result.current.getPresetDate({
+      date: LOCAL_NOON,
+      preset: "date",
+    })
+
+    expect(dateTimeFormatLocales).toHaveLength(0)
+    expect(second).toBe(first)
+    expect(first).toBe("۰۱ فروردین ۱۴۰۵")
+  })
+
+  it("constructs one RelativeTimeFormat for repeated relative calls", () => {
+    const now = new Date(2026, 2, 24, 12, 0, 0)
+    const locale = "fa-IR-u-ca-persian-nu-latn"
+
+    const first = formatRelativeDateIntl(LOCAL_NOON, now, locale)
+    const second = formatRelativeDateIntl(LOCAL_NOON, now, locale)
+
+    expect(relativeTimeFormatLocales.filter((l) => l === locale)).toHaveLength(
+      1
+    )
+    expect(second).toBe(first)
   })
 })
 

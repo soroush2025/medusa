@@ -6,6 +6,44 @@ import { useTranslation } from "react-i18next"
 import { languages } from "../i18n/languages"
 import { useIntlLocale } from "../lib/format-locale"
 
+const dateTimeFormatCache = new Map<string, Intl.DateTimeFormat>()
+const relativeTimeFormatCache = new Map<string, Intl.RelativeTimeFormat>()
+
+/**
+ * Building an Intl formatter is expensive (about 0.3 ms for `fa`) and the date
+ * helpers run once per table cell, so formatters are cached per locale and
+ * options.
+ */
+const getDateTimeFormat = (
+  intlLocale: string,
+  options: Intl.DateTimeFormatOptions
+): Intl.DateTimeFormat => {
+  const key = `${intlLocale}|${JSON.stringify(options)}`
+  let formatter = dateTimeFormatCache.get(key)
+
+  if (!formatter) {
+    formatter = new Intl.DateTimeFormat(intlLocale, options)
+    dateTimeFormatCache.set(key, formatter)
+  }
+
+  return formatter
+}
+
+const getRelativeTimeFormat = (
+  intlLocale: string,
+  options: Intl.RelativeTimeFormatOptions
+): Intl.RelativeTimeFormat => {
+  const key = `${intlLocale}|${JSON.stringify(options)}`
+  let formatter = relativeTimeFormatCache.get(key)
+
+  if (!formatter) {
+    formatter = new Intl.RelativeTimeFormat(intlLocale, options)
+    relativeTimeFormatCache.set(key, formatter)
+  }
+
+  return formatter
+}
+
 export type DatePreset = "date" | "dateTime" | "dateTimeCompact"
 
 const DATE_TIME_INTL_OPTIONS: Intl.DateTimeFormatOptions = {
@@ -54,7 +92,7 @@ export const formatFullDateIntl = (
     ? { dateStyle: "medium", timeStyle: "short" }
     : { dateStyle: "medium" }
 
-  return new Intl.DateTimeFormat(intlLocale, options).format(date)
+  return getDateTimeFormat(intlLocale, options).format(date)
 }
 
 const SECONDS_IN_UNIT: [Intl.RelativeTimeFormatUnit, number][] = [
@@ -69,6 +107,9 @@ const SECONDS_IN_UNIT: [Intl.RelativeTimeFormatUnit, number][] = [
 /**
  * Relative time through `Intl.RelativeTimeFormat`. The wording is CLDR's
  * ("3 days ago"), not date-fns' fuzzy "about 3 hours ago".
+ *
+ * The unit is chosen after rounding, so 59.6 seconds reads "1 minute" rather
+ * than "60 seconds", and 364 days reads "1 year" rather than "12 months".
  */
 export const formatRelativeDateIntl = (
   date: Date,
@@ -77,13 +118,28 @@ export const formatRelativeDateIntl = (
 ): string => {
   const diffInSeconds = (date.getTime() - now.getTime()) / 1000
   const absolute = Math.abs(diffInSeconds)
-  const [unit, size] =
-    SECONDS_IN_UNIT.find(([, seconds]) => absolute >= seconds) ??
-    SECONDS_IN_UNIT[SECONDS_IN_UNIT.length - 1]
 
-  return new Intl.RelativeTimeFormat(intlLocale, { numeric: "auto" }).format(
-    Math.round(diffInSeconds / size),
-    unit
+  let index = SECONDS_IN_UNIT.findIndex(([, seconds]) => absolute >= seconds)
+  if (index === -1) {
+    index = SECONDS_IN_UNIT.length - 1
+  }
+
+  let value = Math.round(diffInSeconds / SECONDS_IN_UNIT[index][1])
+
+  // Promote to the next larger unit once the rounded value fills it, for
+  // example 60 seconds or 12 months.
+  while (
+    index > 0 &&
+    Math.abs(value) >=
+      Math.round(SECONDS_IN_UNIT[index - 1][1] / SECONDS_IN_UNIT[index][1])
+  ) {
+    index -= 1
+    value = Math.round(diffInSeconds / SECONDS_IN_UNIT[index][1])
+  }
+
+  return getRelativeTimeFormat(intlLocale, { numeric: "auto" }).format(
+    value,
+    SECONDS_IN_UNIT[index][0]
   )
 }
 
@@ -140,7 +196,7 @@ export const useDate = () => {
       const { pattern, intl } = DATE_PRESETS[preset]
 
       if (intlLocale) {
-        return new Intl.DateTimeFormat(intlLocale, intl).format(ensuredDate)
+        return getDateTimeFormat(intlLocale, intl).format(ensuredDate)
       }
 
       return format(ensuredDate, pattern, { locale })
@@ -153,7 +209,13 @@ export const useDate = () => {
       const now = new Date()
 
       if (intlLocale) {
-        return formatRelativeDateIntl(new Date(date), now, intlLocale)
+        const ensuredDate = new Date(date)
+
+        if (isNaN(ensuredDate.getTime())) {
+          return ""
+        }
+
+        return formatRelativeDateIntl(ensuredDate, now, intlLocale)
       }
 
       return formatDistance(sub(new Date(date), { minutes: 0 }), now, {
