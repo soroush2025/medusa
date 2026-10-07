@@ -89,30 +89,18 @@ describe("display unit store", () => {
     expect(b).toHaveBeenCalledTimes(1)
   })
 
-  it("picks up a change made in another tab through the storage event", async () => {
+  it("does not react to storage events, so another tab never remounts this one", async () => {
     const store = await loadStore()
-    const first = vi.fn()
-    const second = vi.fn()
-    store.subscribeDisplayUnits(first)
-    store.subscribeDisplayUnits(second)
+    const listener = vi.fn()
+    store.subscribeDisplayUnits(listener)
     expect(store.isDisplayUnitsEnabled()).toBe(false)
 
     window.localStorage.setItem(STORAGE_KEY, "true")
     window.dispatchEvent(new StorageEvent("storage", { key: STORAGE_KEY }))
-
-    expect(store.isDisplayUnitsEnabled()).toBe(true)
-    expect(first).toHaveBeenCalledTimes(1)
-    expect(second).toHaveBeenCalledTimes(1)
-  })
-
-  it("ignores storage events for other keys", async () => {
-    const store = await loadStore()
-    const listener = vi.fn()
-    store.subscribeDisplayUnits(listener)
-
-    window.dispatchEvent(new StorageEvent("storage", { key: "other" }))
+    window.dispatchEvent(new StorageEvent("storage", { key: null }))
 
     expect(listener).not.toHaveBeenCalled()
+    expect(store.isDisplayUnitsEnabled()).toBe(false)
   })
 
   describe("when localStorage is unavailable", () => {

@@ -73,8 +73,12 @@ export const EditProfileForm = ({ user }: EditProfileProps) => {
     toast.success(t("profile.toast.edit"))
     handleSuccess()
 
-    // Last: the provider remounts its subtree when the preference changes.
-    setDisplayUnits(values.display_units)
+    // The provider remounts its subtree when the preference changes. handleSuccess
+    // navigates in a setTimeout(0), so apply the preference in a later timer, after
+    // the drawer has closed and the route has changed.
+    setTimeout(() => {
+      setDisplayUnits(values.display_units)
+    }, 0)
   })
 
   return (

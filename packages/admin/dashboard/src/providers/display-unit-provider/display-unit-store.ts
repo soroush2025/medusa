@@ -11,10 +11,13 @@ const STORAGE_KEY = "medusa_admin_currency_display_units"
  * to it with useSyncExternalStore. localStorage can be absent (SSR, tests) or
  * throw (blocked storage, quota), so every access is guarded and the value
  * always stays correct in memory for the current session.
+ *
+ * There is deliberately no cross-tab sync: a storage event would remount the
+ * app subtree of every other open tab and destroy unsaved form state. Other
+ * tabs pick the preference up on their next load.
  */
 let cached: boolean | undefined
 const listeners = new Set<() => void>()
-let storageHandlerInstalled = false
 
 const readPersisted = (): boolean => {
   try {
@@ -51,53 +54,11 @@ export const setDisplayUnitsEnabled = (enabled: boolean): void => {
   }
 }
 
-// One handler for all subscribers: it must reset the cache once, then notify
-// everybody, otherwise the second subscriber would see no change.
-const onStorage = (event: StorageEvent) => {
-  if (event.key !== null && event.key !== STORAGE_KEY) {
-    return
-  }
-
-  const previous = cached
-  cached = undefined
-
-  if (isDisplayUnitsEnabled() !== previous) {
-    notify()
-  }
-}
-
-const installStorageHandler = () => {
-  if (
-    storageHandlerInstalled ||
-    typeof window === "undefined" ||
-    typeof window.addEventListener !== "function"
-  ) {
-    return
-  }
-
-  window.addEventListener("storage", onStorage)
-  storageHandlerInstalled = true
-}
-
-const removeStorageHandler = () => {
-  if (!storageHandlerInstalled) {
-    return
-  }
-
-  window.removeEventListener("storage", onStorage)
-  storageHandlerInstalled = false
-}
-
 export const subscribeDisplayUnits = (listener: () => void): (() => void) => {
   listeners.add(listener)
-  installStorageHandler()
 
   return () => {
     listeners.delete(listener)
-
-    if (listeners.size === 0) {
-      removeStorageHandler()
-    }
   }
 }
 
