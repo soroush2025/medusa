@@ -15,7 +15,6 @@ import { sdk } from "../../../../../lib/client"
 import { useComboboxData } from "../../../../../hooks/use-combobox-data"
 import { Combobox } from "../../../../../components/inputs/combobox"
 import { useCampaign } from "../../../../../hooks/api/campaigns"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 
 type EditPromotionFormProps = {
   promotion: AdminPromotion
@@ -36,7 +35,6 @@ export const AddCampaignPromotionFields = ({
   promotionCurrencyCode?: string
 }) => {
   const { t } = useTranslation()
-  const direction = useDocumentDirection()
 
   const watchCampaignId = useWatch({
     control: form.control,
@@ -85,7 +83,6 @@ export const AddCampaignPromotionFields = ({
 
               <Form.Control>
                 <RadioGroup
-                  dir={direction}
                   className="grid grid-cols-1 gap-3"
                   {...field}
                   value={field.value}
@@ -136,7 +133,6 @@ export const AddCampaignPromotionFields = ({
 
                 <Form.Control>
                   <Combobox
-                    dir={direction}
                     options={campaignsCombobox.options}
                     searchValue={campaignsCombobox.searchValue}
                     onSearchValueChange={campaignsCombobox.onSearchValueChange}

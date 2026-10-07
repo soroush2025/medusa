@@ -27,7 +27,6 @@ import {
 import { KeyboundForm } from "../../../../../components/utilities/keybound-form"
 import { useRbacAssignablePolicies } from "../../../../../hooks/api/rbac-policies"
 import { useCreateRbacRole } from "../../../../../hooks/api/rbac-roles"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 import { useQueryParams } from "../../../../../hooks/use-query-params"
 
 enum Tab {
@@ -57,7 +56,6 @@ const columnHelper =
 export const CreateRoleForm = () => {
   const { t } = useTranslation()
   const { handleSuccess } = useRouteModal()
-  const direction = useDocumentDirection()
 
   const [tab, setTab] = useState<Tab>(Tab.DETAILS)
   const [tabState, setTabState] = useState<TabState>({
@@ -183,7 +181,6 @@ export const CreateRoleForm = () => {
         className="flex size-full flex-col overflow-hidden"
       >
         <ProgressTabs
-          dir={direction}
           value={tab}
           onValueChange={(tab) => handleTabChange(tab as Tab)}
           className="flex h-full flex-col overflow-hidden"

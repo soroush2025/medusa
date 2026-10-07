@@ -28,7 +28,6 @@ import {
   CreateShippingOptionSchema,
 } from "./schema"
 import { useFulfillmentProviderOptions } from "../../../../../hooks/api"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 
 enum Tab {
   DETAILS = "details",
@@ -53,7 +52,6 @@ export function CreateShippingOptionsForm({
 
   const { t } = useTranslation()
   const { handleSuccess } = useRouteModal()
-  const direction = useDocumentDirection()
   const form = useForm<CreateShippingOptionSchema>({
     defaultValues: {
       name: "",
@@ -120,7 +118,7 @@ export function CreateShippingOptionsForm({
           region_id: region_id,
           amount: castNumber(rule.amount),
           rules: buildShippingOptionPriceRules(rule),
-        })) || [] as AdminCreateShippingOptionPriceWithRegion[]
+        })) || ([] as AdminCreateShippingOptionPriceWithRegion[])
 
       return prices?.filter(Boolean)
     })
@@ -133,7 +131,7 @@ export function CreateShippingOptionsForm({
           currency_code,
           amount: castNumber(rule.amount),
           rules: buildShippingOptionPriceRules(rule),
-        })) || [] as AdminCreateShippingOptionPriceWithCurrency[]
+        })) || ([] as AdminCreateShippingOptionPriceWithCurrency[])
 
       return prices?.filter(Boolean)
     })
@@ -274,7 +272,6 @@ export function CreateShippingOptionsForm({
         }}
       >
         <ProgressTabs
-          dir={direction}
           value={activeTab}
           className="flex h-full flex-col overflow-hidden"
           onValueChange={(tab) => onTabChange(tab as Tab)}

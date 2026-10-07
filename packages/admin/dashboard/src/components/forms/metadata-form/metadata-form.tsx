@@ -25,7 +25,6 @@ import { Form } from "../../common/form"
 import { Skeleton } from "../../common/skeleton"
 import { RouteDrawer, useRouteModal } from "../../modals"
 import { KeyboundForm } from "../../utilities/keybound-form"
-import { useDocumentDirection } from "../../../hooks/use-document-direction"
 
 type MetaDataSubmitHook<TRes> = (
   params: { metadata?: Record<string, any> | null },
@@ -78,7 +77,6 @@ const InnerForm = <TRes,>({
 }: Omit<MetadataFormProps<TRes>, "isPending">) => {
   const { t } = useTranslation()
   const { handleSuccess } = useRouteModal()
-  const direction = useDocumentDirection()
   const hasUneditableRows = getHasUneditableRows(metadata)
 
   const form = useForm<z.infer<typeof MetadataSchema>>({
@@ -227,7 +225,7 @@ const InnerForm = <TRes,>({
                         }}
                       />
                     </div>
-                    <DropdownMenu dir={direction}>
+                    <DropdownMenu>
                       <DropdownMenu.Trigger
                         className={clx(
                           "invisible absolute inset-y-0 -end-2.5 my-auto group-hover/table:visible data-[state='open']:visible",

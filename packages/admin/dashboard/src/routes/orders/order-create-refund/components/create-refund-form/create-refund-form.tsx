@@ -19,7 +19,6 @@ import {
   getLocaleAmount,
 } from "../../../../../lib/money-amount-helpers"
 import { getPaymentsFromOrder } from "../../../../../lib/orders"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 import { formatProvider } from "../../../../../lib/format-provider.ts"
 
 type CreateRefundFormProps = {
@@ -54,7 +53,6 @@ export const CreateRefundForm = ({ order }: CreateRefundFormProps) => {
     [order.currency_code]
   )
 
-  const direction = useDocumentDirection()
   const decimalDigits = getDecimalDigits(order.currency_code)
 
   // Uses toLocaleString to match getStylizedAmount's rounding and keep the button and form in sync.
@@ -131,7 +129,6 @@ export const CreateRefundForm = ({ order }: CreateRefundFormProps) => {
           <div className="flex flex-col gap-y-4">
             {!hasPaymentIdInSearchParams && (
               <Select
-                dir={direction}
                 value={paymentId}
                 onValueChange={(value) => {
                   setPaymentId(value)
@@ -238,7 +235,6 @@ export const CreateRefundForm = ({ order }: CreateRefundFormProps) => {
 
                     <Form.Control>
                       <Select
-                        dir={direction}
                         value={field.value}
                         onValueChange={field.onChange}
                       >

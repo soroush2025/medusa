@@ -44,7 +44,6 @@ import {
 } from "./constants"
 import { SearchArea } from "./types"
 import { useSearchResults } from "./use-search-results"
-import { useDocumentDirection } from "../../hooks/use-document-direction"
 
 export const Search = () => {
   const [area, setArea] = useState<SearchArea>("all")
@@ -353,7 +352,6 @@ const CommandInput = forwardRef<
   ) => {
     const { t } = useTranslation()
     const innerRef = useRef<HTMLInputElement>(null)
-    const direction = useDocumentDirection()
     useImperativeHandle<HTMLInputElement | null, HTMLInputElement | null>(
       ref,
       () => innerRef.current
@@ -362,7 +360,7 @@ const CommandInput = forwardRef<
     return (
       <div className="flex flex-col border-b">
         <div className="px-4 pt-4">
-          <DropdownMenu dir={direction}>
+          <DropdownMenu>
             <DropdownMenu.Trigger asChild>
               <Badge
                 size="2xsmall"

@@ -14,7 +14,6 @@ import { KeyboundForm } from "../../../../../components/utilities/keybound-form/
 import { useUpdateRegion } from "../../../../../hooks/api/regions.tsx"
 import { CurrencyInfo } from "../../../../../lib/data/currencies.ts"
 import { formatProvider } from "../../../../../lib/format-provider.ts"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 import { useComboboxData } from "../../../../../hooks/use-combobox-data.tsx"
 import { sdk } from "../../../../../lib/client/index.ts"
 
@@ -43,7 +42,6 @@ export const EditRegionForm = ({
     (preference) =>
       preference.attribute === "region_id" && preference.value === region.id
   )
-  const direction = useDocumentDirection()
   const form = useForm<zod.infer<typeof EditRegionSchema>>({
     defaultValues: {
       name: region.name,
@@ -121,11 +119,7 @@ export const EditRegionForm = ({
                     <Form.Item>
                       <Form.Label>{t("fields.currency")}</Form.Label>
                       <Form.Control>
-                        <Select
-                          dir={direction}
-                          onValueChange={onChange}
-                          {...field}
-                        >
+                        <Select onValueChange={onChange} {...field}>
                           <Select.Trigger ref={ref}>
                             <Select.Value />
                           </Select.Trigger>

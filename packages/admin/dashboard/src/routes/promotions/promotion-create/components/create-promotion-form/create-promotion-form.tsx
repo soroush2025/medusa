@@ -41,7 +41,6 @@ import { AddCampaignPromotionFields } from "../../../promotion-add-campaign/comp
 import { Tab } from "./constants"
 import { CreatePromotionSchema } from "./form-schema"
 import { templates } from "./templates"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 
 const defaultValues = {
   campaign_id: undefined,
@@ -77,7 +76,6 @@ export const CreatePromotionForm = () => {
 
   const { t } = useTranslation()
   const { handleSuccess } = useRouteModal()
-  const direction = useDocumentDirection()
   const form = useForm<z.infer<typeof CreatePromotionSchema>>({
     defaultValues,
     resolver: zodResolver(CreatePromotionSchema),
@@ -363,7 +361,6 @@ export const CreatePromotionForm = () => {
     <RouteFocusModal.Form form={form}>
       <KeyboundForm className="flex h-full flex-col" onSubmit={handleSubmit}>
         <ProgressTabs
-          dir={direction}
           value={tab}
           onValueChange={(tab) => handleTabChange(tab as Tab)}
           className="flex h-full flex-col overflow-hidden"
@@ -417,7 +414,6 @@ export const CreatePromotionForm = () => {
 
                           <Form.Control>
                             <RadioGroup
-                              dir={direction}
                               key={"template_id"}
                               className="flex-col gap-y-3"
                               {...field}
@@ -487,7 +483,6 @@ export const CreatePromotionForm = () => {
 
                           <Form.Control>
                             <RadioGroup
-                              dir={direction}
                               className="flex gap-y-3"
                               {...field}
                               value={field.value}
@@ -532,7 +527,6 @@ export const CreatePromotionForm = () => {
 
                           <Form.Control>
                             <RadioGroup
-                              dir={direction}
                               className="flex gap-y-3"
                               {...field}
                               value={field.value}
@@ -651,7 +645,6 @@ export const CreatePromotionForm = () => {
                             </Form.Label>
                             <Form.Control>
                               <RadioGroup
-                                dir={direction}
                                 className="flex gap-y-3"
                                 {...field}
                                 onValueChange={field.onChange}
@@ -704,7 +697,6 @@ export const CreatePromotionForm = () => {
                               </Form.Label>
                               <Form.Control>
                                 <RadioGroup
-                                  dir={direction}
                                   className="flex gap-y-3"
                                   {...field}
                                   onValueChange={field.onChange}
@@ -888,7 +880,6 @@ export const CreatePromotionForm = () => {
 
                               <Form.Control>
                                 <RadioGroup
-                                  dir={direction}
                                   className="flex gap-y-3"
                                   {...field}
                                   onValueChange={field.onChange}

@@ -25,7 +25,6 @@ import {
   PricingProductsFields,
   PricingProductsSchema,
 } from "./schema"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 
 enum Tab {
   DETAIL = "detail",
@@ -59,7 +58,6 @@ export const PriceListCreateForm = ({
 
   const { t } = useTranslation()
   const { handleSuccess } = useRouteModal()
-  const direction = useDocumentDirection()
   const form = useForm<PricingCreateSchemaType>({
     defaultValues: {
       type: "sale",
@@ -247,7 +245,6 @@ export const PriceListCreateForm = ({
   return (
     <RouteFocusModal.Form form={form}>
       <ProgressTabs
-        dir={direction}
         value={tab}
         onValueChange={(tab) => handleChangeTab(tab as Tab)}
         className="flex h-full flex-col overflow-hidden"

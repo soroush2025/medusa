@@ -11,7 +11,6 @@ import { KeyboundForm } from "../../../../../components/utilities/keybound-form"
 import { useStore } from "../../../../../hooks/api/store"
 import { useUpdateUser } from "../../../../../hooks/api/users"
 import { languages } from "../../../../../i18n/languages"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 import { SwitchBox } from "../../../../../components/common/switch-box"
 import { getCurrencyDisplayUnit } from "../../../../../lib/data/currency-display-units"
 import { useDisplayUnits } from "../../../../../providers/display-unit-provider"
@@ -32,7 +31,6 @@ const EditProfileSchema = zod.object({
 export const EditProfileForm = ({ user }: EditProfileProps) => {
   const { t, i18n } = useTranslation()
   const { handleSuccess } = useRouteModal()
-  const direction = useDocumentDirection()
   const { enabled: displayUnitsEnabled, setEnabled: setDisplayUnits } =
     useDisplayUnits()
   const { store } = useStore()
@@ -135,11 +133,7 @@ export const EditProfileForm = ({ user }: EditProfileProps) => {
                   </div>
                   <div>
                     <Form.Control>
-                      <Select
-                        dir={direction}
-                        {...field}
-                        onValueChange={field.onChange}
-                      >
+                      <Select {...field} onValueChange={field.onChange}>
                         <Select.Trigger ref={ref} className="py-1 text-[13px]">
                           <Select.Value
                             placeholder={t("profile.edit.languagePlaceholder")}

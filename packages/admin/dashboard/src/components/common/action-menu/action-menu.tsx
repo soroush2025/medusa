@@ -4,7 +4,6 @@ import { EllipsisHorizontal } from "@medusajs/icons"
 import { PropsWithChildren, ReactNode } from "react"
 import { Link } from "react-router-dom"
 import { ConditionalTooltip } from "../conditional-tooltip"
-import { useDocumentDirection } from "../../../hooks/use-document-direction"
 
 export type Action = {
   icon: ReactNode
@@ -39,7 +38,6 @@ export const ActionMenu = ({
   variant = "transparent",
   children,
 }: ActionMenuProps) => {
-  const direction = useDocumentDirection()
   const inner = children ?? (
     <IconButton size="small" variant={variant}>
       <EllipsisHorizontal />
@@ -47,7 +45,7 @@ export const ActionMenu = ({
   )
 
   return (
-    <DropdownMenu dir={direction}>
+    <DropdownMenu>
       <DropdownMenu.Trigger asChild>{inner}</DropdownMenu.Trigger>
       <DropdownMenu.Content>
         {groups.map((group, index) => {

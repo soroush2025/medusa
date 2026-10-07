@@ -33,7 +33,6 @@ import { FieldValues, UseFormReturn } from "react-hook-form"
 import { useTranslation } from "react-i18next"
 
 import { useCommandHistory } from "../../../hooks/use-command-history"
-import { useDocumentDirection } from "../../../hooks/use-document-direction"
 import { ConditionalTooltip } from "../../common/conditional-tooltip"
 import { DataGridContext, DataGridContextType } from "../context"
 import {
@@ -855,7 +854,6 @@ const DataGridHeader = ({
   const [shortcutsOpen, setShortcutsOpen] = useState(false)
   const [columnsOpen, setColumnsOpen] = useState(false)
   const { t } = useTranslation()
-  const direction = useDocumentDirection()
 
   // Since all columns are checked by default, we can check if any column is unchecked
   const hasChanged = columnOptions.some((column) => !column.checked)
@@ -874,7 +872,6 @@ const DataGridHeader = ({
       {showColumnsDropdown && (
         <div className="flex items-center gap-x-2">
           <DropdownMenu
-            dir={direction}
             open={columnsOpen}
             onOpenChange={handleColumnsOpenChange}
           >
