@@ -116,7 +116,7 @@ const DrawerContent = React.forwardRef<
         ref={ref}
         className={clx(
           "bg-ui-bg-base shadow-elevation-modal border-ui-border-base fixed inset-y-2 flex w-full flex-1 flex-col rounded-lg border outline-none max-sm:inset-x-2 max-sm:w-[calc(100%-16px)] sm:end-2 sm:max-w-[560px]",
-          "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:slide-out-to-right-1/2 data-[state=open]:slide-in-from-right-1/2 rtl:data-[state=closed]:slide-out-to-left-1/2 rtl:data-[state=open]:slide-in-from-left-1/2 duration-200",
+          "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:slide-out-to-right-1/2 data-[state=open]:slide-in-from-right-1/2 [&:dir(rtl)]:data-[state=closed]:slide-out-to-left-1/2 [&:dir(rtl)]:data-[state=open]:slide-in-from-left-1/2 duration-200",
           className
         )}
         {...props}
