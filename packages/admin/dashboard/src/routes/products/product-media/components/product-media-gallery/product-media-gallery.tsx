@@ -13,6 +13,8 @@ import { Link, useLocation } from "react-router-dom"
 import { HttpTypes } from "@medusajs/types"
 import { RouteFocusModal } from "../../../../../components/modals"
 import { useUpdateProduct } from "../../../../../hooks/api/products"
+import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
+import { toVisualArrowKey } from "../../../../../lib/direction"
 
 type ProductMediaGalleryProps = {
   product: HttpTypes.AdminProduct
@@ -23,6 +25,7 @@ export const ProductMediaGallery = ({ product }: ProductMediaGalleryProps) => {
   const [curr, setCurr] = useState<number>(state?.curr || 0)
 
   const { t } = useTranslation()
+  const direction = useDocumentDirection()
   const prompt = usePrompt()
   const { mutateAsync, isPending } = useUpdateProduct(product.id)
 
@@ -108,9 +111,11 @@ export const ProductMediaGallery = ({ product }: ProductMediaGalleryProps) => {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "ArrowRight") {
+      const key = toVisualArrowKey(e.key, direction)
+
+      if (key === "ArrowRight") {
         next()
-      } else if (e.key === "ArrowLeft") {
+      } else if (key === "ArrowLeft") {
         prev()
       }
     }
@@ -120,7 +125,7 @@ export const ProductMediaGallery = ({ product }: ProductMediaGalleryProps) => {
     return () => {
       document.removeEventListener("keydown", handleKeyDown)
     }
-  }, [next, prev])
+  }, [next, prev, direction])
 
   const noMedia = !media.length
 

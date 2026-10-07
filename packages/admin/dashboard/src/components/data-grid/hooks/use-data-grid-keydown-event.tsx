@@ -13,6 +13,8 @@ import {
   DataGridUpdateCommand,
 } from "../models"
 import { DataGridCoordinates } from "../types"
+import { useDocumentDirection } from "../../../hooks/use-document-direction"
+import { toVisualArrowKey } from "../../../lib/direction"
 
 type UseDataGridKeydownEventOptions<TData, TFieldValues extends FieldValues> = {
   containerRef: React.RefObject<HTMLDivElement>
@@ -70,6 +72,8 @@ export const useDataGridKeydownEvent = <
   restoreSnapshot,
   createSnapshot,
 }: UseDataGridKeydownEventOptions<TData, TFieldValues>) => {
+  const documentDirection = useDocumentDirection()
+
   const handleKeyboardNavigation = useCallback(
     (e: KeyboardEvent) => {
       if (!anchor) {
@@ -127,10 +131,14 @@ export const useDataGridKeydownEvent = <
         updater(coords)
       }
 
+      /**
+       * The matrix is logical: ArrowRight means "next column", which is
+       * visually to the left in RTL. Translate the pressed key first.
+       */
       const next = matrix.getValidMovement(
         row,
         col,
-        e.key,
+        toVisualArrowKey(e.key, documentDirection),
         e.metaKey || e.ctrlKey
       )
 
@@ -144,6 +152,7 @@ export const useDataGridKeydownEvent = <
       setSingleRange,
       setRangeEnd,
       matrix,
+      documentDirection,
     ]
   )
 
@@ -158,6 +167,9 @@ export const useDataGridKeydownEvent = <
 
       const { row, col } = anchor
 
+      // Tab follows reading order in both directions: column order is DOM
+      // order, so "next" is already visually leftwards in RTL. Do not map
+      // this through toVisualArrowKey.
       const key = e.shiftKey ? "ArrowLeft" : "ArrowRight"
       const direction = "horizontal"
 
