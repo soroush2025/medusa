@@ -70,6 +70,10 @@ describe("convertClassTokens: rewrites", () => {
     )
   })
 
+  it("rewrites the important modifier after variants", () => {
+    assert.equal(convert('"hover:!ml-1 md:!pr-2"'), '"hover:!ms-1 md:!pe-2"')
+  })
+
   it("is idempotent", () => {
     const once = convert('"ml-2 left-0 border-l rounded-tl-md"')
     assert.equal(convert(once), once)
