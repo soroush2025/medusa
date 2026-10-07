@@ -136,7 +136,7 @@
     "build": "turbo run build build:plugin --concurrency=100% --no-daemon",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts,.tsx .",
     "lint:medusa": "eslint --no-eslintrc --config eslint.medusa.cjs --ignore-path .eslintignore --ext .js,.ts,.tsx .",
-    "lint:rtl": "eslint --no-eslintrc --config eslint.rtl.cjs --no-ignore --ext .ts,.tsx packages/design-system/ui/src",
+    "lint:rtl": "eslint --no-eslintrc --config eslint.rtl.cjs --no-ignore --ext .ts,.tsx packages/design-system/ui/src packages/admin/dashboard/src",
     "lint:path": "eslint --ignore-path .eslintignore --ext .js,.ts,.tsx",
     "prettier": "prettier",
     "jest": "jest",

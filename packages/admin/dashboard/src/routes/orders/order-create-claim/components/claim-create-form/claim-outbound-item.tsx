@@ -92,7 +92,7 @@ function ClaimOutboundItem({
             </Text>
           </div>
 
-          <div className="text-ui-fg-subtle txt-small mr-2 flex flex-shrink-0">
+          <div className="text-ui-fg-subtle txt-small me-2 flex flex-shrink-0">
             <MoneyAmountCell
               currencyCode={currencyCode}
               amount={previewItem.total}

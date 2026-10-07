@@ -29,7 +29,7 @@ function SalesChannels(props: SalesChannelsProps) {
         >
           {t(`stockLocations.salesChannels.label`)}
         </Text>
-        <div className="flex-1 text-left">
+        <div className="flex-1 text-start">
           {salesChannels?.length ? (
             <BadgeListSummary
               rounded
@@ -68,7 +68,7 @@ function FulfillmentSet(props: FulfillmentSetProps) {
         >
           {t(`stockLocations.fulfillmentSets.${type}.header`)}
         </Text>
-        <div className="flex-1 text-left">
+        <div className="flex-1 text-start">
           <StatusBadge color={fulfillmentSetExists ? "green" : "grey"}>
             {t(fulfillmentSetExists ? "statuses.enabled" : "statuses.disabled")}
           </StatusBadge>

@@ -31,7 +31,7 @@ const AttributeGridRow = ({
   value: string | number
 }) => {
   return (
-    <div className="grid grid-cols-2 divide-x">
+    <div className="grid grid-cols-2 divide-x rtl:divide-x-reverse">
       <Text className="px-2 py-1.5" size="small" leading="compact">
         {title}
       </Text>

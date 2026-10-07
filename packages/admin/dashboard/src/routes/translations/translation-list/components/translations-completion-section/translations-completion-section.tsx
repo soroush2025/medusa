@@ -92,7 +92,7 @@ export const TranslationsCompletionSection = ({
           {percentage > 0 ? (
             <>
               <div
-                className="mr-0.5 h-full rounded-sm transition-all"
+                className="me-0.5 h-full rounded-sm transition-all"
                 style={{
                   width: `${percentage}%`,
                   backgroundColor: "var(--tag-blue-icon)",

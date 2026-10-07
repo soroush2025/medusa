@@ -374,7 +374,7 @@ export const CreatePromotionForm = () => {
         >
           <RouteFocusModal.Header>
             <div className="flex w-full items-center justify-between gap-x-4">
-              <div className="-my-2 w-full max-w-[600px] border-l">
+              <div className="-my-2 w-full max-w-[600px] border-s">
                 <ProgressTabs.List className="grid w-full grid-cols-3">
                   <ProgressTabs.Trigger
                     className="w-full"
@@ -459,7 +459,7 @@ export const CreatePromotionForm = () => {
 
                     {currentTemplate?.title && (
                       <Badge
-                        className="ml-2 align-middle"
+                        className="ms-2 align-middle"
                         color="grey"
                         size="2xsmall"
                         rounded="full"
@@ -624,7 +624,7 @@ export const CreatePromotionForm = () => {
                                       )}
                                     </Form.Hint>
                                   </div>
-                                  <Form.Control className="mr-2 self-center">
+                                  <Form.Control className="me-2 self-center">
                                     <Switch
                                       dir="ltr"
                                       className="mt-[2px] rtl:rotate-180"
@@ -797,7 +797,7 @@ export const CreatePromotionForm = () => {
                                 ) : (
                                   <DeprecatedPercentageInput
                                     key="amount"
-                                    className="text-right"
+                                    className="text-end"
                                     min={0}
                                     max={100}
                                     {...field}

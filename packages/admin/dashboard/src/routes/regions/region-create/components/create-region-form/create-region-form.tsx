@@ -517,7 +517,7 @@ const CountryTag = ({
       <button
         type="button"
         onClick={() => onRemove(country.code)}
-        className="focus-visible:bg-ui-bg-field-hover transition-fg hover:bg-ui-bg-field-hover flex h-full w-7 items-center justify-center border-l outline-none"
+        className="focus-visible:bg-ui-bg-field-hover transition-fg hover:bg-ui-bg-field-hover flex h-full w-7 items-center justify-center border-s outline-none"
       >
         <XMarkMini className="text-ui-fg-muted" />
       </button>

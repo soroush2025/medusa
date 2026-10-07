@@ -168,7 +168,7 @@ export const EditProductForm = ({ product }: EditProductFormProps) => {
                       <Form.Label>{t("fields.handle")}</Form.Label>
                       <Form.Control>
                         <div className="relative">
-                          <div className="absolute inset-y-0 left-0 z-10 flex w-8 items-center justify-center border-r">
+                          <div className="absolute inset-y-0 start-0 z-10 flex w-8 items-center justify-center border-e">
                             <Text
                               className="text-ui-fg-muted"
                               size="small"
@@ -178,7 +178,7 @@ export const EditProductForm = ({ product }: EditProductFormProps) => {
                               /
                             </Text>
                           </div>
-                          <Input {...field} className="pl-10" />
+                          <Input {...field} className="ps-10" />
                         </div>
                       </Form.Control>
                       <Form.ErrorMessage />

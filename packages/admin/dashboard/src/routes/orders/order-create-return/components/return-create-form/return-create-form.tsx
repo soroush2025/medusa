@@ -585,7 +585,7 @@ export const ReturnCreateForm = ({
                       <Text
                         size="small"
                         leading="compact"
-                        className="text-ui-fg-muted ml-1 inline"
+                        className="text-ui-fg-muted ms-1 inline"
                       >
                         ({t("fields.optional")})
                       </Text>
@@ -738,7 +738,7 @@ export const ReturnCreateForm = ({
             </div>
 
             {/* SEND NOTIFICATION*/}
-            <div className="bg-ui-bg-field mt-8 rounded-lg border py-2 pl-2 pr-4">
+            <div className="bg-ui-bg-field mt-8 rounded-lg border py-2 pe-4 ps-2">
               <Form.Field
                 control={form.control}
                 name="send_notification"
@@ -746,7 +746,7 @@ export const ReturnCreateForm = ({
                   return (
                     <Form.Item>
                       <div className="flex items-center">
-                        <Form.Control className="mr-4 self-start">
+                        <Form.Control className="me-4 self-start">
                           <Switch
                             dir="ltr"
                             className="mt-[2px] rtl:rotate-180"

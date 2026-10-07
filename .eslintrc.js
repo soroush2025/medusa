@@ -344,12 +344,16 @@ module.exports = {
     },
 
     // --- RTL guard: no physical-direction Tailwind classes ---
-    // Not reached by `yarn lint` (ui is excluded by .eslintignore); it runs
-    // through eslint.rtl.cjs (`yarn lint:rtl`). Tests and stories are exempt.
+    // Covers ui and the dashboard. ui is excluded from `yarn lint` by
+    // .eslintignore, so it runs through eslint.rtl.cjs (`yarn lint:rtl`); the
+    // dashboard is reached by both `yarn lint:rtl` and its own `yarn lint`.
+    // Tests and stories are exempt.
     {
       files: [
         "packages/design-system/ui/src/**/*.ts",
         "packages/design-system/ui/src/**/*.tsx",
+        "packages/admin/dashboard/src/**/*.ts",
+        "packages/admin/dashboard/src/**/*.tsx",
       ],
       excludedFiles: [
         "**/__tests__/**",

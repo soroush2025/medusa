@@ -311,7 +311,7 @@ export const CategoryCombobox = forwardRef<
           <button
             type="button"
             onClick={() => handleOpenChange(true)}
-            className="text-ui-fg-muted transition-fg hover:bg-ui-bg-field-hover absolute end-0 flex size-8 items-center justify-center rounded-r outline-none"
+            className="text-ui-fg-muted transition-fg hover:bg-ui-bg-field-hover absolute end-0 flex size-8 items-center justify-center rounded-e outline-none"
           >
             <TrianglesMini className="text-ui-fg-muted" />
           </button>

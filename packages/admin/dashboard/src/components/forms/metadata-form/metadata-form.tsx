@@ -149,7 +149,7 @@ const InnerForm = <TRes,>({
       >
         <RouteDrawer.Body className="flex flex-1 flex-col gap-y-8 overflow-y-auto">
           <div className="bg-ui-bg-base shadow-elevation-card-rest grid grid-cols-1 divide-y rounded-lg">
-            <div className="bg-ui-bg-subtle grid grid-cols-2 divide-x rounded-t-lg">
+            <div className="bg-ui-bg-subtle grid grid-cols-2 divide-x rounded-t-lg rtl:divide-x-reverse">
               <div className="txt-compact-small-plus text-ui-fg-subtle px-2 py-1.5">
                 <label id={METADATA_KEY_LABEL_ID}>
                   {t("metadata.edit.labels.key")}
@@ -181,10 +181,13 @@ const InnerForm = <TRes,>({
                 >
                   <div className="group/table relative">
                     <div
-                      className={clx("grid grid-cols-2 divide-x", {
-                        "overflow-hidden rounded-b-lg":
-                          index === fields.length - 1,
-                      })}
+                      className={clx(
+                        "grid grid-cols-2 divide-x rtl:divide-x-reverse",
+                        {
+                          "overflow-hidden rounded-b-lg":
+                            index === fields.length - 1,
+                        }
+                      )}
                     >
                       <Form.Field
                         control={form.control}

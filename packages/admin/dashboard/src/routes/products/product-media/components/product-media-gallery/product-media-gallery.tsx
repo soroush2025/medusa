@@ -206,7 +206,7 @@ const Canvas = ({ media, curr }: { media: Media[]; curr: number }) => {
       <div className="flex size-full items-center justify-center p-6">
         <div className="relative inline-block max-h-full max-w-full">
           {media[curr].isThumbnail && (
-            <div className="absolute left-2 top-2">
+            <div className="absolute start-2 top-2">
               <Tooltip content={t("products.media.thumbnailTooltip")}>
                 <ThumbnailBadge />
               </Tooltip>

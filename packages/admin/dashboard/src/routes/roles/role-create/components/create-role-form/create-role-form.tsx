@@ -189,7 +189,7 @@ export const CreateRoleForm = () => {
           className="flex h-full flex-col overflow-hidden"
         >
           <RouteFocusModal.Header>
-            <div className="-my-2 w-full border-l">
+            <div className="-my-2 w-full border-s">
               <ProgressTabs.List className="justify-start-start flex w-full items-center">
                 <ProgressTabs.Trigger
                   status={tabState[Tab.DETAILS]}

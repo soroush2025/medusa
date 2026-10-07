@@ -126,7 +126,7 @@ export const CampaignGeneralSection = ({
 
           <div>
             <Badge size="xsmall">{campaign?.budget.currency_code}</Badge>
-            <Text className="inline pl-3" size="small" leading="compact">
+            <Text className="inline ps-3" size="small" leading="compact">
               {currencies[campaign?.budget.currency_code?.toUpperCase()]?.name}
             </Text>
           </div>

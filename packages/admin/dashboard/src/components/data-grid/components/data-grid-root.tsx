@@ -107,9 +107,11 @@ const getCommonPinningStyles = <TData,>(
     width: column.getSize(),
     zIndex: isPinned ? 1 : 0,
     borderBottom: isPinned ? `1px solid ${BORDER_COLOR}` : undefined,
-    borderRight: isPinned ? `1px solid ${BORDER_COLOR}` : undefined,
-    left: isPinned === "left" ? `${column.getStart("left")}px` : undefined,
-    right: isPinned === "right" ? `${column.getAfter("right")}px` : undefined,
+    borderInlineEnd: isPinned ? `1px solid ${BORDER_COLOR}` : undefined,
+    insetInlineStart:
+      isPinned === "left" ? `${column.getStart("left")}px` : undefined,
+    insetInlineEnd:
+      isPinned === "right" ? `${column.getAfter("right")}px` : undefined,
   }
 }
 
@@ -735,7 +737,7 @@ export const DataGridRoot = <
                             width: header.getSize(),
                             ...getCommonPinningStyles(header.column),
                           }}
-                          className="bg-ui-bg-base txt-compact-small-plus flex items-center border-b border-r px-4 py-2.5"
+                          className="bg-ui-bg-base txt-compact-small-plus flex items-center border-b border-e px-4 py-2.5"
                         >
                           {header.isPlaceholder
                             ? null
@@ -749,7 +751,7 @@ export const DataGridRoot = <
                               onTouchStart={header.getResizeHandler()}
                               onClick={(e) => e.stopPropagation()}
                               className={clx(
-                                "hover:bg-ui-fg-interactive absolute right-0 top-0 z-[2] h-full w-1 cursor-col-resize touch-none select-none",
+                                "hover:bg-ui-fg-interactive absolute end-0 top-0 z-[2] h-full w-1 cursor-col-resize touch-none select-none",
                                 {
                                   "bg-ui-fg-interactive":
                                     header.column.getIsResizing(),
@@ -923,7 +925,7 @@ const DataGridHeader = ({
         </div>
       )}
       {headerContent}
-      <div className="ml-auto flex items-center gap-x-2">
+      <div className="ms-auto flex items-center gap-x-2">
         {errorCount > 0 && (
           <Button
             size="small"
@@ -987,7 +989,7 @@ const DataGridCell = <TData,>({
       data-row-index={rowIndex}
       data-column-index={columnIndex}
       className={clx(
-        "relative flex items-stretch border-b border-r p-0 outline-none"
+        "relative flex items-stretch border-b border-e p-0 outline-none"
       )}
       tabIndex={-1}
     >
@@ -1001,7 +1003,7 @@ const DataGridCell = <TData,>({
           <div
             onMouseDown={onDragToFillStart}
             className={clx(
-              "bg-ui-fg-interactive absolute bottom-0 right-0 z-[3] size-1.5 cursor-ns-resize",
+              "bg-ui-fg-interactive absolute bottom-0 end-0 z-[3] size-1.5 cursor-ns-resize",
               {
                 "cursor-nwse-resize": multiColumnSelection,
               }
@@ -1157,7 +1159,7 @@ const DataGridRowSkeleton = ({
             key={`skeleton-cell-${vc.index}`}
             role="gridcell"
             style={{ width: vc.size }}
-            className="relative flex items-center border-b border-r p-0 outline-none"
+            className="relative flex items-center border-b border-e p-0 outline-none"
           >
             <div className="flex h-full w-full items-center px-4">
               <div className="bg-ui-bg-component h-4 w-3/4 animate-pulse rounded" />

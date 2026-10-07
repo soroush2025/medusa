@@ -155,7 +155,7 @@ function ShippingOption({
         </Text>
       </div>
       <Badge
-        className="mr-4"
+        className="me-4"
         color={isStoreOption ? "grey" : "purple"}
         size="2xsmall"
         rounded="full"

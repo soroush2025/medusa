@@ -26,8 +26,8 @@ export const MoneyAmountCell = ({
       className={clx(
         "flex h-full w-full items-center overflow-hidden",
         {
-          "justify-start text-left": align === "left",
-          "justify-end text-right": align === "right",
+          "justify-start text-start": align === "left",
+          "justify-end text-end": align === "right",
         },
         className
       )}

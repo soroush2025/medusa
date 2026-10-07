@@ -182,7 +182,7 @@ const Inner = ({
   return (
     <div className="relative flex size-full items-center">
       <span
-        className="txt-compact-small text-ui-fg-muted pointer-events-none absolute left-0 w-fit min-w-4"
+        className="txt-compact-small text-ui-fg-muted pointer-events-none absolute start-0 w-fit min-w-4"
         aria-hidden
         ref={onMeasureSymbol}
       >
@@ -192,7 +192,7 @@ const Inner = ({
         {...rest}
         {...attributes}
         ref={combinedRef}
-        className="txt-compact-small w-full flex-1 cursor-default appearance-none bg-transparent pl-[60px] text-right outline-none"
+        className="txt-compact-small w-full flex-1 cursor-default appearance-none bg-transparent ps-[60px] text-end outline-none"
         value={localValue || undefined}
         onValueChange={handleValueChange}
         formatValueOnBlur
