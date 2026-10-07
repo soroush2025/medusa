@@ -5,6 +5,7 @@ import ReactCountryFlag from "react-country-flag"
 import { ArrowUpRightOnBox } from "@medusajs/icons"
 import { getCountryByIso2 } from "../data/countries"
 import { formatQuantity } from "../format-quantity"
+import { getIntlLocale } from "../format-locale"
 import { ProductCell } from "../../components/table/table-cells/product/product-cell"
 import { CollectionCell } from "../../components/table/table-cells/product/collection-cell"
 import { VariantCell } from "../../components/table/table-cells/product/variant-cell"
@@ -459,7 +460,7 @@ const NumberRenderer: CellRenderer = (value, _row, _column, _t) => {
     return "-"
   }
 
-  return (num as number).toLocaleString()
+  return (num as number).toLocaleString(getIntlLocale())
 }
 
 /**

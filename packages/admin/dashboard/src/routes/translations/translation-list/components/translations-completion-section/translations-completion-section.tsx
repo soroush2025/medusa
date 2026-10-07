@@ -2,6 +2,7 @@ import { AdminTranslationEntityStatistics, HttpTypes } from "@medusajs/types"
 import { Container, Divider, Heading, Text, Tooltip } from "@medusajs/ui"
 import { useMemo, useState } from "react"
 import { useTranslation } from "react-i18next"
+import { getIntlLocale } from "../../../../../lib/format-locale"
 
 type TranslationsCompletionSectionProps = {
   statistics: Record<string, AdminTranslationEntityStatistics>
@@ -83,8 +84,8 @@ export const TranslationsCompletionSection = ({
         <div className="flex items-center justify-between">
           <Heading level="h2">{t("translations.completion.heading")}</Heading>
           <Text size="small" weight="plus" className="text-ui-fg-subtle">
-            {translatedCount.toLocaleString()} {t("general.of")}{" "}
-            {totalCount.toLocaleString()}
+            {translatedCount.toLocaleString(getIntlLocale())} {t("general.of")}{" "}
+            {totalCount.toLocaleString(getIntlLocale())}
           </Text>
         </div>
 
@@ -123,7 +124,8 @@ export const TranslationsCompletionSection = ({
             {percentage.toFixed(1)}%
           </Text>
           <Text size="small" weight="plus" className="text-ui-fg-subtle">
-            {remaining.toLocaleString()} {t("general.remaining").toLowerCase()}
+            {remaining.toLocaleString(getIntlLocale())}{" "}
+            {t("general.remaining").toLowerCase()}
           </Text>
         </div>
       </div>

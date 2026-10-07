@@ -2,6 +2,7 @@ import { Badge, StatusBadge, Tooltip } from "@medusajs/ui"
 import ReactCountryFlag from "react-country-flag"
 import { getCountryByIso2 } from "./data/countries"
 import { getStylizedAmount } from "./money-amount-helpers"
+import { getIntlLocale } from "./format-locale"
 
 // Helper function to get nested value from object using dot notation
 const getNestedValue = (obj: any, path: string) => {
@@ -166,7 +167,7 @@ export const DISPLAY_STRATEGIES = {
   },
 
   number: {
-    default: (value: any) => value?.toLocaleString() || "0",
+    default: (value: any) => value?.toLocaleString(getIntlLocale()) || "0",
   },
 
   boolean: {
