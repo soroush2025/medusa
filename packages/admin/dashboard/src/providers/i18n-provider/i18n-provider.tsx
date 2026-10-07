@@ -2,6 +2,7 @@ import { I18nProvider as Provider } from "@medusajs/ui"
 import { PropsWithChildren, useEffect } from "react"
 import { useTranslation } from "react-i18next"
 import { languages } from "../../i18n/languages"
+import { useIntlLocale } from "../../lib/format-locale"
 
 type I18nProviderProps = PropsWithChildren
 
@@ -25,5 +26,14 @@ export const I18nProvider = ({ children }: I18nProviderProps) => {
     document.documentElement.setAttribute("lang", formatLocaleCode(locale))
   }, [locale])
 
-  return <Provider locale={formatLocaleCode(locale)}>{children}</Provider>
+  // The ui provider drives react-aria, which reads the calendar from the
+  // `-u-ca-` extension (date pickers become Jalali for fa). `<html lang>`
+  // above keeps the clean language code.
+  const intlLocale = useIntlLocale()
+
+  return (
+    <Provider locale={intlLocale ?? formatLocaleCode(locale)}>
+      {children}
+    </Provider>
+  )
 }
