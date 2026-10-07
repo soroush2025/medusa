@@ -3,6 +3,7 @@ export const FIGMA_ICONS_NODE_ID = "109:599"
 
 export const FONT_FAMILY_SANS = [
   "Inter",
+  "Vazirmatn",
   "ui-sans-serif",
   "system-ui",
   "-apple-system",
