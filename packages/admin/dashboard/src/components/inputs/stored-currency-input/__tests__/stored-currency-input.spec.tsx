@@ -191,7 +191,7 @@ const typeAndBlur = (typed: string) => {
 }
 
 describe("StoredCurrencyInput keeps the decimal handling of each site with the unit off", () => {
-  it('"scale" passes only decimalScale: a third KWD decimal is limited exactly like the plain input', () => {
+  it("scale passes only decimalScale: a third KWD decimal is limited like the plain input", () => {
     // Baseline: what the site rendered before the wrapper existed.
     const baseline = render(
       <CurrencyInput
@@ -220,7 +220,7 @@ describe("StoredCurrencyInput keeps the decimal handling of each site with the u
     expect(actual.afterTyping).not.toBe("1.234")
   })
 
-  it('"scale" pads to three decimals on blur', () => {
+  it("scale pads to three decimals on blur", () => {
     render(
       <Harness
         currencyCode="kwd"
@@ -233,7 +233,7 @@ describe("StoredCurrencyInput keeps the decimal handling of each site with the u
     expect(typeAndBlur("1.5").afterBlur).toBe("1.500")
   })
 
-  it('"scale-and-limit" passes both: a third KWD decimal is typeable', () => {
+  it("scale-and-limit passes both: a third KWD decimal is typeable", () => {
     const spy = vi.fn()
     render(
       <Harness
