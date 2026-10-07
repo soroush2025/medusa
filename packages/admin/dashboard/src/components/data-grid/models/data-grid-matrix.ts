@@ -70,10 +70,30 @@ export class DataGridMatrix<TData, TFieldValues extends FieldValues> {
     start: DataGridCoordinates | null,
     end: DataGridCoordinates | null
   ): string[] {
-    const keys: string[] = []
+    return this._getCellsInSelection(start, end).map((cell) => cell.field)
+  }
+
+  /**
+   * The currency of each cell in the selection, in the same order as
+   * `getFieldsInSelection`. Cells that do not hold a money amount are undefined.
+   */
+  getCurrencyCodesInSelection(
+    start: DataGridCoordinates | null,
+    end: DataGridCoordinates | null
+  ): (string | undefined)[] {
+    return this._getCellsInSelection(start, end).map(
+      (cell) => cell.currencyCode
+    )
+  }
+
+  private _getCellsInSelection(
+    start: DataGridCoordinates | null,
+    end: DataGridCoordinates | null
+  ): GridCell<TFieldValues>[] {
+    const selected: GridCell<TFieldValues>[] = []
 
     if (!start || !end) {
-      return keys
+      return selected
     }
 
     if (!this.multiColumnSelection && start.col !== end.col) {
@@ -93,13 +113,17 @@ export class DataGridMatrix<TData, TFieldValues extends FieldValues> {
 
     for (let row = startRow; row <= endRow; row++) {
       for (let col = startCol; col <= endCol; col++) {
-        if (this._isValidPosition(row, col) && this.cells[row][col] !== null) {
-          keys.push(this.cells[row][col]?.field as string)
+        const cell = this._isValidPosition(row, col)
+          ? this.cells[row][col]
+          : null
+
+        if (cell !== null) {
+          selected.push(cell)
         }
       }
     }
 
-    return keys
+    return selected
   }
 
   getCellField(cell: DataGridCoordinates): string | null {
@@ -391,6 +415,7 @@ export class DataGridMatrix<TData, TFieldValues extends FieldValues> {
           name: _,
           field,
           type,
+          currencyCode,
           ...rest
         } = column.meta as InternalColumnMeta<TData, TFieldValues>
 
@@ -412,6 +437,7 @@ export class DataGridMatrix<TData, TFieldValues extends FieldValues> {
           field: fieldValue,
           type,
           enabled: true,
+          ...(currencyCode ? { currencyCode } : {}),
         }
       })
     })

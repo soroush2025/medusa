@@ -48,6 +48,11 @@ type DataGridHelperColumnsProps<TData, TFieldValues extends FieldValues> = {
    * The maximum size of the column in pixels.
    */
   maxSize?: number
+  /**
+   * The currency of the cells in the column, when they hold a money amount.
+   * Copy and paste use it to read and write amounts in the active display unit.
+   */
+  currencyCode?: string
 } & (
   | {
       field: FieldFunction<TData, TFieldValues>
@@ -74,6 +79,7 @@ export function createDataGridHelper<
       size,
       minSize,
       maxSize,
+      currencyCode,
     }: DataGridHelperColumnsProps<TData, TFieldValues>) =>
       columnHelper.display({
         id,
@@ -87,6 +93,7 @@ export function createDataGridHelper<
           name,
           field,
           type,
+          currencyCode,
         },
       }),
   }

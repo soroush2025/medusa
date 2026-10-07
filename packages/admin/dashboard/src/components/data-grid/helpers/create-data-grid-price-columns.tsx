@@ -70,6 +70,7 @@ export const createDataGridPriceColumns = <
           return getFieldName(context, currency)
         },
         type: "number",
+        currencyCode: renderPriceCell ? undefined : currency,
         header: () => (
           <div className="flex w-full items-center justify-between gap-3">
             <span className="truncate" title={translatedCurrencyName}>
@@ -115,6 +116,7 @@ export const createDataGridPriceColumns = <
           return getFieldName(context, region.id)
         },
         type: "number",
+        currencyCode: renderPriceCell ? undefined : region.currency_code,
         header: () => (
           <div className="flex w-full items-center justify-between gap-3">
             <span className="truncate" title={translatedRegionName}>

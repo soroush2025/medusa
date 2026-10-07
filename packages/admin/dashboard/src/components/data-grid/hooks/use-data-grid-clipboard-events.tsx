@@ -1,8 +1,20 @@
 import { RefObject, useCallback } from "react"
 import { FieldValues, Path, PathValue } from "react-hook-form"
 
+import { buildCurrencyInputInfo } from "../../../hooks/use-currency-input-info"
+import { getCurrencyDisplayUnit } from "../../../lib/data/currency-display-units"
+import { isDisplayUnitsEnabled } from "../../../providers/display-unit-provider/display-unit-store"
 import { DataGridBulkUpdateCommand, DataGridMatrix } from "../models"
 import { DataGridCoordinates } from "../types"
+
+/**
+ * True when the cell holds an amount that is currently shown in a display unit
+ * (for example Toman for IRR), so its stored value differs from what it shows.
+ */
+const hasActiveDisplayUnit = (currencyCode: string | undefined) =>
+  !!currencyCode &&
+  isDisplayUnitsEnabled() &&
+  !!getCurrencyDisplayUnit(currencyCode)
 
 type UseDataGridClipboardEventsOptions<
   TData,
@@ -69,12 +81,23 @@ export const useDataGridClipboardEvents = <
 
       const fields = matrix.getFieldsInSelection(anchor, rangeEnd)
       const values = getSelectionValues(fields)
+      const currencyCodes = matrix.getCurrencyCodesInSelection(anchor, rangeEnd)
 
       const text = values
-        .map((value) => {
+        .map((value, index) => {
           if (typeof value === "object" && value !== null) {
             return JSON.stringify(value)
           }
+
+          // Copy what the cell shows: an amount in an active display unit is
+          // stored in the base unit (Rials) but shown in Toman.
+          const currencyCode = currencyCodes[index]
+          if (value != null && hasActiveDisplayUnit(currencyCode)) {
+            return buildCurrencyInputInfo(currencyCode, true).toDisplayValue(
+              value as string | number
+            )
+          }
+
           return value == null ? "" : `${value}`
         })
         .join("\t")
@@ -98,10 +121,32 @@ export const useDataGridClipboardEvents = <
         return
       }
 
-      const next = text.split("\t")
+      let next = text.split("\t")
 
       const fields = matrix.getFieldsInSelection(anchor, rangeEnd)
       const prev = getSelectionValues(fields)
+      const currencyCodes = matrix.getCurrencyCodesInSelection(anchor, rangeEnd)
+
+      // Pasted amounts are in the displayed unit (Toman), the grid stores the
+      // base unit (Rials). The setter repeats `next` over the selection, so it
+      // is expanded to one entry per cell before converting each one.
+      if (currencyCodes.some(hasActiveDisplayUnit)) {
+        next = fields.map((_, index) => {
+          const pasted = next[index % next.length]
+          const currencyCode = currencyCodes[index]
+
+          if (!hasActiveDisplayUnit(currencyCode)) {
+            return pasted
+          }
+
+          const info = buildCurrencyInputInfo(currencyCode, true)
+          const stored = info.toStoredValue(pasted)
+
+          // Leave text that is not a number untouched so the grid's existing
+          // validation handles it the same way as before.
+          return stored === null ? pasted : String(stored)
+        })
+      }
 
       const command = new DataGridBulkUpdateCommand({
         fields,
