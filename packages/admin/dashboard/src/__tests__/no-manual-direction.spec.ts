@@ -27,7 +27,9 @@ describe("manual direction props", () => {
 
   it("no component passes dir={direction}; the ui I18nProvider provides it", () => {
     const offenders = files
-      .filter((file) => fs.readFileSync(file, "utf-8").includes("dir={direction}"))
+      .filter((file) =>
+        fs.readFileSync(file, "utf-8").includes("dir={direction}")
+      )
       .map((file) => path.relative(SRC_DIR, file))
 
     expect(offenders).toEqual([])
@@ -35,7 +37,9 @@ describe("manual direction props", () => {
 
   it("only literal ltr is passed as a dir prop", () => {
     const offenders = files
-      .filter((file) => /\sdir=\{(?!"ltr"\})/.test(fs.readFileSync(file, "utf-8")))
+      .filter((file) =>
+        /\sdir=\{(?!"ltr"\})/.test(fs.readFileSync(file, "utf-8"))
+      )
       .map((file) => path.relative(SRC_DIR, file))
 
     expect(offenders).toEqual([])
