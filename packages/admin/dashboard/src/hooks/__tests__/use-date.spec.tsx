@@ -111,9 +111,9 @@ describe("useDate with fa (Jalali through Intl)", () => {
     languageMock.current = "fa"
     const { result } = renderHook(() => useDate())
 
-    expect(
-      result.current.getFullDate({ date: LOCAL_NOON.toISOString() })
-    ).toBe("۱ فروردین ۱۴۰۵")
+    expect(result.current.getFullDate({ date: LOCAL_NOON.toISOString() })).toBe(
+      "۱ فروردین ۱۴۰۵"
+    )
   })
 
   it("returns an empty string for an invalid date", () => {
@@ -143,7 +143,10 @@ describe("useDate with fa (Jalali through Intl)", () => {
       result.current.getPresetDate({ date: LOCAL_NOON, preset: "date" })
     ).toBe("۰۱ فروردین ۱۴۰۵")
     expect(
-      result.current.getPresetDate({ date: LOCAL_NOON, preset: "dateTimeCompact" })
+      result.current.getPresetDate({
+        date: LOCAL_NOON,
+        preset: "dateTimeCompact",
+      })
     ).toBe("۰۱ فروردین ۱۴۰۵، ۱۲:۰۰:۰۰")
   })
 
@@ -210,9 +213,9 @@ describe("formatRelativeDateIntl", () => {
 
   it("uses 'yesterday' wording for -1 day and future times", () => {
     expect(formatRelativeDateIntl(minus(DAY), NOW, L)).toBe("دیروز")
-    expect(formatRelativeDateIntl(new Date(NOW.getTime() + 2 * HOUR), NOW, L)).toBe(
-      "۲ ساعت بعد"
-    )
+    expect(
+      formatRelativeDateIntl(new Date(NOW.getTime() + 2 * HOUR), NOW, L)
+    ).toBe("۲ ساعت بعد")
   })
 })
 
