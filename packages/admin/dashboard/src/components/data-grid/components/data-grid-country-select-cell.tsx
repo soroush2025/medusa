@@ -95,7 +95,7 @@
 //     <div className="relative flex size-full" {...attributes}>
 //       <TrianglesMini
 //         className={clx(
-//           "text-ui-fg-muted transition-fg pointer-events-none absolute end-4 top-1/2 -translate-y-1/2",
+//           "text-ui-fg-muted transition-fg pointer-events-none absolute right-4 top-1/2 -translate-y-1/2",
 //           {
 //             "text-ui-fg-disabled": disabled,
 //           }
@@ -120,7 +120,7 @@
 //     <div className="relative flex size-full">
 //       <TrianglesMini
 //         className={clx(
-//           "text-ui-fg-muted transition-fg pointer-events-none absolute end-4 top-1/2 -translate-y-1/2",
+//           "text-ui-fg-muted transition-fg pointer-events-none absolute right-4 top-1/2 -translate-y-1/2",
 //           {
 //             "text-ui-fg-disabled": disabled,
 //           }

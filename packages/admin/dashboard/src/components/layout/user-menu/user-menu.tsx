@@ -150,14 +150,9 @@ const ThemeToggle = () => {
 
   return (
     <DropdownMenu.SubMenu>
-      <DropdownMenu.SubMenuTrigger
-        dir="ltr"
-        className="rounded-md rtl:rotate-180"
-      >
+      <DropdownMenu.SubMenuTrigger className="rounded-md">
         <CircleHalfSolid className="text-ui-fg-subtle me-2" />
-        <span className="rtl:rotate-180">
-          {t("app.menus.user.theme.label")}
-        </span>
+        <span>{t("app.menus.user.theme.label")}</span>
       </DropdownMenu.SubMenuTrigger>
       <DropdownMenu.SubMenuContent>
         <DropdownMenu.RadioGroup value={theme}>
