@@ -10377,6 +10377,9 @@
             "currencyDisplayUnitLabel": {
               "type": "string"
             },
+            "latinDigitsLabel": {
+              "type": "string"
+            },
             "usageInsightsLabel": {
               "type": "string"
             }
@@ -10384,6 +10387,7 @@
           "required": [
             "languageLabel",
             "currencyDisplayUnitLabel",
+            "latinDigitsLabel",
             "usageInsightsLabel"
           ],
           "additionalProperties": false
@@ -10503,6 +10507,9 @@
             "currencyDisplayUnitHint": {
               "type": "string"
             },
+            "latinDigitsHint": {
+              "type": "string"
+            },
             "usageInsightsHint": {
               "type": "string"
             }
@@ -10512,6 +10519,7 @@
             "languageHint",
             "languagePlaceholder",
             "currencyDisplayUnitHint",
+            "latinDigitsHint",
             "usageInsightsHint"
           ],
           "additionalProperties": false

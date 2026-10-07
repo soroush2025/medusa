@@ -6,13 +6,17 @@ import * as zod from "zod"
 
 import { HttpTypes } from "@medusajs/types"
 import { Form } from "../../../../../components/common/form"
+import { SwitchBox } from "../../../../../components/common/switch-box"
 import { RouteDrawer, useRouteModal } from "../../../../../components/modals"
 import { KeyboundForm } from "../../../../../components/utilities/keybound-form"
 import { useStore } from "../../../../../hooks/api/store"
 import { useUpdateUser } from "../../../../../hooks/api/users"
 import { languages } from "../../../../../i18n/languages"
-import { SwitchBox } from "../../../../../components/common/switch-box"
 import { getCurrencyDisplayUnit } from "../../../../../lib/data/currency-display-units"
+import {
+  isLatinDigitsEnabled,
+  setLatinDigitsEnabled,
+} from "../../../../../lib/format-locale"
 import { useDisplayUnits } from "../../../../../providers/display-unit-provider"
 
 type EditProfileProps = {
@@ -25,6 +29,7 @@ const EditProfileSchema = zod.object({
   last_name: zod.string().optional(),
   language: zod.string(),
   display_units: zod.boolean(),
+  latin_digits: zod.boolean(),
   // usage_insights: zod.boolean(),
 })
 
@@ -47,10 +52,18 @@ export const EditProfileForm = ({ user }: EditProfileProps) => {
       last_name: user.last_name ?? "",
       language: i18n.language,
       display_units: displayUnitsEnabled,
+      latin_digits: isLatinDigitsEnabled(),
       // usage_insights: usageInsights,
     },
     resolver: zodResolver(EditProfileSchema),
   })
+
+  // The toggle is only meaningful for languages that use digits of their own.
+  const selectedLanguage = form.watch("language")
+  const hasOwnDigits = Boolean(
+    languages.find((language) => language.code === selectedLanguage)
+      ?.intl_locale
+  )
 
   const changeLanguage = async (code: string) => {
     await i18n.changeLanguage(code)
@@ -75,6 +88,8 @@ export const EditProfileForm = ({ user }: EditProfileProps) => {
         },
       }
     )
+
+    setLatinDigitsEnabled(values.latin_digits)
 
     await changeLanguage(values.language)
 
@@ -162,6 +177,14 @@ export const EditProfileForm = ({ user }: EditProfileProps) => {
                 </Form.Item>
               )}
             />
+            {hasOwnDigits && (
+              <SwitchBox
+                control={form.control}
+                name="latin_digits"
+                label={t("profile.fields.latinDigitsLabel")}
+                description={t("profile.edit.latinDigitsHint")}
+              />
+            )}
             {hasDisplayUnitCurrency && (
               <SwitchBox
                 control={form.control}

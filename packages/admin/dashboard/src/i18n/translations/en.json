@@ -2708,6 +2708,7 @@
     "fields": {
       "languageLabel": "Language",
       "currencyDisplayUnitLabel": "Show Iranian Rial amounts in Toman",
+      "latinDigitsLabel": "Latin digits",
       "usageInsightsLabel": "Usage insights"
     },
     "mfa": {
@@ -2740,6 +2741,7 @@
       "languageHint": "The language you want to use in the admin dashboard. This doesn't change the language of your store.",
       "languagePlaceholder": "Select language",
       "currencyDisplayUnitHint": "Display and enter Iranian Rial (IRR) amounts in Toman (1 Toman is 10 Rials). Stored prices, API data and CSV files stay in Rials. This setting is saved in this browser only.",
+      "latinDigitsHint": "Show dates and numbers with Latin digits (0-9) instead of the digits of the selected language. Saved in this browser only.",
       "usageInsightsHint": "Share usage insights and help us improve Medusa. You can read more about what we collect and how we use it in our <0>documentation</0>."
     },
     "toast": {
