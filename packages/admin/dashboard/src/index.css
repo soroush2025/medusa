@@ -27,6 +27,24 @@
     src: url("./assets/fonts/RobotoMono-Medium.ttf") format("truetype");
   }
 
+  @font-face {
+    font-family: "Vazirmatn";
+    font-weight: 400;
+    font-display: swap;
+    src: url("./assets/fonts/Vazirmatn-Regular.woff2") format("woff2");
+    unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF,
+      U+200C-200F;
+  }
+
+  @font-face {
+    font-family: "Vazirmatn";
+    font-weight: 500;
+    font-display: swap;
+    src: url("./assets/fonts/Vazirmatn-Medium.woff2") format("woff2");
+    unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF,
+      U+200C-200F;
+  }
+
   :root {
     @apply bg-ui-bg-subtle text-ui-fg-base antialiased;
     text-rendering: optimizeLegibility;
