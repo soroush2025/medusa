@@ -56,7 +56,7 @@ const SubMenuTrigger = React.forwardRef<
     {...props}
   >
     {children}
-    <ChevronRightMini className="text-ui-fg-muted ml-auto" />
+    <ChevronRightMini className="text-ui-fg-muted ms-auto rtl:rotate-180" />
   </RadixDropdownMenu.SubTrigger>
 ))
 SubMenuTrigger.displayName = "DropdownMenu.SubMenuTrigger"
@@ -160,7 +160,7 @@ const CheckboxItem = React.forwardRef<
   <RadixDropdownMenu.CheckboxItem
     ref={ref}
     className={clx(
-      "bg-ui-bg-component text-ui-fg-base txt-compact-small relative flex cursor-pointer select-none items-center rounded-md py-1.5 pl-[31px] pr-2 outline-none transition-colors",
+      "bg-ui-bg-component text-ui-fg-base txt-compact-small relative flex cursor-pointer select-none items-center rounded-md py-1.5 ps-[31px] pe-2 outline-none transition-colors",
       "focus-visible:bg-ui-bg-component-hover focus:bg-ui-bg-component-hover",
       "active:bg-ui-bg-component-hover",
       "data-[disabled]:text-ui-fg-disabled data-[disabled]:pointer-events-none",
@@ -170,7 +170,7 @@ const CheckboxItem = React.forwardRef<
     checked={checked}
     {...props}
   >
-    <span className="absolute left-2 flex size-[15px] items-center justify-center">
+    <span className="absolute start-2 flex size-[15px] items-center justify-center">
       <RadixDropdownMenu.ItemIndicator>
         <CheckMini />
       </RadixDropdownMenu.ItemIndicator>
@@ -190,7 +190,7 @@ const RadioItem = React.forwardRef<
   <RadixDropdownMenu.RadioItem
     ref={ref}
     className={clx(
-      "bg-ui-bg-component txt-compact-small relative flex cursor-pointer select-none items-center rounded-md py-1.5 pl-[31px] pr-2 outline-none transition-colors",
+      "bg-ui-bg-component txt-compact-small relative flex cursor-pointer select-none items-center rounded-md py-1.5 ps-[31px] pe-2 outline-none transition-colors",
       "focus-visible:bg-ui-bg-component-hover focus:bg-ui-bg-component-hover",
       "active:bg-ui-bg-component-hover",
       "data-[disabled]:text-ui-fg-disabled data-[disabled]:pointer-events-none",
@@ -199,7 +199,7 @@ const RadioItem = React.forwardRef<
     )}
     {...props}
   >
-    <span className="absolute left-2 flex size-[15px] items-center justify-center">
+    <span className="absolute start-2 flex size-[15px] items-center justify-center">
       <RadixDropdownMenu.ItemIndicator>
         <EllipseMiniSolid className="text-ui-fg-base" />
       </RadixDropdownMenu.ItemIndicator>
@@ -252,7 +252,7 @@ const Shortcut = ({
   return (
     <span
       className={clx(
-        "text-ui-fg-subtle txt-compact-small ml-auto tracking-widest",
+        "text-ui-fg-subtle txt-compact-small ms-auto tracking-widest",
         className
       )}
       {...props}
@@ -271,7 +271,7 @@ const Hint = ({
   return (
     <span
       className={clx(
-        "text-ui-fg-subtle txt-compact-small ml-auto tracking-widest",
+        "text-ui-fg-subtle txt-compact-small ms-auto tracking-widest",
         className
       )}
       {...props}
