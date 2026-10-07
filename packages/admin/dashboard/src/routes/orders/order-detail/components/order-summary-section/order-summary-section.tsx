@@ -696,9 +696,7 @@ const CostBreakdown = ({
             </span>
             {hasTaxes && (
               <TriangleDownMini
-                style={{
-                  transform: `rotate(${isTaxOpen ? 0 : -90}deg)`,
-                }}
+                className={clx({ "-rotate-90 rtl:rotate-90": !isTaxOpen })}
               />
             )}
           </div>
@@ -816,9 +814,7 @@ const DiscountAndTotalBreakdown = ({
             <span>{t("orders.summary.discountTotal")}</span>
             {hasDiscount && (
               <TriangleDownMini
-                style={{
-                  transform: `rotate(${isDiscountOpen ? 0 : -90}deg)`,
-                }}
+                className={clx({ "-rotate-90 rtl:rotate-90": !isDiscountOpen })}
               />
             )}
           </div>
@@ -863,9 +859,9 @@ const DiscountAndTotalBreakdown = ({
                     : t("orders.creditLines.title")}
                 </span>
                 <TriangleDownMini
-                  style={{
-                    transform: `rotate(${isCreditLinesOpen ? 0 : -90}deg)`,
-                  }}
+                  className={clx({
+                    "-rotate-90 rtl:rotate-90": !isCreditLinesOpen,
+                  })}
                 />
               </div>
             }
@@ -955,9 +951,7 @@ const InventoryKitBreakdown = ({ item }: { item: AdminOrderLineItem }) => {
         className="flex cursor-pointer items-center gap-2 border-t border-dashed px-6 py-4"
       >
         <TriangleDownMini
-          style={{
-            transform: `rotate(${isOpen ? 0 : -90}deg)`,
-          }}
+          className={clx({ "-rotate-90 rtl:rotate-90": !isOpen })}
         />
         <span className="text-ui-fg-muted txt-small select-none">
           {t("orders.summary.inventoryKit", { count: inventory.length })}
