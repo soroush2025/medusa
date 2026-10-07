@@ -6,6 +6,7 @@ import { useConfirmImportProducts, useImportProducts } from "../../../hooks/api"
 import { UploadImport } from "./components/upload-import"
 import { ImportSummary } from "./components/import-summary"
 import { Trash } from "@medusajs/icons"
+import { CsvStoredUnitsHint } from "../../../components/common/csv-stored-units-hint"
 import { FilePreview } from "../../../components/common/file-preview"
 import { getProductImportCsvTemplate } from "./helpers/import-template"
 
@@ -102,6 +103,7 @@ const ProductImportContent = () => {
             <UploadImport onUploaded={handleUploaded} />
           )}
         </div>
+        <CsvStoredUnitsHint />
 
         {data?.summary && !!filename && (
           <div className="mt-4">

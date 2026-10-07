@@ -1,12 +1,5 @@
 import { InformationCircleSolid } from "@medusajs/icons"
-import {
-  Badge,
-  CurrencyInput,
-  Divider,
-  Label,
-  Text,
-  Tooltip,
-} from "@medusajs/ui"
+import { Badge, Divider, Label, Text, Tooltip } from "@medusajs/ui"
 import { Fragment, ReactNode } from "react"
 import { Control, useWatch, useFormContext } from "react-hook-form"
 import { Trans, useTranslation } from "react-i18next"
@@ -23,6 +16,7 @@ import { ConditionalPriceInfo } from "../../types"
 import { getCustomShippingOptionPriceFieldName } from "../../utils/get-custom-shipping-option-price-field-info"
 import { useShippingOptionPrice } from "../shipping-option-price-provider"
 import { Form } from "../../../../../components/common/form"
+import { StoredCurrencyInput } from "../../../../../components/inputs/stored-currency-input"
 import { formatValue } from "react-currency-input-field"
 import { TieredPriceInput } from "../../../../../common/components/tiered-price-form/tiered-price-input"
 import { TieredPriceForm } from "../../../../../common/components/tiered-price-form/tiered-price-form"
@@ -170,18 +164,17 @@ const ConditionalConditionItem = ({
               </div>
               <div className="flex flex-col gap-y-1">
                 <Form.Control>
-                  <CurrencyInput
+                  <StoredCurrencyInput
                     className="bg-ui-bg-field-component hover:bg-ui-bg-field-component-hover focus-visible:bg-ui-bg-field-component-hover"
                     placeholder={formatValue({
                       value: "0",
                       decimalScale: currency.decimal_digits,
                     })}
-                    decimalScale={currency.decimal_digits}
-                    symbol={currency.symbol_native}
-                    code={currency.code}
+                    constrainDecimals
+                    currencyCode={currency.code}
                     value={value}
-                    onValueChange={(_value, _name, values) =>
-                      onChange(values?.value ? values?.value : "")
+                    onStoredValueChange={({ value: stored }) =>
+                      onChange(stored)
                     }
                     autoFocus={false}
                     {...props}
@@ -205,20 +198,17 @@ const ConditionalConditionItem = ({
             )}
             toggleValues={{ active: "", inactive: null }}
             renderInput={({ field: { onChange, ...fieldProps }, value }) => (
-              <CurrencyInput
+              <StoredCurrencyInput
                 className="bg-ui-bg-field-component hover:bg-ui-bg-field-component-hover focus-visible:bg-ui-bg-field-component-hover"
                 placeholder={formatValue({
                   value: "10",
                   decimalScale: currency.decimal_digits,
                 })}
-                decimalScale={currency.decimal_digits}
-                symbol={currency.symbol_native}
-                code={currency.code}
+                constrainDecimals
+                currencyCode={currency.code}
                 value={value}
                 ref={fieldProps.ref}
-                onValueChange={(_value, _name, values) =>
-                  onChange(values?.value ? values?.value : "")
-                }
+                onStoredValueChange={({ value: stored }) => onChange(stored)}
                 {...fieldProps}
               />
             )}
@@ -237,20 +227,17 @@ const ConditionalConditionItem = ({
             )}
             toggleValues={{ active: "", inactive: null }}
             renderInput={({ field: { onChange, ...fieldProps }, value }) => (
-              <CurrencyInput
+              <StoredCurrencyInput
                 className="bg-ui-bg-field-component hover:bg-ui-bg-field-component-hover focus-visible:bg-ui-bg-field-component-hover"
                 placeholder={formatValue({
                   value: "10",
                   decimalScale: currency.decimal_digits,
                 })}
-                decimalScale={currency.decimal_digits}
-                symbol={currency.symbol_native}
-                code={currency.code}
+                constrainDecimals
+                currencyCode={currency.code}
                 value={value}
                 ref={fieldProps.ref}
-                onValueChange={(_value, _name, values) =>
-                  onChange(values?.value ? values?.value : "")
-                }
+                onStoredValueChange={({ value: stored }) => onChange(stored)}
                 {...fieldProps}
               />
             )}
@@ -309,11 +296,11 @@ const ReadOnlyConditions = ({
                 )}
               </Label>
             </div>
-            <CurrencyInput
+            <StoredCurrencyInput
               className="bg-ui-bg-field-component hover:bg-ui-bg-field-component-hover focus-visible:bg-ui-bg-field-component-hover"
-              symbol={currency.symbol_native}
-              code={currency.code}
+              currencyCode={currency.code}
               value={item.eq}
+              onStoredValueChange={() => {}}
               disabled
             />
           </div>
@@ -329,11 +316,11 @@ const ReadOnlyConditions = ({
                   )}
                 </Label>
               </div>
-              <CurrencyInput
+              <StoredCurrencyInput
                 className="bg-ui-bg-field-component hover:bg-ui-bg-field-component-hover focus-visible:bg-ui-bg-field-component-hover"
-                symbol={currency.symbol_native}
-                code={currency.code}
+                currencyCode={currency.code}
                 value={item.gt}
+                onStoredValueChange={() => {}}
                 disabled
               />
             </div>
@@ -350,11 +337,11 @@ const ReadOnlyConditions = ({
                   )}
                 </Label>
               </div>
-              <CurrencyInput
+              <StoredCurrencyInput
                 className="bg-ui-bg-field-component hover:bg-ui-bg-field-component-hover focus-visible:bg-ui-bg-field-component-hover"
-                symbol={currency.symbol_native}
-                code={currency.code}
+                currencyCode={currency.code}
                 value={item.lt}
+                onStoredValueChange={() => {}}
                 disabled
               />
             </div>

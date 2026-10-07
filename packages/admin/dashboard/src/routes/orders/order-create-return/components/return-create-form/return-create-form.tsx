@@ -9,7 +9,6 @@ import {
 import {
   Alert,
   Button,
-  CurrencyInput,
   Heading,
   IconButton,
   Switch,
@@ -30,6 +29,7 @@ import {
 
 import { Form } from "../../../../../components/common/form"
 import { Combobox } from "../../../../../components/inputs/combobox"
+import { StoredCurrencyInput } from "../../../../../components/inputs/stored-currency-input"
 import { KeyboundForm } from "../../../../../components/utilities/keybound-form"
 import {
   useAddReturnItem,
@@ -45,7 +45,6 @@ import {
 import { useShippingOptions } from "../../../../../hooks/api/shipping-options"
 import { useStockLocations } from "../../../../../hooks/api/stock-locations"
 import { sdk } from "../../../../../lib/client"
-import { currencies } from "../../../../../lib/data/currencies"
 import { getStylizedAmount } from "../../../../../lib/money-amount-helpers"
 import { ReturnShippingPlaceholder } from "../../../common/placeholders"
 import { AddReturnItemsTable } from "../add-return-items-table"
@@ -683,7 +682,7 @@ export const ReturnCreateForm = ({
                     </IconButton>
                   )}
                   {isShippingPriceEdit ? (
-                    <CurrencyInput
+                    <StoredCurrencyInput
                       id="js-shipping-input"
                       onBlur={() => {
                         let actionId
@@ -707,17 +706,8 @@ export const ReturnCreateForm = ({
                         }
                         setIsShippingPriceEdit(false)
                       }}
-                      symbol={
-                        currencies[order.currency_code.toUpperCase()]
-                          .symbol_native
-                      }
-                      code={order.currency_code}
-                      onValueChange={(_value, _name, values) =>
-                        setCustomShippingAmount({
-                          value: values?.value ?? "",
-                          float: values?.float ?? null,
-                        })
-                      }
+                      currencyCode={order.currency_code}
+                      onStoredValueChange={setCustomShippingAmount}
                       value={customShippingAmount.value}
                       disabled={showPlaceholder}
                     />

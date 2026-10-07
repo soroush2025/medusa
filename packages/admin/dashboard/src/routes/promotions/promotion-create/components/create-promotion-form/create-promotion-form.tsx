@@ -12,7 +12,6 @@ import {
   Badge,
   Button,
   clx,
-  CurrencyInput,
   Divider,
   Heading,
   Input,
@@ -29,16 +28,13 @@ import { Trans, useTranslation } from "react-i18next"
 import { z } from "zod"
 import { Form } from "../../../../../components/common/form"
 import { DeprecatedPercentageInput } from "../../../../../components/inputs/percentage-input"
+import { StoredCurrencyInput } from "../../../../../components/inputs/stored-currency-input"
 import {
   RouteFocusModal,
   useRouteModal,
 } from "../../../../../components/modals"
 import { KeyboundForm } from "../../../../../components/utilities/keybound-form"
 import { useCreatePromotion } from "../../../../../hooks/api/promotions"
-import {
-  currencies,
-  getCurrencySymbol,
-} from "../../../../../lib/data/currencies"
 import { DEFAULT_CAMPAIGN_VALUES } from "../../../../campaigns/common/constants"
 import { RulesFormField } from "../../../common/edit-rules/components/rules-form-field"
 import { AddCampaignPromotionFields } from "../../../promotion-add-campaign/components/add-campaign-promotion-form"
@@ -756,9 +752,6 @@ export const CreatePromotionForm = () => {
                           const currencyCode =
                             form.getValues().application_method.currency_code
 
-                          const currencyInfo =
-                            currencies[currencyCode?.toUpperCase() || "USD"]
-
                           return (
                             <Form.Item className="basis-1/2">
                               <Form.Label
@@ -773,24 +766,14 @@ export const CreatePromotionForm = () => {
 
                               <Form.Control>
                                 {isFixedValueType ? (
-                                  <CurrencyInput
+                                  <StoredCurrencyInput
                                     {...field}
                                     min={0}
-                                    code={currencyCode || "USD"}
-                                    onValueChange={(_value, _name, values) =>
-                                      onChange(values?.value)
+                                    currencyCode={currencyCode || "USD"}
+                                    onStoredValueChange={({ value: stored }) =>
+                                      onChange(stored)
                                     }
-                                    decimalScale={
-                                      currencyInfo?.decimal_digits ?? 2
-                                    }
-                                    decimalsLimit={
-                                      currencyInfo?.decimal_digits ?? 2
-                                    }
-                                    symbol={
-                                      currencyCode
-                                        ? getCurrencySymbol(currencyCode)
-                                        : "$"
-                                    }
+                                    constrainDecimals
                                     value={value}
                                     disabled={!currencyCode}
                                   />

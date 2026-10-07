@@ -235,6 +235,9 @@
         },
         "global": {
           "type": "string"
+        },
+        "csvStoredUnitsHint": {
+          "type": "string"
         }
       },
       "required": [
@@ -301,7 +304,8 @@
         "noMoreData",
         "quantityPrice",
         "exclusive",
-        "global"
+        "global",
+        "csvStoredUnitsHint"
       ],
       "additionalProperties": false
     },

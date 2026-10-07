@@ -1,6 +1,6 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { AdminPromotion } from "@medusajs/types"
-import { Button, CurrencyInput, Input, RadioGroup, Text } from "@medusajs/ui"
+import { Button, Input, RadioGroup, Text } from "@medusajs/ui"
 import { useForm, useWatch } from "react-hook-form"
 import { Trans, useTranslation } from "react-i18next"
 import { useEffect } from "react"
@@ -8,13 +8,10 @@ import * as zod from "zod"
 
 import { Form } from "../../../../../components/common/form"
 import { DeprecatedPercentageInput } from "../../../../../components/inputs/percentage-input"
+import { StoredCurrencyInput } from "../../../../../components/inputs/stored-currency-input"
 import { RouteDrawer, useRouteModal } from "../../../../../components/modals"
 import { KeyboundForm } from "../../../../../components/utilities/keybound-form"
 import { useUpdatePromotion } from "../../../../../hooks/api/promotions"
-import {
-  currencies,
-  getCurrencySymbol,
-} from "../../../../../lib/data/currencies"
 import { SwitchBox } from "../../../../../components/common/switch-box"
 import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 
@@ -292,9 +289,6 @@ export const EditPromotionDetailsForm = ({
                     const currencyCode =
                       promotion.application_method?.currency_code ?? "USD"
 
-                    const currencyInfo =
-                      currencies[currencyCode?.toUpperCase() || "USD"]
-
                     return (
                       <Form.Item>
                         <Form.Label>
@@ -304,15 +298,15 @@ export const EditPromotionDetailsForm = ({
                         </Form.Label>
                         <Form.Control>
                           {isFixedValueType ? (
-                            <CurrencyInput
+                            <StoredCurrencyInput
                               min={0}
-                              onValueChange={(val) => onChange(val)}
+                              onStoredValueChange={({ value: stored }) =>
+                                onChange(stored)
+                              }
                               decimalSeparator="."
                               groupSeparator=","
-                              decimalScale={currencyInfo.decimal_digits}
-                              decimalsLimit={currencyInfo.decimal_digits}
-                              code={currencyCode}
-                              symbol={getCurrencySymbol(currencyCode)}
+                              constrainDecimals
+                              currencyCode={currencyCode}
                               {...field}
                               value={field.value}
                             />

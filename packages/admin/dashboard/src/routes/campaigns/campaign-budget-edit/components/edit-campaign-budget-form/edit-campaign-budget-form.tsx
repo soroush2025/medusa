@@ -1,14 +1,14 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { AdminCampaign } from "@medusajs/types"
-import { Button, CurrencyInput, Input, toast } from "@medusajs/ui"
+import { Button, Input, toast } from "@medusajs/ui"
 import { useForm } from "react-hook-form"
 import { useTranslation } from "react-i18next"
 import * as zod from "zod"
 import { Form } from "../../../../../components/common/form"
+import { StoredCurrencyInput } from "../../../../../components/inputs/stored-currency-input"
 import { RouteDrawer, useRouteModal } from "../../../../../components/modals"
 import { KeyboundForm } from "../../../../../components/utilities/keybound-form"
 import { useUpdateCampaign } from "../../../../../hooks/api/campaigns"
-import { getCurrencySymbol } from "../../../../../lib/data/currencies"
 
 type EditCampaignBudgetFormProps = {
   campaign: AdminCampaign
@@ -74,19 +74,12 @@ export const EditCampaignBudgetForm = ({
 
                     <Form.Control>
                       {campaign.budget?.type === "spend" ? (
-                        <CurrencyInput
+                        <StoredCurrencyInput
                           min={0}
-                          onValueChange={(value) =>
-                            onChange(value ? parseInt(value) : null)
+                          onStoredValueChange={({ value: stored }) =>
+                            onChange(stored ? parseInt(stored) : null)
                           }
-                          code={campaign.budget?.currency_code}
-                          symbol={
-                            campaign.budget?.currency_code
-                              ? getCurrencySymbol(
-                                  campaign.budget?.currency_code
-                                )
-                              : ""
-                          }
+                          currencyCode={campaign.budget?.currency_code ?? ""}
                           {...field}
                           value={value || undefined}
                         />
