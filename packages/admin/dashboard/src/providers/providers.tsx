@@ -5,6 +5,7 @@ import { HelmetProvider } from "react-helmet-async"
 import { I18n } from "../components/utilities/i18n"
 import { DashboardApp } from "../dashboard-app"
 import { queryClient } from "../lib/query-client"
+import { DisplayUnitProvider } from "./display-unit-provider"
 import { ExtensionProvider } from "./extension-provider"
 import { I18nProvider } from "./i18n-provider"
 import { ThemeProvider } from "./theme-provider"
@@ -22,7 +23,9 @@ export const Providers = ({ api, children }: ProvidersProps) => {
             <ThemeProvider>
               <FeatureFlagProvider>
                 <I18n />
-                <I18nProvider>{children}</I18nProvider>
+                <DisplayUnitProvider>
+                  <I18nProvider>{children}</I18nProvider>
+                </DisplayUnitProvider>
                 <Toaster />
               </FeatureFlagProvider>
             </ThemeProvider>
