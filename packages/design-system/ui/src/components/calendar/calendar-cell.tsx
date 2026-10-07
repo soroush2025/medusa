@@ -1,6 +1,10 @@
 "use client"
 
-import { CalendarDate } from "@internationalized/date"
+import {
+  CalendarDate,
+  getLocalTimeZone,
+  isToday,
+} from "@internationalized/date"
 import * as React from "react"
 import { useCalendarCell } from "react-aria"
 import { CalendarState } from "react-stately"
@@ -61,15 +65,13 @@ const CalendarCell = ({ state, date }: CalendarCellProps) => {
 }
 
 /**
- * Check if the date is today. The CalendarDate is using a 1-based index for the month.
+ * Check if the date is today. The date may belong to any calendar (for example
+ * the Persian calendar), so it is compared as a calendar-aware date instead of
+ * by its year, month and day numbers.
  * @returns Whether the CalendarDate is today.
  */
 function getIsToday(date: CalendarDate) {
-  const today = new Date()
-  return (
-    [date.year, date.month, date.day].join("-") ===
-    [today.getFullYear(), today.getMonth() + 1, today.getDate()].join("-")
-  )
+  return isToday(date, getLocalTimeZone())
 }
 
 export { CalendarCell }
