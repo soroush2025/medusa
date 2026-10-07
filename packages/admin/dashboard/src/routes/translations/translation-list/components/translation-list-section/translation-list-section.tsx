@@ -2,6 +2,7 @@ import { Button, Container, Text } from "@medusajs/ui"
 import { Link } from "react-router-dom"
 import { TranslatableEntity } from "../../translation-list"
 import { useTranslation } from "react-i18next"
+import { getIntlLocale } from "../../../../../lib/format-locale"
 
 type TranslationListSectionProps = {
   entities: TranslatableEntity[]
@@ -26,8 +27,10 @@ export const TranslationListSection = ({
           </Text>
           <Text size="small" className="text-ui-fg-subtle">
             {t("translations.list.metrics", {
-              translated: (entity.translatedCount ?? 0).toLocaleString(),
-              total: (entity.totalCount ?? 0).toLocaleString(),
+              translated: (entity.translatedCount ?? 0).toLocaleString(
+                getIntlLocale()
+              ),
+              total: (entity.totalCount ?? 0).toLocaleString(getIntlLocale()),
             })}
           </Text>
           <Link
