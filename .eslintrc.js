@@ -69,14 +69,17 @@ function medusaOverrides(presetName, dirs) {
 //     lookahead exempts exactly left-1/2 (not left-12 or left-1.25).
 const NOT_UNDER_DIRECTION_VARIANT = String.raw`(?<!(?:^|\s)\S*(?:rtl|ltr):\S*)`
 const PHYSICAL_DIRECTION_CLASS = [
-  String.raw`-?(m|p)[lr]-`,
+  String.raw`-?(scroll-)?(m|p)[lr]-`,
   String.raw`-?(left|right)-(?!1\x2f2(?![\d.])|\[50%\])`,
   String.raw`text-(left|right)\b`,
-  String.raw`(border|rounded)-[lr](-|\b)`,
+  String.raw`(border|rounded)-(l|r|tl|tr|bl|br)(-|\b)`,
 ]
   .map(
     (alternative) =>
-      String.raw`(^|[\s:])` + NOT_UNDER_DIRECTION_VARIANT + alternative
+      String.raw`(^|[\s:])` +
+      NOT_UNDER_DIRECTION_VARIANT +
+      String.raw`!?` +
+      alternative
   )
   .join("|")
 const PHYSICAL_DIRECTION_MESSAGE =
