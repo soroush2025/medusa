@@ -241,8 +241,9 @@ export function OrderAllocateItemsItem({
             className="flex items-center gap-x-2"
           >
             <TriangleDownMini
-              style={{ transform: `rotate(${isOpen ? -90 : 0}deg)` }}
-              className="text-ui-fg-muted -mt-[1px]"
+              className={clx("text-ui-fg-muted -mt-[1px]", {
+                "-rotate-90 rtl:rotate-90": isOpen,
+              })}
             />
             <span className="txt-small text-ui-fg-muted cursor-pointer">
               {t("orders.allocateItems.consistsOf", {
