@@ -59,6 +59,40 @@ function medusaOverrides(presetName, dirs) {
     }))
 }
 
+// Tailwind classes that name a physical side. They break RTL layouts, so ui
+// (and, from the dashboard PR, the dashboard) must use logical utilities. The
+// regex is shared by the Literal and TemplateElement selectors below; it
+// contains no "/" because esquery regex literals cannot escape it.
+//   - Tokens already under an rtl: or ltr: variant are allowed.
+//   - left-1/2 and left-[50%] are the centering pair with -translate-x-1/2.
+//     The slash is written as \x2f, which RegExp reads as "/", so the
+//     lookahead exempts exactly left-1/2 (not left-12 or left-1.25).
+const NOT_UNDER_DIRECTION_VARIANT = String.raw`(?<!(?:^|\s)\S*(?:rtl|ltr):\S*)`
+const PHYSICAL_DIRECTION_CLASS = [
+  String.raw`-?(m|p)[lr]-`,
+  String.raw`-?(left|right)-(?!1\x2f2(?![\d.])|\[50%\])`,
+  String.raw`text-(left|right)\b`,
+  String.raw`(border|rounded)-[lr](-|\b)`,
+]
+  .map(
+    (alternative) =>
+      String.raw`(^|[\s:])` + NOT_UNDER_DIRECTION_VARIANT + alternative
+  )
+  .join("|")
+const PHYSICAL_DIRECTION_MESSAGE =
+  "Use logical Tailwind utilities (ms/me, ps/pe, start/end, text-start/end, border-s/e, rounded-s/e) so RTL languages render correctly."
+const physicalDirectionRule = [
+  "error",
+  {
+    selector: `Literal[value=/${PHYSICAL_DIRECTION_CLASS}/]`,
+    message: PHYSICAL_DIRECTION_MESSAGE,
+  },
+  {
+    selector: `TemplateElement[value.raw=/${PHYSICAL_DIRECTION_CLASS}/]`,
+    message: PHYSICAL_DIRECTION_MESSAGE,
+  },
+]
+
 module.exports = {
   root: true,
   parserOptions: {
@@ -303,6 +337,25 @@ module.exports = {
             argsIgnorePattern: "^_",
           },
         ],
+      },
+    },
+
+    // --- RTL guard: no physical-direction Tailwind classes ---
+    // Not reached by `yarn lint` (ui is excluded by .eslintignore); it runs
+    // through eslint.rtl.cjs (`yarn lint:rtl`). Tests and stories are exempt.
+    {
+      files: [
+        "packages/design-system/ui/src/**/*.ts",
+        "packages/design-system/ui/src/**/*.tsx",
+      ],
+      excludedFiles: [
+        "**/__tests__/**",
+        "**/*.spec.*",
+        "**/*.test.*",
+        "**/*.stories.*",
+      ],
+      rules: {
+        "no-restricted-syntax": physicalDirectionRule,
       },
     },
 
