@@ -8,10 +8,12 @@ import { HttpTypes } from "@medusajs/types"
 import { Form } from "../../../../../components/common/form"
 import { RouteDrawer, useRouteModal } from "../../../../../components/modals"
 import { KeyboundForm } from "../../../../../components/utilities/keybound-form"
+import { useStore } from "../../../../../hooks/api/store"
 import { useUpdateUser } from "../../../../../hooks/api/users"
 import { languages } from "../../../../../i18n/languages"
 import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 import { SwitchBox } from "../../../../../components/common/switch-box"
+import { getCurrencyDisplayUnit } from "../../../../../lib/data/currency-display-units"
 import { useDisplayUnits } from "../../../../../providers/display-unit-provider"
 
 type EditProfileProps = {
@@ -33,6 +35,14 @@ export const EditProfileForm = ({ user }: EditProfileProps) => {
   const direction = useDocumentDirection()
   const { enabled: displayUnitsEnabled, setEnabled: setDisplayUnits } =
     useDisplayUnits()
+  const { store } = useStore()
+
+  // The preference only matters to stores that sell in a currency with an
+  // alternative display unit (for example IRR with Toman).
+  const hasDisplayUnitCurrency = !!store?.supported_currencies?.some(
+    (currency) => !!getCurrencyDisplayUnit(currency.currency_code)
+  )
+
   const form = useForm<zod.infer<typeof EditProfileSchema>>({
     defaultValues: {
       first_name: user.first_name ?? "",
@@ -158,12 +168,14 @@ export const EditProfileForm = ({ user }: EditProfileProps) => {
                 </Form.Item>
               )}
             />
-            <SwitchBox
-              control={form.control}
-              name="display_units"
-              label={t("profile.fields.currencyDisplayUnitLabel")}
-              description={t("profile.edit.currencyDisplayUnitHint")}
-            />
+            {hasDisplayUnitCurrency && (
+              <SwitchBox
+                control={form.control}
+                name="display_units"
+                label={t("profile.fields.currencyDisplayUnitLabel")}
+                description={t("profile.edit.currencyDisplayUnitHint")}
+              />
+            )}
             {/* TODO: Do we want to implement usage insights in V2? */}
             {/* <Form.Field
               control={form.control}
