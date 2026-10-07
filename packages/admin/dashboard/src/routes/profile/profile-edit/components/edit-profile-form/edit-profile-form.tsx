@@ -11,6 +11,8 @@ import { KeyboundForm } from "../../../../../components/utilities/keybound-form"
 import { useUpdateUser } from "../../../../../hooks/api/users"
 import { languages } from "../../../../../i18n/languages"
 import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
+import { SwitchBox } from "../../../../../components/common/switch-box"
+import { useDisplayUnits } from "../../../../../providers/display-unit-provider"
 
 type EditProfileProps = {
   user: HttpTypes.AdminUser
@@ -21,6 +23,7 @@ const EditProfileSchema = zod.object({
   first_name: zod.string().optional(),
   last_name: zod.string().optional(),
   language: zod.string(),
+  display_units: zod.boolean(),
   // usage_insights: zod.boolean(),
 })
 
@@ -28,11 +31,14 @@ export const EditProfileForm = ({ user }: EditProfileProps) => {
   const { t, i18n } = useTranslation()
   const { handleSuccess } = useRouteModal()
   const direction = useDocumentDirection()
+  const { enabled: displayUnitsEnabled, setEnabled: setDisplayUnits } =
+    useDisplayUnits()
   const form = useForm<zod.infer<typeof EditProfileSchema>>({
     defaultValues: {
       first_name: user.first_name ?? "",
       last_name: user.last_name ?? "",
       language: i18n.language,
+      display_units: displayUnitsEnabled,
       // usage_insights: usageInsights,
     },
     resolver: zodResolver(EditProfileSchema),
@@ -66,6 +72,9 @@ export const EditProfileForm = ({ user }: EditProfileProps) => {
 
     toast.success(t("profile.toast.edit"))
     handleSuccess()
+
+    // Last: the provider remounts its subtree when the preference changes.
+    setDisplayUnits(values.display_units)
   })
 
   return (
@@ -144,6 +153,12 @@ export const EditProfileForm = ({ user }: EditProfileProps) => {
                   </div>
                 </Form.Item>
               )}
+            />
+            <SwitchBox
+              control={form.control}
+              name="display_units"
+              label={t("profile.fields.currencyDisplayUnitLabel")}
+              description={t("profile.edit.currencyDisplayUnitHint")}
             />
             {/* TODO: Do we want to implement usage insights in V2? */}
             {/* <Form.Field

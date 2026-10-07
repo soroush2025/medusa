@@ -35,6 +35,7 @@ export {
 
 export {
   getDecimalDigits,
+  getDisplayDecimalDigits,
   getLocaleAmount,
   getNativeSymbol,
   getStylizedAmount,

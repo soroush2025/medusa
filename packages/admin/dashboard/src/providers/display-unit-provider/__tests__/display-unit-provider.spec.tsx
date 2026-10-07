@@ -18,7 +18,9 @@ const Probe = () => {
   }, [])
 
   return (
-    <button onClick={() => setEnabled(!enabled)}>{enabled ? "on" : "off"}</button>
+    <button onClick={() => setEnabled(!enabled)}>
+      {enabled ? "on" : "off"}
+    </button>
   )
 }
 
