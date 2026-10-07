@@ -36,13 +36,13 @@ const InternalCalendar = <TDateValue extends DateValue>(
     <div {...calendarProps} className="flex flex-col gap-y-2">
       <div className="bg-ui-bg-field border-base grid grid-cols-[28px_1fr_28px] items-center gap-1 rounded-md border p-0.5">
         <CalendarButton {...prevButtonProps}>
-          <TriangleLeftMini />
+          <TriangleLeftMini className="rtl:rotate-180" />
         </CalendarButton>
         <div className="flex items-center justify-center">
           <h2 className="txt-compact-small-plus">{title}</h2>
         </div>
         <CalendarButton {...nextButtonProps}>
-          <TriangleRightMini />
+          <TriangleRightMini className="rtl:rotate-180" />
         </CalendarButton>
       </div>
       <CalendarGrid state={state} />

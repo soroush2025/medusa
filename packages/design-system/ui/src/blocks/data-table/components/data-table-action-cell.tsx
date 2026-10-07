@@ -32,7 +32,7 @@ const DataTableActionCell = <TData,>({
 
   return (
     <DropdownMenu>
-      <DropdownMenu.Trigger asChild className="ml-1">
+      <DropdownMenu.Trigger asChild className="ms-1">
         <IconButton size="small" variant="transparent">
           <EllipsisHorizontal />
         </IconButton>
