@@ -35,7 +35,9 @@ describe("resolveIntlLocale", () => {
         continue
       }
 
-      expect(() => Intl.getCanonicalLocales(language.intl_locale!)).not.toThrow()
+      expect(() =>
+        Intl.getCanonicalLocales(language.intl_locale!)
+      ).not.toThrow()
       expect(new Intl.Locale(language.intl_locale).language).toBe(language.code)
     }
   })
