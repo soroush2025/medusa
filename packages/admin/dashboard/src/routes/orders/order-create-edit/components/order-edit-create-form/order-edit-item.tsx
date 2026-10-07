@@ -163,13 +163,13 @@ function OrderEditItem({ item, currencyCode, orderId }: OrderEditItemProps) {
           </div>
 
           {isAddedItem && (
-            <Badge size="2xsmall" rounded="full" color="blue" className="mr-1">
+            <Badge size="2xsmall" rounded="full" color="blue" className="me-1">
               {t("general.new")}
             </Badge>
           )}
 
           {isItemRemoved ? (
-            <Badge size="2xsmall" rounded="full" color="red" className="mr-1">
+            <Badge size="2xsmall" rounded="full" color="red" className="me-1">
               {t("general.removed")}
             </Badge>
           ) : (
@@ -178,7 +178,7 @@ function OrderEditItem({ item, currencyCode, orderId }: OrderEditItemProps) {
                 size="2xsmall"
                 rounded="full"
                 color="orange"
-                className="mr-1"
+                className="me-1"
               >
                 {t("general.modified")}
               </Badge>
@@ -225,7 +225,7 @@ function OrderEditItem({ item, currencyCode, orderId }: OrderEditItemProps) {
             )}
           </div>
 
-          <div className="text-ui-fg-subtle txt-small mr-2 flex flex-shrink-0">
+          <div className="text-ui-fg-subtle txt-small me-2 flex flex-shrink-0">
             <MoneyAmountCell currencyCode={currencyCode} amount={item.total} />
           </div>
 

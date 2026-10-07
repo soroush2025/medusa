@@ -138,7 +138,7 @@ export const CreateCategoryForm = ({
         >
           <RouteFocusModal.Header>
             <div className="flex w-full items-center justify-between">
-              <div className="-my-2 w-full max-w-[400px] border-l">
+              <div className="-my-2 w-full max-w-[400px] border-s">
                 <ProgressTabs.List className="grid w-full grid-cols-2">
                   <ProgressTabs.Trigger
                     value={Tab.DETAILS}

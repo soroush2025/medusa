@@ -53,7 +53,7 @@ export const TreeItem = forwardRef<HTMLDivElement, TreeItemProps>(
         ref={wrapperRef}
         style={
           {
-            paddingLeft: `${indentationWidth * depth}px`,
+            paddingInlineStart: `${indentationWidth * depth}px`,
           } as React.CSSProperties
         }
         className={clx("-mb-px list-none", {
@@ -69,8 +69,8 @@ export const TreeItem = forwardRef<HTMLDivElement, TreeItemProps>(
           className={clx(
             "bg-ui-bg-base transition-fg relative flex items-center gap-x-3 border-y px-6 py-2.5",
             {
-              "border-l": depth > 0,
-              "shadow-elevation-flyout bg-ui-bg-base w-fit rounded-lg border-none pr-6 opacity-80":
+              "border-s": depth > 0,
+              "shadow-elevation-flyout bg-ui-bg-base w-fit rounded-lg border-none pe-6 opacity-80":
                 clone,
               "bg-ui-bg-base-hover z-[1] opacity-50": ghost,
               "bg-ui-bg-disabled": disabled,
@@ -167,6 +167,7 @@ const Collapse = ({ collapsed, onCollapse, clone }: CollapseProps) => {
       <TriangleRightMini
         className={clx("text-ui-fg-subtle transition-transform", {
           "rotate-90": !collapsed,
+          "rtl:rotate-180": collapsed,
         })}
       />
     </IconButton>
@@ -200,7 +201,7 @@ const ChildrenCount = ({ clone, childrenCount }: ChildrenCountProps) => {
   }
 
   return (
-    <Badge size="2xsmall" color="blue" className="absolute -right-2 -top-2">
+    <Badge size="2xsmall" color="blue" className="absolute -end-2 -top-2">
       {childrenCount}
     </Badge>
   )

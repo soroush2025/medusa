@@ -290,7 +290,7 @@ const ComboboxImpl = <T extends Value = string>(
                 <Badge
                   key={value}
                   size="2xsmall"
-                  className="transition-fg gap-x-0.5 pl-1.5 pr-1 max-w-full min-w-0 overflow-hidden"
+                  className="transition-fg gap-x-0.5 ps-1.5 pe-1 max-w-full min-w-0 overflow-hidden"
                 >
                   <span className="truncate min-w-0">{option.label}</span>
                   <button
@@ -329,7 +329,7 @@ const ComboboxImpl = <T extends Value = string>(
                 <button
                   {...props}
                   type="button"
-                  className="text-ui-fg-muted transition-fg hover:bg-ui-bg-field-hover absolute end-0 top-0 flex h-8 w-8 items-center justify-center rounded-r outline-none"
+                  className="text-ui-fg-muted transition-fg hover:bg-ui-bg-field-hover absolute end-0 top-0 flex h-8 w-8 items-center justify-center rounded-e outline-none"
                 >
                   <TrianglesMini />
                 </button>
@@ -434,7 +434,7 @@ const ComboboxImpl = <T extends Value = string>(
                 <button
                   {...props}
                   type="button"
-                  className="text-ui-fg-muted transition-fg hover:bg-ui-bg-field-hover absolute end-0 flex size-8 items-center justify-center rounded-r outline-none"
+                  className="text-ui-fg-muted transition-fg hover:bg-ui-bg-field-hover absolute end-0 flex size-8 items-center justify-center rounded-e outline-none"
                 >
                   <TrianglesMini />
                 </button>

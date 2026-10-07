@@ -280,7 +280,7 @@ export function CreateShippingOptionsForm({
           onValueChange={(tab) => onTabChange(tab as Tab)}
         >
           <RouteFocusModal.Header>
-            <ProgressTabs.List className="border-ui-border-base -my-2 ml-2 min-w-0 flex-1 border-l">
+            <ProgressTabs.List className="border-ui-border-base -my-2 ms-2 min-w-0 flex-1 border-s">
               <ProgressTabs.Trigger
                 value={Tab.DETAILS}
                 status={detailsStatus}

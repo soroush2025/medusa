@@ -541,7 +541,7 @@ export const ExchangeCreateForm = ({
 
             {/* CARRY OVER PROMOTION */}
             {hasPromotions && (
-              <div className="bg-ui-bg-field mt-4 rounded-lg border py-2 pl-2 pr-4">
+              <div className="bg-ui-bg-field mt-4 rounded-lg border py-2 pe-4 ps-2">
                 <Form.Field
                   control={form.control}
                   name="carry_over_promotions"
@@ -549,7 +549,7 @@ export const ExchangeCreateForm = ({
                     return (
                       <Form.Item>
                         <div className="flex items-center">
-                          <Form.Control className="mr-4 self-start">
+                          <Form.Control className="me-4 self-start">
                             <Switch
                               dir="ltr"
                               className="mt-[2px] rtl:rotate-180"
@@ -592,7 +592,7 @@ export const ExchangeCreateForm = ({
             )}
 
             {/* SEND NOTIFICATION*/}
-            <div className="bg-ui-bg-field mt-8 rounded-lg border py-2 pl-2 pr-4">
+            <div className="bg-ui-bg-field mt-8 rounded-lg border py-2 pe-4 ps-2">
               <Form.Field
                 control={form.control}
                 name="send_notification"
@@ -600,7 +600,7 @@ export const ExchangeCreateForm = ({
                   return (
                     <Form.Item>
                       <div className="flex items-center">
-                        <Form.Control className="mr-4 self-start">
+                        <Form.Control className="me-4 self-start">
                           <Switch
                             dir="ltr"
                             className="mt-[2px] rtl:rotate-180"

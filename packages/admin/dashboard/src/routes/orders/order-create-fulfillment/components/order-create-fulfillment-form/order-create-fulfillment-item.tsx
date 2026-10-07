@@ -139,7 +139,7 @@ export function OrderCreateFulfillmentItem({
     <div className="bg-ui-bg-subtle shadow-elevation-card-rest my-2 rounded-xl">
       <div className="flex flex-row items-center">
         {disabled && (
-          <div className="ml-4 inline-flex items-center">
+          <div className="ms-4 inline-flex items-center">
             <Tooltip
               content={t("orders.fulfillment.disabledItemTooltip")}
               side="top"
@@ -171,7 +171,7 @@ export function OrderCreateFulfillmentItem({
           </div>
 
           <div className="flex flex-1 items-center gap-x-1">
-            <div className="mr-2 block h-[16px] w-[2px] bg-gray-200" />
+            <div className="me-2 block h-[16px] w-[2px] bg-gray-200" />
 
             <div className="text-small flex flex-1 flex-col">
               <span className="text-ui-fg-subtle font-medium">
@@ -183,7 +183,7 @@ export function OrderCreateFulfillmentItem({
             </div>
 
             <div className="flex flex-1 items-center gap-x-1">
-              <div className="mr-2 block h-[16px] w-[2px] bg-gray-200" />
+              <div className="me-2 block h-[16px] w-[2px] bg-gray-200" />
 
               <div className="flex flex-col">
                 <span className="text-ui-fg-subtle font-medium">
@@ -210,7 +210,7 @@ export function OrderCreateFulfillmentItem({
                     <Form.Item>
                       <Form.Control>
                         <Input
-                          className="bg-ui-bg-base txt-small w-[50px] rounded-lg text-right [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                          className="bg-ui-bg-base txt-small w-[50px] rounded-lg text-end [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
                           type="number"
                           {...field}
                           onChange={(e) => {

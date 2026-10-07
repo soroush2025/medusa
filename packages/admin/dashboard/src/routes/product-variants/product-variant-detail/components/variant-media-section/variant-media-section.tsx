@@ -48,7 +48,7 @@ export const VariantMediaSection = ({ variant }: VariantMediaSectionProps) => {
                 key={i.id}
               >
                 {i.url === variant.thumbnail && (
-                  <div className="absolute left-2 top-2">
+                  <div className="absolute start-2 top-2">
                     <Tooltip content={t("products.media.thumbnailTooltip")}>
                       <ThumbnailBadge />
                     </Tooltip>

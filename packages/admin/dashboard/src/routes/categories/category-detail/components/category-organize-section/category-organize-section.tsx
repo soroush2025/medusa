@@ -146,7 +146,9 @@ const PathDisplay = ({
                     {chip.name}
                   </LinkButton>
                 )}
-                {index < chips.length - 1 && <TriangleRightMini />}
+                {index < chips.length - 1 && (
+                  <TriangleRightMini className="rtl:rotate-180" />
+                )}
               </div>
             )
           })}
@@ -162,7 +164,9 @@ const PathDisplay = ({
           <Text size="xsmall" leading="compact" weight="plus">
             {chip.name}
           </Text>
-          {index < chips.length - 1 && <TriangleRightMini />}
+          {index < chips.length - 1 && (
+            <TriangleRightMini className="rtl:rotate-180" />
+          )}
         </div>
       ))}
     </div>

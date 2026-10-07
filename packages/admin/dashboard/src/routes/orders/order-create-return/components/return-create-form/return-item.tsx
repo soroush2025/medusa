@@ -105,7 +105,7 @@ function ReturnItem({
             </Text>
           </div>
 
-          <div className="text-ui-fg-subtle txt-small mr-2 flex flex-shrink-0">
+          <div className="text-ui-fg-subtle txt-small me-2 flex flex-shrink-0">
             <MoneyAmountCell
               currencyCode={currencyCode}
               amount={previewItem.return_requested_total}

@@ -179,7 +179,7 @@ export const NumberFilter = ({
                   <RadixRadioGroup.Item
                     key={o.operator}
                     value={o.operator}
-                    className="txt-compact-small hover:bg-ui-bg-base-hover focus-visible:bg-ui-bg-base-hover active:bg-ui-bg-base-pressed transition-fg grid w-full grid-cols-[20px_1fr] gap-2 rounded-[4px] px-2 py-1.5 text-left outline-none"
+                    className="txt-compact-small hover:bg-ui-bg-base-hover focus-visible:bg-ui-bg-base-hover active:bg-ui-bg-base-pressed transition-fg grid w-full grid-cols-[20px_1fr] gap-2 rounded-[4px] px-2 py-1.5 text-start outline-none"
                   >
                     <div className="size-5">
                       <RadixRadioGroup.Indicator>

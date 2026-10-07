@@ -127,7 +127,7 @@ export const DISPLAY_STRATEGIES = {
       const formatted = getStylizedAmount(value, currencyCode)
 
       return (
-        <div className="flex h-full w-full items-center justify-end text-right">
+        <div className="flex h-full w-full items-center justify-end text-end">
           <span className="truncate">{formatted}</span>
         </div>
       )

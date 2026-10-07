@@ -40,7 +40,7 @@ function ShippingInfoPopover({ shippingMethod }: ShippingInfoPopoverProps) {
         </Badge>
       }
     >
-      <InformationCircleSolid className="text-ui-fg-muted ml-1 inline-block" />
+      <InformationCircleSolid className="text-ui-fg-muted ms-1 inline-block" />
     </Tooltip>
   )
 }

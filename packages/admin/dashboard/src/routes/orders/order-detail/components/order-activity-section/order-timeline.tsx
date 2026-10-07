@@ -705,7 +705,7 @@ const OrderActivityItem = ({
               <Text
                 size="small"
                 leading="compact"
-                className="text-ui-fg-subtle text-right"
+                className="text-ui-fg-subtle text-end"
               >
                 {getRelativeDate(timestamp)}
               </Text>
@@ -739,7 +739,7 @@ const OrderActivityCollapsible = ({
             <div className="border-ui-border-strong w-px flex-1 bg-[linear-gradient(var(--border-strong)_33%,rgba(255,255,255,0)_0%)] bg-[length:1px_3px] bg-right bg-repeat-y" />
           </div>
           <div className="pb-4">
-            <RadixCollapsible.Trigger className="text-left">
+            <RadixCollapsible.Trigger className="text-start">
               <Text
                 size="small"
                 leading="compact"
@@ -809,7 +809,7 @@ const OrderActivityCollapsible = ({
 
 //   return (
 //     <div className="flex flex-col gap-y-2 pt-2">
-//       <div className="bg-ui-bg-component shadow-borders-base group grid grid-cols-[1fr_20px] items-start gap-x-2 text-pretty rounded-r-2xl rounded-bl-md rounded-tl-xl px-3 py-1.5">
+//       <div className="bg-ui-bg-component shadow-borders-base group grid grid-cols-[1fr_20px] items-start gap-x-2 text-pretty rounded-e-2xl rounded-es-md rounded-ss-xl px-3 py-1.5">
 //         <div className="flex h-full min-h-7 items-center">
 //           <Text size="xsmall" className="text-ui-fg-subtle">
 //             {note.value}
@@ -1210,7 +1210,7 @@ const OrderEditBody = ({ edit }: { edit: AdminOrderChange }) => {
         />
       )}
       {edit.internal_note && (
-        <div className="bg-ui-bg-component shadow-borders-base mt-2 w-fit rounded-r-2xl rounded-bl-md rounded-tl-xl px-3 py-1.5">
+        <div className="bg-ui-bg-component shadow-borders-base mt-2 w-fit rounded-e-2xl rounded-es-md rounded-ss-xl px-3 py-1.5">
           <Text size="xsmall" className="text-ui-fg-subtle">
             {edit.internal_note}
           </Text>

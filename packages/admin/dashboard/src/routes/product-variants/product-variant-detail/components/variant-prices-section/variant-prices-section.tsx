@@ -74,7 +74,7 @@ export function VariantPricesSection({ variant }: VariantPricesSectionProps) {
           <Button
             onClick={onShowMore}
             disabled={pageSize >= prices.length}
-            className="-mr-3 text-blue-500"
+            className="-me-3 text-blue-500"
             variant="transparent"
           >
             {t("actions.showMore")}

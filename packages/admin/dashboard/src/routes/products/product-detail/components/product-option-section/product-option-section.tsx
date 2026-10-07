@@ -20,7 +20,7 @@ const OptionActions = ({
             {
               label: t("actions.goToProductOption"),
               to: `/product-options/${option.id}`,
-              icon: <ArrowRight />,
+              icon: <ArrowRight className="rtl:rotate-180" />,
             },
           ],
         },

@@ -151,7 +151,7 @@ const AccessDenied = ({ requirement }: AccessDeniedProps) => {
   const { t } = useTranslation()
 
   return (
-    <div className="bg-ui-bg-subtle absolute bottom-0 left-0 right-0 top-0 flex min-h-screen items-center justify-center p-4">
+    <div className="bg-ui-bg-subtle absolute bottom-0 end-0 start-0 top-0 flex min-h-screen items-center justify-center p-4">
       <Container className="max-w-md">
         <div className="flex flex-col items-center gap-y-4 py-8 text-center">
           <div className="bg-ui-bg-subtle flex h-12 w-12 items-center justify-center rounded-full">

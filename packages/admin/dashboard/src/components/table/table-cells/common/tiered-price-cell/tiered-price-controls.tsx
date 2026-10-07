@@ -33,7 +33,7 @@ export const TieredPriceControls = ({
     <div
       className="absolute inset-y-0 z-[3] flex w-fit items-center justify-center"
       style={{
-        left: symbolWidth ? `${symbolWidth + 16 + 4}px` : undefined,
+        insetInlineStart: symbolWidth ? `${symbolWidth + 16 + 4}px` : undefined,
       }}
     >
       {isTiered && !isAnchor && (

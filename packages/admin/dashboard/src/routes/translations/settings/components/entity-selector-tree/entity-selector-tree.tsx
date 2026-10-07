@@ -242,7 +242,7 @@ export const EntitySelectorTree = React.forwardRef<
                           <TriangleRightMini
                             className={clx(
                               "text-ui-fg-muted transition-transform",
-                              isExpanded && "rotate-90"
+                              isExpanded ? "rotate-90" : "rtl:rotate-180"
                             )}
                           />
                         </button>
@@ -254,7 +254,7 @@ export const EntitySelectorTree = React.forwardRef<
                     <div className="relative">
                       <Divider
                         orientation="vertical"
-                        className="absolute bottom-0 left-[2.87rem] top-0 z-10"
+                        className="absolute bottom-0 start-[2.87rem] top-0 z-10"
                       />
                       {entity.fields!.map((field) => {
                         const fieldKey = `${entity.id}.${field.id}`
@@ -263,7 +263,7 @@ export const EntitySelectorTree = React.forwardRef<
                         return (
                           <SelectorRow
                             key={field.id}
-                            className="pl-3"
+                            className="ps-3"
                             leftElement={<div className="w-11" />}
                             checked={isFieldSelected}
                             onCheckedChange={() => {

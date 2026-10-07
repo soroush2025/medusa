@@ -113,7 +113,7 @@ export const ProductMediaSection = ({ product }: ProductMedisaSectionProps) => {
               >
                 <div
                   className={clx(
-                    "transition-fg invisible absolute right-2 top-2 opacity-0 group-hover:visible group-hover:opacity-100",
+                    "transition-fg invisible absolute end-2 top-2 opacity-0 group-hover:visible group-hover:opacity-100",
                     {
                       "visible opacity-100": isSelected,
                     }
@@ -125,7 +125,7 @@ export const ProductMediaSection = ({ product }: ProductMedisaSectionProps) => {
                   />
                 </div>
                 {i.isThumbnail && (
-                  <div className="absolute left-2 top-2">
+                  <div className="absolute start-2 top-2">
                     <Tooltip content={t("fields.thumbnail")}>
                       <ThumbnailBadge />
                     </Tooltip>
