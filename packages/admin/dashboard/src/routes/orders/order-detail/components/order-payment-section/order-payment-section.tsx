@@ -12,7 +12,6 @@ import {
   Tooltip,
   usePrompt,
 } from "@medusajs/ui"
-import { format } from "date-fns"
 import { Trans, useTranslation } from "react-i18next"
 import { ActionMenu } from "../../../../../components/common/action-menu"
 import DisplayId from "../../../../../components/common/display-id/display-id"
@@ -20,6 +19,7 @@ import {
   useCapturePayment,
   useAuthorizePaymentSession,
 } from "../../../../../hooks/api"
+import { useDate } from "../../../../../hooks/use-date"
 import { formatCurrency } from "../../../../../lib/format-currency"
 import {
   getLocaleAmount,
@@ -87,6 +87,7 @@ const Refund = ({
   currencyCode: string
 }) => {
   const { t } = useTranslation()
+  const { getPresetDate } = useDate()
   const RefundReasonBadge = refund?.refund_reason && (
     <Badge
       size="2xsmall"
@@ -114,7 +115,7 @@ const Refund = ({
             {t("orders.payment.refund")} {RefundNoteIndicator}
           </Text>
           <Text size="small" leading="compact">
-            {format(new Date(refund.created_at), "dd MMM, yyyy, HH:mm:ss")}
+            {getPresetDate({ date: refund.created_at, preset: "dateTime" })}
           </Text>
         </div>
       </div>
@@ -140,6 +141,7 @@ const Payment = ({
   currencyCode: string
 }) => {
   const { t } = useTranslation()
+  const { getPresetDate } = useDate()
   const prompt = usePrompt()
   const { mutateAsync } = useCapturePayment(order.id, payment.id)
 
@@ -211,10 +213,10 @@ const Payment = ({
             <DisplayId id={payment.id} />
           </Text>
           <Text size="small" leading="compact">
-            {format(
-              new Date(payment.created_at as string),
-              "dd MMM, yyyy, HH:mm:ss"
-            )}
+            {getPresetDate({
+              date: payment.created_at as string,
+              preset: "dateTime",
+            })}
           </Text>
         </div>
         <div className="hidden items-center justify-end sm:flex">
@@ -294,6 +296,7 @@ const CreditLine = ({
   plugins: HttpTypes.AdminPlugin[]
 }) => {
   const { t } = useTranslation()
+  const { getPresetDate } = useDate()
   const loyaltyPlugin = getLoyaltyPlugin(plugins)
 
   if (!loyaltyPlugin) {
@@ -329,10 +332,10 @@ const CreditLine = ({
             )}
           </Text>
           <Text size="small" leading="compact">
-            {format(
-              new Date(creditLine.created_at as unknown as string),
-              "dd MMM, yyyy, HH:mm:ss"
-            )}
+            {getPresetDate({
+              date: creditLine.created_at as unknown as string,
+              preset: "dateTime",
+            })}
           </Text>
         </div>
         <div className="hidden items-center justify-end sm:flex">

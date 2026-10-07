@@ -8,11 +8,11 @@ import {
   IconButton,
   Text,
 } from "@medusajs/ui"
-import { format } from "date-fns"
 import { Collapsible as RadixCollapsible } from "radix-ui"
 import { useEffect, useRef, useState } from "react"
 import { useTranslation } from "react-i18next"
 import { useLocation } from "react-router-dom"
+import { useDate } from "../../../../../hooks/use-date"
 import {
   STEP_ERROR_STATES,
   STEP_IN_PROGRESS_STATES,
@@ -285,6 +285,7 @@ const StepState = ({
   isUnreachable?: boolean
 }) => {
   const { t } = useTranslation()
+  const { getPresetDate } = useDate()
 
   const isFailed = state === TransactionStepState.FAILED
   const isRunning = state === TransactionStepState.INVOKING
@@ -327,7 +328,7 @@ const StepState = ({
   if (startedAt) {
     return (
       <Text size="small" leading="compact" className="text-ui-fg-muted">
-        {format(startedAt, "dd MMM yyyy HH:mm:ss")}
+        {getPresetDate({ date: startedAt, preset: "dateTimeCompact" })}
       </Text>
     )
   }
