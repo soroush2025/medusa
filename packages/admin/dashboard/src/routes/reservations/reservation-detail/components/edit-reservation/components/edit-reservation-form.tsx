@@ -12,7 +12,6 @@ import { QuantityInput } from "../../../../../../components/inputs/quantity-inpu
 import { KeyboundForm } from "../../../../../../components/utilities/keybound-form"
 import { formatQuantity } from "../../../../../../lib/format-quantity"
 import { useUpdateReservationItem } from "../../../../../../hooks/api/reservations"
-import { useDocumentDirection } from "../../../../../../hooks/use-document-direction"
 
 type EditReservationFormProps = {
   reservation: HttpTypes.AdminReservationResponse["reservation"]
@@ -62,7 +61,6 @@ export const EditReservationForm = ({
 }: EditReservationFormProps) => {
   const { t } = useTranslation()
   const { handleSuccess } = useRouteModal()
-  const direction = useDocumentDirection()
   const form = useForm<zod.infer<typeof EditReservationSchema>>({
     defaultValues: getDefaultValues(reservation),
     resolver: zodResolver(EditReservationSchema),
@@ -105,7 +103,6 @@ export const EditReservationForm = ({
                   <Form.Label>{t("inventory.reservation.location")}</Form.Label>
                   <Form.Control>
                     <Select
-                      dir={direction}
                       value={value}
                       onValueChange={(v) => {
                         onChange(v)

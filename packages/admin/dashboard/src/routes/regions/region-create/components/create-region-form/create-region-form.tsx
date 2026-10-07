@@ -38,7 +38,6 @@ import { formatProvider } from "../../../../../lib/format-provider"
 import { useCountries } from "../../../common/hooks/use-countries"
 import { useCountryTableColumns } from "../../../common/hooks/use-country-table-columns"
 import { useCountryTableQuery } from "../../../common/hooks/use-country-table-query"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 import { useComboboxData } from "../../../../../hooks/use-combobox-data"
 import { sdk } from "../../../../../lib/client"
 
@@ -66,7 +65,6 @@ export const CreateRegionForm = ({ currencies }: CreateRegionFormProps) => {
   const { setIsOpen } = useStackedModal()
   const [rowSelection, setRowSelection] = useState<RowSelectionState>({})
   const { handleSuccess } = useRouteModal()
-  const direction = useDocumentDirection()
   const form = useForm<zod.infer<typeof CreateRegionSchema>>({
     defaultValues: {
       name: "",
@@ -239,11 +237,7 @@ export const CreateRegionForm = ({ currencies }: CreateRegionFormProps) => {
                         <Form.Item>
                           <Form.Label>{t("fields.currency")}</Form.Label>
                           <Form.Control>
-                            <Select
-                              dir={direction}
-                              {...field}
-                              onValueChange={onChange}
-                            >
+                            <Select {...field} onValueChange={onChange}>
                               <Select.Trigger ref={ref}>
                                 <Select.Value />
                               </Select.Trigger>

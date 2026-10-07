@@ -16,7 +16,6 @@ import {
   getCurrencySymbol,
 } from "../../../../../lib/data/currencies"
 import { SwitchBox } from "../../../../../components/common/switch-box"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 
 type EditPromotionFormProps = {
   promotion: AdminPromotion
@@ -109,7 +108,6 @@ export const EditPromotionDetailsForm = ({
       form.setValue("is_tax_inclusive", false)
     }
   }, [allocationWatchValue, form, promotion])
-  const direction = useDocumentDirection()
   return (
     <RouteDrawer.Form form={form}>
       <KeyboundForm
@@ -127,7 +125,6 @@ export const EditPromotionDetailsForm = ({
                     <Form.Label>{t("promotions.form.status.label")}</Form.Label>
                     <Form.Control>
                       <RadioGroup
-                        dir={direction}
                         className="flex-col gap-y-3"
                         {...field}
                         value={field.value}
@@ -173,7 +170,6 @@ export const EditPromotionDetailsForm = ({
                     <Form.Label>{t("promotions.form.method.label")}</Form.Label>
                     <Form.Control>
                       <RadioGroup
-                        dir={direction}
                         className="flex-col gap-y-3"
                         {...field}
                         value={field.value}
@@ -254,7 +250,6 @@ export const EditPromotionDetailsForm = ({
                         </Form.Label>
                         <Form.Control>
                           <RadioGroup
-                            dir={direction}
                             className="flex-col gap-y-3"
                             {...field}
                             onValueChange={field.onChange}
@@ -351,7 +346,6 @@ export const EditPromotionDetailsForm = ({
                         </Form.Label>
                         <Form.Control>
                           <RadioGroup
-                            dir={direction}
                             className="flex-col gap-y-3"
                             {...field}
                             onValueChange={field.onChange}
