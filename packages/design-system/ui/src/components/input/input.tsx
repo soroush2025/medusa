@@ -62,10 +62,10 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           className={clx(
             inputVariants({ size: size }),
             {
-              "pl-8": isSearch && size === "base",
-              "pr-8": isPassword && size === "base",
-              "pl-7": isSearch && size === "small",
-              "pr-7": isPassword && size === "small",
+              "ps-8": isSearch && size === "base",
+              "pe-8": isPassword && size === "base",
+              "ps-7": isSearch && size === "small",
+              "pe-7": isPassword && size === "small",
             },
             className
           )}
@@ -74,7 +74,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         {isSearch && (
           <div
             className={clx(
-              "text-ui-fg-muted pointer-events-none absolute bottom-0 left-0 flex items-center justify-center",
+              "text-ui-fg-muted pointer-events-none absolute bottom-0 start-0 flex items-center justify-center",
               {
                 "h-8 w-8": size === "base",
                 "h-7 w-7": size === "small",
@@ -88,7 +88,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         {isPassword && (
           <div
             className={clx(
-              "absolute bottom-0 right-0 flex items-center justify-center border-l",
+              "absolute bottom-0 end-0 flex items-center justify-center border-s",
               {
                 "h-8 w-8": size === "base",
                 "h-7 w-7": size === "small",

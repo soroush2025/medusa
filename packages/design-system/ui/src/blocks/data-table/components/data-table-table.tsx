@@ -257,16 +257,16 @@ const DataTableTable = (props: DataTableTableProps) => {
                                   isSelectHeader,
                                 "w-[calc(28px+24px+4px)] min-w-[calc(28px+24px+4px)] max-w-[calc(28px+24px+4px)]":
                                   isActionHeader,
-                                "after:absolute after:inset-y-0 after:right-0 after:h-full after:w-px after:bg-transparent after:content-['']":
+                                "after:absolute after:inset-y-0 after:end-0 after:h-full after:w-px after:bg-transparent after:content-['']":
                                   isFirstColumn,
                                 "after:bg-ui-border-base":
                                   showStickyBorder && isFirstColumn,
                                 "bg-ui-bg-subtle sticky":
                                   isFirstColumn || isSelectHeader,
-                                "left-0":
+                                "start-0":
                                   isSelectHeader ||
                                   (isFirstColumn && !hasSelect),
-                                "left-[calc(20px+24px+24px)]":
+                                "start-[calc(20px+24px+24px)]":
                                   isFirstColumn && hasSelect,
                               })}
                               style={
@@ -361,14 +361,14 @@ const DataTableTable = (props: DataTableTableProps) => {
                                     isActionCell,
                                   "bg-ui-bg-base group-hover/row:bg-ui-bg-base-hover transition-fg sticky":
                                     isFirstColumn || isSelectCell,
-                                  "after:absolute after:inset-y-0 after:right-0 after:h-full after:w-px after:bg-transparent after:content-['']":
+                                  "after:absolute after:inset-y-0 after:end-0 after:h-full after:w-px after:bg-transparent after:content-['']":
                                     isFirstColumn,
                                   "after:bg-ui-border-base":
                                     showStickyBorder && isFirstColumn,
-                                  "left-0":
+                                  "start-0":
                                     isSelectCell ||
                                     (isFirstColumn && !hasSelect),
-                                  "left-[calc(20px+24px+24px)]":
+                                  "start-[calc(20px+24px+24px)]":
                                     isFirstColumn && hasSelect,
                                 }
                               )}
@@ -451,15 +451,15 @@ const DataTableTable = (props: DataTableTableProps) => {
                               isSelectHeader,
                             "w-[calc(28px+24px+4px)] min-w-[calc(28px+24px+4px)] max-w-[calc(28px+24px+4px)]":
                               isActionHeader,
-                            "after:absolute after:inset-y-0 after:right-0 after:h-full after:w-px after:bg-transparent after:content-['']":
+                            "after:absolute after:inset-y-0 after:end-0 after:h-full after:w-px after:bg-transparent after:content-['']":
                               isFirstColumn,
                             "after:bg-ui-border-base":
                               showStickyBorder && isFirstColumn,
                             "bg-ui-bg-subtle sticky":
                               isFirstColumn || isSelectHeader,
-                            "left-0":
+                            "start-0":
                               isSelectHeader || (isFirstColumn && !hasSelect),
-                            "left-[calc(20px+24px+24px)]":
+                            "start-[calc(20px+24px+24px)]":
                               isFirstColumn && hasSelect,
                           })}
                           style={
@@ -541,13 +541,13 @@ const DataTableTable = (props: DataTableTableProps) => {
                                 isActionCell,
                               "bg-ui-bg-base group-hover/row:bg-ui-bg-base-hover transition-fg sticky":
                                 isFirstColumn || isSelectCell,
-                              "after:absolute after:inset-y-0 after:right-0 after:h-full after:w-px after:bg-transparent after:content-['']":
+                              "after:absolute after:inset-y-0 after:end-0 after:h-full after:w-px after:bg-transparent after:content-['']":
                                 isFirstColumn,
                               "after:bg-ui-border-base":
                                 showStickyBorder && isFirstColumn,
-                              "left-0":
+                              "start-0":
                                 isSelectCell || (isFirstColumn && !hasSelect),
-                              "left-[calc(20px+24px+24px)]":
+                              "start-[calc(20px+24px+24px)]":
                                 isFirstColumn && hasSelect,
                             })}
                             style={

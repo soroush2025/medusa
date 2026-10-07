@@ -21,7 +21,7 @@ const DatePickerButton = React.forwardRef<
     <button
       type="button"
       className={clx(
-        "text-ui-fg-muted transition-fg flex items-center justify-center border-r outline-none",
+        "text-ui-fg-muted transition-fg flex items-center justify-center border-e outline-none",
         "disabled:text-ui-fg-disabled",
         "hover:bg-ui-button-transparent-hover",
         "focus-visible:bg-ui-bg-interactive focus-visible:text-ui-fg-on-color",

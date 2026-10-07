@@ -235,7 +235,7 @@ const OtpInput = React.forwardRef<HTMLDivElement, OtpInputProps>(
           autoComplete={index === 0 ? "one-time-code" : "off"}
           autoFocus={autoFocus && index === 0}
           className={clx(
-            "txt-compact-large font-mono text-ui-fg-base bg-ui-bg-field hover:bg-ui-bg-field-hover shadow-borders-base transition-fg relative -ml-px flex size-10 appearance-none items-center justify-center border-0 text-center outline-none first:ml-0 first:rounded-l-md last:rounded-r-md",
+            "txt-compact-large font-mono text-ui-fg-base bg-ui-bg-field hover:bg-ui-bg-field-hover shadow-borders-base transition-fg relative -ms-px flex size-10 appearance-none items-center justify-center border-0 text-center outline-none first:ms-0 first:rounded-s-md last:rounded-e-md",
             "focus-visible:z-10 focus-visible:shadow-borders-interactive-with-active",
             "disabled:text-ui-fg-disabled disabled:!bg-ui-bg-disabled disabled:cursor-not-allowed",
             "aria-[invalid=true]:!shadow-borders-error",
@@ -262,6 +262,7 @@ const OtpInput = React.forwardRef<HTMLDivElement, OtpInputProps>(
         aria-invalid={ariaInvalid}
         aria-label={ariaLabel}
         className={clx("flex items-center justify-center gap-x-3", className)}
+        dir="ltr"
         role="group"
         {...props}
       >

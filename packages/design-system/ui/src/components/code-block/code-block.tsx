@@ -139,7 +139,7 @@ const HeaderComponent = ({
           snippets.map((snippet, idx) => (
             <div
               className={clx(
-                "text-ui-contrast-fg-secondary txt-compact-small-plus transition-fg relative cursor-pointer pb-[9px] pr-3",
+                "text-ui-contrast-fg-secondary txt-compact-small-plus transition-fg relative cursor-pointer pb-[9px] pe-3",
                 {
                   "text-ui-contrast-fg-primary cursor-default":
                     active.label === snippet.label,
@@ -189,7 +189,7 @@ const Meta = ({
   return (
     <div
       className={clx(
-        "txt-compact-small text-ui-contrast-fg-secondary ml-auto",
+        "txt-compact-small text-ui-contrast-fg-secondary ms-auto",
         className
       )}
       {...props}
@@ -326,7 +326,7 @@ const Body = ({
                   {!active.hideLineNumbers && (
                     <div
                       role="presentation"
-                      className="flex flex-col text-right"
+                      className="flex flex-col text-end"
                     >
                       {tokens.map((_, i) => (
                         <span

@@ -48,7 +48,7 @@ const DataTableSearch = (props: DataTableSearchProps) => {
       onChange={(e) => instance.onSearchChange(e.target.value)}
       className={clx(
         {
-          "pr-[calc(15px+2px+8px)]": instance.isLoading,
+          "pe-[calc(15px+2px+8px)]": instance.isLoading,
         },
         className
       )}

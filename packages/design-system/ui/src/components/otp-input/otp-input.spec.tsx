@@ -74,4 +74,10 @@ describe("OtpInput", () => {
 
     expect(inputs[0]).toHaveValue("")
   })
+
+  it("keeps the digit boxes left to right", () => {
+    render(<ControlledOtpInput />)
+
+    expect(screen.getByRole("group")).toHaveAttribute("dir", "ltr")
+  })
 })

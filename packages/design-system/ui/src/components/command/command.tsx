@@ -32,7 +32,7 @@ const CommandCopy = React.forwardRef<
     <Copy
       {...props}
       ref={ref}
-      className={clx("!text-ui-contrast-fg-secondary ml-auto", className)}
+      className={clx("!text-ui-contrast-fg-secondary ms-auto", className)}
     />
   )
 })

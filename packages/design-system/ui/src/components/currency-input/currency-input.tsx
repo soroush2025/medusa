@@ -112,7 +112,7 @@ const CurrencyInput = React.forwardRef<HTMLInputElement, CurrencyInputProps>(
         )}
       >
         <span
-          className={clx("w-fit min-w-[32px] border-r px-2", {
+          className={clx("w-fit min-w-[32px] border-e px-2", {
             "py-[9px]": size === "base",
             "py-[5px]": size === "small",
           })}
@@ -132,7 +132,7 @@ const CurrencyInput = React.forwardRef<HTMLInputElement, CurrencyInputProps>(
           </Text>
         </span>
         <Primitive
-          className="h-full min-w-0 flex-1 appearance-none bg-transparent text-right outline-none disabled:cursor-not-allowed"
+          className="h-full min-w-0 flex-1 appearance-none bg-transparent text-end outline-none disabled:cursor-not-allowed"
           disabled={disabled}
           onInvalid={onInnerInvalid}
           ref={innerRef}
@@ -140,7 +140,7 @@ const CurrencyInput = React.forwardRef<HTMLInputElement, CurrencyInputProps>(
         />
         <span
           className={clx(
-            "flex w-fit min-w-[32px] items-center justify-center border-l px-2 text-right",
+            "flex w-fit min-w-[32px] items-center justify-center border-s px-2 text-end",
             {
               "py-[9px]": size === "base",
               "py-[5px]": size === "small",

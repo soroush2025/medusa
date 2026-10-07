@@ -66,7 +66,7 @@ const datePickerStyles = (
       {
         "shadow-borders-interactive-with-active": isOpen,
         "shadow-borders-error": isInvalid,
-        "pr-2": !value,
+        "pe-2": !value,
       }
     ),
     variants: {
