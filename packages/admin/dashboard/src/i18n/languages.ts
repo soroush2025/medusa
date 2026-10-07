@@ -193,6 +193,7 @@ export const languages: Language[] = [
     display_name: "فارسی",
     ltr: false,
     date_locale: faIR,
+    intl_locale: "fa-IR-u-ca-persian",
   },
   {
     code: "cs",
