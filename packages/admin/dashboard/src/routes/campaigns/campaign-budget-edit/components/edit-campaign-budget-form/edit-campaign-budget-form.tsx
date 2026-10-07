@@ -81,7 +81,7 @@ export const EditCampaignBudgetForm = ({
                           }
                           currencyCode={campaign.budget?.currency_code ?? ""}
                           {...field}
-                          value={value || undefined}
+                          value={value ?? undefined}
                         />
                       ) : (
                         <Input

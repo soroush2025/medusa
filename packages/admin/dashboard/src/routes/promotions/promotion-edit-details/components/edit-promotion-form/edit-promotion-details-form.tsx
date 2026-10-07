@@ -305,7 +305,7 @@ export const EditPromotionDetailsForm = ({
                               }
                               decimalSeparator="."
                               groupSeparator=","
-                              constrainDecimals
+                              constrainDecimals="scale-and-limit"
                               currencyCode={currencyCode}
                               {...field}
                               value={field.value}

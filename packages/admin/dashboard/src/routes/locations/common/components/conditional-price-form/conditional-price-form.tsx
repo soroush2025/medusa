@@ -170,7 +170,7 @@ const ConditionalConditionItem = ({
                       value: "0",
                       decimalScale: currency.decimal_digits,
                     })}
-                    constrainDecimals
+                    constrainDecimals="scale"
                     currencyCode={currency.code}
                     value={value}
                     onStoredValueChange={({ value: stored }) =>
@@ -204,7 +204,7 @@ const ConditionalConditionItem = ({
                   value: "10",
                   decimalScale: currency.decimal_digits,
                 })}
-                constrainDecimals
+                constrainDecimals="scale"
                 currencyCode={currency.code}
                 value={value}
                 ref={fieldProps.ref}
@@ -233,7 +233,7 @@ const ConditionalConditionItem = ({
                   value: "10",
                   decimalScale: currency.decimal_digits,
                 })}
-                constrainDecimals
+                constrainDecimals="scale"
                 currencyCode={currency.code}
                 value={value}
                 ref={fieldProps.ref}

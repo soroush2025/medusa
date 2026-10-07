@@ -1,4 +1,5 @@
 // @vitest-environment jsdom
+import { CurrencyInput } from "@medusajs/ui"
 import { cleanup, fireEvent, render, screen } from "@testing-library/react"
 import { useState } from "react"
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
@@ -11,16 +12,19 @@ const Harness = ({
   currencyCode,
   initial,
   spy,
+  constrainDecimals,
 }: {
   currencyCode: string
   initial: string
   spy: (next: StoredAmount) => void
+  constrainDecimals?: "scale" | "scale-and-limit"
 }) => {
   const [stored, setStored] = useState(initial)
 
   return (
     <StoredCurrencyInput
       currencyCode={currencyCode}
+      constrainDecimals={constrainDecimals}
       value={stored}
       onStoredValueChange={(next) => {
         spy(next)
@@ -174,5 +178,187 @@ describe("StoredCurrencyInput with the Toman unit on", () => {
     expect(screen.getByText("USD")).toBeTruthy()
     fireEvent.change(getInput(), { target: { value: "15" } })
     expect(spy).toHaveBeenLastCalledWith({ value: "15", float: 15 })
+  })
+})
+
+// Types "1.234" then blurs, and records what the input shows after each step.
+const typeAndBlur = (typed: string) => {
+  fireEvent.focus(getInput())
+  fireEvent.change(getInput(), { target: { value: typed } })
+  const afterTyping = getInput().value
+  fireEvent.blur(getInput())
+  return { afterTyping, afterBlur: getInput().value }
+}
+
+describe("StoredCurrencyInput keeps the decimal handling of each site with the unit off", () => {
+  it('"scale" passes only decimalScale: a third KWD decimal is limited exactly like the plain input', () => {
+    // Baseline: what the site rendered before the wrapper existed.
+    const baseline = render(
+      <CurrencyInput
+        symbol="KD"
+        code="KWD"
+        decimalScale={3}
+        defaultValue=""
+        onValueChange={() => {}}
+      />
+    )
+    const expected = typeAndBlur("1.234")
+    baseline.unmount()
+
+    render(
+      <Harness
+        currencyCode="kwd"
+        initial=""
+        spy={vi.fn()}
+        constrainDecimals="scale"
+      />
+    )
+    const actual = typeAndBlur("1.234")
+
+    expect(actual).toEqual(expected)
+    // decimalsLimit stays at the library default of 2: the third decimal is not typeable.
+    expect(actual.afterTyping).not.toBe("1.234")
+  })
+
+  it('"scale" pads to three decimals on blur', () => {
+    render(
+      <Harness
+        currencyCode="kwd"
+        initial=""
+        spy={vi.fn()}
+        constrainDecimals="scale"
+      />
+    )
+
+    expect(typeAndBlur("1.5").afterBlur).toBe("1.500")
+  })
+
+  it('"scale-and-limit" passes both: a third KWD decimal is typeable', () => {
+    const spy = vi.fn()
+    render(
+      <Harness
+        currencyCode="kwd"
+        initial=""
+        spy={spy}
+        constrainDecimals="scale-and-limit"
+      />
+    )
+
+    expect(typeAndBlur("1.234").afterTyping).toBe("1.234")
+    expect(spy).toHaveBeenLastCalledWith({ value: "1.234", float: 1.234 })
+  })
+
+  it("passes neither prop when the site passed neither", () => {
+    render(<Harness currencyCode="kwd" initial="" spy={vi.fn()} />)
+
+    expect(typeAndBlur("1.5").afterBlur).toBe("1.5")
+  })
+
+  it("keeps decimalsLimit when the Toman unit is active, whichever option the site uses", () => {
+    setDisplayUnitsEnabled(true)
+    const spy = vi.fn()
+    render(
+      <Harness
+        currencyCode="irr"
+        initial=""
+        spy={spy}
+        constrainDecimals="scale"
+      />
+    )
+
+    fireEvent.change(getInput(), { target: { value: "125.55" } })
+    expect(getInput().value).not.toBe("125.55")
+  })
+})
+
+describe("StoredCurrencyInput with an undefined or nullish value", () => {
+  // The edit campaign budget form feeds the input from a field that starts
+  // undefined and writes numbers back.
+  const BudgetHarness = ({
+    spy,
+    toProp,
+  }: {
+    spy: (value: number | null) => void
+    toProp: (value: number | undefined) => number | undefined
+  }) => {
+    const [value, setValue] = useState<number | undefined>(undefined)
+
+    return (
+      <StoredCurrencyInput
+        currencyCode="usd"
+        min={0}
+        value={toProp(value)}
+        onStoredValueChange={({ value: stored }) => {
+          const next = stored ? parseInt(stored) : null
+          spy(next)
+          setValue(next ?? undefined)
+        }}
+      />
+    )
+  }
+
+  // "||" is the expression the site used before; "??" is the one it uses now.
+  it.each([
+    ["value || undefined", (value: number | undefined) => value || undefined],
+    ["value ?? undefined", (value: number | undefined) => value ?? undefined],
+  ])(
+    "keeps a typed 0 displayed and reports 0 with the unit off (%s)",
+    (_name, toProp) => {
+      const spy = vi.fn()
+      render(<BudgetHarness spy={spy} toProp={toProp} />)
+
+      fireEvent.change(getInput(), { target: { value: "0" } })
+
+      expect(spy).toHaveBeenLastCalledWith(0)
+      expect(getInput().value).toBe("0")
+    }
+  )
+
+  it("keeps a typed 0 displayed and reports 0 with the Toman unit on", () => {
+    setDisplayUnitsEnabled(true)
+    const spy = vi.fn()
+    const Toman = () => {
+      const [value, setValue] = useState<number | undefined>(100)
+
+      return (
+        <StoredCurrencyInput
+          currencyCode="irr"
+          min={0}
+          value={value ?? undefined}
+          onStoredValueChange={({ value: stored }) => {
+            const next = stored ? parseInt(stored) : null
+            spy(next)
+            setValue(next ?? undefined)
+          }}
+        />
+      )
+    }
+    render(<Toman />)
+
+    // 100 Rials is 10 Toman. Typing 0 stores 0 Rials and must not be blanked.
+    fireEvent.change(getInput(), { target: { value: "0" } })
+
+    expect(spy).toHaveBeenLastCalledWith(0)
+    expect(getInput().value).toBe("0")
+  })
+
+  it("does not reset the text when a nullish value comes back for an empty field", () => {
+    setDisplayUnitsEnabled(true)
+    const { rerender } = render(
+      <StoredCurrencyInput
+        currencyCode="irr"
+        value={undefined}
+        onStoredValueChange={vi.fn()}
+      />
+    )
+    rerender(
+      <StoredCurrencyInput
+        currencyCode="irr"
+        value={null}
+        onStoredValueChange={vi.fn()}
+      />
+    )
+
+    expect(getInput().value).toBe("")
   })
 })

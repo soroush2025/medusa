@@ -163,7 +163,7 @@ const QuantityConditionItem = ({
                       value: "0",
                       decimalScale: currency.decimal_digits,
                     })}
-                    constrainDecimals
+                    constrainDecimals="scale"
                     currencyCode={currency.code}
                     value={value}
                     onStoredValueChange={({ value: stored }) =>

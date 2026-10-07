@@ -773,7 +773,7 @@ export const CreatePromotionForm = () => {
                                     onStoredValueChange={({ value: stored }) =>
                                       onChange(stored)
                                     }
-                                    constrainDecimals
+                                    constrainDecimals="scale-and-limit"
                                     value={value}
                                     disabled={!currencyCode}
                                   />
