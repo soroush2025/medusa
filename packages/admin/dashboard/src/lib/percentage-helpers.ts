@@ -1,8 +1,23 @@
-const formatter = new Intl.NumberFormat([], {
-  style: "percent",
-  minimumFractionDigits: 2,
-  maximumFractionDigits: 4,
-})
+import { getIntlLocale } from "./format-locale"
+
+const formatters = new Map<string, Intl.NumberFormat>()
+
+const getFormatter = () => {
+  const locale = getIntlLocale()
+  const key = locale ?? ""
+  let formatter = formatters.get(key)
+
+  if (!formatter) {
+    formatter = new Intl.NumberFormat(locale ?? [], {
+      style: "percent",
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 4,
+    })
+    formatters.set(key, formatter)
+  }
+
+  return formatter
+}
 
 /**
  * Formats a number as a percentage
@@ -24,5 +39,5 @@ export const formatPercentage = (
     val = val / 100
   }
 
-  return formatter.format(val)
+  return getFormatter().format(val)
 }
