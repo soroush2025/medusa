@@ -19,10 +19,12 @@ vi.mock("@medusajs/ui", () => ({
   },
 }))
 
+import { setLatinDigitsEnabled } from "../../../lib/format-locale"
 import { I18nProvider } from "../i18n-provider"
 
 afterEach(() => {
   cleanup()
+  window.localStorage.clear()
   providerProps.current = undefined
   document.documentElement.removeAttribute("lang")
   document.documentElement.removeAttribute("dir")
@@ -55,5 +57,17 @@ describe("I18nProvider intl_locale", () => {
     languageMock.current = "ptBR"
     render(<I18nProvider />)
     expect(providerProps.current?.locale).toBe("pt-BR")
+  })
+})
+
+describe("I18nProvider with the Latin digits preference", () => {
+  it("passes the -nu-latn tag so date pickers show Latin digits", () => {
+    languageMock.current = "fa"
+    setLatinDigitsEnabled(true)
+
+    render(<I18nProvider />)
+
+    expect(providerProps.current?.locale).toBe("fa-IR-u-ca-persian-nu-latn")
+    expect(document.documentElement.getAttribute("lang")).toBe("fa")
   })
 })
