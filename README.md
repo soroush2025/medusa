@@ -1,3 +1,9 @@
+# Iran checkout documentation
+
+This local checkout builds the Iranian Medusa 2.21.2 packages. Start with
+[the Iran docs index](docs/README.md) and [remaining work](docs/REMAINING_TASKS.md).
+The upstream Medusa README is retained below.
+
 <p align="center">
   <a href="https://www.medusajs.com">
   <picture>
