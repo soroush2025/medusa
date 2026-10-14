@@ -21,3 +21,10 @@ Before any folder/worktree pruning, repair the Git worktree registration that
 still points to the former `~/00-VP-Projects/medusa-iran-build` path. Retain the
 common checkout at `~/00-VP-Projects/medusa`. Local acceptance is recorded in
 [completion review](../../medusa-iran-backend-phase5/docs/PHASE_5_REVIEW.md).
+
+## Remote/folder follow-up — October 14
+
+[Remote synchronization and folder retention](../../medusa-iran-backend-phase5/docs/REMOTE_BRANCH_STATUS.md)
+records synchronized project heads and the repaired build worktree registration.
+Keep primary folders permanently; temporary Phase 5 worktrees stay until integration
+and handoff. Branch publication does not satisfy external release acceptance.

@@ -16,3 +16,6 @@ Iran runtime without verification and a new backend packaged artifact.
 October 14: local admin browser acceptance in the Phase 5 backend passed; see
 [completion review](../../medusa-iran-backend-phase5/docs/PHASE_5_REVIEW.md).
 Production HTTPS acceptance and shared worktree-path repair remain pending.
+
+The October 14 remote/folder follow-up repaired the old-path Git registration.
+Earlier repair reminders are historical; no worktree/folder was removed.
