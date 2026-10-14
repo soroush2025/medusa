@@ -27,3 +27,7 @@ Its `main` matches local `develop` baseline `f274f4e`; latest upstream-tip sync
 was not performed by this audit. Eleven obsolete local PR branch copies remain.
 Owner cleanup must preserve `iran/main`, `iran/phase-0`, `iran/phase-3` and the
 real upstream fork's active work. No branch was deleted or reset by this audit.
+
+October 14: local admin browser acceptance in the Phase 5 backend passed; see
+[completion review](../../medusa-iran-backend-phase5/docs/PHASE_5_REVIEW.md).
+Production HTTPS acceptance and shared worktree-path repair remain pending.

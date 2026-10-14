@@ -12,3 +12,7 @@ not the deployable backend and not the separate upstream fork. Its source
 Documentation audit branch: `iran/docs-aaa-status-audit`; source branch
 `iran/main` is retained. Do not merge development/proposal branches into the
 Iran runtime without verification and a new backend packaged artifact.
+
+October 14: local admin browser acceptance in the Phase 5 backend passed; see
+[completion review](../../medusa-iran-backend-phase5/docs/PHASE_5_REVIEW.md).
+Production HTTPS acceptance and shared worktree-path repair remain pending.
