@@ -29,12 +29,10 @@ import { useLogout, useMe } from "../../../hooks/api"
 import { queryClient } from "../../../lib/query-client"
 import { useGlobalShortcuts } from "../../../providers/keybind-provider/hooks"
 import { useTheme } from "../../../providers/theme-provider"
-import { useDocumentDirection } from "../../../hooks/use-document-direction"
 
 export const UserMenu = () => {
   const { t } = useTranslation()
   const location = useLocation()
-  const direction = useDocumentDirection()
 
   const [openMenu, setOpenMenu] = useState(false)
   const [openModal, setOpenModal] = useState(false)
@@ -46,7 +44,7 @@ export const UserMenu = () => {
 
   return (
     <div>
-      <DropdownMenu dir={direction} open={openMenu} onOpenChange={setOpenMenu}>
+      <DropdownMenu open={openMenu} onOpenChange={setOpenMenu}>
         <UserBadge />
         <DropdownMenu.Content className="min-w-[var(--radix-dropdown-menu-trigger-width)] max-w-[var(--radix-dropdown-menu-trigger-width)]">
           <UserItem />
@@ -150,14 +148,9 @@ const ThemeToggle = () => {
 
   return (
     <DropdownMenu.SubMenu>
-      <DropdownMenu.SubMenuTrigger
-        dir="ltr"
-        className="rounded-md rtl:rotate-180"
-      >
+      <DropdownMenu.SubMenuTrigger className="rounded-md">
         <CircleHalfSolid className="text-ui-fg-subtle me-2" />
-        <span className="rtl:rotate-180">
-          {t("app.menus.user.theme.label")}
-        </span>
+        <span>{t("app.menus.user.theme.label")}</span>
       </DropdownMenu.SubMenuTrigger>
       <DropdownMenu.SubMenuContent>
         <DropdownMenu.RadioGroup value={theme}>

@@ -105,7 +105,7 @@ const Header = React.forwardRef<
       >
         <ProgressIndicator status={status} />
         {children}
-        <RadixAccordion.Trigger asChild className="ml-auto">
+        <RadixAccordion.Trigger asChild className="ms-auto">
           <IconButton variant="transparent">
             <Plus className="transform transition-transform group-data-[state=open]:rotate-45" />
           </IconButton>
@@ -125,7 +125,7 @@ const Content = React.forwardRef<
       ref={ref}
       className={clx(
         "overflow-hidden",
-        "data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down pl-[88px] pr-6",
+        "data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down ps-[88px] pe-6",
         className
       )}
       {...props}

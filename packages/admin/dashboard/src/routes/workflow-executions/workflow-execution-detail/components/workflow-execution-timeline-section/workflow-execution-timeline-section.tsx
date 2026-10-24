@@ -18,7 +18,6 @@ import {
   STEP_OK_STATES,
   STEP_SKIPPED_STATES,
 } from "../../../constants"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 
 type WorkflowExecutionTimelineSectionProps = {
   execution: HttpTypes.AdminWorkflowExecutionResponse["workflow_execution"]
@@ -88,7 +87,6 @@ const Canvas = ({
 }) => {
   const [zoom, setZoom] = useState<number>(1)
   const [isDragging, setIsDragging] = useState(false)
-  const direction = useDocumentDirection()
   const scale = useMotionValue(defaultState.scale)
   const x = useMotionValue(defaultState.x)
   const y = useMotionValue(defaultState.y)
@@ -158,7 +156,10 @@ const Canvas = ({
   return (
     <div className="h-[400px] w-full">
       <div ref={dragConstraints} className="relative size-full">
-        <div className="relative size-full overflow-hidden object-contain">
+        <div
+          dir="ltr"
+          className="relative size-full overflow-hidden object-contain"
+        >
           <div>
             <motion.div
               onMouseDown={() => setIsDragging(true)}
@@ -186,6 +187,7 @@ const Canvas = ({
               )}
             >
               <main className="size-full">
+                {/* eslint-disable-next-line no-restricted-syntax -- LTR canvas island (dir="ltr" above) */}
                 <div className="absolute left-[1100px] top-[1100px] flex select-none items-start">
                   {Object.entries(clusters).map(([depth, cluster]) => {
                     const next = getNextCluster(clusters, Number(depth))
@@ -206,20 +208,20 @@ const Canvas = ({
             </motion.div>
           </div>
         </div>
-        <div className="bg-ui-bg-base shadow-borders-base text-ui-fg-subtle absolute bottom-4 left-6 flex h-7 items-center overflow-hidden rounded-md">
+        <div className="bg-ui-bg-base shadow-borders-base text-ui-fg-subtle absolute bottom-4 start-6 flex h-7 items-center overflow-hidden rounded-md">
           <div className="flex items-center">
             <button
               onClick={zoomIn}
               type="button"
               disabled={!canZoomIn}
               aria-label="Zoom in"
-              className="disabled:text-ui-fg-disabled transition-fg hover:bg-ui-bg-base-hover active:bg-ui-bg-base-pressed focus-visible:bg-ui-bg-base-pressed border-r p-1 outline-none"
+              className="disabled:text-ui-fg-disabled transition-fg hover:bg-ui-bg-base-hover active:bg-ui-bg-base-pressed focus-visible:bg-ui-bg-base-pressed border-e p-1 outline-none"
             >
               <PlusMini />
             </button>
             <div>
-              <DropdownMenu dir={direction}>
-                <DropdownMenu.Trigger className="disabled:text-ui-fg-disabled transition-fg hover:bg-ui-bg-base-hover active:bg-ui-bg-base-pressed focus-visible:bg-ui-bg-base-pressed flex w-[50px] items-center justify-center border-r p-1 outline-none">
+              <DropdownMenu>
+                <DropdownMenu.Trigger className="disabled:text-ui-fg-disabled transition-fg hover:bg-ui-bg-base-hover active:bg-ui-bg-base-pressed focus-visible:bg-ui-bg-base-pressed flex w-[50px] items-center justify-center border-e p-1 outline-none">
                   <Text
                     as="span"
                     size="xsmall"
@@ -246,7 +248,7 @@ const Canvas = ({
               type="button"
               disabled={!canZoomOut}
               aria-label="Zoom out"
-              className="disabled:text-ui-fg-disabled transition-fg hover:bg-ui-bg-base-hover active:bg-ui-bg-base-pressed focus-visible:bg-ui-bg-base-pressed border-r p-1 outline-none"
+              className="disabled:text-ui-fg-disabled transition-fg hover:bg-ui-bg-base-hover active:bg-ui-bg-base-pressed focus-visible:bg-ui-bg-base-pressed border-e p-1 outline-none"
             >
               <MinusMini />
             </button>
@@ -351,6 +353,7 @@ const Line = ({ next }: { next?: HttpTypes.AdminWorkflowExecutionStep[] }) => {
   }
 
   return (
+    // eslint-disable-next-line no-restricted-syntax -- LTR canvas island: connector geometry is in physical pixels
     <div className="-ml-[5px] -mr-[7px] w-[60px] pr-[7px]">
       <div className="flex min-h-[24px] w-full items-start">
         <div className="flex h-6 w-2.5 items-center justify-center">

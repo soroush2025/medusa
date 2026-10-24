@@ -13,7 +13,6 @@ import { transformNullableFormData } from "../../../../../lib/form-helpers"
 import { KeyboundForm } from "../../../../../components/utilities/keybound-form"
 import { FormExtensionZone } from "../../../../../dashboard-app"
 import { useExtension } from "../../../../../providers/extension-provider"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 
 type EditProductFormProps = {
   product: HttpTypes.AdminProduct
@@ -32,7 +31,6 @@ const EditProductSchema = zod.object({
 export const EditProductForm = ({ product }: EditProductFormProps) => {
   const { t } = useTranslation()
   const { handleSuccess } = useRouteModal()
-  const direction = useDocumentDirection()
   const { getFormFields, getFormConfigs } = useExtension()
   const fields = getFormFields("product", "edit")
   const configs = getFormConfigs("product", "edit")
@@ -98,11 +96,7 @@ export const EditProductForm = ({ product }: EditProductFormProps) => {
                     <Form.Item>
                       <Form.Label>{t("fields.status")}</Form.Label>
                       <Form.Control>
-                        <Select
-                          dir={direction}
-                          {...field}
-                          onValueChange={onChange}
-                        >
+                        <Select {...field} onValueChange={onChange}>
                           <Select.Trigger ref={ref}>
                             <Select.Value />
                           </Select.Trigger>
@@ -168,7 +162,7 @@ export const EditProductForm = ({ product }: EditProductFormProps) => {
                       <Form.Label>{t("fields.handle")}</Form.Label>
                       <Form.Control>
                         <div className="relative">
-                          <div className="absolute inset-y-0 left-0 z-10 flex w-8 items-center justify-center border-r">
+                          <div className="absolute inset-y-0 start-0 z-10 flex w-8 items-center justify-center border-e">
                             <Text
                               className="text-ui-fg-muted"
                               size="small"
@@ -178,7 +172,7 @@ export const EditProductForm = ({ product }: EditProductFormProps) => {
                               /
                             </Text>
                           </div>
-                          <Input {...field} className="pl-10" />
+                          <Input {...field} className="ps-10" />
                         </div>
                       </Form.Control>
                       <Form.ErrorMessage />

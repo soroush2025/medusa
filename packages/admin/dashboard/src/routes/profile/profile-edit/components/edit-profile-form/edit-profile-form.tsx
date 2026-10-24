@@ -6,11 +6,18 @@ import * as zod from "zod"
 
 import { HttpTypes } from "@medusajs/types"
 import { Form } from "../../../../../components/common/form"
+import { SwitchBox } from "../../../../../components/common/switch-box"
 import { RouteDrawer, useRouteModal } from "../../../../../components/modals"
 import { KeyboundForm } from "../../../../../components/utilities/keybound-form"
+import { useStore } from "../../../../../hooks/api/store"
 import { useUpdateUser } from "../../../../../hooks/api/users"
 import { languages } from "../../../../../i18n/languages"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
+import { getCurrencyDisplayUnit } from "../../../../../lib/data/currency-display-units"
+import {
+  isLatinDigitsEnabled,
+  setLatinDigitsEnabled,
+} from "../../../../../lib/format-locale"
+import { useDisplayUnits } from "../../../../../providers/display-unit-provider"
 
 type EditProfileProps = {
   user: HttpTypes.AdminUser
@@ -21,22 +28,42 @@ const EditProfileSchema = zod.object({
   first_name: zod.string().optional(),
   last_name: zod.string().optional(),
   language: zod.string(),
+  display_units: zod.boolean(),
+  latin_digits: zod.boolean(),
   // usage_insights: zod.boolean(),
 })
 
 export const EditProfileForm = ({ user }: EditProfileProps) => {
   const { t, i18n } = useTranslation()
   const { handleSuccess } = useRouteModal()
-  const direction = useDocumentDirection()
+  const { enabled: displayUnitsEnabled, setEnabled: setDisplayUnits } =
+    useDisplayUnits()
+  const { store } = useStore()
+
+  // The preference only matters to stores that sell in a currency with an
+  // alternative display unit (for example IRR with Toman).
+  const hasDisplayUnitCurrency = !!store?.supported_currencies?.some(
+    (currency) => !!getCurrencyDisplayUnit(currency.currency_code)
+  )
+
   const form = useForm<zod.infer<typeof EditProfileSchema>>({
     defaultValues: {
       first_name: user.first_name ?? "",
       last_name: user.last_name ?? "",
       language: i18n.language,
+      display_units: displayUnitsEnabled,
+      latin_digits: isLatinDigitsEnabled(),
       // usage_insights: usageInsights,
     },
     resolver: zodResolver(EditProfileSchema),
   })
+
+  // The toggle is only meaningful for languages that use digits of their own.
+  const selectedLanguage = form.watch("language")
+  const hasOwnDigits = Boolean(
+    languages.find((language) => language.code === selectedLanguage)
+      ?.intl_locale
+  )
 
   const changeLanguage = async (code: string) => {
     await i18n.changeLanguage(code)
@@ -62,10 +89,19 @@ export const EditProfileForm = ({ user }: EditProfileProps) => {
       }
     )
 
+    setLatinDigitsEnabled(values.latin_digits)
+
     await changeLanguage(values.language)
 
     toast.success(t("profile.toast.edit"))
     handleSuccess()
+
+    // The provider remounts its subtree when the preference changes. handleSuccess
+    // navigates in a setTimeout(0), so apply the preference in a later timer, after
+    // the drawer has closed and the route has changed.
+    setTimeout(() => {
+      setDisplayUnits(values.display_units)
+    }, 0)
   })
 
   return (
@@ -112,11 +148,7 @@ export const EditProfileForm = ({ user }: EditProfileProps) => {
                   </div>
                   <div>
                     <Form.Control>
-                      <Select
-                        dir={direction}
-                        {...field}
-                        onValueChange={field.onChange}
-                      >
+                      <Select {...field} onValueChange={field.onChange}>
                         <Select.Trigger ref={ref} className="py-1 text-[13px]">
                           <Select.Value
                             placeholder={t("profile.edit.languagePlaceholder")}
@@ -145,6 +177,22 @@ export const EditProfileForm = ({ user }: EditProfileProps) => {
                 </Form.Item>
               )}
             />
+            {hasOwnDigits && (
+              <SwitchBox
+                control={form.control}
+                name="latin_digits"
+                label={t("profile.fields.latinDigitsLabel")}
+                description={t("profile.edit.latinDigitsHint")}
+              />
+            )}
+            {hasDisplayUnitCurrency && (
+              <SwitchBox
+                control={form.control}
+                name="display_units"
+                label={t("profile.fields.currencyDisplayUnitLabel")}
+                description={t("profile.edit.currencyDisplayUnitHint")}
+              />
+            )}
             {/* TODO: Do we want to implement usage insights in V2? */}
             {/* <Form.Field
               control={form.control}

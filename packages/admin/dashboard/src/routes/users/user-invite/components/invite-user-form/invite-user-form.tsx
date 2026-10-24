@@ -14,7 +14,6 @@ import {
 } from "@medusajs/ui"
 import { createColumnHelper } from "@tanstack/react-table"
 import copy from "copy-to-clipboard"
-import { format } from "date-fns"
 import { useMemo } from "react"
 import { useForm } from "react-hook-form"
 import { Trans, useTranslation } from "react-i18next"
@@ -35,6 +34,7 @@ import {
 import { useRbacAssignableRoles } from "../../../../../hooks/api/rbac-roles"
 import { useUserInviteTableQuery } from "../../../../../hooks/table/query/use-user-invite-table-query"
 import { useDataTable } from "../../../../../hooks/use-data-table"
+import { useDate } from "../../../../../hooks/use-date"
 import { isFetchError } from "../../../../../lib/is-fetch-error"
 import { useFeatureFlag } from "../../../../../providers/feature-flag-provider"
 import { usePermissions } from "../../../../../providers/permissions-provider"
@@ -342,6 +342,7 @@ const columnHelper = createColumnHelper<HttpTypes.AdminInvite>()
 
 const useColumns = ({ isRbacEnabled }: { isRbacEnabled: boolean }) => {
   const { t } = useTranslation()
+  const { getPresetDate } = useDate()
 
   return useMemo(
     () => [
@@ -387,10 +388,10 @@ const useColumns = ({ isRbacEnabled }: { isRbacEnabled: boolean }) => {
             return (
               <Tooltip
                 content={t("users.acceptedOnDate", {
-                  date: format(
-                    new Date(row.original.updated_at),
-                    "dd MMM, yyyy"
-                  ),
+                  date: getPresetDate({
+                    date: row.original.updated_at,
+                    preset: "date",
+                  }),
                 })}
               >
                 <StatusBadge color="green">
@@ -404,10 +405,10 @@ const useColumns = ({ isRbacEnabled }: { isRbacEnabled: boolean }) => {
             return (
               <Tooltip
                 content={t("users.expiredOnDate", {
-                  date: format(
-                    new Date(row.original.expires_at),
-                    "dd MMM, yyyy"
-                  ),
+                  date: getPresetDate({
+                    date: row.original.expires_at,
+                    preset: "date",
+                  }),
                 })}
               >
                 <StatusBadge color="red">
@@ -427,14 +428,14 @@ const useColumns = ({ isRbacEnabled }: { isRbacEnabled: boolean }) => {
                     <span key="untill" className="font-medium" />,
                   ]}
                   values={{
-                    from: format(
-                      new Date(row.original.created_at),
-                      "dd MMM, yyyy"
-                    ),
-                    until: format(
-                      new Date(row.original.expires_at),
-                      "dd MMM, yyyy"
-                    ),
+                    from: getPresetDate({
+                      date: row.original.created_at,
+                      preset: "date",
+                    }),
+                    until: getPresetDate({
+                      date: row.original.expires_at,
+                      preset: "date",
+                    }),
                   }}
                 />
               }
@@ -451,6 +452,6 @@ const useColumns = ({ isRbacEnabled }: { isRbacEnabled: boolean }) => {
         cell: ({ row }) => <InviteActions invite={row.original} />,
       }),
     ],
-    [t, isRbacEnabled]
+    [t, isRbacEnabled, getPresetDate]
   )
 }

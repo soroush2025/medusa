@@ -28,7 +28,6 @@ import {
   CreateShippingOptionSchema,
 } from "./schema"
 import { useFulfillmentProviderOptions } from "../../../../../hooks/api"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 
 enum Tab {
   DETAILS = "details",
@@ -53,7 +52,6 @@ export function CreateShippingOptionsForm({
 
   const { t } = useTranslation()
   const { handleSuccess } = useRouteModal()
-  const direction = useDocumentDirection()
   const form = useForm<CreateShippingOptionSchema>({
     defaultValues: {
       name: "",
@@ -274,13 +272,12 @@ export function CreateShippingOptionsForm({
         }}
       >
         <ProgressTabs
-          dir={direction}
           value={activeTab}
           className="flex h-full flex-col overflow-hidden"
           onValueChange={(tab) => onTabChange(tab as Tab)}
         >
           <RouteFocusModal.Header>
-            <ProgressTabs.List className="border-ui-border-base -my-2 ml-2 min-w-0 flex-1 border-l">
+            <ProgressTabs.List className="border-ui-border-base -my-2 ms-2 min-w-0 flex-1 border-s">
               <ProgressTabs.Trigger
                 value={Tab.DETAILS}
                 status={detailsStatus}

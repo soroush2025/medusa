@@ -25,7 +25,6 @@ import { Form } from "../../common/form"
 import { Skeleton } from "../../common/skeleton"
 import { RouteDrawer, useRouteModal } from "../../modals"
 import { KeyboundForm } from "../../utilities/keybound-form"
-import { useDocumentDirection } from "../../../hooks/use-document-direction"
 
 type MetaDataSubmitHook<TRes> = (
   params: { metadata?: Record<string, any> | null },
@@ -78,7 +77,6 @@ const InnerForm = <TRes,>({
 }: Omit<MetadataFormProps<TRes>, "isPending">) => {
   const { t } = useTranslation()
   const { handleSuccess } = useRouteModal()
-  const direction = useDocumentDirection()
   const hasUneditableRows = getHasUneditableRows(metadata)
 
   const form = useForm<z.infer<typeof MetadataSchema>>({
@@ -149,7 +147,7 @@ const InnerForm = <TRes,>({
       >
         <RouteDrawer.Body className="flex flex-1 flex-col gap-y-8 overflow-y-auto">
           <div className="bg-ui-bg-base shadow-elevation-card-rest grid grid-cols-1 divide-y rounded-lg">
-            <div className="bg-ui-bg-subtle grid grid-cols-2 divide-x rounded-t-lg">
+            <div className="bg-ui-bg-subtle grid grid-cols-2 divide-x rounded-t-lg rtl:divide-x-reverse">
               <div className="txt-compact-small-plus text-ui-fg-subtle px-2 py-1.5">
                 <label id={METADATA_KEY_LABEL_ID}>
                   {t("metadata.edit.labels.key")}
@@ -181,10 +179,13 @@ const InnerForm = <TRes,>({
                 >
                   <div className="group/table relative">
                     <div
-                      className={clx("grid grid-cols-2 divide-x", {
-                        "overflow-hidden rounded-b-lg":
-                          index === fields.length - 1,
-                      })}
+                      className={clx(
+                        "grid grid-cols-2 divide-x rtl:divide-x-reverse",
+                        {
+                          "overflow-hidden rounded-b-lg":
+                            index === fields.length - 1,
+                        }
+                      )}
                     >
                       <Form.Field
                         control={form.control}
@@ -224,7 +225,7 @@ const InnerForm = <TRes,>({
                         }}
                       />
                     </div>
-                    <DropdownMenu dir={direction}>
+                    <DropdownMenu>
                       <DropdownMenu.Trigger
                         className={clx(
                           "invisible absolute inset-y-0 -end-2.5 my-auto group-hover/table:visible data-[state='open']:visible",

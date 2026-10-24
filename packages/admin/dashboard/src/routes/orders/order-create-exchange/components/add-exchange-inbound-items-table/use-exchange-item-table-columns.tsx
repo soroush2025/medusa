@@ -71,7 +71,7 @@ export const useExchangeItemTableColumns = (currencyCode: string) => {
       }),
       columnHelper.accessor("quantity", {
         header: () => (
-          <div className="flex size-full items-center overflow-hidden text-right">
+          <div className="flex size-full items-center overflow-hidden text-end">
             <span className="truncate">{t("fields.quantity")}</span>
           </div>
         ),
@@ -81,7 +81,7 @@ export const useExchangeItemTableColumns = (currencyCode: string) => {
       }),
       columnHelper.accessor("refundable_total", {
         header: () => (
-          <div className="flex size-full items-center justify-end overflow-hidden text-right">
+          <div className="flex size-full items-center justify-end overflow-hidden text-end">
             <span className="truncate">{t("fields.price")}</span>
           </div>
         ),
@@ -91,7 +91,7 @@ export const useExchangeItemTableColumns = (currencyCode: string) => {
           const stylized = getStylizedAmount(amount, currencyCode)
 
           return (
-            <div className="flex size-full items-center justify-end overflow-hidden text-right">
+            <div className="flex size-full items-center justify-end overflow-hidden text-end">
               <span className="truncate">{stylized}</span>
             </div>
           )

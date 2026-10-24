@@ -123,6 +123,11 @@ export type FieldFunction<TData, TFieldValues extends FieldValues> = (
 export type InternalColumnMeta<TData, TFieldValues extends FieldValues> = {
   name: string
   field?: FieldFunction<TData, TFieldValues>
+  /**
+   * The currency of the cells in the column, when they hold a money amount.
+   * Used to copy and paste amounts in the active display unit.
+   */
+  currencyCode?: string
 } & (
   | {
       field: FieldFunction<TData, TFieldValues>
@@ -136,6 +141,7 @@ export type GridCell<TFieldValues extends FieldValues> = {
   field: FieldPath<TFieldValues>
   type: DataGridColumnType
   enabled: boolean
+  currencyCode?: string
 }
 
 export type Grid<TFieldValues extends FieldValues> =

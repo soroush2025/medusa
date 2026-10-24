@@ -1,3 +1,4 @@
+import { getIntlLocale } from "./format-locale"
 import { isEmpty } from "./is-empty"
 
 /**
@@ -9,9 +10,22 @@ import { isEmpty } from "./is-empty"
  */
 const MAX_FRACTION_DIGITS = 4
 
-const quantityFormatter = new Intl.NumberFormat(undefined, {
-  maximumFractionDigits: MAX_FRACTION_DIGITS,
-})
+const quantityFormatters = new Map<string, Intl.NumberFormat>()
+
+const getQuantityFormatter = () => {
+  const locale = getIntlLocale()
+  const key = locale ?? ""
+  let formatter = quantityFormatters.get(key)
+
+  if (!formatter) {
+    formatter = new Intl.NumberFormat(locale, {
+      maximumFractionDigits: MAX_FRACTION_DIGITS,
+    })
+    quantityFormatters.set(key, formatter)
+  }
+
+  return formatter
+}
 
 /**
  * Formats an inventory quantity for display, appending the inventory item's
@@ -38,7 +52,7 @@ export const formatQuantity = (
     return "-"
   }
 
-  const formatted = quantityFormatter.format(quantity!)
+  const formatted = getQuantityFormatter().format(quantity!)
 
   return unitOfMeasure ? `${formatted} ${unitOfMeasure}` : formatted
 }

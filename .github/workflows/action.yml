@@ -86,6 +86,11 @@ jobs:
       - name: Lint Medusa rules
         run: yarn lint:medusa
 
+      # Bans physical-direction Tailwind classes (ml-, left-, text-left, ...)
+      # so RTL languages render correctly. Config: eslint.rtl.cjs.
+      - name: Lint RTL classes
+        run: yarn lint:rtl
+
   admin-bundle:
     needs: setup
     name: Admin Bundle (Vite)

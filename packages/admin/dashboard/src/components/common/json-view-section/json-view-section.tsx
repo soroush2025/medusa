@@ -130,7 +130,7 @@ export const JsonViewSection = ({ data }: JsonViewSectionProps) => {
                   <Primitive.CountInfo
                     render={(_props, { value }) => {
                       return (
-                        <span className="text-ui-contrast-fg-secondary ml-2">
+                        <span className="text-ui-contrast-fg-secondary ms-2">
                           {t("general.items", {
                             count: Object.keys(value as object).length,
                           })}
@@ -139,10 +139,10 @@ export const JsonViewSection = ({ data }: JsonViewSectionProps) => {
                     }}
                   />
                   <Primitive.Arrow>
-                    <TriangleDownMini className="text-ui-contrast-fg-secondary -ml-[0.5px]" />
+                    <TriangleDownMini className="text-ui-contrast-fg-secondary -ms-[0.5px]" />
                   </Primitive.Arrow>
                   <Primitive.Colon>
-                    <span className="mr-1">:</span>
+                    <span className="me-1">:</span>
                   </Primitive.Colon>
                   <Primitive.Copied
                     render={({ style }, { value }) => {

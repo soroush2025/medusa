@@ -1,13 +1,6 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { HttpTypes } from "@medusajs/types"
-import {
-  Button,
-  CurrencyInput,
-  Label,
-  Select,
-  Textarea,
-  toast,
-} from "@medusajs/ui"
+import { Button, Label, Select, Textarea, toast } from "@medusajs/ui"
 import { useEffect, useMemo, useState } from "react"
 import { formatValue } from "react-currency-input-field"
 import { useForm } from "react-hook-form"
@@ -15,6 +8,7 @@ import { useTranslation } from "react-i18next"
 import { useSearchParams } from "react-router-dom"
 import * as zod from "zod"
 import { Form } from "../../../../../components/common/form"
+import { StoredCurrencyInput } from "../../../../../components/inputs/stored-currency-input"
 import { RouteDrawer, useRouteModal } from "../../../../../components/modals"
 import { KeyboundForm } from "../../../../../components/utilities/keybound-form"
 import { useRefundPayment, useRefundReasons } from "../../../../../hooks/api"
@@ -25,7 +19,6 @@ import {
   getLocaleAmount,
 } from "../../../../../lib/money-amount-helpers"
 import { getPaymentsFromOrder } from "../../../../../lib/orders"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 import { formatProvider } from "../../../../../lib/format-provider.ts"
 
 type CreateRefundFormProps = {
@@ -60,7 +53,6 @@ export const CreateRefundForm = ({ order }: CreateRefundFormProps) => {
     [order.currency_code]
   )
 
-  const direction = useDocumentDirection()
   const decimalDigits = getDecimalDigits(order.currency_code)
 
   // Uses toLocaleString to match getStylizedAmount's rounding and keep the button and form in sync.
@@ -137,7 +129,6 @@ export const CreateRefundForm = ({ order }: CreateRefundFormProps) => {
           <div className="flex flex-col gap-y-4">
             {!hasPaymentIdInSearchParams && (
               <Select
-                dir={direction}
                 value={paymentId}
                 onValueChange={(value) => {
                   setPaymentId(value)
@@ -213,23 +204,17 @@ export const CreateRefundForm = ({ order }: CreateRefundFormProps) => {
                     <Form.Label>{t("fields.amount")}</Form.Label>
 
                     <Form.Control>
-                      <CurrencyInput
+                      <StoredCurrencyInput
                         {...field}
                         min={0}
                         placeholder={formatValue({
                           value: "0",
                           decimalScale: currency.decimal_digits,
                         })}
-                        decimalScale={currency.decimal_digits}
-                        symbol={currency.symbol_native}
-                        code={currency.code}
+                        constrainDecimals="scale"
+                        currencyCode={currency.code}
                         value={field.value.value}
-                        onValueChange={(_value, _name, values) =>
-                          onChange({
-                            value: values?.value ?? "",
-                            float: values?.float ?? null,
-                          })
-                        }
+                        onStoredValueChange={onChange}
                         autoFocus
                       />
                     </Form.Control>
@@ -250,7 +235,6 @@ export const CreateRefundForm = ({ order }: CreateRefundFormProps) => {
 
                     <Form.Control>
                       <Select
-                        dir={direction}
                         value={field.value}
                         onValueChange={field.onChange}
                       >

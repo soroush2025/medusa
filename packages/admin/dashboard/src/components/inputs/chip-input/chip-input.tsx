@@ -141,8 +141,8 @@ export const ChipInput = forwardRef<HTMLInputElement, ChipInputProps>(
             <AnimatePresence key={`${v}-${index}`}>
               <Badge
                 size="2xsmall"
-                className={clx("gap-x-0.5 pl-1.5 pr-1.5 max-w-full min-w-0 overflow-hidden", {
-                  "transition-fg pr-1": showRemove,
+                className={clx("gap-x-0.5 ps-1.5 pe-1.5 max-w-full min-w-0 overflow-hidden", {
+                  "transition-fg pe-1": showRemove,
                   "shadow-borders-focus": index === duplicateIndex,
                 })}
                 asChild

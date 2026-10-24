@@ -21,7 +21,6 @@ import {
   PriceListPricesAddProductsIdsFields,
   PriceListPricesAddSchema,
 } from "./schema"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 
 type PriceListPricesAddFormProps = {
   priceList: HttpTypes.AdminPriceList
@@ -55,7 +54,6 @@ export const PriceListPricesAddForm = ({
 
   const { t } = useTranslation()
   const { handleSuccess } = useRouteModal()
-  const direction = useDocumentDirection()
   const form = useForm<PriceListPricesAddSchema>({
     defaultValues: {
       products: {},
@@ -197,7 +195,6 @@ export const PriceListPricesAddForm = ({
   return (
     <RouteFocusModal.Form form={form}>
       <ProgressTabs
-        dir={direction}
         value={tab}
         onValueChange={(tab) => handleChangeTab(tab as Tab)}
         className="flex h-full flex-col overflow-hidden"
@@ -205,7 +202,7 @@ export const PriceListPricesAddForm = ({
         <KeyboundForm onSubmit={handleSubmit} className="flex h-full flex-col">
           <RouteFocusModal.Header>
             <div className="flex w-full items-center justify-between gap-x-4">
-              <div className="-my-2 w-full max-w-[600px] border-l">
+              <div className="-my-2 w-full max-w-[600px] border-s">
                 <ProgressTabs.List className="grid w-full grid-cols-3">
                   <ProgressTabs.Trigger
                     status={tabState.product}

@@ -15,7 +15,7 @@ export const HandleInput: ForwardRefExoticComponent<
 > = forwardRef<ElementRef<typeof Input>, HandleInputProps>((props, ref) => {
   return (
     <div className="relative">
-      <div className="absolute inset-y-0 left-0 z-10 flex w-8 items-center justify-center border-r">
+      <div className="absolute inset-y-0 start-0 z-10 flex w-8 items-center justify-center border-e">
         <Text
           className="text-ui-fg-muted"
           size="small"
@@ -25,7 +25,7 @@ export const HandleInput: ForwardRefExoticComponent<
           /
         </Text>
       </div>
-      <Input ref={ref} {...props} className="pl-10" />
+      <Input ref={ref} {...props} className="ps-10" />
     </div>
   )
 })

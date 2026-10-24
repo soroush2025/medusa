@@ -231,7 +231,7 @@ export const OrderSummarySection = ({
                           id: `#${id.slice(-7)}`,
                           returnType,
                         }),
-                        icon: <ArrowLongRight />,
+                        icon: <ArrowLongRight className="rtl:rotate-180" />,
                         to: `/orders/${order.id}/returns/${r.id}/receive`,
                       }
                     }),
@@ -578,12 +578,12 @@ const Cost = ({
     <Text size="small" leading="compact">
       {label} {tooltip}
     </Text>
-    <div className="text-right">
+    <div className="text-end">
       <Text size="small" leading="compact">
         {secondaryValue}
       </Text>
     </div>
-    <div className="text-right">
+    <div className="text-end">
       <Text size="small" leading="compact">
         {value}
       </Text>
@@ -644,9 +644,7 @@ const CostBreakdown = ({
           >
             <span>{t("orders.summary.shippingSubtotal")}</span>
             <TriangleDownMini
-              style={{
-                transform: `rotate(${isShippingOpen ? 0 : -90}deg)`,
-              }}
+              className={clx({ "-rotate-90 rtl:rotate-90": !isShippingOpen })}
             />
           </div>
         }
@@ -654,7 +652,7 @@ const CostBreakdown = ({
       />
 
       {isShippingOpen && (
-        <div className="flex flex-col gap-1 pl-5">
+        <div className="flex flex-col gap-1 ps-5">
           {(order.shipping_methods || [])
             .sort((m1, m2) =>
               (m1.created_at as string).localeCompare(m2.created_at as string)
@@ -698,21 +696,19 @@ const CostBreakdown = ({
             </span>
             {hasTaxes && (
               <TriangleDownMini
-                style={{
-                  transform: `rotate(${isTaxOpen ? 0 : -90}deg)`,
-                }}
+                className={clx({ "-rotate-90 rtl:rotate-90": !isTaxOpen })}
               />
             )}
           </div>
 
-          <div className="text-right">
+          <div className="text-end">
             <Text size="small" leading="compact">
               {getLocaleAmount(order.original_tax_total, order.currency_code)}
             </Text>
           </div>
         </div>
         {isTaxOpen && (
-          <div className="flex flex-col gap-1 pl-5">
+          <div className="flex flex-col gap-1 ps-5">
             {Object.entries(taxCodes).map(([code, { total, rate }]) => {
               return (
                 <div
@@ -818,9 +814,7 @@ const DiscountAndTotalBreakdown = ({
             <span>{t("orders.summary.discountTotal")}</span>
             {hasDiscount && (
               <TriangleDownMini
-                style={{
-                  transform: `rotate(${isDiscountOpen ? 0 : -90}deg)`,
-                }}
+                className={clx({ "-rotate-90 rtl:rotate-90": !isDiscountOpen })}
               />
             )}
           </div>
@@ -828,7 +822,7 @@ const DiscountAndTotalBreakdown = ({
         value={getLocaleAmount(order.discount_total, order.currency_code)}
       />
       {isDiscountOpen && (
-        <div className="flex flex-col gap-1 pl-5">
+        <div className="flex flex-col gap-1 ps-5">
           {discounts.map(({ type, total, codes }) => {
             return (
               <div
@@ -865,9 +859,9 @@ const DiscountAndTotalBreakdown = ({
                     : t("orders.creditLines.title")}
                 </span>
                 <TriangleDownMini
-                  style={{
-                    transform: `rotate(${isCreditLinesOpen ? 0 : -90}deg)`,
-                  }}
+                  className={clx({
+                    "-rotate-90 rtl:rotate-90": !isCreditLinesOpen,
+                  })}
                 />
               </div>
             }
@@ -877,7 +871,7 @@ const DiscountAndTotalBreakdown = ({
             )}
           />
           {isCreditLinesOpen && (
-            <div className="flex flex-col gap-1 pl-5">
+            <div className="flex flex-col gap-1 ps-5">
               {creditLines.map((creditLine) => {
                 const prettyReference = creditLine.reference
                   ?.split("_")
@@ -957,9 +951,7 @@ const InventoryKitBreakdown = ({ item }: { item: AdminOrderLineItem }) => {
         className="flex cursor-pointer items-center gap-2 border-t border-dashed px-6 py-4"
       >
         <TriangleDownMini
-          style={{
-            transform: `rotate(${isOpen ? 0 : -90}deg)`,
-          }}
+          className={clx({ "-rotate-90 rtl:rotate-90": !isOpen })}
         />
         <span className="text-ui-fg-muted txt-small select-none">
           {t("orders.summary.inventoryKit", { count: inventory.length })}
@@ -1028,7 +1020,7 @@ const ReturnBreakdownWithDamages = ({
 
           {item?.note && (
             <Tooltip content={item.note}>
-              <DocumentText className="text-ui-tag-neutral-icon ml-1 inline" />
+              <DocumentText className="text-ui-tag-neutral-icon ms-1 inline" />
             </Tooltip>
           )}
 
@@ -1046,7 +1038,7 @@ const ReturnBreakdownWithDamages = ({
         <Text size="small" leading="compact" className="text-ui-fg-muted">
           {t(`orders.returns.damagedItemReceived`)}
 
-          <span className="ml-2">
+          <span className="ms-2">
             <ReturnInfoPopover orderReturn={orderReturn} />
           </span>
         </Text>
@@ -1106,7 +1098,7 @@ const ReturnBreakdown = ({
 
             {item?.note && (
               <Tooltip content={item.note}>
-                <DocumentText className="text-ui-tag-neutral-icon ml-1 inline" />
+                <DocumentText className="text-ui-tag-neutral-icon ms-1 inline" />
               </Tooltip>
             )}
 
@@ -1124,7 +1116,7 @@ const ReturnBreakdown = ({
           {orderReturn && isRequested && (
             <Text size="small" leading="compact" className="text-ui-fg-muted">
               {getRelativeDate(orderReturn.created_at)}
-              <span className="ml-2">
+              <span className="ms-2">
                 <ReturnInfoPopover orderReturn={orderReturn} />
               </span>
             </Text>
@@ -1134,7 +1126,7 @@ const ReturnBreakdown = ({
             <Text size="small" leading="compact" className="text-ui-fg-muted">
               {t(`orders.returns.itemReceived`)}
 
-              <span className="ml-2">
+              <span className="ms-2">
                 <ReturnInfoPopover orderReturn={orderReturn} />
               </span>
             </Text>

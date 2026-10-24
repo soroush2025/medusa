@@ -15,7 +15,6 @@ import {
   usePromotionRuleAttributes,
   usePromotionRules,
 } from "../../../../../../hooks/api/promotions"
-import { useDocumentDirection } from "../../../../../../hooks/use-document-direction"
 import { generateRuleAttributes } from "../edit-rules-form/utils"
 import { RuleValueFormField } from "../rule-value-form-field"
 import { requiredProductRule } from "./constants"
@@ -68,7 +67,6 @@ export const RulesFormField = ({
   const initialRulesSet = useRef(false)
 
   const { t } = useTranslation()
-  const direction = useDocumentDirection()
   const formData = form.getValues()
   const { attributes } = usePromotionRuleAttributes(
     ruleType,
@@ -251,7 +249,6 @@ export const RulesFormField = ({
                         <Form.Control>
                           {!disabled ? (
                             <Select
-                              dir={direction}
                               {...fieldProps}
                               onValueChange={onValueChange}
                               disabled={fieldRule.required}
@@ -322,7 +319,6 @@ export const RulesFormField = ({
                           <Form.Control>
                             {!disabled ? (
                               <Select
-                                dir={direction}
                                 {...fieldProps}
                                 disabled={!fieldRule.attribute}
                                 onValueChange={onChange}
@@ -399,7 +395,7 @@ export const RulesFormField = ({
 
             {index < fields.length - 1 && (
               <div className="relative px-6 py-3">
-                <div className="border-ui-border-strong absolute bottom-0 left-[40px] top-0 z-[-1] w-px bg-[linear-gradient(var(--border-strong)_33%,rgba(255,255,255,0)_0%)] bg-[length:1px_3px] bg-repeat-y"></div>
+                <div className="border-ui-border-strong absolute bottom-0 start-[40px] top-0 z-[-1] w-px bg-[linear-gradient(var(--border-strong)_33%,rgba(255,255,255,0)_0%)] bg-[length:1px_3px] bg-repeat-y"></div>
 
                 <Badge size="2xsmall" className=" text-xs">
                   {t("promotions.form.and")}
@@ -431,7 +427,7 @@ export const RulesFormField = ({
           <Button
             type="button"
             variant="transparent"
-            className="text-ui-fg-muted hover:text-ui-fg-subtle ml-2 inline-block"
+            className="text-ui-fg-muted hover:text-ui-fg-subtle ms-2 inline-block"
             onClick={() => {
               const indicesToRemove = fields
                 .map((field: any, index) => {

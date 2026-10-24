@@ -16,7 +16,6 @@ import { Form } from "../../../../../components/common/form"
 import { RouteDrawer, useRouteModal } from "../../../../../components/modals"
 import { KeyboundForm } from "../../../../../components/utilities/keybound-form"
 import { useUpdatePriceList } from "../../../../../hooks/api/price-lists"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 import { PriceListStatus, PriceListType } from "../../../common/constants"
 
 type PriceListEditFormProps = {
@@ -33,7 +32,6 @@ const PriceListEditSchema = z.object({
 export const PriceListEditForm = ({ priceList }: PriceListEditFormProps) => {
   const { t } = useTranslation()
   const { handleSuccess } = useRouteModal()
-  const direction = useDocumentDirection()
   const form = useForm<z.infer<typeof PriceListEditSchema>>({
     defaultValues: {
       type: priceList.type as PriceListType,
@@ -81,11 +79,7 @@ export const PriceListEditForm = ({ priceList }: PriceListEditFormProps) => {
                     <Form.Hint>{t("priceLists.fields.type.hint")}</Form.Hint>
                   </div>
                   <Form.Control>
-                    <RadioGroup
-                      dir={direction}
-                      {...field}
-                      onValueChange={onChange}
-                    >
+                    <RadioGroup {...field} onValueChange={onChange}>
                       <RadioGroup.ChoiceBox
                         value={PriceListType.SALE}
                         label={t("priceLists.fields.type.options.sale.label")}
@@ -135,11 +129,7 @@ export const PriceListEditForm = ({ priceList }: PriceListEditFormProps) => {
                       {t("priceLists.fields.status.label")}
                     </Form.Label>
                     <Form.Control>
-                      <Select
-                        dir={direction}
-                        {...field}
-                        onValueChange={onChange}
-                      >
+                      <Select {...field} onValueChange={onChange}>
                         <Select.Trigger ref={ref}>
                           <Select.Value />
                         </Select.Trigger>

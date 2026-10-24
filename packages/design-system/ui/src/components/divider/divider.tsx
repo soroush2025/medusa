@@ -22,7 +22,7 @@ export const Divider = ({
         {
           "w-full border-t":
             orientation === "horizontal" && variant === "solid",
-          "h-full border-l": orientation === "vertical" && variant === "solid",
+          "h-full border-s": orientation === "vertical" && variant === "solid",
           "bg-transparent": variant === "dashed",
           "h-px w-full bg-[linear-gradient(90deg,var(--border-strong)_1px,transparent_1px)] bg-[length:4px_1px]":
             variant === "dashed" && orientation === "horizontal",

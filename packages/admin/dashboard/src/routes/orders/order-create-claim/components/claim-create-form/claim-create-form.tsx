@@ -9,7 +9,6 @@ import {
 import {
   Alert,
   Button,
-  CurrencyInput,
   Heading,
   IconButton,
   Switch,
@@ -31,6 +30,7 @@ import {
 
 import { Form } from "../../../../../components/common/form"
 import { Combobox } from "../../../../../components/inputs/combobox"
+import { StoredCurrencyInput } from "../../../../../components/inputs/stored-currency-input"
 import { useShippingOptions } from "../../../../../hooks/api/shipping-options"
 import { useStockLocations } from "../../../../../hooks/api/stock-locations"
 import { getStylizedAmount } from "../../../../../lib/money-amount-helpers"
@@ -784,7 +784,7 @@ export const ClaimCreateForm = ({
                       <Text
                         size="small"
                         leading="compact"
-                        className="text-ui-fg-muted ml-1 inline"
+                        className="text-ui-fg-muted ms-1 inline"
                       >
                         ({t("fields.optional")})
                       </Text>
@@ -910,7 +910,7 @@ export const ClaimCreateForm = ({
                   )}
 
                   {isShippingInboundPriceEdit ? (
-                    <CurrencyInput
+                    <StoredCurrencyInput
                       id="js-shipping-inbound-input"
                       onBlur={() => {
                         let actionId
@@ -945,17 +945,8 @@ export const ClaimCreateForm = ({
                         }
                         setIsShippingInboundPriceEdit(false)
                       }}
-                      symbol={
-                        currencies[order.currency_code.toUpperCase()]
-                          .symbol_native
-                      }
-                      code={order.currency_code}
-                      onValueChange={(_value, _name, values) => {
-                        setCustomInboundShippingAmount({
-                          value: values?.value ?? "",
-                          float: values?.float ?? null,
-                        })
-                      }}
+                      currencyCode={order.currency_code}
+                      onStoredValueChange={setCustomInboundShippingAmount}
                       value={customInboundShippingAmount.value}
                       disabled={showInboundItemsPlaceholder}
                     />
@@ -986,7 +977,7 @@ export const ClaimCreateForm = ({
                   )}
 
                   {isShippingOutboundPriceEdit ? (
-                    <CurrencyInput
+                    <StoredCurrencyInput
                       id="js-shipping-outbound-input"
                       onBlur={() => {
                         let actionId
@@ -1018,17 +1009,8 @@ export const ClaimCreateForm = ({
                         }
                         setIsShippingOutboundPriceEdit(false)
                       }}
-                      symbol={
-                        currencies[order.currency_code.toUpperCase()]
-                          .symbol_native
-                      }
-                      code={order.currency_code}
-                      onValueChange={(_value, _name, values) => {
-                        setCustomOutboundShippingAmount({
-                          value: values?.value ?? "",
-                          float: values?.float ?? null,
-                        })
-                      }}
+                      currencyCode={order.currency_code}
+                      onStoredValueChange={setCustomOutboundShippingAmount}
                       value={customOutboundShippingAmount.value}
                       disabled={showOutboundItemsPlaceholder}
                     />
@@ -1053,7 +1035,7 @@ export const ClaimCreateForm = ({
 
             {/* CARRY OVER PROMOTION */}
             {hasPromotions && (
-              <div className="bg-ui-bg-field mt-4 rounded-lg border py-2 pl-2 pr-4">
+              <div className="bg-ui-bg-field mt-4 rounded-lg border py-2 pe-4 ps-2">
                 <Form.Field
                   control={form.control}
                   name="carry_over_promotions"
@@ -1061,7 +1043,7 @@ export const ClaimCreateForm = ({
                     return (
                       <Form.Item>
                         <div className="flex items-center">
-                          <Form.Control className="mr-4 self-start">
+                          <Form.Control className="me-4 self-start">
                             <Switch
                               dir="ltr"
                               className="mt-[2px] rtl:rotate-180"
@@ -1104,7 +1086,7 @@ export const ClaimCreateForm = ({
             )}
 
             {/* SEND NOTIFICATION*/}
-            <div className="bg-ui-bg-field mt-8 rounded-lg border py-2 pl-2 pr-4">
+            <div className="bg-ui-bg-field mt-8 rounded-lg border py-2 pe-4 ps-2">
               <Form.Field
                 control={form.control}
                 name="send_notification"
@@ -1112,7 +1094,7 @@ export const ClaimCreateForm = ({
                   return (
                     <Form.Item>
                       <div className="flex items-center">
-                        <Form.Control className="mr-4 self-start">
+                        <Form.Control className="me-4 self-start">
                           <Switch
                             dir="ltr"
                             className="mt-[2px] rtl:rotate-180"

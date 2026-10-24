@@ -79,7 +79,7 @@ export const useReservationTableColumns = () => {
       }),
       columnHelper.accessor("quantity", {
         header: () => (
-          <div className="flex size-full items-center justify-end overflow-hidden text-right">
+          <div className="flex size-full items-center justify-end overflow-hidden text-end">
             <span className="truncate">{t("fields.quantity")}</span>
           </div>
         ),
@@ -87,7 +87,7 @@ export const useReservationTableColumns = () => {
           const quantity = getValue()
 
           return (
-            <div className="flex size-full items-center justify-end overflow-hidden text-right">
+            <div className="flex size-full items-center justify-end overflow-hidden text-end">
               <span className="truncate">
                 {formatQuantity(
                   quantity,

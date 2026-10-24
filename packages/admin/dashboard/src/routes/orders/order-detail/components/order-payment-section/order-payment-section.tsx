@@ -12,7 +12,6 @@ import {
   Tooltip,
   usePrompt,
 } from "@medusajs/ui"
-import { format } from "date-fns"
 import { Trans, useTranslation } from "react-i18next"
 import { ActionMenu } from "../../../../../components/common/action-menu"
 import DisplayId from "../../../../../components/common/display-id/display-id"
@@ -20,6 +19,7 @@ import {
   useCapturePayment,
   useAuthorizePaymentSession,
 } from "../../../../../hooks/api"
+import { useDate } from "../../../../../hooks/use-date"
 import { formatCurrency } from "../../../../../lib/format-currency"
 import { formatProvider } from "../../../../../lib/format-provider"
 import {
@@ -88,6 +88,7 @@ const Refund = ({
   currencyCode: string
 }) => {
   const { t } = useTranslation()
+  const { getPresetDate } = useDate()
   const RefundReasonBadge = refund?.refund_reason && (
     <Badge
       size="2xsmall"
@@ -100,14 +101,14 @@ const Refund = ({
 
   const RefundNoteIndicator = refund.note && (
     <Tooltip content={refund.note}>
-      <DocumentText className="text-ui-tag-neutral-icon ml-1 inline" />
+      <DocumentText className="text-ui-tag-neutral-icon ms-1 inline" />
     </Tooltip>
   )
 
   return (
     <div className="bg-ui-bg-subtle text-ui-fg-subtle grid grid-cols-[1fr_1fr_1fr_20px] items-center gap-x-4 px-6 py-4">
       <div className="flex flex-row">
-        <div className="self-center pr-3">
+        <div className="self-center pe-3">
           <ArrowDownRightMini className="text-ui-fg-muted" />
         </div>
         <div>
@@ -115,7 +116,7 @@ const Refund = ({
             {t("orders.payment.refund")} {RefundNoteIndicator}
           </Text>
           <Text size="small" leading="compact">
-            {format(new Date(refund.created_at), "dd MMM, yyyy, HH:mm:ss")}
+            {getPresetDate({ date: refund.created_at, preset: "dateTime" })}
           </Text>
         </div>
       </div>
@@ -141,6 +142,7 @@ const Payment = ({
   currencyCode: string
 }) => {
   const { t } = useTranslation()
+  const { getPresetDate } = useDate()
   const prompt = usePrompt()
   const { mutateAsync } = useCapturePayment(order.id, payment.id)
 
@@ -212,10 +214,10 @@ const Payment = ({
             <DisplayId id={payment.id} />
           </Text>
           <Text size="small" leading="compact">
-            {format(
-              new Date(payment.created_at as string),
-              "dd MMM, yyyy, HH:mm:ss"
-            )}
+            {getPresetDate({
+              date: payment.created_at as string,
+              preset: "dateTime",
+            })}
           </Text>
         </div>
         <div className="hidden items-center justify-end sm:flex">
@@ -295,6 +297,7 @@ const CreditLine = ({
   plugins: HttpTypes.AdminPlugin[]
 }) => {
   const { t } = useTranslation()
+  const { getPresetDate } = useDate()
   const loyaltyPlugin = getLoyaltyPlugin(plugins)
 
   if (!loyaltyPlugin) {
@@ -330,10 +333,10 @@ const CreditLine = ({
             )}
           </Text>
           <Text size="small" leading="compact">
-            {format(
-              new Date(creditLine.created_at as unknown as string),
-              "dd MMM, yyyy, HH:mm:ss"
-            )}
+            {getPresetDate({
+              date: creditLine.created_at as unknown as string,
+              preset: "dateTime",
+            })}
           </Text>
         </div>
         <div className="hidden items-center justify-end sm:flex">

@@ -2,13 +2,14 @@ import { ReactNode } from "react"
 import { Control, useWatch } from "react-hook-form"
 import { Trans, useTranslation } from "react-i18next"
 import { z } from "zod"
-import { Badge, CurrencyInput, Divider, Text } from "@medusajs/ui"
+import { Badge, Divider, Text } from "@medusajs/ui"
 import { CubeSolid } from "@medusajs/icons"
 import { i18n } from "../../../../../components/utilities/i18n"
 import { CurrencyInfo } from "../../../../../lib/data/currencies"
 import { PriceListUpdateCurrencyPrice } from "../../schemas"
 import { formatQuantityPrices } from "../../../common/utils"
 import { Form } from "../../../../../components/common/form"
+import { StoredCurrencyInput } from "../../../../../components/inputs/stored-currency-input"
 import { formatValue } from "react-currency-input-field"
 import { TieredPriceInput } from "../../../../../common/components/tiered-price-form/tiered-price-input"
 import { TieredPriceForm } from "../../../../../common/components/tiered-price-form/tiered-price-form"
@@ -156,18 +157,17 @@ const QuantityConditionItem = ({
               </div>
               <div className="flex flex-col gap-y-1">
                 <Form.Control>
-                  <CurrencyInput
+                  <StoredCurrencyInput
                     className="bg-ui-bg-field-component hover:bg-ui-bg-field-component-hover focus-visible:bg-ui-bg-field-component-hover"
                     placeholder={formatValue({
                       value: "0",
                       decimalScale: currency.decimal_digits,
                     })}
-                    decimalScale={currency.decimal_digits}
-                    symbol={currency.symbol_native}
-                    code={currency.code}
+                    constrainDecimals="scale"
+                    currencyCode={currency.code}
                     value={value}
-                    onValueChange={(_value, _name, values) =>
-                      onChange(values?.value ? values?.value : "")
+                    onStoredValueChange={({ value: stored }) =>
+                      onChange(stored)
                     }
                     autoFocus={false}
                     {...props}
@@ -190,7 +190,7 @@ const QuantityConditionItem = ({
             toggleValues={{ active: "", inactive: null }}
             renderInput={({ field: { onChange, ...fieldProps }, value }) => (
               <div className="bg-ui-bg-field-component hover:bg-ui-bg-field-component-hover focus-within:bg-ui-bg-field-component-hover shadow-buttons-neutral placeholder-ui-fg-muted text-ui-fg-base transition-fg focus-within:shadow-borders-interactive-with-active relative flex h-8 w-full items-center gap-x-1 overflow-hidden rounded-md">
-                <span className="flex w-fit min-w-[48px] items-center gap-x-1 border-r px-2 py-[9px]">
+                <span className="flex w-fit min-w-[48px] items-center gap-x-1 border-e px-2 py-[9px]">
                   <Text
                     size="small"
                     leading="compact"
@@ -200,7 +200,7 @@ const QuantityConditionItem = ({
                   </Text>
                 </span>
                 <input
-                  className="h-full min-w-0 flex-1 appearance-none bg-transparent text-right text-sm outline-none disabled:cursor-not-allowed"
+                  className="h-full min-w-0 flex-1 appearance-none bg-transparent text-end text-sm outline-none disabled:cursor-not-allowed"
                   value={value}
                   onChange={(e) => {
                     const val = e.target.value.replace(/\D/g, "")
@@ -215,7 +215,7 @@ const QuantityConditionItem = ({
                   }}
                   {...fieldProps}
                 />
-                <span className="flex w-fit min-w-[32px] items-center justify-center border-l px-2 py-[9px] text-right">
+                <span className="flex w-fit min-w-[32px] items-center justify-center border-s px-2 py-[9px] text-end">
                   <CubeSolid className="text-ui-fg-muted" />
                 </span>
               </div>
@@ -234,7 +234,7 @@ const QuantityConditionItem = ({
             toggleValues={{ active: "", inactive: null }}
             renderInput={({ field: { onChange, ...fieldProps }, value }) => (
               <div className="bg-ui-bg-field-component hover:bg-ui-bg-field-component-hover focus-within:bg-ui-bg-field-component-hover shadow-buttons-neutral placeholder-ui-fg-muted text-ui-fg-base transition-fg focus-within:shadow-borders-interactive-with-active relative flex h-8 w-full items-center gap-x-1 overflow-hidden rounded-md">
-                <span className="flex w-fit min-w-[48px] items-center gap-x-1 border-r px-2 py-[9px]">
+                <span className="flex w-fit min-w-[48px] items-center gap-x-1 border-e px-2 py-[9px]">
                   <Text
                     size="small"
                     leading="compact"
@@ -244,7 +244,7 @@ const QuantityConditionItem = ({
                   </Text>
                 </span>
                 <input
-                  className="h-full min-w-0 flex-1 appearance-none bg-transparent text-right text-sm outline-none disabled:cursor-not-allowed"
+                  className="h-full min-w-0 flex-1 appearance-none bg-transparent text-end text-sm outline-none disabled:cursor-not-allowed"
                   value={value}
                   onChange={(e) => {
                     const val = e.target.value.replace(/\D/g, "")
@@ -259,7 +259,7 @@ const QuantityConditionItem = ({
                   }}
                   {...fieldProps}
                 />
-                <span className="flex w-fit min-w-[32px] items-center justify-center border-l px-2 py-[9px] text-right">
+                <span className="flex w-fit min-w-[32px] items-center justify-center border-s px-2 py-[9px] text-end">
                   <CubeSolid className="text-ui-fg-muted" />
                 </span>
               </div>

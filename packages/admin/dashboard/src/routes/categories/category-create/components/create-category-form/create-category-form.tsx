@@ -14,7 +14,6 @@ import { transformNullableFormData } from "../../../../../lib/form-helpers"
 import { CreateCategoryDetails } from "./create-category-details"
 import { CreateCategoryNesting } from "./create-category-nesting"
 import { CreateCategoryDetailsSchema, CreateCategorySchema } from "./schema"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 
 type CreateCategoryFormProps = {
   parentCategoryId: string | null
@@ -30,7 +29,6 @@ export const CreateCategoryForm = ({
 }: CreateCategoryFormProps) => {
   const { t } = useTranslation()
   const { handleSuccess } = useRouteModal()
-  const direction = useDocumentDirection()
   const [activeTab, setActiveTab] = useState<Tab>(Tab.DETAILS)
   const [validDetails, setValidDetails] = useState(false)
   const [shouldFreeze, setShouldFreeze] = useState(false)
@@ -131,14 +129,13 @@ export const CreateCategoryForm = ({
         className="flex size-full flex-col overflow-hidden"
       >
         <ProgressTabs
-          dir={direction}
           value={activeTab}
           onValueChange={(tab) => handleTabChange(tab as Tab)}
           className="flex size-full flex-col"
         >
           <RouteFocusModal.Header>
             <div className="flex w-full items-center justify-between">
-              <div className="-my-2 w-full max-w-[400px] border-l">
+              <div className="-my-2 w-full max-w-[400px] border-s">
                 <ProgressTabs.List className="grid w-full grid-cols-2">
                   <ProgressTabs.Trigger
                     value={Tab.DETAILS}

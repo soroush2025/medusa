@@ -12,7 +12,6 @@ import {
   Badge,
   Button,
   clx,
-  CurrencyInput,
   Divider,
   Heading,
   Input,
@@ -29,23 +28,19 @@ import { Trans, useTranslation } from "react-i18next"
 import { z } from "zod"
 import { Form } from "../../../../../components/common/form"
 import { DeprecatedPercentageInput } from "../../../../../components/inputs/percentage-input"
+import { StoredCurrencyInput } from "../../../../../components/inputs/stored-currency-input"
 import {
   RouteFocusModal,
   useRouteModal,
 } from "../../../../../components/modals"
 import { KeyboundForm } from "../../../../../components/utilities/keybound-form"
 import { useCreatePromotion } from "../../../../../hooks/api/promotions"
-import {
-  currencies,
-  getCurrencySymbol,
-} from "../../../../../lib/data/currencies"
 import { DEFAULT_CAMPAIGN_VALUES } from "../../../../campaigns/common/constants"
 import { RulesFormField } from "../../../common/edit-rules/components/rules-form-field"
 import { AddCampaignPromotionFields } from "../../../promotion-add-campaign/components/add-campaign-promotion-form"
 import { Tab } from "./constants"
 import { CreatePromotionSchema } from "./form-schema"
 import { templates } from "./templates"
-import { useDocumentDirection } from "../../../../../hooks/use-document-direction"
 
 const defaultValues = {
   campaign_id: undefined,
@@ -81,7 +76,6 @@ export const CreatePromotionForm = () => {
 
   const { t } = useTranslation()
   const { handleSuccess } = useRouteModal()
-  const direction = useDocumentDirection()
   const form = useForm<z.infer<typeof CreatePromotionSchema>>({
     defaultValues,
     resolver: zodResolver(CreatePromotionSchema),
@@ -367,14 +361,13 @@ export const CreatePromotionForm = () => {
     <RouteFocusModal.Form form={form}>
       <KeyboundForm className="flex h-full flex-col" onSubmit={handleSubmit}>
         <ProgressTabs
-          dir={direction}
           value={tab}
           onValueChange={(tab) => handleTabChange(tab as Tab)}
           className="flex h-full flex-col overflow-hidden"
         >
           <RouteFocusModal.Header>
             <div className="flex w-full items-center justify-between gap-x-4">
-              <div className="-my-2 w-full max-w-[600px] border-l">
+              <div className="-my-2 w-full max-w-[600px] border-s">
                 <ProgressTabs.List className="grid w-full grid-cols-3">
                   <ProgressTabs.Trigger
                     className="w-full"
@@ -421,7 +414,6 @@ export const CreatePromotionForm = () => {
 
                           <Form.Control>
                             <RadioGroup
-                              dir={direction}
                               key={"template_id"}
                               className="flex-col gap-y-3"
                               {...field}
@@ -459,7 +451,7 @@ export const CreatePromotionForm = () => {
 
                     {currentTemplate?.title && (
                       <Badge
-                        className="ml-2 align-middle"
+                        className="ms-2 align-middle"
                         color="grey"
                         size="2xsmall"
                         rounded="full"
@@ -491,7 +483,6 @@ export const CreatePromotionForm = () => {
 
                           <Form.Control>
                             <RadioGroup
-                              dir={direction}
                               className="flex gap-y-3"
                               {...field}
                               value={field.value}
@@ -536,7 +527,6 @@ export const CreatePromotionForm = () => {
 
                           <Form.Control>
                             <RadioGroup
-                              dir={direction}
                               className="flex gap-y-3"
                               {...field}
                               value={field.value}
@@ -624,7 +614,7 @@ export const CreatePromotionForm = () => {
                                       )}
                                     </Form.Hint>
                                   </div>
-                                  <Form.Control className="mr-2 self-center">
+                                  <Form.Control className="me-2 self-center">
                                     <Switch
                                       dir="ltr"
                                       className="mt-[2px] rtl:rotate-180"
@@ -655,7 +645,6 @@ export const CreatePromotionForm = () => {
                             </Form.Label>
                             <Form.Control>
                               <RadioGroup
-                                dir={direction}
                                 className="flex gap-y-3"
                                 {...field}
                                 onValueChange={field.onChange}
@@ -708,7 +697,6 @@ export const CreatePromotionForm = () => {
                               </Form.Label>
                               <Form.Control>
                                 <RadioGroup
-                                  dir={direction}
                                   className="flex gap-y-3"
                                   {...field}
                                   onValueChange={field.onChange}
@@ -756,9 +744,6 @@ export const CreatePromotionForm = () => {
                           const currencyCode =
                             form.getValues().application_method.currency_code
 
-                          const currencyInfo =
-                            currencies[currencyCode?.toUpperCase() || "USD"]
-
                           return (
                             <Form.Item className="basis-1/2">
                               <Form.Label
@@ -773,31 +758,21 @@ export const CreatePromotionForm = () => {
 
                               <Form.Control>
                                 {isFixedValueType ? (
-                                  <CurrencyInput
+                                  <StoredCurrencyInput
                                     {...field}
                                     min={0}
-                                    code={currencyCode || "USD"}
-                                    onValueChange={(_value, _name, values) =>
-                                      onChange(values?.value)
+                                    currencyCode={currencyCode || "USD"}
+                                    onStoredValueChange={({ value: stored }) =>
+                                      onChange(stored)
                                     }
-                                    decimalScale={
-                                      currencyInfo?.decimal_digits ?? 2
-                                    }
-                                    decimalsLimit={
-                                      currencyInfo?.decimal_digits ?? 2
-                                    }
-                                    symbol={
-                                      currencyCode
-                                        ? getCurrencySymbol(currencyCode)
-                                        : "$"
-                                    }
+                                    constrainDecimals="scale-and-limit"
                                     value={value}
                                     disabled={!currencyCode}
                                   />
                                 ) : (
                                   <DeprecatedPercentageInput
                                     key="amount"
-                                    className="text-right"
+                                    className="text-end"
                                     min={0}
                                     max={100}
                                     {...field}
@@ -905,7 +880,6 @@ export const CreatePromotionForm = () => {
 
                               <Form.Control>
                                 <RadioGroup
-                                  dir={direction}
                                   className="flex gap-y-3"
                                   {...field}
                                   onValueChange={field.onChange}

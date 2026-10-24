@@ -5,7 +5,6 @@ import {
 } from "@medusajs/icons"
 import { HttpTypes } from "@medusajs/types"
 import { clx, Drawer, Heading, IconButton, Text } from "@medusajs/ui"
-import { formatDistance } from "date-fns"
 import { TFunction } from "i18next"
 import { useEffect, useState } from "react"
 import { useTranslation } from "react-i18next"
@@ -14,6 +13,7 @@ import {
   useMe,
   useNotifications,
 } from "../../../hooks/api"
+import { useDate } from "../../../hooks/use-date"
 import { sdk } from "../../../lib/client"
 import { FilePreview } from "../../common/file-preview"
 import { InfiniteList } from "../../common/infinite-list"
@@ -129,6 +129,7 @@ const Notification = ({
   notification: HttpTypes.AdminNotification
   unread?: boolean
 }) => {
+  const { getRelativeDate } = useDate()
   const data = notification.data as unknown as NotificationData | undefined
 
   // We need at least the title to render a notification in the feed
@@ -158,9 +159,7 @@ const Notification = ({
                   leading="compact"
                   weight="plus"
                 >
-                  {formatDistance(notification.created_at, new Date(), {
-                    addSuffix: true,
-                  })}
+                  {getRelativeDate(notification.created_at)}
                 </Text>
                 {unread && (
                   <div

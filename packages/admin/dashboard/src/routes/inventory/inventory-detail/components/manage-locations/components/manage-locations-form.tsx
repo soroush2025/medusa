@@ -87,7 +87,7 @@ export const ManageLocationsForm = ({
     <div className="flex flex-1 flex-col overflow-hidden">
       <RouteDrawer.Body className="flex flex-1 flex-col gap-y-4 overflow-auto">
         <div className="text-ui-fg-subtle shadow-elevation-card-rest grid grid-rows-2 divide-y rounded-lg border">
-          <div className="grid grid-cols-2 divide-x">
+          <div className="grid grid-cols-2 divide-x rtl:divide-x-reverse">
             <Text className="px-2 py-1.5" size="small" leading="compact">
               {t("fields.title")}
             </Text>
@@ -95,7 +95,7 @@ export const ManageLocationsForm = ({
               {item.title ?? "-"}
             </Text>
           </div>
-          <div className="grid grid-cols-2 divide-x">
+          <div className="grid grid-cols-2 divide-x rtl:divide-x-reverse">
             <Text className="px-2 py-1.5" size="small" leading="compact">
               {t("fields.sku")}
             </Text>
