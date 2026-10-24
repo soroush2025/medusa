@@ -17,10 +17,11 @@ merged, with `--no-ff`, `iran/docs-aaa-status-audit` (which contains `iran/main`
 - Repository: `~/00-VP-Projects/medusa`, branch **`develop`**. `develop` is a local
   integration branch with no upstream; it no longer tracks `origin/develop`
   (`medusajs/medusa`). Nothing was pushed.
-- `~/00-VP-Projects/medusa-iran-build` is now a symlink to `~/00-VP-Projects/medusa`.
-  The separate worktree, whose Git registration pointed at the former `aaa` path,
-  was removed after confirming it was identical to `iran/docs-aaa-status-audit`
-  with no untracked files. Only ignored dependencies/build output were discarded.
+- `~/00-VP-Projects/medusa-iran-build` no longer exists. It was a linked worktree with
+  a stale registration pointing at the former `aaa` path; it was verified identical to
+  `iran/docs-aaa-status-audit` with no untracked files, then removed (only ignored
+  dependencies/build output were discarded). A temporary compatibility symlink was
+  removed too, and path references in the backend docs now point at `~/00-VP-Projects/medusa`.
 - All branches above are retained and are ancestors of `develop`, except as noted below.
 
 ## Conflict decisions

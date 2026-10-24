@@ -24,7 +24,7 @@ See [build status](IRAN_BUILD_STATUS.md) and backend `docs/upstream/README.md`
 for source and remote evidence. No upstream PR/comment was posted in this audit.
 
 Folder cleanup is done: the stale build worktree was removed and
-`~/00-VP-Projects/medusa-iran-build` is a symlink to the common checkout at
+`~/00-VP-Projects/medusa-iran-build` was removed; use the common checkout at
 `~/00-VP-Projects/medusa`. Local acceptance is recorded in
 [completion review](../../medusa-iran-backend-phase5/docs/PHASE_5_REVIEW.md).
 
