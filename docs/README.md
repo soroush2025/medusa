@@ -1,5 +1,9 @@
 # Iran Medusa build documentation
 
+**Current branch: `develop`** (2026-10-24) combines Phase 0/3, the docs audit and all
+proposal branches. See [develop status](DEVELOP_STATUS.md). The text below is the
+October 10/14 history.
+
 Reviewed 2026-10-10. This folder is the Medusa 2.21.2 Iran source checkout,
 not the deployable backend and not the separate upstream fork. Its source
 `iran/main` and retained `iran/phase-3` both resolve to `b3fbb57cc3`.
