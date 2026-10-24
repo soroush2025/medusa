@@ -1,7 +1,9 @@
 # Iran Medusa build remaining work
 
-Updated 2026-10-24: work happens on `develop` ([status](DEVELOP_STATUS.md)). It already
-contains every item the first bullets call integrated.
+Updated 2026-10-24: work happens on `iran/local-development` ([status](DEVELOP_STATUS.md));
+`develop` is now an upstream copy. The integration branch already contains every item the
+first bullets call integrated. Where a bullet below says `develop`, read
+`iran/local-development`.
 
 Reviewed 2026-10-14; remote statements retain their October 10 audit date. Scoped from the backend master task list. Phase 0/3 source
 is integrated; this is not a list of unimplemented Phase 5 storefront features.
@@ -11,9 +13,9 @@ is integrated; this is not a list of unimplemented Phase 5 storefront features.
 - [ ] Follow approved/open upstream PRs #17196 and #17198. #17197 and #17199 are merged; avoid treating them as pending PR submissions.
 - [ ] Confirm scope/owner approval for larger C/E/G contributions; follow C→B→D and E→F, then recreate 3.7 from its own commits after dependencies merge.
 - [ ] Remove the eleven local proposal branch copies only after the upstream PRs merge; all but the moved seed tip are now merged into `develop`. Retained Iran phase branches must stay.
-- [ ] Rebuild `@medusajs/ui` (stale `dist`) and rerun the dashboard suite; two `i18n-provider-direction` specs fail only because of that stale build.
+- [x] Rebuild `@medusajs/ui` (stale `dist`) and rerun the dashboard suite. Done 2026-10-24: 49 files, 416/416 tests pass.
 - [ ] Decide whether to rebase `develop` onto current upstream `develop` (138 commits newer than `f274f4e`); `feat/translation-seed-fa-ir-locale` already merged upstream into itself (`3ee02703ee`).
-- [ ] Publish `develop` to the Iran remote (`soroush2025/medusa`) when approved; nothing was pushed.
+- [x] Publish the integration branch to the Iran remote: `iran/local-development` was pushed to `soroush2025/medusa` on 2026-10-24.
 - [ ] Wire codemod checks into CI and explain that the Medusa lint job also runs `lint:rtl`.
 - [ ] Deferred: physical tooltip `side="right"`, unmirrored `ArrowDownRightMini`, literal Persian/LRM test regexes and locale-dependent amount assertions.
 - [ ] For future source changes: run affected dashboard/UI tests/typecheck and RTL lint, create package changesets, rebuild/pack distinct artifacts and update backend vendor/lockfile provenance before integration.
