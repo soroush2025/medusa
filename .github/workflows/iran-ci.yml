@@ -38,8 +38,8 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Build @medusajs/ui
-        run: yarn turbo run build --filter=@medusajs/ui
+      - name: Build @medusajs/ui and @medusajs/eslint-plugin
+        run: yarn turbo run build --filter=@medusajs/ui --filter=@medusajs/eslint-plugin
 
       - name: Lint RTL
         run: yarn lint:rtl
