@@ -19,16 +19,27 @@ merged, with `--no-ff`, `iran/docs-aaa-status-audit` (which contains `iran/main`
 
 ## Where to work
 
-- Repository: `~/00-VP-Projects/aaa/medusa`, branch **`iran/local-development`**. It
+- Repository: `~/00-VP-Projects/03-medusa/medusa`, branch **`iran/local-development`**. It
   tracks `soroush/iran/local-development` (`soroush2025/medusa`) and was pushed
   2026-10-24 (`3f828d27cd..bcf3abadd9`, fast-forward).
 - `~/00-VP-Projects/medusa-iran-build` no longer exists. It was a linked worktree with
-  a stale registration pointing at the former `aaa` path; it was verified identical to
+  a stale registration pointing at the old workspace path; it was verified identical to
   `iran/docs-aaa-status-audit` with no untracked files, then removed (only ignored
   dependencies/build output were discarded). A temporary compatibility symlink was
-  removed too, and path references in the backend docs now point at `~/00-VP-Projects/aaa/medusa`.
+  removed too, and path references in the backend docs now point at `~/00-VP-Projects/03-medusa/medusa`.
 - All branches above are retained and are ancestors of `iran/local-development`,
   except as noted below.
+
+## Local runtime
+
+An isolated local dev runtime for this workspace lives in `../local-check`
+(relative to the repository root) — see [HANDOFF.md](../../local-check/HANDOFF.md).
+It serves the backend/admin at http://localhost:19000 (admin UI at `/app`) and the
+storefront at http://localhost:18000/ir, with PostgreSQL on 15438, Redis on 16383
+and the integration PostgreSQL on 15439. Control it with
+`../local-check/bin/start|status|stop|logs backend|logs storefront|verify all`.
+`stop` keeps the database; never run `docker compose down -v` or a docker prune
+against it.
 
 ## Branch and remote roles
 
