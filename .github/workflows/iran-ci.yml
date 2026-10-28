@@ -1,0 +1,66 @@
+name: Iran CI
+
+on:
+  push:
+    branches:
+      - "iran/**"
+  pull_request:
+    branches:
+      - "iran/**"
+  workflow_dispatch:
+
+concurrency:
+  group: iran-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  rtl-dashboard-ui:
+    name: Lint, typecheck and test
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    # TURBO_TOKEN / TURBO_TEAM are intentionally unset: no remote cache, no secrets.
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Enable corepack
+        run: corepack enable
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install
+
+      # Dashboard typecheck/tests and lint:rtl need the built output of the workspace packages
+      # they import (@medusajs/types, admin-shared, deps, ui) and of the ESLint plugin.
+      - name: Build dashboard dependencies and the ESLint plugin
+        run: yarn turbo run build --filter='@medusajs/dashboard^...' --filter=@medusajs/eslint-plugin
+
+      - name: Lint RTL
+        run: yarn lint:rtl
+
+      - name: Typecheck dashboard
+        working-directory: packages/admin/dashboard
+        run: yarn typecheck
+
+      - name: Test dashboard
+        working-directory: packages/admin/dashboard
+        run: yarn test
+
+      - name: Test ui
+        working-directory: packages/design-system/ui
+        run: yarn test
+
+      - name: Test ui-preset
+        working-directory: packages/design-system/ui-preset
+        run: yarn test
+
+      - name: RTL node tests
+        run: node --test scripts/rtl/__tests__/*.test.mjs
