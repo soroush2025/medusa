@@ -38,8 +38,10 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Build @medusajs/ui and @medusajs/eslint-plugin
-        run: yarn turbo run build --filter=@medusajs/ui --filter=@medusajs/eslint-plugin
+      # Dashboard typecheck/tests and lint:rtl need the built output of the workspace packages
+      # they import (@medusajs/types, admin-shared, deps, ui) and of the ESLint plugin.
+      - name: Build dashboard dependencies and the ESLint plugin
+        run: yarn turbo run build --filter='@medusajs/dashboard^...' --filter=@medusajs/eslint-plugin
 
       - name: Lint RTL
         run: yarn lint:rtl
