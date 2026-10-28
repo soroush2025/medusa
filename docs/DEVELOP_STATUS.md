@@ -78,3 +78,18 @@ is a separate, deliberate rebase of the whole build.
 
 See [REMAINING_TASKS.md](REMAINING_TASKS.md). Rebuild `@medusajs/ui` and rerun the
 dashboard suite first; then pack new artifacts before the backend consumes `develop`.
+
+## Baseline 2026-10-25
+
+Branch: `iran/local-development` (baseline recorded on `chore/G1.4-baseline`). Node v24.21.0, yarn 3.2.1 via corepack. Measurement only.
+
+| command | result | counts | notes |
+|---|---|---|---|
+| `corepack yarn install` | skipped | — | node_modules already present (measurement only) |
+| `corepack yarn turbo run build --filter=@medusajs/ui` | pass | 4 tasks (0 cached) | exit 0; Time 1m39.109s |
+| dashboard: `corepack yarn typecheck` | pass | — | exit 0 |
+| dashboard: `corepack yarn test` | pass | Test Files 49 passed (49); Tests 416 passed (416) | exit 0; Duration 12.74s |
+| design-system/ui: `corepack yarn test` | pass | Test Files 19 passed (19); Tests 52 passed (52) | exit 0; Duration 5.47s |
+| design-system/ui-preset: `corepack yarn test` | pass | tests 6, pass 6, fail 0 (1 suite) | exit 0; node:test runner; MODULE_TYPELESS_PACKAGE_JSON warnings (no `"type": "module"`) |
+| root: `corepack yarn lint:rtl` | pass | 0 errors, 0 warnings | exit 0; no output |
+| root: `node --test scripts/rtl/__tests__/*.test.mjs` | pass | fail 0 | exit 0; the directory form `node --test scripts/rtl/__tests__/` fails on Node 24 (`Cannot find module`), use the glob |
