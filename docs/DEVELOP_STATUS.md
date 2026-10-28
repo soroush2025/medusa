@@ -39,7 +39,8 @@ storefront at http://localhost:18000/ir, with PostgreSQL on 15438, Redis on 1638
 and the integration PostgreSQL on 15439. Control it with
 `../local-check/bin/start|status|stop|logs backend|logs storefront|verify all`.
 `stop` keeps the database; never run `docker compose down -v` or a docker prune
-against it.
+against it. Medusa checks are run with `../local-check/bin/verify medusa`; they
+need no containers.
 
 ## Branch and remote roles
 
