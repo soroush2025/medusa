@@ -1,0 +1,287 @@
+{
+  "communities": {
+    "0": [
+      "layer_analytics_module::package",
+      "layer_analytics_module::package_author",
+      "layer_analytics_module::package_bugs",
+      "layer_analytics_module::package_bugs_url",
+      "layer_analytics_module::package_description",
+      "layer_analytics_module::package_devdependencies",
+      "layer_analytics_module::package_devdependencies_medusajs_framework",
+      "layer_analytics_module::package_devdependencies_medusajs_test_utils",
+      "layer_analytics_module::package_engines",
+      "layer_analytics_module::package_engines_node",
+      "layer_analytics_module::package_files",
+      "layer_analytics_module::package_license",
+      "layer_analytics_module::package_main",
+      "layer_analytics_module::package_name",
+      "layer_analytics_module::package_peerdependencies",
+      "layer_analytics_module::package_peerdependencies_medusajs_framework",
+      "layer_analytics_module::package_publishconfig",
+      "layer_analytics_module::package_publishconfig_access",
+      "layer_analytics_module::package_repository",
+      "layer_analytics_module::package_repository_directory",
+      "layer_analytics_module::package_repository_type",
+      "layer_analytics_module::package_repository_url",
+      "layer_analytics_module::package_types",
+      "layer_analytics_module::package_version",
+      "layer_analytics_module::ref_medusajs_framework",
+      "layer_analytics_module::ref_medusajs_test_utils"
+    ],
+    "1": [
+      "ext_core_framework_dist_utils_index_js",
+      "ext_medusa_test_utils_src_index_ts",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_provideridentifyanalyticseventdto",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_providertrackanalyticseventdto",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_utils_index_abstractanalyticsproviderservice",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_utils_index_module",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_utils_index_modules",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_types_src_index_ianalyticsmoduleservice",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_medusa_test_utils_src_index_moduleintegrationtestrunner",
+      "layer_analytics_module::integration_tests_fixtures_providers_default_provider",
+      "layer_analytics_module::integration_tests_fixtures_providers_default_provider_analyticsproviderservicefixtures",
+      "layer_analytics_module::integration_tests_fixtures_providers_default_provider_analyticsproviderservicefixtures_identify",
+      "layer_analytics_module::integration_tests_fixtures_providers_default_provider_analyticsproviderservicefixtures_shutdown",
+      "layer_analytics_module::integration_tests_fixtures_providers_default_provider_analyticsproviderservicefixtures_track",
+      "layer_analytics_module::integration_tests_fixtures_providers_default_provider_services",
+      "layer_analytics_module::integration_tests_fixtures_providers_index",
+      "layer_analytics_module::integration_tests_tests_module_spec",
+      "layer_analytics_module::integration_tests_tests_module_spec_moduleoptions",
+      "layer_analytics_module::src_index",
+      "ref_path"
+    ],
+    "2": [
+      "ext_core_types_src_index_ts",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_utils_index_medusaerror",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_types_src_index_constructor",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_types_src_index_ianalyticsprovider",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_types_src_index_identifyanalyticseventdto",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_types_src_index_provideridentifyanalyticseventdto",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_types_src_index_providertrackanalyticseventdto",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_types_src_index_trackanalyticseventdto",
+      "layer_analytics_module::src_services_analytics_service",
+      "layer_analytics_module::src_services_analytics_service_injecteddependencies",
+      "layer_analytics_module::src_services_provider_service",
+      "layer_analytics_module::src_services_provider_service_analyticsprovideridentifierregistrationname",
+      "layer_analytics_module::src_services_provider_service_analyticsproviderregistrationprefix",
+      "layer_analytics_module::src_services_provider_service_injecteddependencies"
+    ],
+    "3": [
+      "ext_core_framework_dist_deps_awilix_js",
+      "ext_core_framework_dist_modules_sdk_index_js",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_deps_awilix_asfunction",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_deps_awilix_asvalue",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_deps_awilix_lifetime",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_modules_sdk_index_moduleproviderloader",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_loaderoptions",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_moduleprovider",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_modulessdktypes",
+      "layer_analytics_module::src_loaders_providers",
+      "layer_analytics_module::src_loaders_providers_registrationfn"
+    ],
+    "4": [
+      "layer_analytics_module::src_services_analytics_service_analyticsservice",
+      "layer_analytics_module::src_services_analytics_service_analyticsservice_constructor",
+      "layer_analytics_module::src_services_analytics_service_analyticsservice_getprovider",
+      "layer_analytics_module::src_services_analytics_service_analyticsservice_identify",
+      "layer_analytics_module::src_services_analytics_service_analyticsservice_track",
+      "layer_analytics_module::src_services_provider_service_analyticsproviderservice",
+      "layer_analytics_module::src_services_provider_service_analyticsproviderservice_constructor",
+      "layer_analytics_module::src_services_provider_service_analyticsproviderservice_getregistrationidentifier",
+      "layer_analytics_module::src_services_provider_service_analyticsproviderservice_identify",
+      "layer_analytics_module::src_services_provider_service_analyticsproviderservice_shutdown",
+      "layer_analytics_module::src_services_provider_service_analyticsproviderservice_track",
+      "layer_types_analytics::provider_ianalyticsprovider",
+      "layer_types_analytics::provider_ianalyticsprovider_identify",
+      "layer_types_analytics::provider_ianalyticsprovider_shutdown",
+      "layer_types_analytics::provider_ianalyticsprovider_track"
+    ],
+    "5": [
+      "ext_core_framework_dist_types_index_js",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_moduleproviderexports",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_moduleserviceinitializeoptions",
+      "layer_analytics_module::src_types_index",
+      "layer_analytics_module::src_types_index_analyticsmoduleoptions",
+      "layer_analytics_module::src_types_index_medusajs_types",
+      "layer_analytics_module::src_types_index_moduleoptions"
+    ],
+    "6": [
+      "layer_analytics_module::package_scripts",
+      "layer_analytics_module::package_scripts_build",
+      "layer_analytics_module::package_scripts_resolve_aliases",
+      "layer_analytics_module::package_scripts_test",
+      "layer_analytics_module::package_scripts_test_integration",
+      "layer_analytics_module::package_scripts_watch",
+      "layer_analytics_module::package_scripts_watch_test"
+    ],
+    "7": [
+      "layer_analytics_module::ref_tsconfig_base_json",
+      "layer_analytics_module::tsconfig",
+      "layer_analytics_module::tsconfig_compileroptions",
+      "layer_analytics_module::tsconfig_compileroptions_paths",
+      "layer_analytics_module::tsconfig_extends",
+      "layer_analytics_module::tsconfig_paths_services",
+      "layer_analytics_module::tsconfig_paths_types"
+    ],
+    "9": [
+      "ext_define_jest_config_js",
+      "layer_analytics_module::jest_config",
+      "layer_analytics_module::jest_config_definejestconfig"
+    ],
+    "11": [
+      "ext_modules_sdk_index_ts",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_types_src_modules_sdk_index_imoduleservice",
+      "layer_types_analytics::index",
+      "layer_types_analytics::mutations",
+      "layer_types_analytics::mutations_identifyactordto",
+      "layer_types_analytics::mutations_identifyanalyticseventdto",
+      "layer_types_analytics::mutations_identifygroupdto",
+      "layer_types_analytics::mutations_trackanalyticseventdto",
+      "layer_types_analytics::provider",
+      "layer_types_analytics::provider_provideridentifyanalyticseventdto",
+      "layer_types_analytics::provider_providertrackanalyticseventdto",
+      "layer_types_analytics::providers_index",
+      "layer_types_analytics::providers_local",
+      "layer_types_analytics::providers_local_localanalyticsserviceoptions",
+      "layer_types_analytics::providers_posthog",
+      "layer_types_analytics::providers_posthog_posthoganalyticsserviceoptions",
+      "layer_types_analytics::service",
+      "layer_types_analytics::service_ianalyticsmoduleservice",
+      "layer_types_analytics::service_ianalyticsmoduleservice_getprovider",
+      "layer_types_analytics::service_ianalyticsmoduleservice_identify",
+      "layer_types_analytics::service_ianalyticsmoduleservice_track"
+    ],
+    "15": [
+      "layer_medusa_files::analytics",
+      "layer_medusa_files::analytics_discoverypath",
+      "ref_medusajs_analytics"
+    ],
+    "16": [
+      "layer_medusa_files::analytics_local",
+      "layer_medusa_files::analytics_local_discoverypath",
+      "ref_medusajs_analytics_local"
+    ],
+    "17": [
+      "layer_medusa_files::analytics_posthog",
+      "layer_medusa_files::analytics_posthog_discoverypath",
+      "ref_medusajs_analytics_posthog"
+    ]
+  },
+  "cohesion": {
+    "0": 0.07692307692307693,
+    "1": 0.11578947368421053,
+    "2": 0.16483516483516483,
+    "3": 0.18181818181818182,
+    "4": 0.17142857142857143,
+    "5": 0.2857142857142857,
+    "6": 0.2857142857142857,
+    "7": 0.2857142857142857,
+    "9": 0.6666666666666666,
+    "11": 0.1380952380952381,
+    "15": 0.6666666666666666,
+    "16": 0.6666666666666666,
+    "17": 0.6666666666666666
+  },
+  "gods": [
+    {
+      "id": "layer_analytics_module::src_services_provider_service_analyticsproviderservice",
+      "label": "AnalyticsProviderService",
+      "degree": 9
+    },
+    {
+      "id": "layer_analytics_module::src_services_analytics_service_analyticsservice",
+      "label": "AnalyticsService",
+      "degree": 7
+    },
+    {
+      "id": "layer_analytics_module::package_scripts",
+      "label": "scripts",
+      "degree": 7
+    },
+    {
+      "id": "layer_types_analytics::provider_ianalyticsprovider",
+      "label": "IAnalyticsProvider",
+      "degree": 6
+    },
+    {
+      "id": "layer_analytics_module::integration_tests_fixtures_providers_default_provider_analyticsproviderservicefixtures",
+      "label": "AnalyticsProviderServiceFixtures",
+      "degree": 5
+    },
+    {
+      "id": "layer_analytics_module::package_repository",
+      "label": "repository",
+      "degree": 4
+    },
+    {
+      "id": "layer_types_analytics::mutations_identifyanalyticseventdto",
+      "label": "IdentifyAnalyticsEventDTO",
+      "degree": 4
+    },
+    {
+      "id": "layer_types_analytics::service_ianalyticsmoduleservice",
+      "label": "IAnalyticsModuleService",
+      "degree": 4
+    },
+    {
+      "id": "layer_types_analytics::mutations_trackanalyticseventdto",
+      "label": "TrackAnalyticsEventDTO",
+      "degree": 4
+    },
+    {
+      "id": "layer_analytics_module::tsconfig_compileroptions_paths",
+      "label": "paths",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "AnalyticsService",
+      "target": "AnalyticsProviderService",
+      "source_files": [
+        "src/services/analytics-service.ts",
+        "src/services/provider-service.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `AnalyticsProviderService` connect `Community 4` to `Community 2`, `Community 3`?",
+      "why": "High betweenness centrality (0.180) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `@medusajs/framework`, `@medusajs/test-utils`, `../../../_tsconfig.base.json` to the rest of the system?",
+      "why": "3 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `IAnalyticsProvider` connect `Community 4` to `Community 11`?",
+      "why": "High betweenness centrality (0.146) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11578947368421053 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `AnalyticsService` connect `Community 4` to `Community 1`, `Community 2`?",
+      "why": "High betweenness centrality (0.039) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 11` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1380952380952381 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

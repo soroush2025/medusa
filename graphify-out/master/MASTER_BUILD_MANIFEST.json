@@ -1,0 +1,100 @@
+{
+  "tool_version": "0.9.85",
+  "python_interpreter": "/home/soroush110/.local/share/uv/tools/graphifyy/bin/python",
+  "build_timestamp": "2026-10-30T14:55:00+00:00",
+  "repository_root": "/home/soroush/00-VP-Projects/03-medusa/medusa",
+  "repository_revision": "ea78969d7e432dbbae125e0d29ca36401750955d",
+  "repository_dirty": true,
+  "repository_dirty_file_count": 111,
+  "products_categories_included": true,
+  "subject_count": 20,
+  "identity_policy": "Node IDs are <repo-tag>::<layer>::<local-id> after merge-graphs re-tagging. merge-graphs assigned collision-free repo tags (graphify-out, graphify-out-2, ..., graphify-out-20) since all inputs share the same parent directory name. Deduplication occurs only on exact node ID match. Subject nodes are never merged across subjects unless they have identical IDs (which is rare given the per-subject repo tag prefix).",
+  "inputs": [
+    {"subject": "cart-checkout",            "path": "graphify-out/cart-checkout/graph.json",            "sha256": "b32f0cf5c672f4ba85f75fb16c79786c4fb74d9d6c180613951f9eca4c665d07", "nodes": 1060, "edges": 2510,  "communities": 65},
+    {"subject": "orders",                   "path": "graphify-out/orders/graph.json",                   "sha256": "0223ea8591dc5401bfa182eccde78ca089b765374298eb85758750699903380c",  "nodes": 2952, "edges": 9277,  "communities": 127},
+    {"subject": "pricing",                  "path": "graphify-out/pricing/graph.json",                  "sha256": "85ee7e92b0a5b124ce6b6143683dc7294e28caead282d22540fed501175b0eea",  "nodes": 885,  "edges": 1779,  "communities": 59},
+    {"subject": "inventory",                "path": "graphify-out/inventory/graph.json",                "sha256": "181a92e52d297bd6faa73e86f02539b0201d92c84e574f614a4324398cebe1cc",  "nodes": 830,  "edges": 1657,  "communities": 46},
+    {"subject": "customers",                "path": "graphify-out/customers/graph.json",                "sha256": "fcd80bddd6d10d5a7b167e2627f5273c42f8c30a741f358b88121ce4979f139d",  "nodes": 541,  "edges": 1112,  "communities": 20},
+    {"subject": "promotions",               "path": "graphify-out/promotions/graph.json",               "sha256": "e5a7fd69e60bfdd156349e2ea550cce59dc4b724d196fc7cf8b54e0db9a4abf7",  "nodes": 782,  "edges": 1734,  "communities": 51},
+    {"subject": "payments",                 "path": "graphify-out/payments/graph.json",                 "sha256": "9ca6a68aeacf853a62e42e3e646ff6f294cb455a7162c2bb3d6fd866d1165fb7",  "nodes": 858,  "edges": 1815,  "communities": 49},
+    {"subject": "fulfillment-shipping",     "path": "graphify-out/fulfillment-shipping/graph.json",     "sha256": "bf1b8941e82c883bce8ae34ca00fd0b3bf84db0e713504c3b4c9db7ecf763391",  "nodes": 1164, "edges": 2629,  "communities": 48},
+    {"subject": "auth-users",               "path": "graphify-out/auth-users/graph.json",               "sha256": "bc634cbd00294930724c8ea6d69fade1b5997ee08818beee6c97bc29b23854c6",  "nodes": 1343, "edges": 2679,  "communities": 81},
+    {"subject": "tax",                      "path": "graphify-out/tax/graph.json",                      "sha256": "b9225f90f797c1edd5b2405b586fa1e258abff51c33ea0ad4ae095d6fdf33329",  "nodes": 481,  "edges": 899,   "communities": 26},
+    {"subject": "regions-sales-channels",   "path": "graphify-out/regions-sales-channels/graph.json",  "sha256": "d9c33858ac847df79ef80ccce68080cae6b4428b8edd78e460a310a199a6a9e7",  "nodes": 814,  "edges": 1485,  "communities": 45},
+    {"subject": "notifications",            "path": "graphify-out/notifications/graph.json",            "sha256": "16dbea290e87a603ace03fbf6664e41196a4a7f0fcd44ddac5c4942ed7f6cab0",  "nodes": 419,  "edges": 540,   "communities": 73},
+    {"subject": "search",                   "path": "graphify-out/search/graph.json",                   "sha256": "5365bb6932c05d44e4129b749acad9666aa0e1c6c0b6d15d578d61db9fe70174",  "nodes": 719,  "edges": 1583,  "communities": 30},
+    {"subject": "files-uploads",            "path": "graphify-out/files-uploads/graph.json",            "sha256": "d423226610dfaf14709a7625318b795f78282f947b23f1955ada9a24fa36b112",  "nodes": 242,  "edges": 319,   "communities": 17},
+    {"subject": "workflow-engine",          "path": "graphify-out/workflow-engine/graph.json",          "sha256": "1fca2027da3a960967fc9307414cb1c2fb9dba80057ccfff275ae581f2665167",  "nodes": 1618, "edges": 3300,  "communities": 87},
+    {"subject": "analytics",               "path": "graphify-out/analytics/graph.json",                "sha256": "53857e627e01f2a59b24e870b67055242e390af69399c9aa56b5236b8d155212",  "nodes": 140,  "edges": 165,   "communities": 13},
+    {"subject": "translation-settings",    "path": "graphify-out/translation-settings/graph.json",    "sha256": "eb11bfef26ed7a103172b0378766fe612b837e651400daece69df61b3b32b195",  "nodes": 825,  "edges": 1618,  "communities": 36},
+    {"subject": "caching-locking-events",  "path": "graphify-out/caching-locking-events/graph.json",  "sha256": "ff69e58c10c9f67104c5fcb94ab109971f554927f175350f5c4be627c662d4ca",  "nodes": 1653, "edges": 1875,  "communities": 448},
+    {"subject": "link-modules",            "path": "graphify-out/link-modules/graph.json",            "sha256": "389efddb4faf7e9d28f08b06b169855f3520882ae75802c4b09ec6e782b70e61",  "nodes": 777,  "edges": 1457,  "communities": 39},
+    {"subject": "products-categories",     "path": "graphify-out/products-categories/graph.json",     "sha256": "6a6de0cb750b4441ffdd67adaa0ed876565e99c56ddff97df6ec0d91e53adbd9",  "nodes": 1574, "edges": 3826,  "communities": 116, "note": "optional 20th subject"}
+  ],
+  "input_raw_sums": {
+    "nodes": 19677,
+    "edges": 42258,
+    "communities": 1376
+  },
+  "merged_counts": {
+    "nodes": 17961,
+    "edges": 42236,
+    "communities": 1104,
+    "components": 149,
+    "deduplication": {
+      "nodes_deduplicated": 1716,
+      "edges_collapsed": 22,
+      "note": "1716 nodes were merged as identical entities (same ID from shared external imports); 22 edges were collapsed as exact duplicates"
+    }
+  },
+  "clustering_settings": {
+    "algorithm": "louvain",
+    "seed": "graphify default (not explicitly set)",
+    "label_mode": "hub-based (--no-label) + manual override for top 40 communities",
+    "curated_communities": 40,
+    "total_communities": 1104
+  },
+  "integrity_diagnostic": {
+    "tool": "graphify diagnose multigraph",
+    "missing_endpoint_edges": 0,
+    "dangling_endpoint_edges": 0,
+    "self_loop_edges": 94,
+    "exact_duplicate_edges": 0,
+    "directed_same_endpoint_collapsed_edges": 0,
+    "undirected_same_endpoint_collapsed_edges": 0,
+    "extraction_warnings": 364,
+    "extraction_warning_detail": "182 nodes missing 'label' field, 182 nodes missing 'source_file' field (all from link-modules subject with temp path prefix 'graphify-out-18::tmp_graphify_cl_jr1vdrxy-10::...')",
+    "independent_check": "0 orphaned edge endpoints confirmed by Python networkx traversal"
+  },
+  "output_files": [
+    {"file": "graph.json",              "sha256": "8c7434ce810c5fdcfe6e7d70e4101d0f601694a60b87ee254795d99d2eca91b9", "size_bytes": 27924011},
+    {"file": "GRAPH_REPORT.md",         "sha256": "1a60b209de39461c6fbe7fc39bf27f815415531703d426929cef3264b8e88b7c", "size_bytes": 106601},
+    {"file": "graph.html",              "sha256": "d9464a49640a62cb28e6e6301a8d63c3860fe32e040e8e4db220841204b89fa6", "size_bytes": 1011486},
+    {"file": ".graphify_labels.json",   "sha256": "20247e4cb475861179eef72809d517b425a4ec7727bbadb9de8dcb2d1c600443", "size_bytes": 30402},
+    {"file": ".graphify_analysis.json", "sha256": "05c09310b2f18fb690c128f82293cc97512b8b41bde5ec52f31ae38cdf72f1fb", "size_bytes": 1575371},
+    {"file": "MASTER_BUILD_MANIFEST.json",       "sha256": "not-self-hashed",  "size_bytes": null},
+    {"file": "SUBJECT_COVERAGE.md",              "sha256": "pending",           "size_bytes": null},
+    {"file": "CROSS_SUBJECT_CONNECTIONS.md",     "sha256": "pending",           "size_bytes": null},
+    {"file": "VALIDATION_REPORT.md",             "sha256": "pending",           "size_bytes": null}
+  ],
+  "commands_used": [
+    "graphify merge-graphs graphify-out/cart-checkout/graph.json ... graphify-out/products-categories/graph.json --out /tmp/tmp.yxbVe7hdWo/graph.json",
+    "graphify diagnose multigraph --graph /tmp/tmp.yxbVe7hdWo/graph.json",
+    "graphify cluster-only /tmp/tmp.yxbVe7hdWo --graph /tmp/tmp.yxbVe7hdWo/graph.json --no-label",
+    "graphify export html --graph /tmp/tmp.yxbVe7hdWo/graph.json --out /tmp/tmp.yxbVe7hdWo/graph.html",
+    "python: graphify.build.build_from_json + graphify.report.generate + graphify.export.to_json (label curation)"
+  ],
+  "token_cost": {
+    "this_build": {"input": 0, "output": 0},
+    "note": "Master build used local operations only: merge-graphs, cluster-only, export html, Python API. Zero LLM tokens."
+  },
+  "limitations": [
+    "0 direct cross-subject edges: per-subject extraction did not cross subject boundaries; cross-subject calls exist in source but are not in the graph",
+    "182 link-modules nodes have temp path prefix (graphify-out-18::tmp_graphify_cl_jr1vdrxy-10::) in their IDs instead of stable paths",
+    "caching-locking-events subject used 184,600 input tokens during extraction (unusual for a code-only subject)",
+    "notifications and analytics subjects are in disconnected components outside the giant component",
+    "Freshness of subject graphs is unknown; extraction timestamps are not embedded in graph.json",
+    "Community IDs are integers assigned by Louvain; they have no stable meaning across re-clusterings",
+    "Admin UI (packages/admin/dashboard) excluded from all subjects per project design"
+  ]
+}

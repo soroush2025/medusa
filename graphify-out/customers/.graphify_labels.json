@@ -1,0 +1,22 @@
+{
+  "0": "Customer Module Service",
+  "10": "Default Address Steps",
+  "12": "Customer Account Workflows",
+  "14": "Customer Step Inputs",
+  "16": "Customer Workflows",
+  "2": "Database Migrations",
+  "21": "Create Customers Step",
+  "22": "Customer Group Workflows",
+  "30": "Customer Data Types",
+  "4": "Admin Customer Routes",
+  "40": "Admin Customer Types",
+  "41": "Admin Query Config",
+  "47": "Admin Customer Group Types",
+  "5": "Customer Types & DTOs",
+  "51": "Admin Group Query Config",
+  "53": "Store Customer Types",
+  "1": "Package Manifest",
+  "55": "Store Query Config",
+  "8": "TypeScript Path Aliases",
+  "9": "Jest Config"
+}

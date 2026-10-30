@@ -1,0 +1,3149 @@
+{
+  "communities": {
+    "0": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_event_bus_local_injecteddependencies",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_event_bus_local_localeventbusservice",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_event_bus_local_stagingqueuetype",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_initialize_index_initialize",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_event_bus_local_localeventbusservice_cleargroupedevents",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_event_bus_local_localeventbusservice_constructor",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_event_bus_local_localeventbusservice_emit",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_event_bus_local_localeventbusservice_groupevent",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_event_bus_local_localeventbusservice_grouporemitevent",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_event_bus_local_localeventbusservice_logprocessingevent",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_event_bus_local_localeventbusservice_releasegroupedevents",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_event_bus_local_localeventbusservice_subscribe",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_event_bus_local_localeventbusservice_unsubscribe",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_integration_tests_tests_index_spec",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_index",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_index_loaders",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_index_moduledefinition",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_index_service",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_initialize_index",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_loaders_index",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_event_bus_local",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_event_bus_local_eventemitter",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_tests_event_bus_local",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_tests_event_bus_local_loggermock",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_tests_event_bus_local_moduledeps",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_modules_sdk_index",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_modules_sdk_index_medusamodule",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_types_index",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_types_index_event",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_types_index_eventbustypes",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_types_index_ieventbusservice",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_types_index_internalmoduledeclaration",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_types_index_loaderoptions",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_types_index_logger",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_types_index_medusacontainer",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_types_index_message",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_types_index_moduleexports",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_types_index_subscriber",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_utils_index",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_utils_index_abstracteventbusmoduleservice",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_utils_index_commonevents",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_utils_index_composemessage",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_framework_dist_utils_index_modules",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_types_src_index",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_core_types_src_index_ieventbusmoduleservice",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_medusa_test_utils_src_index",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_medusa_test_utils_src_index_moduleintegrationtestrunner",
+      "tmp_graphify_cl_jr1vdrxy-10::ref_events",
+      "tmp_graphify_cl_jr1vdrxy-10::ref_timers"
+    ],
+    "13": [
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_entityreference",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_icachingmoduleservice",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_icachingproviderservice",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_icachingstrategy",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_providers",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_icachingmoduleservice_clear",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_icachingmoduleservice_computekey",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_icachingmoduleservice_computetags",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_icachingmoduleservice_get",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_icachingmoduleservice_set",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_icachingproviderservice_clear",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_icachingproviderservice_get",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_icachingproviderservice_set",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_icachingstrategy_computekey",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_icachingstrategy_computetags",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_icachingstrategy_onapplicationprepareshutdown",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_icachingstrategy_onapplicationshutdown",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index_icachingstrategy_onapplicationstart",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_caching_index",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_modules_sdk_index",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_modules_sdk_index_imoduleservice",
+      "tmp_graphify_cl_jr1vdrxy-18::packages_core_types_src_modules_sdk_index_modulejoinerconfig"
+    ],
+    "15": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_provider_cacheproviderservice",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_provider_injecteddependencies",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_types_index_moduleoptions",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_provider_cacheproviderservice_constructor",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_provider_cacheproviderservice_getregistrationidentifier",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_provider",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_index",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_types_index",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_types_index_cachingdefaultprovider",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_types_index_cachingproviderregistrationprefix",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_types_index_medusajs_types",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_types_index_constructor",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_types_index_icachingproviderservice",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_types_index_icachingstrategy",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_types_index_ieventbusmoduleservice",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_types_index_moduleproviderexports",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_types_index_moduleserviceinitializeoptions",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_utils_index_deduplicate",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_utils_index_graphqlutils",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_utils_index_medusaerror",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_provider_default"
+    ],
+    "17": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_types_index_injecteddependencies",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice_clear",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice_computekey",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice_computetags",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice_constructor",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice_get",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice_getclearrequestkey",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice_getrequestkey",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice_normalizeproviders",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice_onapplicationprepareshutdown",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice_onapplicationshutdown",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice_onapplicationstart",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice_performcacheclear",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice_performcacheget",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice_performcacheset",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice_set",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_provider_cacheproviderservice_retrieveprovider",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_strategy_defaultcachestrategy_constructor"
+    ],
+    "19": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_types_index_cachingmoduleoptions",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_loaders_providers_registrationfn",
+      "tmp_graphify_cl_jr1vdrxy-6::xxhash_wasm",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_index",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_loaders_hash",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_loaders_providers",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_types_index_cachingidentifiersregistrationname",
+      "tmp_graphify_cl_jr1vdrxy-6::ref_awilix",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_modules_sdk_index_moduleproviderloader",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_types_index_loaderoptions",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_types_index_modulessdktypes",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_utils_index_containerregistrationkeys",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_utils_index_getproviderregistrationkey",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_utils_index_module",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_loaders_hash_default",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_loaders_providers_default",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_index_cachingproviderservice"
+    ],
+    "21": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_providers_memory_cache_memorycachingprovider",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_types_index_memorycachemoduleoptions",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_providers_memory_cache_formatbytes",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_providers_memory_cache_memorycachingprovider_calculateentrysize",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_providers_memory_cache_memorycachingprovider_cleanuptagreferences",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_providers_memory_cache_memorycachingprovider_clear",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_providers_memory_cache_memorycachingprovider_constructor",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_providers_memory_cache_memorycachingprovider_get",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_providers_memory_cache_memorycachingprovider_set",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_providers_tests_memory_cache_spec_createprovider",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_providers_tests_memory_cache_spec_fillpastmaxsize",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_providers_memory_cache",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_providers_tests_memory_cache_spec",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_providers_tests_memory_cache_spec_loggermock",
+      "tmp_graphify_cl_jr1vdrxy-6::ref_node_cache",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_types_index_logger"
+    ],
+    "22": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_types_index_bulljob",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_types_index_eventbusredismoduleoptions",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_types_index_jobdata",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_types_index_moduleoptions",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_rediseventbusservice_constructor",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_loaders_index",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_types_index",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_types_index_medusajs_types",
+      "tmp_graphify_cl_jr1vdrxy-14::ref_ioredis",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_types_index_rationale_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_deps_awilix",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_deps_awilix_asvalue",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_types_index_loaderoptions",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_types_src_index_moduleoptions",
+      "tmp_graphify_cl_jr1vdrxy-14::ref_os"
+    ],
+    "24": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_injecteddependencies",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_iorediseventtype",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_rationale_176",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_rationale_292",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_rationale_3",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_rationale_58",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_rationale_86",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_types_index_event",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_types_index_message",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_utils_index_abstracteventbusmoduleservice",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_utils_index_eventpriority",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_utils_index_ispresent",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_utils_index_promiseall"
+    ],
+    "25": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_providers_in_memory_lockinfo",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_providers_in_memory_resolvablepromise",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_services_locking_provider_injecteddependencies",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_providers_in_memory",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_services_index",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_services_locking_provider",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_types_index_lockingproviderregistrationprefix",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_types_index_constructor",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_types_index_ilockingprovider",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_types_index_logger",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_utils_index",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_utils_index_isdefined",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_utils_index_medusaerror",
+      "tmp_graphify_cl_jr1vdrxy-3::ref_node_crypto"
+    ],
+    "26": [
+      "tmp_graphify_cl_jr1vdrxy-11::packages_core_types_src_locking_index_ilockingmodule",
+      "tmp_graphify_cl_jr1vdrxy-11::packages_core_types_src_locking_index_ilockingprovider",
+      "tmp_graphify_cl_jr1vdrxy-11::packages_core_types_src_locking_index_ilockingmodule_acquire",
+      "tmp_graphify_cl_jr1vdrxy-11::packages_core_types_src_locking_index_ilockingmodule_execute",
+      "tmp_graphify_cl_jr1vdrxy-11::packages_core_types_src_locking_index_ilockingmodule_release",
+      "tmp_graphify_cl_jr1vdrxy-11::packages_core_types_src_locking_index_ilockingmodule_releaseall",
+      "tmp_graphify_cl_jr1vdrxy-11::packages_core_types_src_locking_index_ilockingprovider_acquire",
+      "tmp_graphify_cl_jr1vdrxy-11::packages_core_types_src_locking_index_ilockingprovider_execute",
+      "tmp_graphify_cl_jr1vdrxy-11::packages_core_types_src_locking_index_ilockingprovider_release",
+      "tmp_graphify_cl_jr1vdrxy-11::packages_core_types_src_locking_index_ilockingprovider_releaseall",
+      "tmp_graphify_cl_jr1vdrxy-11::packages_core_types_src_locking_index",
+      "tmp_graphify_cl_jr1vdrxy-11::packages_core_types_src_shared_context",
+      "tmp_graphify_cl_jr1vdrxy-11::packages_core_types_src_shared_context_context"
+    ],
+    "28": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_types_index_lockingmoduleoptions",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_types_index_moduleoptions",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_index",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_types_index",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_types_index_lockingdefaultprovider",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_types_index_lockingidentifiersregistrationname",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_types_index_medusajs_types",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_types_index_moduleproviderexports",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_types_index_moduleserviceinitializeoptions",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_utils_index_module",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_utils_index_modules",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_loaders_providers_default"
+    ],
+    "29": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_integration_tests_fixtures_event_bus_mock_eventbusservicemock",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_integration_tests_fixtures_event_bus_mock_eventbusservicemock_cleargroupedevents",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_integration_tests_fixtures_event_bus_mock_eventbusservicemock_emit",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_integration_tests_fixtures_event_bus_mock_eventbusservicemock_releasegroupedevents",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_integration_tests_fixtures_event_bus_mock_eventbusservicemock_subscribe",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_integration_tests_fixtures_event_bus_mock_eventbusservicemock_unsubscribe",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_integration_tests_fixtures_event_bus_mock",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_types_src_index",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_types_src_index_eventbustypes",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_types_src_index_ieventbusmoduleservice",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_types_src_index_message",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_types_src_index_subscriber"
+    ],
+    "3": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_services_redis_cache_injecteddependencies",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_services_redis_cache_rediscacheservice",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_types_index_moduleoptions",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_types_index_rediscachemoduleoptions",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_initialize_index_initialize",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_services_redis_cache_rediscacheservice_constructor",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_services_redis_cache_rediscacheservice_get",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_services_redis_cache_rediscacheservice_getcachekey",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_services_redis_cache_rediscacheservice_invalidate",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_services_redis_cache_rediscacheservice_set",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_index",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_index_loaders",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_index_moduledefinition",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_initialize_index",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_loaders_index",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_services_index",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_services_redis_cache",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_services_tests_redis_cache",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_services_tests_redis_cache_redisclientmock",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_types_index",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_types_index_medusajs_types",
+      "tmp_graphify_cl_jr1vdrxy-4::ref_ioredis",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_core_framework_dist_deps_awilix",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_core_framework_dist_deps_awilix_asvalue",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_core_framework_dist_modules_sdk_index",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_core_framework_dist_modules_sdk_index_medusamodule",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_core_framework_dist_types_index",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_core_framework_dist_types_index_externalmoduledeclaration",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_core_framework_dist_types_index_icacheservice",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_core_framework_dist_types_index_internalmoduledeclaration",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_core_framework_dist_types_index_loaderoptions",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_core_framework_dist_types_index_moduleexports",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_core_framework_dist_utils_index",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_core_framework_dist_utils_index_modules",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_src_services_index_rediscacheservice"
+    ],
+    "32": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_rediseventbusservice",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_types_index_emitoptions",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_types_index_options",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_rediseventbusservice_buildevents",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_rediseventbusservice_cleargroupedevents",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_rediseventbusservice_emit",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_rediseventbusservice_getgroupedevents",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_rediseventbusservice_groupevents",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_rediseventbusservice_releasegroupedevents",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_rediseventbusservice_worker"
+    ],
+    "35": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_services_locking_module_injecteddependencies",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_services_locking_module",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_deps_mikro_orm_core",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_deps_mikro_orm_core_entitymanager",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_types_src_index",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_types_src_index_context",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_types_src_index_ilockingmodule",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_types_src_index_internalmoduledeclaration",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_types_src_index_logger"
+    ],
+    "36": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_services_locking_module_lockingmoduleservice",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_services_locking_provider_lockingproviderservice",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_services_locking_module_lockingmoduleservice_acquire",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_services_locking_module_lockingmoduleservice_constructor",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_services_locking_module_lockingmoduleservice_execute",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_services_locking_module_lockingmoduleservice_release",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_services_locking_module_lockingmoduleservice_releaseall",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_services_locking_provider_lockingproviderservice_constructor",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_services_locking_provider_lockingproviderservice_retrieveproviderregistration"
+    ],
+    "38": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_providers_in_memory_inmemorylockingprovider",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_providers_in_memory_inmemorylockingprovider_acquire",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_providers_in_memory_inmemorylockingprovider_constructor",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_providers_in_memory_inmemorylockingprovider_execute",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_providers_in_memory_inmemorylockingprovider_getpromise",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_providers_in_memory_inmemorylockingprovider_gettimeout",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_providers_in_memory_inmemorylockingprovider_release",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_providers_in_memory_inmemorylockingprovider_releaseall"
+    ],
+    "41": [
+      "tmp_graphify_cl_jr1vdrxy-17::packages_core_types_src_cache_service_icacheservice",
+      "tmp_graphify_cl_jr1vdrxy-17::packages_core_types_src_cache_service_icacheservice_get",
+      "tmp_graphify_cl_jr1vdrxy-17::packages_core_types_src_cache_service_icacheservice_invalidate",
+      "tmp_graphify_cl_jr1vdrxy-17::packages_core_types_src_cache_service_icacheservice_set",
+      "tmp_graphify_cl_jr1vdrxy-17::packages_core_types_src_cache_index",
+      "tmp_graphify_cl_jr1vdrxy-17::packages_core_types_src_cache_service"
+    ],
+    "5": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_services_inmemory_cache_injecteddependencies",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_services_inmemory_cache_inmemorycacheservice",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_types_index_cacherecord",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_types_index_inmemorycachemoduleoptions",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_types_index_moduleoptions",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_initialize_index_initialize",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_services_inmemory_cache_inmemorycacheservice_clear",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_services_inmemory_cache_inmemorycacheservice_constructor",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_services_inmemory_cache_inmemorycacheservice_get",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_services_inmemory_cache_inmemorycacheservice_invalidate",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_services_inmemory_cache_inmemorycacheservice_set",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_index",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_index_moduledefinition",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_initialize_index",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_services_index",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_services_inmemory_cache",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_services_tests_inmemory_cache",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_types_index",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_types_index_medusajs_types",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_core_framework_dist_modules_sdk_index",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_core_framework_dist_modules_sdk_index_medusamodule",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_core_framework_dist_types_index",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_core_framework_dist_types_index_externalmoduledeclaration",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_core_framework_dist_types_index_icacheservice",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_core_framework_dist_types_index_internalmoduledeclaration",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_core_framework_dist_types_index_moduleexports",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_core_framework_dist_utils_index",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_core_framework_dist_utils_index_modules",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_src_services_index_inmemorycacheservice"
+    ],
+    "7": [
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_common_event",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_common_eventmetadata",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_common_interceptorsubscriber",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_common_message",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_common_rawmessageformat",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_common_subscriber",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_common_subscribercontext",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_common_subscriberdescriptor",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_event_bus_ieventbusservice",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_event_bus_module_ieventbusmoduleservice",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_event_bus_ieventbusservice_emit",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_event_bus_ieventbusservice_subscribe",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_event_bus_ieventbusservice_unsubscribe",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_event_bus_module_ieventbusmoduleservice_addinterceptor",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_event_bus_module_ieventbusmoduleservice_cleargroupedevents",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_event_bus_module_ieventbusmoduleservice_emit",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_event_bus_module_ieventbusmoduleservice_releasegroupedevents",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_event_bus_module_ieventbusmoduleservice_removeinterceptor",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_event_bus_module_ieventbusmoduleservice_subscribe",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_event_bus_module_ieventbusmoduleservice_unsubscribe",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_common",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_event_bus",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_event_bus_module",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_index",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_event_bus_common_rationale_3",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_shared_context",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_shared_context_context",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_transaction_base_index",
+      "tmp_graphify_cl_jr1vdrxy-8::packages_core_types_src_transaction_base_index_itransactionbaseservice"
+    ],
+    "9": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_parser_cacheinvalidationparser",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_parser_entityreference",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_parser_invalidationevent",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_parser_invalidationoperation",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_strategy_defaultcachestrategy",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_parser_cacheinvalidationparser_buildaffectedcachekeys",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_parser_cacheinvalidationparser_buildinvalidationevents",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_parser_cacheinvalidationparser_constructor",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_parser_cacheinvalidationparser_detectentitytype",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_parser_cacheinvalidationparser_getrelationshiptype",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_parser_cacheinvalidationparser_objectmatchestype",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_parser_cacheinvalidationparser_parseobjectforentities",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_strategy_defaultcachestrategy_computekey",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_strategy_defaultcachestrategy_computetags",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_strategy_defaultcachestrategy_objecthash",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_strategy_defaultcachestrategy_onapplicationstart",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_parser",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_parser_list_affecting_operations",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_strategy",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_tests_parser_test",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_types_index_event",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_types_index_modulejoinerconfig",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_utils_index_graphqlschema",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_utils_index_isobject",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_utils_index_tocamelcase",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_utils_index_uppercasefirst",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_index_cachingmoduleservice",
+      "tmp_graphify_cl_jr1vdrxy-6::ref_graphql"
+    ],
+    "20": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_loaders_providers_registrationfn",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_services_locking_provider_lockingproviderservice_getregistrationidentifier",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_loaders_providers",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_deps_awilix",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_deps_awilix_aliasto",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_deps_awilix_asfunction",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_deps_awilix_asvalue",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_deps_awilix_lifetime",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_modules_sdk_index",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_modules_sdk_index_moduleproviderloader",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_types_index_loaderoptions",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_types_index_moduleprovider",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_types_index_modulessdktypes",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_utils_index_containerregistrationkeys",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_utils_index_getproviderregistrationkey",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_src_services_index_lockingproviderservice"
+    ],
+    "27": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_initialize_index_initialize",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_index",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_index_loaders",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_index_moduledefinition",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_initialize_index",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_modules_sdk_index",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_modules_sdk_index_medusamodule",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_types_index",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_types_index_externalmoduledeclaration",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_types_index_ieventbusservice",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_types_index_internalmoduledeclaration",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_types_index_moduleexports"
+    ],
+    "30": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_integration_tests_tests_index_spec_buy",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_integration_tests_tests_index_spec_hasstock",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_integration_tests_tests_index_spec_reducestock",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_integration_tests_tests_index_spec_replenishstock",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_integration_tests_tests_index_spec",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_types_index",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_types_index_ilockingmodule",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_core_framework_dist_utils_index_promiseall",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_medusa_test_utils_src_index",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_medusa_test_utils_src_index_moduleintegrationtestrunner",
+      "tmp_graphify_cl_jr1vdrxy-3::ref_node_timers"
+    ],
+    "1": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_author",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_bugs",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_bugs_url",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_dependencies",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_dependencies_fast_json_stable_stringify",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_dependencies_node_cache",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_dependencies_xxhash_wasm",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_description",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_devdependencies",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_devdependencies_awilix",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_devdependencies_medusajs_framework",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_devdependencies_medusajs_test_utils",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_files",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_license",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_main",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_name",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_peerdependencies",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_peerdependencies_awilix",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_peerdependencies_medusajs_framework",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_publishconfig",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_publishconfig_access",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_repository",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_repository_directory",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_repository_type",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_repository_url",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_scripts",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_scripts_build",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_scripts_resolve_aliases",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_scripts_test",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_scripts_test_integration",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_scripts_watch",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_scripts_watch_test",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_package_version",
+      "tmp_graphify_cl_jr1vdrxy-6::ref_fast_json_stable_stringify",
+      "tmp_graphify_cl_jr1vdrxy-6::ref_medusajs_framework",
+      "tmp_graphify_cl_jr1vdrxy-6::ref_medusajs_test_utils",
+      "tmp_graphify_cl_jr1vdrxy-6::ref_xxhash_wasm"
+    ],
+    "10": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_author",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_bugs",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_bugs_url",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_description",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_devdependencies",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_devdependencies_medusajs_framework",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_engines",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_engines_node",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_files",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_license",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_main",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_name",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_peerdependencies",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_peerdependencies_medusajs_framework",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_publishconfig",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_publishconfig_access",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_repository",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_repository_directory",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_repository_type",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_repository_url",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_scripts",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_scripts_build",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_scripts_test",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_scripts_watch",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_package_version",
+      "tmp_graphify_cl_jr1vdrxy-19::ref_medusajs_framework"
+    ],
+    "100": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_0_5",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_451"
+    ],
+    "101": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_10_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_314"
+    ],
+    "102": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_10_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_307"
+    ],
+    "103": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_10_2",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_298"
+    ],
+    "104": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_10_3",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_289"
+    ],
+    "105": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_11_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_280"
+    ],
+    "106": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_11_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_273"
+    ],
+    "107": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_11_2",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_266"
+    ],
+    "108": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_11_3",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_257"
+    ],
+    "109": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_12_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_248"
+    ],
+    "11": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_2",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_0_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_0_2",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_0_3",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_0_4",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_0_6",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_0_7",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_12_6",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_14_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_1_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_1_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_1_2",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_1_3",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_2_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_3_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_3_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_5_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_5_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_medusajs_event_bus_redis",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_146",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_206",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_590"
+    ],
+    "110": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_12_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_241"
+    ],
+    "111": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_12_2",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_230"
+    ],
+    "112": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_12_3",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_223"
+    ],
+    "113": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_12_4",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_216"
+    ],
+    "114": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_12_5",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_209"
+    ],
+    "115": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_12_6",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_202"
+    ],
+    "116": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_13_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_184"
+    ],
+    "117": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_13_2",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_177"
+    ],
+    "118": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_13_3",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_170"
+    ],
+    "119": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_13_4",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_163"
+    ],
+    "12": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_0_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_0_2",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_0_3",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_0_4",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_0_6",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_0_7",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_13_5",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_14_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_1_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_1_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_1_2",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_1_3",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_2_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_3_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_3_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_5_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_5_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_6_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_medusajs_event_bus_local",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_135",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_156"
+    ],
+    "120": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_13_6",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_149"
+    ],
+    "121": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_14_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_142"
+    ],
+    "122": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_14_2",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_128"
+    ],
+    "123": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_15_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_121"
+    ],
+    "124": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_15_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_114"
+    ],
+    "125": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_15_2",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_107"
+    ],
+    "126": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_15_3",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_100"
+    ],
+    "127": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_15_4",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_93"
+    ],
+    "128": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_15_5",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_86"
+    ],
+    "129": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_16_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_79"
+    ],
+    "130": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_17_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_72"
+    ],
+    "131": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_17_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_63"
+    ],
+    "132": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_17_2",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_54"
+    ],
+    "133": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_18_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_47"
+    ],
+    "134": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_19_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_40"
+    ],
+    "135": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_20_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_33"
+    ],
+    "136": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_20_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_26"
+    ],
+    "137": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_21_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_19"
+    ],
+    "138": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_21_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_12"
+    ],
+    "139": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_21_2",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes"
+    ],
+    "14": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_1_9_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_0_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_0_2",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_0_3",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_0_4",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_0_5",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_0_6",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_0_7",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_12_5",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_1_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_1_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_1_2",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_1_3",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_2_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_3_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_3_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_5_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_5_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_medusajs_cache_redis",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_207",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_460"
+    ],
+    "140": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_4_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_424"
+    ],
+    "141": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_6_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_409"
+    ],
+    "142": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_7_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_402"
+    ],
+    "143": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_7_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_393"
+    ],
+    "144": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_8_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_386"
+    ],
+    "145": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_8_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_379"
+    ],
+    "146": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_8_2",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_372"
+    ],
+    "147": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_8_3",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_365"
+    ],
+    "148": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_8_4",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_358"
+    ],
+    "149": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_8_5",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_351"
+    ],
+    "150": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_8_6",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_344"
+    ],
+    "151": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_8_7",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_337"
+    ],
+    "152": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_8_8",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_330"
+    ],
+    "153": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_9_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_323"
+    ],
+    "154": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_0_rc_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_648"
+    ],
+    "155": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_0_rc_2",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_638"
+    ],
+    "156": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_0_rc_3",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_631"
+    ],
+    "157": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_0_rc_4",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_621"
+    ],
+    "158": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_597"
+    ],
+    "159": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_10",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_522"
+    ],
+    "16": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_0_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_0_2",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_0_3",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_0_4",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_0_5",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_0_6",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_0_7",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_19_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_1_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_1_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_1_2",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_1_3",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_2_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_3_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_3_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_5_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_5_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_6_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_medusajs_cache_inmemory",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_40"
+    ],
+    "160": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_11",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_512"
+    ],
+    "161": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_12",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_502"
+    ],
+    "162": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_13",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_490"
+    ],
+    "163": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_3",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_582"
+    ],
+    "164": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_4",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_574"
+    ],
+    "165": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_5",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_566"
+    ],
+    "166": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_6",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_558"
+    ],
+    "167": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_7",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_550"
+    ],
+    "168": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_8",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_540"
+    ],
+    "169": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_9",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_531"
+    ],
+    "170": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_0_5",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_465"
+    ],
+    "171": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_10_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_328"
+    ],
+    "172": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_10_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_321"
+    ],
+    "173": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_10_2",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_314"
+    ],
+    "174": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_10_3",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_305"
+    ],
+    "175": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_11_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_294"
+    ],
+    "176": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_11_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_287"
+    ],
+    "177": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_11_2",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_280"
+    ],
+    "178": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_11_3",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_271"
+    ],
+    "179": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_12_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_262"
+    ],
+    "18": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_0_1",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_0_3",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_0_4",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_0_6",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_0_7",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_13_4",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_1_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_1_1",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_1_2",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_1_3",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_2_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_3_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_3_1",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_5_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_5_1",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_6_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_medusajs_locking",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_161"
+    ],
+    "180": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_12_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_255"
+    ],
+    "181": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_12_2",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_246"
+    ],
+    "182": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_12_3",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_239"
+    ],
+    "183": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_12_4",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_232"
+    ],
+    "184": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_12_5",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_223"
+    ],
+    "185": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_13_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_188"
+    ],
+    "186": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_13_2",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_181"
+    ],
+    "187": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_13_3",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_174"
+    ],
+    "188": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_13_4",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_167"
+    ],
+    "189": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_13_5",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_160"
+    ],
+    "190": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_13_6",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_153"
+    ],
+    "191": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_14_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_139"
+    ],
+    "192": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_14_2",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_132"
+    ],
+    "193": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_15_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_125"
+    ],
+    "194": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_15_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_118"
+    ],
+    "195": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_15_2",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_111"
+    ],
+    "196": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_15_3",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_104"
+    ],
+    "197": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_15_4",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_97"
+    ],
+    "198": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_15_5",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_90"
+    ],
+    "199": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_16_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_83"
+    ],
+    "2": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_author",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_bugs",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_bugs_url",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_dependencies",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_dependencies_bullmq",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_dependencies_ioredis",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_description",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_devdependencies",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_devdependencies_medusajs_framework",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_devdependencies_medusajs_types",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_devdependencies_medusajs_utils",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_engines",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_engines_node",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_files",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_license",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_main",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_name",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_peerdependencies",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_peerdependencies_medusajs_framework",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_publishconfig",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_publishconfig_access",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_repository",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_repository_directory",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_repository_type",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_repository_url",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_scripts",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_scripts_build",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_scripts_test",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_scripts_test_integration",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_scripts_watch",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_package_version",
+      "tmp_graphify_cl_jr1vdrxy-14::ref_medusajs_framework",
+      "tmp_graphify_cl_jr1vdrxy-14::ref_medusajs_types",
+      "tmp_graphify_cl_jr1vdrxy-14::ref_medusajs_utils"
+    ],
+    "200": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_17_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_76"
+    ],
+    "201": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_17_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_67"
+    ],
+    "202": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_17_2",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_56"
+    ],
+    "203": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_18_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_49"
+    ],
+    "204": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_19_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_42"
+    ],
+    "205": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_20_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_35"
+    ],
+    "206": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_20_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_28"
+    ],
+    "207": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_21_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_19"
+    ],
+    "208": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_21_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_12"
+    ],
+    "209": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_21_2",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes"
+    ],
+    "210": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_4_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_440"
+    ],
+    "211": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_6_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_430"
+    ],
+    "212": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_6_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_421"
+    ],
+    "213": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_7_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_414"
+    ],
+    "214": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_7_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_407"
+    ],
+    "215": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_8_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_400"
+    ],
+    "216": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_8_1",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_393"
+    ],
+    "217": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_8_2",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_386"
+    ],
+    "218": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_8_3",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_379"
+    ],
+    "219": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_8_4",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_372"
+    ],
+    "220": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_8_5",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_365"
+    ],
+    "221": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_8_6",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_358"
+    ],
+    "222": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_8_7",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_351"
+    ],
+    "223": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_8_8",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_344"
+    ],
+    "224": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_9_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_337"
+    ],
+    "225": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_1_8_0_rc_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_561"
+    ],
+    "226": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_1_8_0_rc_2",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_554"
+    ],
+    "227": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_1_8_0_rc_3",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_545"
+    ],
+    "228": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_1_8_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_521"
+    ],
+    "229": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_1_8_10",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_452"
+    ],
+    "23": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_integration_tests_tests_index_spec",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_integration_tests_tests_invalidation_spec",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_integration_tests_tests_invalidation_spec_mockeventbus",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_integration_tests_tests_max_size_spec",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_integration_tests_tests_redis_invalidation_spec",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_integration_tests_tests_redis_invalidation_spec_mockeventbus",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_modules_sdk_index",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_modules_sdk_index_medusamodule",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_types_index",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_types_index_icachingmoduleservice",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_utils_index",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_core_framework_dist_utils_index_modules",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_medusa_test_utils_src_index",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_medusa_test_utils_src_index_moduleintegrationtestrunner",
+      "tmp_graphify_cl_jr1vdrxy-6::ref_timers"
+    ],
+    "230": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_1_8_2",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_514"
+    ],
+    "231": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_1_8_3",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_507"
+    ],
+    "232": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_1_8_4",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_500"
+    ],
+    "233": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_1_8_5",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_493"
+    ],
+    "234": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_1_8_6",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_486"
+    ],
+    "235": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_1_8_7",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_479"
+    ],
+    "236": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_1_8_8",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_470"
+    ],
+    "237": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_1_8_9",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_461"
+    ],
+    "238": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_10_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_300"
+    ],
+    "239": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_10_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_293"
+    ],
+    "240": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_10_2",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_286"
+    ],
+    "241": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_10_3",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_279"
+    ],
+    "242": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_11_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_272"
+    ],
+    "243": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_11_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_265"
+    ],
+    "244": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_11_2",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_258"
+    ],
+    "245": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_11_3",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_249"
+    ],
+    "246": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_12_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_242"
+    ],
+    "247": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_12_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_235"
+    ],
+    "248": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_12_2",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_228"
+    ],
+    "249": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_12_3",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_221"
+    ],
+    "250": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_12_4",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_214"
+    ],
+    "251": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_12_5",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_207"
+    ],
+    "252": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_12_6",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_200"
+    ],
+    "253": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_13_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_182"
+    ],
+    "254": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_13_2",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_175"
+    ],
+    "255": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_13_3",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_168"
+    ],
+    "256": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_13_4",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_161"
+    ],
+    "257": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_13_5",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_154"
+    ],
+    "258": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_13_6",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_147"
+    ],
+    "259": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_14_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_140"
+    ],
+    "260": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_14_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_133"
+    ],
+    "261": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_14_2",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_126"
+    ],
+    "262": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_15_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_119"
+    ],
+    "263": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_15_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_112"
+    ],
+    "264": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_15_2",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_105"
+    ],
+    "265": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_15_3",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_98"
+    ],
+    "266": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_15_4",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_91"
+    ],
+    "267": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_15_5",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_84"
+    ],
+    "268": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_16_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_77"
+    ],
+    "269": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_17_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_70"
+    ],
+    "270": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_17_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_63"
+    ],
+    "271": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_17_2",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_54"
+    ],
+    "272": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_18_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_47"
+    ],
+    "273": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_20_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_33"
+    ],
+    "274": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_20_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_26"
+    ],
+    "275": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_21_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_19"
+    ],
+    "276": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_21_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_12"
+    ],
+    "277": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_21_2",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes"
+    ],
+    "278": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_4_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_406"
+    ],
+    "279": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_6_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_391"
+    ],
+    "280": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_7_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_384"
+    ],
+    "281": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_7_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_377"
+    ],
+    "282": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_8_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_370"
+    ],
+    "283": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_8_1",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_363"
+    ],
+    "284": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_8_2",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_356"
+    ],
+    "285": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_8_3",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_349"
+    ],
+    "286": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_8_4",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_342"
+    ],
+    "287": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_8_5",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_335"
+    ],
+    "288": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_8_6",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_328"
+    ],
+    "289": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_8_7",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_321"
+    ],
+    "290": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_8_8",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_314"
+    ],
+    "291": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_9_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_307"
+    ],
+    "292": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog",
+      "tmp_graphify_cl_jr1vdrxy-3::home_soroush_00_vp_projects_03_medusa_medusa_packages_modules_locking_undefined_md"
+    ],
+    "293": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_0_2",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_457"
+    ],
+    "294": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_0_5",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_445"
+    ],
+    "295": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_10_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_306"
+    ],
+    "296": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_10_1",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_299"
+    ],
+    "297": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_10_2",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_292"
+    ],
+    "298": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_10_3",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_285"
+    ],
+    "299": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_11_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_274"
+    ],
+    "300": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_11_1",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_267"
+    ],
+    "301": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_11_2",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_260"
+    ],
+    "302": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_11_3",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_251"
+    ],
+    "303": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_12_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_244"
+    ],
+    "304": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_12_1",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_237"
+    ],
+    "305": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_12_2",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_230"
+    ],
+    "306": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_12_3",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_223"
+    ],
+    "307": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_12_4",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_216"
+    ],
+    "308": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_12_5",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_207"
+    ],
+    "309": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_12_6",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_200"
+    ],
+    "31": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_11_1",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_12_0",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_13_1",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_15_3",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_medusajs_caching",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_108",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_192",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_254",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_277",
+      "tmp_graphify_cl_jr1vdrxy-6::home_soroush_00_vp_projects_03_medusa_medusa_packages_modules_caching_undefined_md"
+    ],
+    "310": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_13_1",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_182"
+    ],
+    "311": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_13_2",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_175"
+    ],
+    "312": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_13_3",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_168"
+    ],
+    "313": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_13_5",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_154"
+    ],
+    "314": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_13_6",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_147"
+    ],
+    "315": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_14_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_140"
+    ],
+    "316": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_14_1",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_133"
+    ],
+    "317": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_14_2",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_126"
+    ],
+    "318": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_15_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_119"
+    ],
+    "319": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_15_1",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_112"
+    ],
+    "320": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_15_2",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_105"
+    ],
+    "321": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_15_3",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_98"
+    ],
+    "322": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_15_4",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_91"
+    ],
+    "323": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_15_5",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_84"
+    ],
+    "324": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_16_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_77"
+    ],
+    "325": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_17_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_70"
+    ],
+    "326": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_17_1",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_63"
+    ],
+    "327": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_17_2",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_54"
+    ],
+    "328": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_18_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_47"
+    ],
+    "329": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_19_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_40"
+    ],
+    "33": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_tsconfig",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_tsconfig_compileroptions",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_tsconfig_compileroptions_paths",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_tsconfig_extends",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_tsconfig_paths_models",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_tsconfig_paths_repositories",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_tsconfig_paths_services",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_tsconfig_paths_types",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_tsconfig_paths_utils",
+      "tmp_graphify_cl_jr1vdrxy-3::ref_tsconfig_base_json"
+    ],
+    "330": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_20_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_33"
+    ],
+    "331": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_20_1",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_26"
+    ],
+    "332": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_21_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_19"
+    ],
+    "333": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_21_1",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_12"
+    ],
+    "334": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_21_2",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes"
+    ],
+    "335": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_6_1",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_401"
+    ],
+    "336": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_7_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_392"
+    ],
+    "337": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_7_1",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_385"
+    ],
+    "338": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_8_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_378"
+    ],
+    "339": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_8_1",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_371"
+    ],
+    "34": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_integration_tests_tests_index_spec",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_utils_index",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_utils_index_commonevents",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_utils_index_composemessage",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_utils_index_modules",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_types_src_index",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_types_src_index_ieventbusmoduleservice",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_medusa_test_utils_src_index",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_medusa_test_utils_src_index_moduleintegrationtestrunner"
+    ],
+    "340": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_8_2",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_364"
+    ],
+    "341": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_8_3",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_357"
+    ],
+    "342": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_8_4",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_350"
+    ],
+    "343": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_8_5",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_343"
+    ],
+    "344": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_8_6",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_336"
+    ],
+    "345": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_8_7",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_327"
+    ],
+    "346": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_8_8",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_320"
+    ],
+    "347": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_9_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_313"
+    ],
+    "348": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_1_8_0_rc_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_580"
+    ],
+    "349": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_1_8_0_rc_2",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_573"
+    ],
+    "350": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_1_8_0_rc_3",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_564"
+    ],
+    "351": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_1_8_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_540"
+    ],
+    "352": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_1_8_2",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_533"
+    ],
+    "353": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_1_8_3",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_526"
+    ],
+    "354": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_1_8_4",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_519"
+    ],
+    "355": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_1_8_5",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_512"
+    ],
+    "356": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_1_8_6",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_505"
+    ],
+    "357": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_1_8_7",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_498"
+    ],
+    "358": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_1_8_8",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_489"
+    ],
+    "359": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_1_8_9",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_480"
+    ],
+    "360": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_10_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_304"
+    ],
+    "361": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_10_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_297"
+    ],
+    "362": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_10_2",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_290"
+    ],
+    "363": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_10_3",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_283"
+    ],
+    "364": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_11_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_274"
+    ],
+    "365": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_11_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_267"
+    ],
+    "366": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_11_2",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_260"
+    ],
+    "367": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_11_3",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_251"
+    ],
+    "368": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_12_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_244"
+    ],
+    "369": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_12_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_237"
+    ],
+    "37": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_tests_event_bus",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_tests_event_bus_loggermock",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_tests_event_bus_moduledeclaration",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_tests_event_bus_moduledeps",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_tests_event_bus_pipelinemock",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_tests_event_bus_redismock",
+      "tmp_graphify_cl_jr1vdrxy-14::ref_bullmq",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_core_framework_dist_types_index_logger"
+    ],
+    "370": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_12_2",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_230"
+    ],
+    "371": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_12_3",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_223"
+    ],
+    "372": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_12_4",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_216"
+    ],
+    "373": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_12_6",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_200"
+    ],
+    "374": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_13_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_182"
+    ],
+    "375": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_13_2",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_175"
+    ],
+    "376": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_13_3",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_168"
+    ],
+    "377": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_13_4",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_161"
+    ],
+    "378": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_13_5",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_154"
+    ],
+    "379": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_13_6",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_147"
+    ],
+    "380": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_14_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_140"
+    ],
+    "381": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_14_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_133"
+    ],
+    "382": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_14_2",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_126"
+    ],
+    "383": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_15_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_119"
+    ],
+    "384": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_15_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_112"
+    ],
+    "385": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_15_2",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_105"
+    ],
+    "386": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_15_3",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_98"
+    ],
+    "387": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_15_4",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_91"
+    ],
+    "388": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_15_5",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_84"
+    ],
+    "389": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_16_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_77"
+    ],
+    "39": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_tsconfig",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_tsconfig_compileroptions",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_tsconfig_compileroptions_paths",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_tsconfig_extends",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_tsconfig_paths_services",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_tsconfig_paths_types",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_tsconfig_paths_utils",
+      "tmp_graphify_cl_jr1vdrxy-6::ref_tsconfig_base_json"
+    ],
+    "390": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_17_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_70"
+    ],
+    "391": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_17_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_63"
+    ],
+    "392": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_17_2",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_54"
+    ],
+    "393": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_18_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_47"
+    ],
+    "394": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_19_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_40"
+    ],
+    "395": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_20_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_33"
+    ],
+    "396": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_20_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_26"
+    ],
+    "397": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_21_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_19"
+    ],
+    "398": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_21_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_12"
+    ],
+    "399": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_21_2",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes"
+    ],
+    "4": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_author",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_bugs",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_bugs_url",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_description",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_devdependencies",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_devdependencies_medusajs_framework",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_devdependencies_medusajs_test_utils",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_files",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_license",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_main",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_name",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_peerdependencies",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_peerdependencies_medusajs_framework",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_publishconfig",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_publishconfig_access",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_repository",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_repository_directory",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_repository_type",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_repository_url",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_scripts",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_scripts_build",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_scripts_migration_create",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_scripts_migration_initial",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_scripts_migration_up",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_scripts_orm_cache_clear",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_scripts_resolve_aliases",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_scripts_test",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_scripts_test_integration",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_scripts_watch",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_scripts_watch_test",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_package_version",
+      "tmp_graphify_cl_jr1vdrxy-3::ref_medusajs_framework",
+      "tmp_graphify_cl_jr1vdrxy-3::ref_medusajs_test_utils"
+    ],
+    "40": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_readme",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_readme_installation",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_readme_medusa_cache_in_memory",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_readme_note",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_readme_options",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_readme_other_caching_modules",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_redis_readme"
+    ],
+    "400": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_4_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_414"
+    ],
+    "401": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_6_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_404"
+    ],
+    "402": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_6_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_395"
+    ],
+    "403": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_7_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_388"
+    ],
+    "404": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_7_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_381"
+    ],
+    "405": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_8_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_374"
+    ],
+    "406": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_8_1",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_367"
+    ],
+    "407": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_8_2",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_360"
+    ],
+    "408": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_8_3",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_353"
+    ],
+    "409": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_8_4",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_346"
+    ],
+    "410": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_8_5",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_339"
+    ],
+    "411": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_8_6",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_332"
+    ],
+    "412": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_8_7",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_325"
+    ],
+    "413": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_8_8",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_318"
+    ],
+    "414": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_9_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_311"
+    ],
+    "415": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_11_0",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_284"
+    ],
+    "416": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_11_2",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_270"
+    ],
+    "417": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_11_3",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_261"
+    ],
+    "418": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_12_1",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_247"
+    ],
+    "419": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_12_2",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_240"
+    ],
+    "42": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_readme",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_readme_installation",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_readme_medusa_cache_redis",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_readme_options",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_readme_other_caching_modules",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_inmemory_readme"
+    ],
+    "420": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_12_3",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_233"
+    ],
+    "421": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_12_4",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_226"
+    ],
+    "422": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_12_5",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_217"
+    ],
+    "423": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_12_6",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_210"
+    ],
+    "424": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_13_2",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_185"
+    ],
+    "425": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_13_3",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_178"
+    ],
+    "426": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_13_4",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_171"
+    ],
+    "427": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_13_5",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_164"
+    ],
+    "428": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_13_6",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_157"
+    ],
+    "429": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_14_0",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_150"
+    ],
+    "43": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_readme",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_readme_configuration",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_readme_getting_started",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_readme_overview"
+    ],
+    "430": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_14_1",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_143"
+    ],
+    "431": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_14_2",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_136"
+    ],
+    "432": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_15_0",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_129"
+    ],
+    "433": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_15_1",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_122"
+    ],
+    "434": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_15_2",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_115"
+    ],
+    "435": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_15_4",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_101"
+    ],
+    "436": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_15_5",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_94"
+    ],
+    "437": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_16_0",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_87"
+    ],
+    "438": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_17_0",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_78"
+    ],
+    "439": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_17_1",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_71"
+    ],
+    "44": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_readme",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_readme_configuration",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_readme_getting_started",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_readme_overview"
+    ],
+    "440": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_17_2",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_62"
+    ],
+    "441": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_18_0",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_55"
+    ],
+    "442": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_19_0",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_46"
+    ],
+    "443": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_20_0",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_35"
+    ],
+    "444": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_20_1",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_28"
+    ],
+    "445": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_21_0",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_21"
+    ],
+    "446": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_21_1",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_12"
+    ],
+    "447": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_21_2",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes"
+    ],
+    "45": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_jest_config",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_jest_config_definejestconfig",
+      "tmp_graphify_cl_jr1vdrxy-10::define_jest_config"
+    ],
+    "46": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_8_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_minor_changes_575",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_579"
+    ],
+    "47": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_8_0_rc_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_minor_changes_629",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_633"
+    ],
+    "48": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_9_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_minor_changes_548",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_552"
+    ],
+    "49": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_0_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_major_changes",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_469"
+    ],
+    "50": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_2_13_0",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_minor_changes",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_195"
+    ],
+    "51": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_tsconfig",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_tsconfig_extends",
+      "tmp_graphify_cl_jr1vdrxy-10::ref_tsconfig_base_json"
+    ],
+    "52": [
+      "tmp_graphify_cl_jr1vdrxy-12::packages_medusa_src_modules_event_bus_local",
+      "tmp_graphify_cl_jr1vdrxy-12::packages_medusa_src_modules_event_bus_local_discoverypath",
+      "tmp_graphify_cl_jr1vdrxy-12::packages_modules_event_bus_local_src_index"
+    ],
+    "53": [
+      "tmp_graphify_cl_jr1vdrxy-13::packages_medusa_src_modules_event_bus_redis",
+      "tmp_graphify_cl_jr1vdrxy-13::packages_medusa_src_modules_event_bus_redis_discoverypath",
+      "tmp_graphify_cl_jr1vdrxy-13::packages_modules_event_bus_redis_src_index"
+    ],
+    "54": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_jest_config",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_jest_config_definejestconfig",
+      "tmp_graphify_cl_jr1vdrxy-14::define_jest_config"
+    ],
+    "55": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_minor_changes_605",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_609"
+    ],
+    "56": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_1_8_0_rc_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_minor_changes_655",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_659"
+    ],
+    "57": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_0_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_major_changes",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_483"
+    ],
+    "58": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_2_13_0",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_minor_changes",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_patch_changes_199"
+    ],
+    "59": [
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_tsconfig",
+      "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_tsconfig_extends",
+      "tmp_graphify_cl_jr1vdrxy-14::ref_tsconfig_base_json"
+    ],
+    "6": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_author",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_bugs",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_bugs_url",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_dependencies",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_dependencies_ioredis",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_description",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_devdependencies",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_devdependencies_medusajs_framework",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_engines",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_engines_node",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_files",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_license",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_main",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_name",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_peerdependencies",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_peerdependencies_medusajs_framework",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_publishconfig",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_publishconfig_access",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_repository",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_repository_directory",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_repository_type",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_repository_url",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_scripts",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_scripts_build",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_scripts_test",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_scripts_watch",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_package_version",
+      "tmp_graphify_cl_jr1vdrxy-4::ref_medusajs_framework"
+    ],
+    "60": [
+      "tmp_graphify_cl_jr1vdrxy-15::packages_medusa_src_modules_locking",
+      "tmp_graphify_cl_jr1vdrxy-15::packages_medusa_src_modules_locking_discoverypath",
+      "tmp_graphify_cl_jr1vdrxy-15::packages_modules_locking_src_index"
+    ],
+    "61": [
+      "tmp_graphify_cl_jr1vdrxy-16::packages_medusa_src_modules_cache_redis",
+      "tmp_graphify_cl_jr1vdrxy-16::packages_medusa_src_modules_cache_redis_discoverypath",
+      "tmp_graphify_cl_jr1vdrxy-16::packages_modules_cache_redis_src_index"
+    ],
+    "62": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_jest_config",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_jest_config_definejestconfig",
+      "tmp_graphify_cl_jr1vdrxy-19::define_jest_config"
+    ],
+    "63": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_1_8_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_minor_changes_528",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_532"
+    ],
+    "64": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_1_8_0_rc_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_minor_changes_570",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_574"
+    ],
+    "65": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_0_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_major_changes",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_445"
+    ],
+    "66": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_2_13_0",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_minor_changes",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_patch_changes_193"
+    ],
+    "67": [
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_tsconfig",
+      "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_tsconfig_extends",
+      "tmp_graphify_cl_jr1vdrxy-19::ref_tsconfig_base_json"
+    ],
+    "68": [
+      "tmp_graphify_cl_jr1vdrxy-2::packages_medusa_src_modules_caching_redis",
+      "tmp_graphify_cl_jr1vdrxy-2::packages_medusa_src_modules_caching_redis_discoverypath",
+      "tmp_graphify_cl_jr1vdrxy-2::packages_modules_providers_caching_redis_src_index"
+    ],
+    "69": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_jest_config",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_jest_config_definejestconfig",
+      "tmp_graphify_cl_jr1vdrxy-3::define_jest_config"
+    ],
+    "70": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_0_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_major_changes",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_469"
+    ],
+    "71": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_13_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_minor_changes",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_193"
+    ],
+    "72": [
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_2_4_0",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_minor_changes_416",
+      "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_patch_changes_420"
+    ],
+    "73": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_jest_config",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_jest_config_definejestconfig",
+      "tmp_graphify_cl_jr1vdrxy-4::define_jest_config"
+    ],
+    "74": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_1_8_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_minor_changes_547",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_551"
+    ],
+    "75": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_1_8_0_rc_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_minor_changes_589",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_593"
+    ],
+    "76": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_1_9_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_minor_changes_469",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_473"
+    ],
+    "77": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_0_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_major_changes",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_453"
+    ],
+    "78": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_2_13_0",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_minor_changes",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_patch_changes_193"
+    ],
+    "79": [
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_tsconfig",
+      "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_tsconfig_extends",
+      "tmp_graphify_cl_jr1vdrxy-4::ref_tsconfig_base_json"
+    ],
+    "8": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_author",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_bugs",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_bugs_url",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_description",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_devdependencies",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_devdependencies_medusajs_framework",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_engines",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_engines_node",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_files",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_license",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_main",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_name",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_peerdependencies",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_peerdependencies_medusajs_framework",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_publishconfig",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_publishconfig_access",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_repository",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_repository_directory",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_repository_type",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_repository_url",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_scripts",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_scripts_build",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_scripts_test",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_scripts_test_integration",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_scripts_watch",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_package_version",
+      "tmp_graphify_cl_jr1vdrxy-10::ref_medusajs_framework"
+    ],
+    "80": [
+      "tmp_graphify_cl_jr1vdrxy-5::packages_medusa_src_modules_locking_postgres",
+      "tmp_graphify_cl_jr1vdrxy-5::packages_medusa_src_modules_locking_postgres_discoverypath",
+      "tmp_graphify_cl_jr1vdrxy-5::packages_modules_providers_locking_postgres_src_index"
+    ],
+    "81": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_jest_config",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_jest_config_definejestconfig",
+      "tmp_graphify_cl_jr1vdrxy-6::define_jest_config"
+    ],
+    "82": [
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_2_13_0",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_minor_changes",
+      "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_patch_changes_203"
+    ],
+    "83": [
+      "tmp_graphify_cl_jr1vdrxy-7::packages_medusa_src_modules_caching",
+      "tmp_graphify_cl_jr1vdrxy-7::packages_medusa_src_modules_caching_discoverypath",
+      "tmp_graphify_cl_jr1vdrxy-7::packages_modules_caching_src_index"
+    ],
+    "84": [
+      "tmp_graphify_cl_jr1vdrxy-9::packages_medusa_src_modules_locking_redis",
+      "tmp_graphify_cl_jr1vdrxy-9::packages_medusa_src_modules_locking_redis_discoverypath",
+      "tmp_graphify_cl_jr1vdrxy-9::packages_modules_providers_locking_redis_src_index"
+    ],
+    "85": [
+      "tmp_graphify_cl_jr1vdrxy::packages_medusa_src_modules_cache_inmemory",
+      "tmp_graphify_cl_jr1vdrxy::packages_medusa_src_modules_cache_inmemory_discoverypath",
+      "tmp_graphify_cl_jr1vdrxy::packages_modules_cache_inmemory_src_index"
+    ],
+    "86": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_8_0_rc_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_620"
+    ],
+    "87": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_8_0_rc_2",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_610"
+    ],
+    "88": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_8_0_rc_3",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_603"
+    ],
+    "89": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_8_0_rc_4",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_593"
+    ],
+    "90": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_8_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_567"
+    ],
+    "91": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_8_2",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_560"
+    ],
+    "92": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_9_1",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_538"
+    ],
+    "93": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_9_2",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_530"
+    ],
+    "94": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_9_3",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_522"
+    ],
+    "95": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_9_4",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_514"
+    ],
+    "96": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_9_5",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_504"
+    ],
+    "97": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_9_6",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_495"
+    ],
+    "98": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_9_7",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_486"
+    ],
+    "99": [
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_1_9_8",
+      "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_patch_changes_476"
+    ]
+  },
+  "cohesion": {
+    "0": 0.05102040816326531,
+    "13": 0.09090909090909091,
+    "15": 0.12987012987012986,
+    "17": 0.1695906432748538,
+    "19": 0.1323529411764706,
+    "21": 0.21666666666666667,
+    "22": 0.1523809523809524,
+    "24": 0.14285714285714285,
+    "25": 0.15384615384615385,
+    "26": 0.15384615384615385,
+    "28": 0.18181818181818182,
+    "29": 0.16666666666666666,
+    "3": 0.08907563025210084,
+    "32": 0.3111111111111111,
+    "35": 0.2222222222222222,
+    "36": 0.3333333333333333,
+    "38": 0.35714285714285715,
+    "41": 0.3333333333333333,
+    "5": 0.09852216748768473,
+    "7": 0.1206896551724138,
+    "9": 0.12169312169312169,
+    "20": 0.125,
+    "27": 0.18181818181818182,
+    "30": 0.21818181818181817,
+    "1": 0.05263157894736842,
+    "10": 0.07407407407407407,
+    "100": 1.0,
+    "101": 1.0,
+    "102": 1.0,
+    "103": 1.0,
+    "104": 1.0,
+    "105": 1.0,
+    "106": 1.0,
+    "107": 1.0,
+    "108": 1.0,
+    "109": 1.0,
+    "11": 0.08695652173913043,
+    "110": 1.0,
+    "111": 1.0,
+    "112": 1.0,
+    "113": 1.0,
+    "114": 1.0,
+    "115": 1.0,
+    "116": 1.0,
+    "117": 1.0,
+    "118": 1.0,
+    "119": 1.0,
+    "12": 0.09090909090909091,
+    "120": 1.0,
+    "121": 1.0,
+    "122": 1.0,
+    "123": 1.0,
+    "124": 1.0,
+    "125": 1.0,
+    "126": 1.0,
+    "127": 1.0,
+    "128": 1.0,
+    "129": 1.0,
+    "130": 1.0,
+    "131": 1.0,
+    "132": 1.0,
+    "133": 1.0,
+    "134": 1.0,
+    "135": 1.0,
+    "136": 1.0,
+    "137": 1.0,
+    "138": 1.0,
+    "139": 1.0,
+    "14": 0.09090909090909091,
+    "140": 1.0,
+    "141": 1.0,
+    "142": 1.0,
+    "143": 1.0,
+    "144": 1.0,
+    "145": 1.0,
+    "146": 1.0,
+    "147": 1.0,
+    "148": 1.0,
+    "149": 1.0,
+    "150": 1.0,
+    "151": 1.0,
+    "152": 1.0,
+    "153": 1.0,
+    "154": 1.0,
+    "155": 1.0,
+    "156": 1.0,
+    "157": 1.0,
+    "158": 1.0,
+    "159": 1.0,
+    "16": 0.09523809523809523,
+    "160": 1.0,
+    "161": 1.0,
+    "162": 1.0,
+    "163": 1.0,
+    "164": 1.0,
+    "165": 1.0,
+    "166": 1.0,
+    "167": 1.0,
+    "168": 1.0,
+    "169": 1.0,
+    "170": 1.0,
+    "171": 1.0,
+    "172": 1.0,
+    "173": 1.0,
+    "174": 1.0,
+    "175": 1.0,
+    "176": 1.0,
+    "177": 1.0,
+    "178": 1.0,
+    "179": 1.0,
+    "18": 0.1111111111111111,
+    "180": 1.0,
+    "181": 1.0,
+    "182": 1.0,
+    "183": 1.0,
+    "184": 1.0,
+    "185": 1.0,
+    "186": 1.0,
+    "187": 1.0,
+    "188": 1.0,
+    "189": 1.0,
+    "190": 1.0,
+    "191": 1.0,
+    "192": 1.0,
+    "193": 1.0,
+    "194": 1.0,
+    "195": 1.0,
+    "196": 1.0,
+    "197": 1.0,
+    "198": 1.0,
+    "199": 1.0,
+    "2": 0.05714285714285714,
+    "200": 1.0,
+    "201": 1.0,
+    "202": 1.0,
+    "203": 1.0,
+    "204": 1.0,
+    "205": 1.0,
+    "206": 1.0,
+    "207": 1.0,
+    "208": 1.0,
+    "209": 1.0,
+    "210": 1.0,
+    "211": 1.0,
+    "212": 1.0,
+    "213": 1.0,
+    "214": 1.0,
+    "215": 1.0,
+    "216": 1.0,
+    "217": 1.0,
+    "218": 1.0,
+    "219": 1.0,
+    "220": 1.0,
+    "221": 1.0,
+    "222": 1.0,
+    "223": 1.0,
+    "224": 1.0,
+    "225": 1.0,
+    "226": 1.0,
+    "227": 1.0,
+    "228": 1.0,
+    "229": 1.0,
+    "23": 0.3333333333333333,
+    "230": 1.0,
+    "231": 1.0,
+    "232": 1.0,
+    "233": 1.0,
+    "234": 1.0,
+    "235": 1.0,
+    "236": 1.0,
+    "237": 1.0,
+    "238": 1.0,
+    "239": 1.0,
+    "240": 1.0,
+    "241": 1.0,
+    "242": 1.0,
+    "243": 1.0,
+    "244": 1.0,
+    "245": 1.0,
+    "246": 1.0,
+    "247": 1.0,
+    "248": 1.0,
+    "249": 1.0,
+    "250": 1.0,
+    "251": 1.0,
+    "252": 1.0,
+    "253": 1.0,
+    "254": 1.0,
+    "255": 1.0,
+    "256": 1.0,
+    "257": 1.0,
+    "258": 1.0,
+    "259": 1.0,
+    "260": 1.0,
+    "261": 1.0,
+    "262": 1.0,
+    "263": 1.0,
+    "264": 1.0,
+    "265": 1.0,
+    "266": 1.0,
+    "267": 1.0,
+    "268": 1.0,
+    "269": 1.0,
+    "270": 1.0,
+    "271": 1.0,
+    "272": 1.0,
+    "273": 1.0,
+    "274": 1.0,
+    "275": 1.0,
+    "276": 1.0,
+    "277": 1.0,
+    "278": 1.0,
+    "279": 1.0,
+    "280": 1.0,
+    "281": 1.0,
+    "282": 1.0,
+    "283": 1.0,
+    "284": 1.0,
+    "285": 1.0,
+    "286": 1.0,
+    "287": 1.0,
+    "288": 1.0,
+    "289": 1.0,
+    "290": 1.0,
+    "291": 1.0,
+    "292": 1.0,
+    "293": 1.0,
+    "294": 1.0,
+    "295": 1.0,
+    "296": 1.0,
+    "297": 1.0,
+    "298": 1.0,
+    "299": 1.0,
+    "300": 1.0,
+    "301": 1.0,
+    "302": 1.0,
+    "303": 1.0,
+    "304": 1.0,
+    "305": 1.0,
+    "306": 1.0,
+    "307": 1.0,
+    "308": 1.0,
+    "309": 1.0,
+    "31": 0.18181818181818182,
+    "310": 1.0,
+    "311": 1.0,
+    "312": 1.0,
+    "313": 1.0,
+    "314": 1.0,
+    "315": 1.0,
+    "316": 1.0,
+    "317": 1.0,
+    "318": 1.0,
+    "319": 1.0,
+    "320": 1.0,
+    "321": 1.0,
+    "322": 1.0,
+    "323": 1.0,
+    "324": 1.0,
+    "325": 1.0,
+    "326": 1.0,
+    "327": 1.0,
+    "328": 1.0,
+    "329": 1.0,
+    "33": 0.2,
+    "330": 1.0,
+    "331": 1.0,
+    "332": 1.0,
+    "333": 1.0,
+    "334": 1.0,
+    "335": 1.0,
+    "336": 1.0,
+    "337": 1.0,
+    "338": 1.0,
+    "339": 1.0,
+    "34": 0.2222222222222222,
+    "340": 1.0,
+    "341": 1.0,
+    "342": 1.0,
+    "343": 1.0,
+    "344": 1.0,
+    "345": 1.0,
+    "346": 1.0,
+    "347": 1.0,
+    "348": 1.0,
+    "349": 1.0,
+    "350": 1.0,
+    "351": 1.0,
+    "352": 1.0,
+    "353": 1.0,
+    "354": 1.0,
+    "355": 1.0,
+    "356": 1.0,
+    "357": 1.0,
+    "358": 1.0,
+    "359": 1.0,
+    "360": 1.0,
+    "361": 1.0,
+    "362": 1.0,
+    "363": 1.0,
+    "364": 1.0,
+    "365": 1.0,
+    "366": 1.0,
+    "367": 1.0,
+    "368": 1.0,
+    "369": 1.0,
+    "37": 0.25,
+    "370": 1.0,
+    "371": 1.0,
+    "372": 1.0,
+    "373": 1.0,
+    "374": 1.0,
+    "375": 1.0,
+    "376": 1.0,
+    "377": 1.0,
+    "378": 1.0,
+    "379": 1.0,
+    "380": 1.0,
+    "381": 1.0,
+    "382": 1.0,
+    "383": 1.0,
+    "384": 1.0,
+    "385": 1.0,
+    "386": 1.0,
+    "387": 1.0,
+    "388": 1.0,
+    "389": 1.0,
+    "39": 0.25,
+    "390": 1.0,
+    "391": 1.0,
+    "392": 1.0,
+    "393": 1.0,
+    "394": 1.0,
+    "395": 1.0,
+    "396": 1.0,
+    "397": 1.0,
+    "398": 1.0,
+    "399": 1.0,
+    "4": 0.058823529411764705,
+    "40": 0.2857142857142857,
+    "400": 1.0,
+    "401": 1.0,
+    "402": 1.0,
+    "403": 1.0,
+    "404": 1.0,
+    "405": 1.0,
+    "406": 1.0,
+    "407": 1.0,
+    "408": 1.0,
+    "409": 1.0,
+    "410": 1.0,
+    "411": 1.0,
+    "412": 1.0,
+    "413": 1.0,
+    "414": 1.0,
+    "415": 1.0,
+    "416": 1.0,
+    "417": 1.0,
+    "418": 1.0,
+    "419": 1.0,
+    "42": 0.3333333333333333,
+    "420": 1.0,
+    "421": 1.0,
+    "422": 1.0,
+    "423": 1.0,
+    "424": 1.0,
+    "425": 1.0,
+    "426": 1.0,
+    "427": 1.0,
+    "428": 1.0,
+    "429": 1.0,
+    "43": 0.5,
+    "430": 1.0,
+    "431": 1.0,
+    "432": 1.0,
+    "433": 1.0,
+    "434": 1.0,
+    "435": 1.0,
+    "436": 1.0,
+    "437": 1.0,
+    "438": 1.0,
+    "439": 1.0,
+    "44": 0.5,
+    "440": 1.0,
+    "441": 1.0,
+    "442": 1.0,
+    "443": 1.0,
+    "444": 1.0,
+    "445": 1.0,
+    "446": 1.0,
+    "447": 1.0,
+    "45": 0.6666666666666666,
+    "46": 0.6666666666666666,
+    "47": 0.6666666666666666,
+    "48": 0.6666666666666666,
+    "49": 0.6666666666666666,
+    "50": 0.6666666666666666,
+    "51": 0.6666666666666666,
+    "52": 0.6666666666666666,
+    "53": 0.6666666666666666,
+    "54": 0.6666666666666666,
+    "55": 0.6666666666666666,
+    "56": 0.6666666666666666,
+    "57": 0.6666666666666666,
+    "58": 0.6666666666666666,
+    "59": 0.6666666666666666,
+    "6": 0.06896551724137931,
+    "60": 0.6666666666666666,
+    "61": 0.6666666666666666,
+    "62": 0.6666666666666666,
+    "63": 0.6666666666666666,
+    "64": 0.6666666666666666,
+    "65": 0.6666666666666666,
+    "66": 0.6666666666666666,
+    "67": 0.6666666666666666,
+    "68": 0.6666666666666666,
+    "69": 0.6666666666666666,
+    "70": 0.6666666666666666,
+    "71": 0.6666666666666666,
+    "72": 0.6666666666666666,
+    "73": 0.6666666666666666,
+    "74": 0.6666666666666666,
+    "75": 0.6666666666666666,
+    "76": 0.6666666666666666,
+    "77": 0.6666666666666666,
+    "78": 0.6666666666666666,
+    "79": 0.6666666666666666,
+    "8": 0.07142857142857142,
+    "80": 0.6666666666666666,
+    "81": 0.6666666666666666,
+    "82": 0.6666666666666666,
+    "83": 0.6666666666666666,
+    "84": 0.6666666666666666,
+    "85": 0.6666666666666666,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
+    "92": 1.0,
+    "93": 1.0,
+    "94": 1.0,
+    "95": 1.0,
+    "96": 1.0,
+    "97": 1.0,
+    "98": 1.0,
+    "99": 1.0
+  },
+  "gods": [
+    {
+      "id": "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_changelog_medusajs_event_bus_redis",
+      "label": "@medusajs/event-bus-redis",
+      "degree": 94
+    },
+    {
+      "id": "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_changelog_medusajs_event_bus_local",
+      "label": "@medusajs/event-bus-local",
+      "degree": 92
+    },
+    {
+      "id": "tmp_graphify_cl_jr1vdrxy-4::packages_modules_cache_redis_changelog_medusajs_cache_redis",
+      "label": "@medusajs/cache-redis",
+      "degree": 91
+    },
+    {
+      "id": "tmp_graphify_cl_jr1vdrxy-19::packages_modules_cache_inmemory_changelog_medusajs_cache_inmemory",
+      "label": "@medusajs/cache-inmemory",
+      "degree": 90
+    },
+    {
+      "id": "tmp_graphify_cl_jr1vdrxy-3::packages_modules_locking_changelog_medusajs_locking",
+      "label": "@medusajs/locking",
+      "degree": 75
+    },
+    {
+      "id": "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_changelog_medusajs_caching",
+      "label": "@medusajs/caching",
+      "degree": 39
+    },
+    {
+      "id": "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_services_cache_module_cachingmoduleservice",
+      "label": "CachingModuleService",
+      "degree": 21
+    },
+    {
+      "id": "tmp_graphify_cl_jr1vdrxy-10::packages_modules_event_bus_local_src_services_event_bus_local_localeventbusservice",
+      "label": "LocalEventBusService",
+      "degree": 12
+    },
+    {
+      "id": "tmp_graphify_cl_jr1vdrxy-14::packages_modules_event_bus_redis_src_services_event_bus_redis_rediseventbusservice",
+      "label": "RedisEventBusService",
+      "degree": 12
+    },
+    {
+      "id": "tmp_graphify_cl_jr1vdrxy-6::packages_modules_caching_src_utils_parser_cacheinvalidationparser",
+      "label": "CacheInvalidationParser",
+      "degree": 12
+    }
+  ],
+  "surprises": [
+    {
+      "source": "CachingModuleService",
+      "target": "CacheProviderService",
+      "source_files": [
+        "packages/modules/caching/src/services/cache-module.ts",
+        "packages/modules/caching/src/services/cache-provider.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "DefaultCacheStrategy",
+      "target": "InjectedDependencies",
+      "source_files": [
+        "packages/modules/caching/src/utils/strategy.ts",
+        "packages/modules/caching/src/types/index.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "createProvider()",
+      "target": "MemoryCachingProvider",
+      "source_files": [
+        "packages/modules/caching/src/providers/__tests__/memory-cache.spec.ts",
+        "packages/modules/caching/src/providers/memory-cache.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `createProvider()` unexpectedly reaches hub `MemoryCachingProvider`"
+    },
+    {
+      "source": "CachingModuleService",
+      "target": "InjectedDependencies",
+      "source_files": [
+        "packages/modules/caching/src/services/cache-module.ts",
+        "packages/modules/caching/src/types/index.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "MemoryCachingProvider",
+      "target": "MemoryCacheModuleOptions",
+      "source_files": [
+        "packages/modules/caching/src/providers/memory-cache.ts",
+        "packages/modules/caching/src/types/index.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `@medusajs/event-bus-local` connect `@medusajs/event-bus-local` to `2.15.5`, `2.16.0`, `2.17.0`, `2.17.1`, `2.17.2`, `2.18.0`, `2.19.0`, `2.20.0`, `2.20.1`, `2.21.0`, `2.21.1`, `2.21.2`, `2.4.0`, `2.6.1`, `2.7.0`, `2.7.1`, `2.8.0`, `2.8.1`, `2.8.2`, `2.8.3`, `2.8.4`, `2.8.5`, `2.8.6`, `2.8.7`, `2.8.8`, `2.9.0`, `1.8.0`, `1.8.0-rc.0`, `1.9.0`, `2.0.0`, `2.13.0`, `1.8.0-rc.1`, `1.8.0-rc.2`, `1.8.0-rc.3`, `1.8.0-rc.4`, `1.8.1`, `1.8.2`, `1.9.1`, `1.9.2`, `1.9.3`, `1.9.4`, `1.9.5`, `1.9.6`, `1.9.7`, `1.9.8`, `2.0.5`, `2.10.0`, `2.10.1`, `2.10.2`, `2.10.3`, `2.11.0`, `2.11.1`, `2.11.2`, `2.11.3`, `2.12.0`, `2.12.1`, `2.12.2`, `2.12.3`, `2.12.4`, `2.12.5`, `2.12.6`, `2.13.1`, `2.13.2`, `2.13.3`, `2.13.4`, `2.13.6`, `2.14.0`, `2.14.2`, `2.15.0`, `2.15.1`, `2.15.2`, `2.15.3`, `2.15.4`?",
+      "why": "High betweenness centrality (0.013) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `@medusajs/framework`, `@medusajs/test-utils`, `xxhash-wasm` to the rest of the system?",
+      "why": "17 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `services/event-bus-local.ts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.05102040816326531 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `@medusajs/cache-inmemory` connect `@medusajs/cache-inmemory` to `2.13.4`, `2.13.5`, `2.13.6`, `2.14.0`, `2.14.1`, `2.14.2`, `2.15.0`, `2.15.1`, `2.15.2`, `2.15.3`, `2.15.4`, `2.15.5`, `2.16.0`, `2.17.0`, `2.17.1`, `2.17.2`, `2.18.0`, `2.20.0`, `2.20.1`, `2.21.0`, `2.21.1`, `2.21.2`, `2.4.0`, `2.6.1`, `2.7.0`, `2.7.1`, `2.8.0`, `2.8.1`, `2.8.2`, `2.8.3`, `2.8.4`, `2.8.5`, `2.8.6`, `2.8.7`, `2.8.8`, `2.9.0`, `1.8.0`, `1.8.0-rc.0`, `2.0.0`, `2.13.0`, `1.8.0-rc.1`, `1.8.0-rc.2`, `1.8.0-rc.3`, `1.8.1`, `1.8.10`, `1.8.2`, `1.8.3`, `1.8.4`, `1.8.5`, `1.8.6`, `1.8.7`, `1.8.8`, `1.8.9`, `2.10.0`, `2.10.1`, `2.10.2`, `2.10.3`, `2.11.0`, `2.11.1`, `2.11.2`, `2.11.3`, `2.12.0`, `2.12.1`, `2.12.2`, `2.12.3`, `2.12.4`, `2.12.5`, `2.12.6`, `2.13.1`, `2.13.2`, `2.13.3`?",
+      "why": "High betweenness centrality (0.012) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `caching/index.ts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `@medusajs/event-bus-redis` connect `@medusajs/event-bus-redis` to `1.8.0-rc.0`, `1.8.3`, `1.8.0`, `1.8.0-rc.1`, `1.8.0-rc.2`, `1.8.0-rc.3`, `1.8.0-rc.4`, `1.8.1`, `2.0.0`, `1.8.11`, `1.8.12`, `1.8.13`, `1.8.10`, `1.8.4`, `1.8.5`, `1.8.6`, `1.8.7`, `1.8.8`, `1.8.9`, `2.0.5`, `2.10.0`, `2.10.1`, `2.10.2`, `2.10.3`, `2.11.0`, `2.11.1`, `2.11.2`, `2.11.3`, `2.12.0`, `2.12.1`, `2.12.2`, `2.12.3`, `2.12.4`, `2.12.5`, `2.13.1`, `2.13.0`, `2.13.2`, `2.13.3`, `2.13.4`, `2.13.5`, `2.13.6`, `2.14.2`, `2.15.0`, `2.15.1`, `2.15.2`, `2.15.3`, `2.14.1`, `2.15.5`, `2.16.0`, `2.17.0`, `2.17.1`, `2.17.2`, `2.18.0`, `2.19.0`, `2.20.0`, `2.20.1`, `2.21.0`, `2.21.1`, `2.21.2`, `2.4.0`, `2.6.0`, `2.6.1`, `2.7.0`, `2.7.1`, `2.8.0`, `2.8.1`, `2.8.2`, `2.8.3`, `2.8.4`, `2.8.5`, `2.8.6`, `2.8.7`, `2.8.8`, `2.9.0`, `2.15.4`?",
+      "why": "High betweenness centrality (0.007) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `caching/src/types/index.ts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.12987012987012986 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

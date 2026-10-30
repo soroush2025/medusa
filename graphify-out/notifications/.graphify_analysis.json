@@ -1,0 +1,790 @@
+{
+  "communities": {
+    "0": [
+      "packages_core_core_flows_src_notification_index",
+      "packages_core_core_flows_src_notification_steps_index",
+      "packages_core_core_flows_src_notification_steps_notify_on_failure",
+      "packages_core_core_flows_src_notification_steps_notify_on_failure_notifyonfailurestep",
+      "packages_core_core_flows_src_notification_steps_notify_on_failure_notifyonfailurestepid",
+      "packages_core_core_flows_src_notification_steps_notify_on_failure_notifyonfailurestepinput",
+      "packages_core_core_flows_src_notification_steps_send_notifications",
+      "packages_core_core_flows_src_notification_steps_send_notifications_sendnotificationsstep",
+      "packages_core_core_flows_src_notification_steps_send_notifications_sendnotificationsstepid",
+      "packages_core_core_flows_src_notification_steps_send_notifications_sendnotificationsstepinput",
+      "packages_core_framework_dist_types_index_attachment",
+      "packages_core_framework_dist_types_index_createnotificationdto",
+      "packages_core_framework_dist_types_index_inotificationmoduleservice",
+      "packages_core_framework_dist_types_index_notificationcontent",
+      "packages_core_framework_dist_utils_index_commonevents",
+      "packages_core_framework_dist_utils_index_composemessage",
+      "packages_core_framework_dist_utils_index_definemikroormcliconfig",
+      "packages_core_framework_dist_utils_index_module",
+      "packages_core_framework_dist_utils_index_modules",
+      "packages_core_framework_dist_utils_index_notificationevents",
+      "packages_core_framework_dist_utils_index_notificationstatus",
+      "packages_core_framework_dist_workflows_sdk_index",
+      "packages_core_framework_dist_workflows_sdk_index_createstep",
+      "packages_core_framework_dist_workflows_sdk_index_stepresponse",
+      "packages_medusa_src_modules_notification",
+      "packages_medusa_src_modules_notification_discoverypath",
+      "packages_medusa_test_utils_src_index",
+      "packages_medusa_test_utils_src_index_mockeventbusservice",
+      "packages_medusa_test_utils_src_index_moduleintegrationtestrunner",
+      "packages_modules_notification_integration_tests_tests_notification_module_service_index_spec",
+      "packages_modules_notification_integration_tests_tests_notification_module_service_index_spec_moduleoptions",
+      "packages_modules_notification_integration_tests_tests_notification_module_service_medusa_cloud_email_spec",
+      "packages_modules_notification_integration_tests_tests_notification_module_service_medusa_cloud_email_spec_successmedusacloudemailresponse",
+      "packages_modules_notification_integration_tests_tests_notification_module_service_medusa_cloud_email_spec_testnotification",
+      "packages_modules_notification_mikro_orm_config_dev",
+      "packages_modules_notification_src_index",
+      "packages_modules_notification_src_services_index",
+      "packages_modules_notification_src_services_index_notificationmoduleservice",
+      "ref_path"
+    ],
+    "1": [
+      "packages_core_framework_dist_deps_awilix",
+      "packages_core_framework_dist_deps_awilix_asfunction",
+      "packages_core_framework_dist_deps_awilix_asvalue",
+      "packages_core_framework_dist_deps_awilix_lifetime",
+      "packages_core_framework_dist_modules_sdk_index",
+      "packages_core_framework_dist_modules_sdk_index_moduleproviderloader",
+      "packages_core_framework_dist_types_index",
+      "packages_core_framework_dist_types_index_loaderoptions",
+      "packages_core_framework_dist_types_index_logger",
+      "packages_core_framework_dist_types_index_moduleproviderexports",
+      "packages_core_framework_dist_types_index_moduleserviceinitializeoptions",
+      "packages_core_framework_dist_types_index_notificationtypes",
+      "packages_core_framework_dist_utils_index_abstractnotificationproviderservice",
+      "packages_core_framework_dist_utils_index_lowercasefirst",
+      "packages_modules_notification_integration_tests_fixtures_providers_default_provider",
+      "packages_modules_notification_integration_tests_fixtures_providers_default_provider_notificationproviderservicefixtures",
+      "packages_modules_notification_integration_tests_fixtures_providers_default_provider_notificationproviderservicefixtures_send",
+      "packages_modules_notification_integration_tests_fixtures_providers_default_provider_services",
+      "packages_modules_notification_integration_tests_fixtures_providers_index",
+      "packages_modules_notification_src_loaders_providers",
+      "packages_modules_notification_src_loaders_providers_registrationfn",
+      "packages_modules_notification_src_loaders_providers_syncdatabaseproviders",
+      "packages_modules_notification_src_loaders_providers_validatecloudoptions",
+      "packages_modules_notification_src_loaders_providers_validateproviders",
+      "packages_modules_notification_src_providers_medusa_cloud_email",
+      "packages_modules_notification_src_providers_medusa_cloud_email_medusacloudemailnotificationprovider",
+      "packages_modules_notification_src_providers_medusa_cloud_email_medusacloudemailnotificationprovider_constructor",
+      "packages_modules_notification_src_providers_medusa_cloud_email_medusacloudemailnotificationprovider_send",
+      "packages_modules_notification_src_services_index_notificationproviderservice",
+      "packages_modules_notification_src_types_index",
+      "packages_modules_notification_src_types_index_initializemoduleinjectabledependencies",
+      "packages_modules_notification_src_types_index_medusacloudemailoptions",
+      "packages_modules_notification_src_types_index_medusajs_types",
+      "packages_modules_notification_src_types_index_moduleoptions",
+      "packages_modules_notification_src_types_index_notificationidentifiersregistrationname",
+      "packages_modules_notification_src_types_index_notificationmoduleoptions",
+      "packages_modules_notification_src_types_index_notificationproviderregistrationprefix"
+    ],
+    "2": [
+      "packages_modules_notification_package",
+      "packages_modules_notification_package_author",
+      "packages_modules_notification_package_bugs",
+      "packages_modules_notification_package_bugs_url",
+      "packages_modules_notification_package_description",
+      "packages_modules_notification_package_devdependencies",
+      "packages_modules_notification_package_devdependencies_medusajs_framework",
+      "packages_modules_notification_package_devdependencies_medusajs_test_utils",
+      "packages_modules_notification_package_engines",
+      "packages_modules_notification_package_engines_node",
+      "packages_modules_notification_package_files",
+      "packages_modules_notification_package_license",
+      "packages_modules_notification_package_main",
+      "packages_modules_notification_package_name",
+      "packages_modules_notification_package_peerdependencies",
+      "packages_modules_notification_package_peerdependencies_medusajs_framework",
+      "packages_modules_notification_package_publishconfig",
+      "packages_modules_notification_package_publishconfig_access",
+      "packages_modules_notification_package_repository",
+      "packages_modules_notification_package_repository_directory",
+      "packages_modules_notification_package_repository_type",
+      "packages_modules_notification_package_repository_url",
+      "packages_modules_notification_package_scripts",
+      "packages_modules_notification_package_scripts_build",
+      "packages_modules_notification_package_scripts_migration_create",
+      "packages_modules_notification_package_scripts_migration_initial",
+      "packages_modules_notification_package_scripts_migration_up",
+      "packages_modules_notification_package_scripts_orm_cache_clear",
+      "packages_modules_notification_package_scripts_resolve_aliases",
+      "packages_modules_notification_package_scripts_test",
+      "packages_modules_notification_package_scripts_test_integration",
+      "packages_modules_notification_package_scripts_watch",
+      "packages_modules_notification_package_scripts_watch_test",
+      "packages_modules_notification_package_types",
+      "packages_modules_notification_package_version",
+      "ref_medusajs_framework",
+      "ref_medusajs_test_utils"
+    ],
+    "3": [
+      "emitevents",
+      "injectmanager",
+      "medusacontext",
+      "packages_core_framework_dist_types_index_context",
+      "packages_core_framework_dist_types_index_dal",
+      "packages_core_framework_dist_types_index_inferentitytype",
+      "packages_core_framework_dist_types_index_internalmoduledeclaration",
+      "packages_core_framework_dist_types_index_modulessdktypes",
+      "packages_core_framework_dist_utils_index",
+      "packages_core_framework_dist_utils_index_emitevents",
+      "packages_core_framework_dist_utils_index_generateentityid",
+      "packages_core_framework_dist_utils_index_injectmanager",
+      "packages_core_framework_dist_utils_index_medusacontext",
+      "packages_core_framework_dist_utils_index_medusaerror",
+      "packages_core_framework_dist_utils_index_medusaservice",
+      "packages_core_framework_dist_utils_index_model",
+      "packages_core_framework_dist_utils_index_modulessdkutils",
+      "packages_modules_notification_src_models_index",
+      "packages_modules_notification_src_models_notification",
+      "packages_modules_notification_src_models_notification_notification",
+      "packages_modules_notification_src_models_notification_provider",
+      "packages_modules_notification_src_models_notification_provider_notificationprovider",
+      "packages_modules_notification_src_services_notification_module_service",
+      "packages_modules_notification_src_services_notification_module_service_injecteddependencies",
+      "packages_modules_notification_src_services_notification_module_service_notificationmoduleservice",
+      "packages_modules_notification_src_services_notification_module_service_notificationmoduleservice_constructor",
+      "packages_modules_notification_src_services_notification_module_service_notificationmoduleservice_createnotifications",
+      "packages_modules_notification_src_services_notification_module_service_rationale_105",
+      "packages_modules_notification_src_services_notification_provider",
+      "packages_modules_notification_src_services_notification_provider_injecteddependencies",
+      "packages_modules_notification_src_services_notification_provider_notificationproviderservice",
+      "packages_modules_notification_src_services_notification_provider_notificationproviderservice_constructor",
+      "packages_modules_notification_src_services_notification_provider_notificationproviderservice_getproviderforchannels",
+      "packages_modules_notification_src_services_notification_provider_notificationproviderservice_retrieveproviderregistration",
+      "packages_modules_notification_src_services_notification_provider_notificationproviderservice_send",
+      "packages_modules_notification_src_services_notification_provider_provider"
+    ],
+    "4": [
+      "packages_core_framework_dist_deps_zod",
+      "packages_core_framework_dist_deps_zod_z",
+      "packages_core_framework_dist_http_index",
+      "packages_core_framework_dist_http_index_authenticatedmedusarequest",
+      "packages_core_framework_dist_http_index_medusaresponse",
+      "packages_core_framework_dist_http_index_middlewareroute",
+      "packages_core_framework_dist_http_index_refetchentities",
+      "packages_core_framework_dist_http_index_refetchentity",
+      "packages_core_framework_dist_index",
+      "packages_core_framework_dist_index_validateandtransformquery",
+      "packages_core_framework_dist_types_index_httptypes",
+      "packages_core_framework_dist_utils_index_policyoperation",
+      "packages_medusa_src_api_admin_notifications_id_route",
+      "packages_medusa_src_api_admin_notifications_id_route_get",
+      "packages_medusa_src_api_admin_notifications_middlewares",
+      "packages_medusa_src_api_admin_notifications_middlewares_adminnotificationroutesmiddlewares",
+      "packages_medusa_src_api_admin_notifications_query_config",
+      "packages_medusa_src_api_admin_notifications_query_config_defaultadminnotificationfields",
+      "packages_medusa_src_api_admin_notifications_query_config_entities",
+      "packages_medusa_src_api_admin_notifications_query_config_entities_notification",
+      "packages_medusa_src_api_admin_notifications_query_config_listtransformqueryconfig",
+      "packages_medusa_src_api_admin_notifications_query_config_retrievetransformqueryconfig",
+      "packages_medusa_src_api_admin_notifications_route",
+      "packages_medusa_src_api_admin_notifications_route_get",
+      "packages_medusa_src_api_admin_notifications_validators",
+      "packages_medusa_src_api_admin_notifications_validators_admingetnotificationparams",
+      "packages_medusa_src_api_admin_notifications_validators_admingetnotificationparamstype",
+      "packages_medusa_src_api_admin_notifications_validators_admingetnotificationsparams",
+      "packages_medusa_src_api_admin_notifications_validators_admingetnotificationsparamsfields",
+      "packages_medusa_src_api_admin_notifications_validators_admingetnotificationsparamstype",
+      "packages_medusa_src_api_utils_common_validators_index",
+      "packages_medusa_src_api_utils_common_validators_index_applyandandoroperators",
+      "packages_medusa_src_api_utils_validators",
+      "packages_medusa_src_api_utils_validators_createfindparams",
+      "packages_medusa_src_api_utils_validators_createselectparams"
+    ],
+    "5": [
+      "packages_core_types_src_common_index",
+      "packages_core_types_src_common_index_findconfig",
+      "packages_core_types_src_dal_index",
+      "packages_core_types_src_dal_index_basefilterable",
+      "packages_core_types_src_dal_utils",
+      "packages_core_types_src_dal_utils_operatormap",
+      "packages_core_types_src_modules_sdk_index",
+      "packages_core_types_src_modules_sdk_index_imoduleservice",
+      "packages_core_types_src_notification_common",
+      "packages_core_types_src_notification_common_attachment",
+      "packages_core_types_src_notification_common_filterablenotificationprops",
+      "packages_core_types_src_notification_common_notificationcontent",
+      "packages_core_types_src_notification_common_notificationdto",
+      "packages_core_types_src_notification_common_notificationproviderdto",
+      "packages_core_types_src_notification_index",
+      "packages_core_types_src_notification_mutations",
+      "packages_core_types_src_notification_mutations_createnotificationdto",
+      "packages_core_types_src_notification_provider",
+      "packages_core_types_src_notification_provider_inotificationprovider",
+      "packages_core_types_src_notification_provider_inotificationprovider_send",
+      "packages_core_types_src_notification_provider_providersendnotificationdto",
+      "packages_core_types_src_notification_provider_providersendnotificationresultsdto",
+      "packages_core_types_src_notification_providers_index",
+      "packages_core_types_src_notification_providers_logger",
+      "packages_core_types_src_notification_providers_logger_localnotificationserviceoptions",
+      "packages_core_types_src_notification_providers_sendgrid",
+      "packages_core_types_src_notification_providers_sendgrid_sendgridnotificationserviceoptions",
+      "packages_core_types_src_notification_service",
+      "packages_core_types_src_notification_service_inotificationmoduleservice",
+      "packages_core_types_src_notification_service_inotificationmoduleservice_createnotifications",
+      "packages_core_types_src_notification_service_inotificationmoduleservice_listandcountnotifications",
+      "packages_core_types_src_notification_service_inotificationmoduleservice_listnotifications",
+      "packages_core_types_src_notification_service_inotificationmoduleservice_retrievenotification",
+      "packages_core_types_src_shared_context",
+      "packages_core_types_src_shared_context_context"
+    ],
+    "6": [
+      "packages_core_framework_dist_deps_mikro_orm_migrations",
+      "packages_core_framework_dist_deps_mikro_orm_migrations_migration",
+      "packages_modules_notification_src_migrations_migration20240509083918_initialsetupmigration",
+      "packages_modules_notification_src_migrations_migration20240509083918_initialsetupmigration_migration20240509083918_initialsetupmigration",
+      "packages_modules_notification_src_migrations_migration20240509083918_initialsetupmigration_migration20240509083918_initialsetupmigration_up",
+      "packages_modules_notification_src_migrations_migration20240628075401",
+      "packages_modules_notification_src_migrations_migration20240628075401_migration20240628075401",
+      "packages_modules_notification_src_migrations_migration20240628075401_migration20240628075401_up",
+      "packages_modules_notification_src_migrations_migration20240830094712",
+      "packages_modules_notification_src_migrations_migration20240830094712_migration20240830094712",
+      "packages_modules_notification_src_migrations_migration20240830094712_migration20240830094712_down",
+      "packages_modules_notification_src_migrations_migration20240830094712_migration20240830094712_up",
+      "packages_modules_notification_src_migrations_migration20250120110514",
+      "packages_modules_notification_src_migrations_migration20250120110514_migration20250120110514",
+      "packages_modules_notification_src_migrations_migration20250120110514_migration20250120110514_down",
+      "packages_modules_notification_src_migrations_migration20250120110514_migration20250120110514_up",
+      "packages_modules_notification_src_migrations_migration20251028172715",
+      "packages_modules_notification_src_migrations_migration20251028172715_migration20251028172715",
+      "packages_modules_notification_src_migrations_migration20251028172715_migration20251028172715_down",
+      "packages_modules_notification_src_migrations_migration20251028172715_migration20251028172715_up",
+      "packages_modules_notification_src_migrations_migration20251121123942",
+      "packages_modules_notification_src_migrations_migration20251121123942_migration20251121123942",
+      "packages_modules_notification_src_migrations_migration20251121123942_migration20251121123942_down",
+      "packages_modules_notification_src_migrations_migration20251121123942_migration20251121123942_up",
+      "packages_modules_notification_src_migrations_migration20251121150408",
+      "packages_modules_notification_src_migrations_migration20251121150408_migration20251121150408",
+      "packages_modules_notification_src_migrations_migration20251121150408_migration20251121150408_down",
+      "packages_modules_notification_src_migrations_migration20251121150408_migration20251121150408_up"
+    ],
+    "7": [
+      "packages_modules_notification_changelog",
+      "packages_modules_notification_changelog_2_0_1",
+      "packages_modules_notification_changelog_2_0_2",
+      "packages_modules_notification_changelog_2_0_3",
+      "packages_modules_notification_changelog_2_0_4",
+      "packages_modules_notification_changelog_2_0_6",
+      "packages_modules_notification_changelog_2_0_7",
+      "packages_modules_notification_changelog_2_1_0",
+      "packages_modules_notification_changelog_2_1_1",
+      "packages_modules_notification_changelog_2_1_2",
+      "packages_modules_notification_changelog_2_1_3",
+      "packages_modules_notification_changelog_2_2_0",
+      "packages_modules_notification_changelog_2_3_0",
+      "packages_modules_notification_changelog_2_3_1",
+      "packages_modules_notification_changelog_2_5_1",
+      "packages_modules_notification_changelog_2_6_0",
+      "packages_modules_notification_changelog_medusajs_notification"
+    ],
+    "8": [
+      "packages_core_framework_dist_utils_index_containerregistrationkeys",
+      "packages_core_framework_dist_utils_index_pickvaluefromobject",
+      "packages_core_framework_dist_utils_index_promiseall",
+      "packages_medusa_src_subscribers_configurable_notifications",
+      "packages_medusa_src_subscribers_configurable_notifications_config",
+      "packages_medusa_src_subscribers_configurable_notifications_configasmap",
+      "packages_medusa_src_subscribers_configurable_notifications_configurablenotifications",
+      "packages_medusa_src_subscribers_configurable_notifications_handlerconfig",
+      "packages_medusa_src_subscribers_configurable_notifications_rationale_19",
+      "packages_medusa_src_subscribers_configurable_notifications_rationale_20",
+      "packages_medusa_src_types_subscribers",
+      "packages_medusa_src_types_subscribers_subscriberargs",
+      "packages_medusa_src_types_subscribers_subscriberconfig"
+    ],
+    "9": [
+      "packages_modules_notification_tsconfig",
+      "packages_modules_notification_tsconfig_compileroptions",
+      "packages_modules_notification_tsconfig_compileroptions_paths",
+      "packages_modules_notification_tsconfig_extends",
+      "packages_modules_notification_tsconfig_paths_models",
+      "packages_modules_notification_tsconfig_paths_repositories",
+      "packages_modules_notification_tsconfig_paths_services",
+      "packages_modules_notification_tsconfig_paths_types",
+      "packages_modules_notification_tsconfig_paths_utils",
+      "ref_tsconfig_base_json"
+    ],
+    "10": [
+      "define_jest_config",
+      "packages_modules_notification_jest_config",
+      "packages_modules_notification_jest_config_definejestconfig"
+    ],
+    "11": [
+      "packages_medusa_src_modules_notification_local",
+      "packages_medusa_src_modules_notification_local_discoverypath",
+      "packages_modules_providers_notification_local_src_index"
+    ],
+    "12": [
+      "packages_medusa_src_modules_notification_sendgrid",
+      "packages_medusa_src_modules_notification_sendgrid_discoverypath",
+      "packages_modules_providers_notification_sendgrid_src_index"
+    ],
+    "13": [
+      "packages_modules_notification_changelog_2_0_0",
+      "packages_modules_notification_changelog_major_changes",
+      "packages_modules_notification_changelog_patch_changes_485"
+    ],
+    "14": [
+      "packages_modules_notification_changelog_2_13_0",
+      "packages_modules_notification_changelog_minor_changes",
+      "packages_modules_notification_changelog_patch_changes_195"
+    ],
+    "15": [
+      "packages_modules_notification_changelog_2_4_0",
+      "packages_modules_notification_changelog_minor_changes_434",
+      "packages_modules_notification_changelog_patch_changes_438"
+    ],
+    "16": [
+      "packages_modules_notification_changelog_2_0_5",
+      "packages_modules_notification_changelog_patch_changes_465"
+    ],
+    "17": [
+      "packages_modules_notification_changelog_2_10_0",
+      "packages_modules_notification_changelog_patch_changes_322"
+    ],
+    "18": [
+      "packages_modules_notification_changelog_2_10_1",
+      "packages_modules_notification_changelog_patch_changes_315"
+    ],
+    "19": [
+      "packages_modules_notification_changelog_2_10_2",
+      "packages_modules_notification_changelog_patch_changes_306"
+    ],
+    "20": [
+      "packages_modules_notification_changelog_2_10_3",
+      "packages_modules_notification_changelog_patch_changes_299"
+    ],
+    "21": [
+      "packages_modules_notification_changelog_2_11_0",
+      "packages_modules_notification_changelog_patch_changes_288"
+    ],
+    "22": [
+      "packages_modules_notification_changelog_2_11_1",
+      "packages_modules_notification_changelog_patch_changes_281"
+    ],
+    "23": [
+      "packages_modules_notification_changelog_2_11_2",
+      "packages_modules_notification_changelog_patch_changes_268"
+    ],
+    "24": [
+      "packages_modules_notification_changelog_2_11_3",
+      "packages_modules_notification_changelog_patch_changes_259"
+    ],
+    "25": [
+      "packages_modules_notification_changelog_2_12_0",
+      "packages_modules_notification_changelog_patch_changes_248"
+    ],
+    "26": [
+      "packages_modules_notification_changelog_2_12_1",
+      "packages_modules_notification_changelog_patch_changes_241"
+    ],
+    "27": [
+      "packages_modules_notification_changelog_2_12_2",
+      "packages_modules_notification_changelog_patch_changes_234"
+    ],
+    "28": [
+      "packages_modules_notification_changelog_2_12_3",
+      "packages_modules_notification_changelog_patch_changes_225"
+    ],
+    "29": [
+      "packages_modules_notification_changelog_2_12_4",
+      "packages_modules_notification_changelog_patch_changes_218"
+    ],
+    "30": [
+      "packages_modules_notification_changelog_2_12_5",
+      "packages_modules_notification_changelog_patch_changes_209"
+    ],
+    "31": [
+      "packages_modules_notification_changelog_2_12_6",
+      "packages_modules_notification_changelog_patch_changes_202"
+    ],
+    "32": [
+      "packages_modules_notification_changelog_2_13_1",
+      "packages_modules_notification_changelog_patch_changes_184"
+    ],
+    "33": [
+      "packages_modules_notification_changelog_2_13_2",
+      "packages_modules_notification_changelog_patch_changes_177"
+    ],
+    "34": [
+      "packages_modules_notification_changelog_2_13_3",
+      "packages_modules_notification_changelog_patch_changes_170"
+    ],
+    "35": [
+      "packages_modules_notification_changelog_2_13_4",
+      "packages_modules_notification_changelog_patch_changes_163"
+    ],
+    "36": [
+      "packages_modules_notification_changelog_2_13_5",
+      "packages_modules_notification_changelog_patch_changes_156"
+    ],
+    "37": [
+      "packages_modules_notification_changelog_2_13_6",
+      "packages_modules_notification_changelog_patch_changes_149"
+    ],
+    "38": [
+      "packages_modules_notification_changelog_2_14_0",
+      "packages_modules_notification_changelog_patch_changes_142"
+    ],
+    "39": [
+      "packages_modules_notification_changelog_2_14_1",
+      "packages_modules_notification_changelog_patch_changes_135"
+    ],
+    "40": [
+      "packages_modules_notification_changelog_2_14_2",
+      "packages_modules_notification_changelog_patch_changes_128"
+    ],
+    "41": [
+      "packages_modules_notification_changelog_2_15_0",
+      "packages_modules_notification_changelog_patch_changes_121"
+    ],
+    "42": [
+      "packages_modules_notification_changelog_2_15_1",
+      "packages_modules_notification_changelog_patch_changes_114"
+    ],
+    "43": [
+      "packages_modules_notification_changelog_2_15_2",
+      "packages_modules_notification_changelog_patch_changes_107"
+    ],
+    "44": [
+      "packages_modules_notification_changelog_2_15_3",
+      "packages_modules_notification_changelog_patch_changes_100"
+    ],
+    "45": [
+      "packages_modules_notification_changelog_2_15_4",
+      "packages_modules_notification_changelog_patch_changes_93"
+    ],
+    "46": [
+      "packages_modules_notification_changelog_2_15_5",
+      "packages_modules_notification_changelog_patch_changes_86"
+    ],
+    "47": [
+      "packages_modules_notification_changelog_2_16_0",
+      "packages_modules_notification_changelog_patch_changes_79"
+    ],
+    "48": [
+      "packages_modules_notification_changelog_2_17_0",
+      "packages_modules_notification_changelog_patch_changes_72"
+    ],
+    "49": [
+      "packages_modules_notification_changelog_2_17_1",
+      "packages_modules_notification_changelog_patch_changes_65"
+    ],
+    "50": [
+      "packages_modules_notification_changelog_2_17_2",
+      "packages_modules_notification_changelog_patch_changes_56"
+    ],
+    "51": [
+      "packages_modules_notification_changelog_2_18_0",
+      "packages_modules_notification_changelog_patch_changes_49"
+    ],
+    "52": [
+      "packages_modules_notification_changelog_2_19_0",
+      "packages_modules_notification_changelog_patch_changes_42"
+    ],
+    "53": [
+      "packages_modules_notification_changelog_2_20_0",
+      "packages_modules_notification_changelog_patch_changes_35"
+    ],
+    "54": [
+      "packages_modules_notification_changelog_2_20_1",
+      "packages_modules_notification_changelog_patch_changes_28"
+    ],
+    "55": [
+      "packages_modules_notification_changelog_2_21_0",
+      "packages_modules_notification_changelog_patch_changes_19"
+    ],
+    "56": [
+      "packages_modules_notification_changelog_2_21_1",
+      "packages_modules_notification_changelog_patch_changes_12"
+    ],
+    "57": [
+      "packages_modules_notification_changelog_2_21_2",
+      "packages_modules_notification_changelog_patch_changes"
+    ],
+    "58": [
+      "packages_modules_notification_changelog_2_5_0",
+      "packages_modules_notification_changelog_patch_changes_428"
+    ],
+    "59": [
+      "packages_modules_notification_changelog_2_6_1",
+      "packages_modules_notification_changelog_patch_changes_415"
+    ],
+    "60": [
+      "packages_modules_notification_changelog_2_7_0",
+      "packages_modules_notification_changelog_patch_changes_408"
+    ],
+    "61": [
+      "packages_modules_notification_changelog_2_7_1",
+      "packages_modules_notification_changelog_patch_changes_401"
+    ],
+    "62": [
+      "packages_modules_notification_changelog_2_8_0",
+      "packages_modules_notification_changelog_patch_changes_394"
+    ],
+    "63": [
+      "packages_modules_notification_changelog_2_8_1",
+      "packages_modules_notification_changelog_patch_changes_387"
+    ],
+    "64": [
+      "packages_modules_notification_changelog_2_8_2",
+      "packages_modules_notification_changelog_patch_changes_380"
+    ],
+    "65": [
+      "packages_modules_notification_changelog_2_8_3",
+      "packages_modules_notification_changelog_patch_changes_373"
+    ],
+    "66": [
+      "packages_modules_notification_changelog_2_8_4",
+      "packages_modules_notification_changelog_patch_changes_366"
+    ],
+    "67": [
+      "packages_modules_notification_changelog_2_8_5",
+      "packages_modules_notification_changelog_patch_changes_359"
+    ],
+    "68": [
+      "packages_modules_notification_changelog_2_8_6",
+      "packages_modules_notification_changelog_patch_changes_352"
+    ],
+    "69": [
+      "packages_modules_notification_changelog_2_8_7",
+      "packages_modules_notification_changelog_patch_changes_343"
+    ],
+    "70": [
+      "packages_modules_notification_changelog_2_8_8",
+      "packages_modules_notification_changelog_patch_changes_336"
+    ],
+    "71": [
+      "packages_modules_notification_changelog_2_9_0",
+      "packages_modules_notification_changelog_patch_changes_329"
+    ],
+    "72": [
+      "packages_modules_notification_readme",
+      "packages_modules_notification_readme_notification_module"
+    ]
+  },
+  "cohesion": {
+    "0": 0.07017543859649122,
+    "1": 0.07507507507507508,
+    "2": 0.05405405405405406,
+    "3": 0.09682539682539683,
+    "4": 0.07058823529411765,
+    "5": 0.0907563025210084,
+    "6": 0.0873015873015873,
+    "7": 0.11764705882352941,
+    "8": 0.15384615384615385,
+    "9": 0.2,
+    "10": 0.6666666666666666,
+    "11": 0.6666666666666666,
+    "12": 0.6666666666666666,
+    "13": 0.6666666666666666,
+    "14": 0.6666666666666666,
+    "15": 0.6666666666666666,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0,
+    "51": 1.0,
+    "52": 1.0,
+    "53": 1.0,
+    "54": 1.0,
+    "55": 1.0,
+    "56": 1.0,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0,
+    "62": 1.0,
+    "63": 1.0,
+    "64": 1.0,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0,
+    "69": 1.0,
+    "70": 1.0,
+    "71": 1.0,
+    "72": 1.0
+  },
+  "gods": [
+    {
+      "id": "packages_modules_notification_changelog_medusajs_notification",
+      "label": "@medusajs/notification",
+      "degree": 75
+    },
+    {
+      "id": "packages_modules_notification_package_scripts",
+      "label": "scripts",
+      "degree": 11
+    },
+    {
+      "id": "packages_modules_notification_src_services_notification_module_service_notificationmoduleservice",
+      "label": "NotificationModuleService",
+      "degree": 9
+    },
+    {
+      "id": "packages_modules_notification_src_services_notification_provider_notificationproviderservice",
+      "label": "NotificationProviderService",
+      "degree": 9
+    },
+    {
+      "id": "packages_modules_notification_src_models_notification_provider_notificationprovider",
+      "label": "NotificationProvider",
+      "degree": 7
+    },
+    {
+      "id": "packages_modules_notification_src_models_notification_notification",
+      "label": "Notification",
+      "degree": 6
+    },
+    {
+      "id": "packages_modules_notification_tsconfig_compileroptions_paths",
+      "label": "paths",
+      "degree": 6
+    },
+    {
+      "id": "packages_core_types_src_notification_common_notificationdto",
+      "label": "NotificationDTO",
+      "degree": 6
+    },
+    {
+      "id": "packages_modules_notification_src_providers_medusa_cloud_email_medusacloudemailnotificationprovider",
+      "label": "MedusaCloudEmailNotificationProvider",
+      "degree": 5
+    },
+    {
+      "id": "packages_core_types_src_notification_mutations_createnotificationdto",
+      "label": "CreateNotificationDTO",
+      "degree": 5
+    }
+  ],
+  "surprises": [
+    {
+      "source": "MedusaCloudEmailNotificationProvider",
+      "target": "MedusaCloudEmailOptions",
+      "source_files": [
+        "packages/modules/notification/src/providers/medusa-cloud-email.ts",
+        "packages/modules/notification/src/types/index.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "NotificationModuleService",
+      "target": "Notification",
+      "source_files": [
+        "packages/modules/notification/src/services/notification-module-service.ts",
+        "packages/modules/notification/src/models/notification.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "NotificationModuleService",
+      "target": "NotificationProviderService",
+      "source_files": [
+        "packages/modules/notification/src/services/notification-module-service.ts",
+        "packages/modules/notification/src/services/notification-provider.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "NotificationProviderService",
+      "target": "NotificationProvider",
+      "source_files": [
+        "packages/modules/notification/src/services/notification-provider.ts",
+        "packages/modules/notification/src/models/notification-provider.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "CreateNotificationDTO",
+      "target": "Attachment",
+      "source_files": [
+        "packages/core/types/src/notification/mutations.ts",
+        "packages/core/types/src/notification/common.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `@medusajs/notification` connect `Core Framework Imports` to `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`, `Release Changelog`?",
+      "why": "High betweenness centrality (0.001) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Patch Changes`, `Patch Changes`, `Patch Changes` to the rest of the system?",
+      "why": "149 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Provider Infrastructure` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07017543859649122 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Medusa Cloud Email Provider` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07507507507507508 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Core Framework Imports` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.05405405405405406 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Notification Provider Service` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.09682539682539683 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Admin Notification API` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07058823529411765 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

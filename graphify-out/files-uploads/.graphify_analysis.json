@@ -1,0 +1,423 @@
+{
+  "communities": {
+    "0": [
+      "layer1::package",
+      "layer1::package_author",
+      "layer1::package_bugs",
+      "layer1::package_bugs_url",
+      "layer1::package_description",
+      "layer1::package_devdependencies",
+      "layer1::package_devdependencies_medusajs_framework",
+      "layer1::package_devdependencies_medusajs_test_utils",
+      "layer1::package_engines",
+      "layer1::package_engines_node",
+      "layer1::package_files",
+      "layer1::package_license",
+      "layer1::package_main",
+      "layer1::package_name",
+      "layer1::package_peerdependencies",
+      "layer1::package_peerdependencies_medusajs_framework",
+      "layer1::package_publishconfig",
+      "layer1::package_publishconfig_access",
+      "layer1::package_repository",
+      "layer1::package_repository_directory",
+      "layer1::package_repository_type",
+      "layer1::package_repository_url",
+      "layer1::package_types",
+      "layer1::package_version",
+      "layer1::ref_medusajs_framework",
+      "layer1::ref_medusajs_test_utils"
+    ],
+    "1": [
+      "ext_core_framework_dist_types_index_js",
+      "ext_core_framework_dist_utils_index_js",
+      "ext_medusa_test_utils_src_index_ts",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_constructor",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_context",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_createfiledto",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_filedto",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_filetypes",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_filterablefileprops",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_findconfig",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_getuploadfileurldto",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_ifilemoduleservice",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_modulejoinerconfig",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_uploadfileurldto",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_utils_index_abstractfileproviderservice",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_utils_index_definejoinerconfig",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_utils_index_module",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_utils_index_modules",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_medusa_test_utils_src_index_moduleintegrationtestrunner",
+      "layer1::integration_tests_fixtures_providers_default_provider",
+      "layer1::integration_tests_fixtures_providers_default_provider_services",
+      "layer1::integration_tests_fixtures_providers_index",
+      "layer1::integration_tests_tests_module_spec",
+      "layer1::integration_tests_tests_module_spec_moduleoptions",
+      "layer1::src_index",
+      "layer1::src_joiner_config",
+      "layer1::src_joiner_config_joinerconfig",
+      "layer1::src_services_file_module_service",
+      "layer1::src_services_file_module_service_injecteddependencies",
+      "layer1::src_services_file_module_service_rationale_46",
+      "layer1::src_services_file_provider_service",
+      "layer1::src_services_file_provider_service_injecteddependencies",
+      "layer1::src_services_index",
+      "layer3::index",
+      "layer3::index_deletefiletype",
+      "layer3::index_fileservicegetuploadstreamresult",
+      "layer3::index_fileserviceuploadresult",
+      "layer3::index_getuploadedfiletype",
+      "layer3::index_uploadstreamdescriptortype",
+      "ref_path",
+      "ref_stream",
+      "src_services_index_filemoduleservice"
+    ],
+    "2": [
+      "layer1::src_loaders_providers_registrationfn",
+      "layer1::src_services_file_module_service_filemoduleservice",
+      "layer1::src_services_file_module_service_filemoduleservice_constructor",
+      "layer1::src_services_file_module_service_filemoduleservice_createfiles",
+      "layer1::src_services_file_module_service_filemoduleservice_deletefiles",
+      "layer1::src_services_file_module_service_filemoduleservice_getasbuffer",
+      "layer1::src_services_file_module_service_filemoduleservice_getdownloadstream",
+      "layer1::src_services_file_module_service_filemoduleservice_getprovider",
+      "layer1::src_services_file_module_service_filemoduleservice_getuploadfileurls",
+      "layer1::src_services_file_module_service_filemoduleservice_getuploadstream",
+      "layer1::src_services_file_module_service_filemoduleservice_joinerconfig",
+      "layer1::src_services_file_module_service_filemoduleservice_listandcountfiles",
+      "layer1::src_services_file_module_service_filemoduleservice_listfiles",
+      "layer1::src_services_file_module_service_filemoduleservice_retrievefile",
+      "layer1::src_services_file_provider_service_fileproviderservice",
+      "layer1::src_services_file_provider_service_fileproviderservice_constructor",
+      "layer1::src_services_file_provider_service_fileproviderservice_delete",
+      "layer1::src_services_file_provider_service_fileproviderservice_getasbuffer",
+      "layer1::src_services_file_provider_service_fileproviderservice_getdownloadstream",
+      "layer1::src_services_file_provider_service_fileproviderservice_getpresigneddownloadurl",
+      "layer1::src_services_file_provider_service_fileproviderservice_getpresigneduploadurl",
+      "layer1::src_services_file_provider_service_fileproviderservice_getregistrationidentifier",
+      "layer1::src_services_file_provider_service_fileproviderservice_getuploadstream",
+      "layer1::src_services_file_provider_service_fileproviderservice_upload"
+    ],
+    "3": [
+      "ext_core_framework_dist_deps_awilix_js",
+      "ext_core_framework_dist_modules_sdk_index_js",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_deps_awilix_asfunction",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_deps_awilix_asvalue",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_deps_awilix_lifetime",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_modules_sdk_index_moduleproviderloader",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_loaderoptions",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_moduleprovider",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_moduleproviderexports",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_moduleserviceinitializeoptions",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_modulessdktypes",
+      "layer1::src_loaders_providers",
+      "layer1::src_types_index",
+      "layer1::src_types_index_filemoduleoptions",
+      "layer1::src_types_index_fileprovideridentifierregistrationname",
+      "layer1::src_types_index_fileproviderregistrationprefix",
+      "layer1::src_types_index_medusajs_types",
+      "layer1::src_types_index_moduleoptions",
+      "src_services_index_fileproviderservice"
+    ],
+    "4": [
+      "ext_index_js",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_core_flows_dist_index_deletefilesworkflow",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_core_flows_dist_index_uploadfilesworkflow",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_http_index_authenticatedmedusarequest",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_http_index_medusaresponse",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_types_index_httptypes",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_utils_index_containerregistrationkeys",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_utils_index_medusaerror",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_utils_index_medusaerrortypes",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_utils_index_remotequeryobjectfromstring",
+      "layer4::id_route",
+      "layer4::id_route_delete",
+      "layer4::id_route_get",
+      "layer4::presigned_urls_route",
+      "layer4::presigned_urls_route_post",
+      "layer4::route",
+      "layer4::route_post",
+      "layer4::validators_adminuploadpresignedurltype",
+      "ref_ulid",
+      "ref_util"
+    ],
+    "5": [
+      "layer1::package_scripts",
+      "layer1::package_scripts_build",
+      "layer1::package_scripts_migration_create",
+      "layer1::package_scripts_migration_initial",
+      "layer1::package_scripts_migration_up",
+      "layer1::package_scripts_orm_cache_clear",
+      "layer1::package_scripts_resolve_aliases",
+      "layer1::package_scripts_test",
+      "layer1::package_scripts_test_integration",
+      "layer1::package_scripts_watch",
+      "layer1::package_scripts_watch_test"
+    ],
+    "6": [
+      "layer1::ref_tsconfig_base_json",
+      "layer1::tsconfig",
+      "layer1::tsconfig_compileroptions",
+      "layer1::tsconfig_compileroptions_paths",
+      "layer1::tsconfig_extends",
+      "layer1::tsconfig_paths_models",
+      "layer1::tsconfig_paths_repositories",
+      "layer1::tsconfig_paths_services",
+      "layer1::tsconfig_paths_types"
+    ],
+    "7": [
+      "layer1::integration_tests_fixtures_providers_default_provider_fileproviderservicefixtures",
+      "layer1::integration_tests_fixtures_providers_default_provider_fileproviderservicefixtures_delete",
+      "layer1::integration_tests_fixtures_providers_default_provider_fileproviderservicefixtures_getpresigneddownloadurl",
+      "layer1::integration_tests_fixtures_providers_default_provider_fileproviderservicefixtures_getpresigneduploadurl",
+      "layer1::integration_tests_fixtures_providers_default_provider_fileproviderservicefixtures_upload"
+    ],
+    "8": [
+      "ext_define_jest_config_js",
+      "layer1::jest_config",
+      "layer1::jest_config_definejestconfig"
+    ],
+    "9": [
+      "layer1::src_services_tests_file_spec"
+    ],
+    "10": [
+      "ext_common_index_ts",
+      "ext_modules_sdk_index_ts",
+      "ext_shared_context_ts",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_types_src_common_index_findconfig",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_types_src_modules_sdk_index_imoduleservice",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_types_src_shared_context_context",
+      "layer2::common",
+      "layer2::common_fileaccesspermission",
+      "layer2::common_filedto",
+      "layer2::common_filterablefileprops",
+      "layer2::common_uploadfileurldto",
+      "layer2::index",
+      "layer2::mutations",
+      "layer2::mutations_createfiledto",
+      "layer2::mutations_getuploadfileurldto",
+      "layer2::provider",
+      "layer2::provider_providerdeletefiledto",
+      "layer2::provider_providerfileresultdto",
+      "layer2::provider_providergetfiledto",
+      "layer2::provider_providergetpresigneduploadurldto",
+      "layer2::provider_provideruploadfiledto",
+      "layer2::provider_provideruploadstreamdto",
+      "layer2::service",
+      "layer2::service_ifilemoduleservice",
+      "layer2::service_ifilemoduleservice_createfiles",
+      "layer2::service_ifilemoduleservice_deletefiles",
+      "layer2::service_ifilemoduleservice_getasbuffer",
+      "layer2::service_ifilemoduleservice_getdownloadstream",
+      "layer2::service_ifilemoduleservice_getuploadfileurls",
+      "layer2::service_ifilemoduleservice_getuploadstream",
+      "layer2::service_ifilemoduleservice_listandcountfiles",
+      "layer2::service_ifilemoduleservice_listfiles",
+      "layer2::service_ifilemoduleservice_retrievefile"
+    ],
+    "13": [
+      "layer2::provider_ifileprovider",
+      "layer2::provider_ifileprovider_delete",
+      "layer2::provider_ifileprovider_getasbuffer",
+      "layer2::provider_ifileprovider_getdownloadstream",
+      "layer2::provider_ifileprovider_getpresigneddownloadurl",
+      "layer2::provider_ifileprovider_getpresigneduploadurl",
+      "layer2::provider_ifileprovider_getuploadstream",
+      "layer2::provider_ifileprovider_upload",
+      "layer2::service_ifilemoduleservice_getprovider"
+    ],
+    "15": [
+      "layer2::providers_index",
+      "layer2::providers_local",
+      "layer2::providers_local_localfileserviceoptions",
+      "layer2::providers_s3",
+      "layer2::providers_s3_s3fileserviceoptions"
+    ],
+    "18": [
+      "ext_index_ts",
+      "ext_utils_validators_ts",
+      "ext_zod_js",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_deps_zod_z",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_deps_zod_zodtype",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_http_index_middlewareroute",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_http_index_validateandtransformbody",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_index_validateandtransformquery",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_framework_dist_utils_index_policyoperation",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_core_types_src_index_httptypes",
+      "home_soroush_00_vp_projects_03_medusa_medusa_packages_medusa_src_api_utils_validators_createselectparams",
+      "layer4::middlewares",
+      "layer4::middlewares_adminuploadroutesmiddlewares",
+      "layer4::middlewares_rationale_11",
+      "layer4::middlewares_rationale_26",
+      "layer4::middlewares_upload",
+      "layer4::query_config",
+      "layer4::query_config_defaultadminuploadfields",
+      "layer4::query_config_entities",
+      "layer4::query_config_entities_file",
+      "layer4::query_config_retrieveuploadconfig",
+      "layer4::validators",
+      "layer4::validators_admingetuploadparams",
+      "layer4::validators_admingetuploadparamstype",
+      "layer4::validators_adminuploadpresignedurl",
+      "ref_multer"
+    ],
+    "23": [
+      "layer5::file",
+      "layer5::file_discoverypath",
+      "ref_medusajs_file"
+    ],
+    "24": [
+      "layer6::file_local",
+      "layer6::file_local_discoverypath",
+      "ref_medusajs_file_local"
+    ],
+    "25": [
+      "layer7::file_s3",
+      "layer7::file_s3_discoverypath",
+      "ref_medusajs_file_s3"
+    ]
+  },
+  "cohesion": {
+    "0": 0.07692307692307693,
+    "1": 0.06620209059233449,
+    "2": 0.11594202898550725,
+    "3": 0.11695906432748537,
+    "4": 0.14210526315789473,
+    "5": 0.18181818181818182,
+    "6": 0.2222222222222222,
+    "7": 0.4,
+    "8": 0.6666666666666666,
+    "9": 1.0,
+    "10": 0.11174242424242424,
+    "13": 0.2222222222222222,
+    "15": 0.4,
+    "18": 0.08923076923076922,
+    "23": 0.6666666666666666,
+    "24": 0.6666666666666666,
+    "25": 0.6666666666666666
+  },
+  "gods": [
+    {
+      "id": "layer1::src_services_file_module_service_filemoduleservice",
+      "label": "FileModuleService",
+      "degree": 16
+    },
+    {
+      "id": "layer1::src_services_file_provider_service_fileproviderservice",
+      "label": "FileProviderService",
+      "degree": 13
+    },
+    {
+      "id": "layer1::package_scripts",
+      "label": "scripts",
+      "degree": 11
+    },
+    {
+      "id": "layer2::service_ifilemoduleservice",
+      "label": "IFileModuleService",
+      "degree": 11
+    },
+    {
+      "id": "layer2::provider_ifileprovider",
+      "label": "IFileProvider",
+      "degree": 10
+    },
+    {
+      "id": "layer2::common_filedto",
+      "label": "FileDTO",
+      "degree": 6
+    },
+    {
+      "id": "layer1::integration_tests_fixtures_providers_default_provider_fileproviderservicefixtures",
+      "label": "FileProviderServiceFixtures",
+      "degree": 5
+    },
+    {
+      "id": "layer1::tsconfig_compileroptions_paths",
+      "label": "paths",
+      "degree": 5
+    },
+    {
+      "id": "layer2::common_fileaccesspermission",
+      "label": "FileAccessPermission",
+      "degree": 5
+    },
+    {
+      "id": "layer1::package_repository",
+      "label": "repository",
+      "degree": 4
+    }
+  ],
+  "surprises": [
+    {
+      "source": "FileModuleService",
+      "target": "FileProviderService",
+      "source_files": [
+        "src/services/file-module-service.ts",
+        "src/services/file-provider-service.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "CreateFileDTO",
+      "target": "FileAccessPermission",
+      "source_files": [
+        "mutations.ts",
+        "common.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "GetUploadFileUrlDTO",
+      "target": "FileAccessPermission",
+      "source_files": [
+        "mutations.ts",
+        "common.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `FileModuleService` connect `File Module Service Implementation` to `File Module Service Setup`?",
+      "why": "High betweenness centrality (0.076) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `@medusajs/framework`, `@medusajs/test-utils`, `../../../_tsconfig.base.json` to the rest of the system?",
+      "why": "4 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Package Configuration & Module References` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `FileProviderService` connect `File Module Service Implementation` to `File Module Service Setup`, `Provider Registration & Module Loading`?",
+      "why": "High betweenness centrality (0.066) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `File Module Service Setup` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06620209059233449 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `IFileProvider` connect `File Provider Interface` to `File Module Service Interface & DTOs`?",
+      "why": "High betweenness centrality (0.047) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `File Module Service Implementation` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11594202898550725 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
